@@ -17,6 +17,7 @@ export interface StaticTranslations {
     bookingDesc: string;
     contactTitle: string;
     contactDesc: string;
+    exportKeywords?: string;
   };
   navbar: {
     home: string;

@@ -70,6 +70,8 @@ export const IMAGES = {
     dehydratedFruits: "/images/products/asset-9-68747470.webp",
     /** Banner for the Flakes category */
     flakes: flakesCategoryImage,
+    /** Banner for the Panchgavya Products category */
+    panchgavya: "/images/products/panchgavya-products.webp",
   },
 
   // ----------------------------------------------------------
@@ -120,6 +122,12 @@ export const IMAGES = {
     lemonPowder: "/images/products/lemon-powder.webp",
     strawberryPowder: "/images/products/strawberry-powder.webp",
     amlaPowder: "/images/products/amla-fruit-powder.webp",
+    dragonFruitPowder: "/images/products/spices-catalog-fallback.webp",
+    jackfruitPowder: "/images/products/spices-catalog-fallback.webp",
+    chikooPowder: "/images/products/spices-catalog-fallback.webp",
+    coconutPowder: "/images/products/spices-catalog-fallback.webp",
+    figPowder: "/images/products/spices-catalog-fallback.webp",
+    watermelonPowder: "/images/products/spices-catalog-fallback.webp",
     // Moringa Products
     moringaPowder: "/images/products/moringa-leaf-powder.webp",
     moringaLeaves: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNwNsgi7f-TOPNkw9sGyb1BBuyrcNuEuNt7Q&s",

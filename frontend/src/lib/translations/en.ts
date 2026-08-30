@@ -26,7 +26,7 @@ export const translations: StaticTranslations = {
     "agriLink3": "Pure Organic Aromatherapy Extracts",
     "agriLink4": "Custom Phytosanitary Certification",
     "agriStatus": "● 100% Trace-Audited",
-    "wellnessLink1": "Edward Bach Floral Consultations",
+    "wellnessLink1": "Bach Flower",
     "wellnessLink2": "Rekkhanoho Therapy",
     "wellnessLink3": "432Hz Quartz Polyphonic Attunements",
     "wellnessLink4": "Schedule Private Residency Session",
@@ -591,16 +591,17 @@ export const translations: StaticTranslations = {
     "reviewsModality": "MODALITY RESIDENCE"
   },
   "seo": {
-    "homeTitle": "DharaAveda Sanctuary | Restorative Quantum Healing & Premium Wellness Exports",
-    "homeDesc": "DharaAveda Sanctuary blends classical Bach wildflower therapy, Usui Reiki chakra alignment, Aura-Soma chromo-essential oils, and sound attunements.",
-    "exportTitle": "Agricultural Trade Division | DharaAveda Sanctuary",
-    "exportDesc": "Direct-source premium green cardamom, pure Shilajit resin, and organic aromatherapy extracts. Authorized APEDA and SGS compliance.",
+    "homeTitle": "Spices, Dehydrated Powders, Panchgavya & Gomay Products Supplier India | Dharaaveda",
+    "homeDesc": "Dharaaveda Global Exim supplies export-quality Indian spices, dehydrated fruit powders, moringa products, Panchgavya compost, Gomay idols, diyas, havan samagri and dhoop for global B2B buyers in UAE, USA, UK, Singapore & Malaysia.",
+    "exportTitle": "Dehydrated Fruit Powders Supplier & Exporter India | Fine, Spray-Dried & Freeze-Dried | Dharaaveda",
+    "exportDesc": "Dharaaveda Global Exim supplies dehydrated fruit powders, fine powders, spray-dried and freeze-dried fruit ingredients, moringa leaf powder, spices, Panchgavya & Gomay products for global food, beverage and B2B industries.",
+    "exportKeywords": "dehydrated fruit powder supplier India, fruit powder exporter India, bulk fruit powder, fine fruit powder, spray dried fruit powder, freeze dried fruit powder, moringa products supplier India, moringa exporter India, Panchgavya products supplier UAE, Gomay products exporter USA, Indian Havan Samagri supplier USA, Cow Dung Diyas, Gomay Havan Cups, Natural Dhoop Supplier India, spices supplier India, Indian spices exporter, bulk spices supplier",
     "wellnessTitle": "Restorative Quantum Sanctuary & Therapies | DharaAveda",
     "wellnessDesc": "Experience Usui Reiki, Bach flower consultations, and 432Hz sound therapy at our Wayanad sanctuary in Kerala.",
     "bookingTitle": "Schedule Your Attunement Residency | DharaAveda",
     "bookingDesc": "Reserve your confidential intake session for Reiki alignment, Bach flower consultations, or deep sound healing.",
-    "contactTitle": "Contact the Council Desk | DharaAveda",
-    "contactDesc": "Get in touch for bulk agricultural shipments, commodity contracts, or sanctuary wellness admissions."
+    "contactTitle": "Contact Export & Trade Desk | Dharaaveda Global Exim",
+    "contactDesc": "Contact Dharaaveda Global Exim for bulk export orders, custom packaging, and international distribution in UAE, USA, UK, Singapore & Malaysia."
   },
   "products": {
     "categories": {
@@ -640,13 +641,13 @@ export const translations: StaticTranslations = {
     "items": {
       "s-turmeric": {
         "name": "Turmeric Powder",
-        "desc": "Turmeric Powder is a premium-quality spice made from carefully selected turmeric rhizomes, offering a vibrant golden-yellow color, rich aroma, and authentic flavor. Widely used in culinary, pharmaceutical, nutraceutical, cosmetic, and Ayurvedic applications, it is hygienically processed to meet international quality standards.",
+        "desc": "Dharaaveda Global Exim offers premium-quality Indian Turmeric Powder with carefully selected raw material and options based on curcumin content, suitable for food, nutraceutical, wellness and ingredient applications along with completely organic.\n\nABOUT THE PRODUCT:\nOur Turmeric Powder is manufactured from quality turmeric fingers and processed under hygienic conditions to retain its natural colour, aroma and characteristic turmeric properties.\n\nAvailable Curcumin Grades:\n• Standard Grade: Curcumin 3.5%+\n• Premium High-Curcumin Grade: Curcumin 7%+\n(The exact curcumin specification can be confirmed through a batch-wise laboratory test/COA)\n\nQUALITY & LAB TESTING:\nFor export-oriented requirements, the product can be tested for:\n• Curcumin Content\n• Pesticide Residues\n• Heavy Metals\n• Aflatoxins\n• Microbiological Parameters\n• Moisture\n• Other quality parameters as per buyer/import-country requirements\nLab-tested batches with COA and required compliance documentation can be supplied as per customer specification.\n\nBENEFITS OF HIGH-CURCUMIN TURMERIC:\nTurmeric naturally contains curcuminoids, with curcumin being its key bioactive compound. Higher-curcumin turmeric provides a more concentrated source of these compounds.\nPotential wellness benefits associated with curcumin include:\n• Antioxidant support\n• Supports the body's natural inflammatory response\n• Traditionally used to support digestion\n• Supports general wellness and healthy lifestyle\n• Widely used in functional foods and nutraceutical formulations\n(These statements are for general nutritional/wellness information and are not intended to diagnose, treat or prevent any disease)\n\nGRADE & APPLICATIONS:\n• Standard Turmeric Powder (Curcumin 3.5%+): Food products, spices, seasoning, sauces, snacks\n• Premium High-Curcumin (Curcumin 7%+): Premium food ingredients, nutraceuticals, wellness products, functional formulations\n\nPACKAGING:\nAvailable according to buyer requirements:\n• 25 kg food-grade bags\n• 50 kg food-grade bags\n• PP bags with suitable inner food-grade liner\n• Kraft paper bags / customized export packaging\n• Private-label packaging available on request\n• Bulk packaging available for container shipments\nCustomized packing, labelling and specifications can be arranged according to destination-country and buyer requirements.",
         "pricing": "Contact Trade Desk",
         "spec": {
-          "origin": "Premium Growing Regions of India",
-          "packaging": "Fine Powder • Whole Turmeric Fingers • Polished Turmeric Fingers • Turmeric Granules • Customized Mesh Sizes",
-          "purity": "NABL Lab Tested • Quality Assured",
-          "grade": "Food • Pharmaceuticals • Nutraceuticals • Cosmetics • Ayurveda",
+          "origin": "India (Sourced from premium turmeric growing regions)",
+          "packaging": "25 kg & 50 kg food-grade bags • PP bags with inner liner • Kraft paper bags • Private-label & Bulk shipments",
+          "purity": "100% Organic & Lab-Tested with COA (Curcumin, Pesticides, Heavy Metals, Aflatoxins, Microbio, Moisture)",
+          "grade": "Standard (Curcumin 3.5%+) • Premium High-Curcumin (Curcumin 7%+)",
           "minOrder": "500 Kilograms"
         }
       },

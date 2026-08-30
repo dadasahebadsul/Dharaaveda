@@ -13,7 +13,7 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
   {
     "id": "spices",
     "title": "Spices & Seasonings",
-    "description": "Vedas-grade aromatics, hot spices, and complex culinary powders milled to absolute microbiological safety standards.",
+    "description": "Whole Spices • Spice Powders • Flakes • Granules • Masala Blends • Custom Seasonings • Bulk & Export Supply. Vedas-grade aromatics, hot spices, and complex culinary powders milled to absolute microbiological safety standards.",
     "image": IMAGES.exportCategories.spices,
     "products": [
       {
@@ -23,13 +23,13 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.turmericPowder
         ],
-        "description": "Turmeric Powder is a premium-quality spice made from carefully selected turmeric rhizomes, offering a vibrant golden-yellow color, rich aroma, and authentic flavor. Widely used in culinary, pharmaceutical, nutraceutical, cosmetic, and Ayurvedic applications, it is hygienically processed to meet international quality standards.",
+        "description": "Dharaaveda Global Exim offers premium-quality Indian Turmeric Powder with carefully selected raw material and options based on curcumin content, suitable for food, nutraceutical, wellness and ingredient applications along with completely organic.\n\nABOUT THE PRODUCT:\nOur Turmeric Powder is manufactured from quality turmeric fingers and processed under hygienic conditions to retain its natural colour, aroma and characteristic turmeric properties.\n\nAvailable Curcumin Grades:\n• Standard Grade: Curcumin 3.5%+\n• Premium High-Curcumin Grade: Curcumin 7%+\n(The exact curcumin specification can be confirmed through a batch-wise laboratory test/COA)\n\nQUALITY & LAB TESTING:\nFor export-oriented requirements, the product can be tested for:\n• Curcumin Content\n• Pesticide Residues\n• Heavy Metals\n• Aflatoxins\n• Microbiological Parameters\n• Moisture\n• Other quality parameters as per buyer/import-country requirements\nLab-tested batches with COA and required compliance documentation can be supplied as per customer specification.\n\nBENEFITS OF HIGH-CURCUMIN TURMERIC:\nTurmeric naturally contains curcuminoids, with curcumin being its key bioactive compound. Higher-curcumin turmeric provides a more concentrated source of these compounds.\nPotential wellness benefits associated with curcumin include:\n• Antioxidant support\n• Supports the body's natural inflammatory response\n• Traditionally used to support digestion\n• Supports general wellness and healthy lifestyle\n• Widely used in functional foods and nutraceutical formulations\n(These statements are for general nutritional/wellness information and are not intended to diagnose, treat or prevent any disease)\n\nGRADE & APPLICATIONS:\n• Standard Turmeric Powder (Curcumin 3.5%+): Food products, spices, seasoning, sauces, snacks\n• Premium High-Curcumin (Curcumin 7%+): Premium food ingredients, nutraceuticals, wellness products, functional formulations\n\nPACKAGING:\nAvailable according to buyer requirements:\n• 25 kg food-grade bags\n• 50 kg food-grade bags\n• PP bags with suitable inner food-grade liner\n• Kraft paper bags / customized export packaging\n• Private-label packaging available on request\n• Bulk packaging available for container shipments\nCustomized packing, labelling and specifications can be arranged according to destination-country and buyer requirements.",
         "pricing": "Contact Trade Desk",
         "specifications": {
-          "origin": "Premium Growing Regions of India",
-          "packaging": "Fine Powder • Whole Turmeric Fingers • Polished Turmeric Fingers • Turmeric Granules • Customized Mesh Sizes",
-          "purity": "NABL Lab Tested • Quality Assured",
-          "grade": "Food • Pharmaceuticals • Nutraceuticals • Cosmetics • Ayurveda",
+          "origin": "India (Sourced from premium turmeric growing regions)",
+          "packaging": "25 kg & 50 kg food-grade bags • PP bags with inner liner • Kraft paper bags • Private-label & Bulk shipments",
+          "purity": "100% Organic & Lab-Tested with COA (Curcumin, Pesticides, Heavy Metals, Aflatoxins, Microbio, Moisture)",
+          "grade": "Standard (Curcumin 3.5%+) • Premium High-Curcumin (Curcumin 7%+)",
           "minOrder": "500 Kilograms"
         },
         "createdAt": "2026-05-31"
@@ -552,7 +552,7 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
   {
     "id": "fruit_powders",
     "title": "Dehydrated Fruit Powders",
-    "description": "Premium Fruit Powders for Global Food Industries\n\nDharaaveda Global Exim offers a premium range of Dehydrated Fruit Powders produced from carefully selected, high-quality fruits using advanced dehydration technology. Our fruit powders preserve the natural flavor, aroma, color, and nutritional goodness of fresh fruits, making them an ideal ingredient for a wide variety of food, beverage, nutraceutical, and confectionery applications.",
+    "description": "Dehydrated Fruit Powders Supplier & Exporter India | Fine, Spray-Dried & Freeze-Dried\n\nDharaaveda Global Exim supplies dehydrated fruit powders, fine powders, spray-dried and freeze-dried fruit ingredients and smoothie mixes for global food, beverage, and nutraceutical industries.",
     "image": IMAGES.exportCategories.fruitPowders,
     "products": [
       {
@@ -562,13 +562,13 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.bananaPowder
         ],
-        "description": "Our Banana Powder is produced from carefully selected ripe bananas that are hygienically processed, gently dehydrated, and finely milled to preserve their natural sweetness, aroma, and nutritional value. It is widely used in the food, beverage, bakery, nutraceutical, and infant nutrition industries.",
+        "description": "Dharaaveda Global Exim offers premium Banana Powder manufactured from selected ripe bananas, gently dehydrated and finely milled to retain natural sweet flavor, aroma, and nutritional goodness. Ideal for food processing, smoothies, baby food, and nutraceutical formulations.",
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
-          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Fine Powder • Custom Mesh Sizes",
-          "purity": "Premium Export Quality • Hygienically Processed",
-          "grade": "Health Supplements • Baby Food & Infant Nutrition • Smoothies & Beverages • Bakery & Confectionery • Dairy Products • Instant Food Mixes",
+          "packaging": "Available Forms: Fine Powder • Freeze-Dried Powder • Smoothie Mix (25 kg Bags / Custom Retail & Bulk)",
+          "purity": "100% Pure Natural Fruit Powder • Free from artificial colors, preservatives or additives",
+          "grade": "SEO Keywords: banana powder supplier India • banana powder exporter • bulk banana powder",
           "minOrder": "500 Kilograms"
         },
         "createdAt": "2026-05-31"
@@ -580,49 +580,13 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.mangoPowder
         ],
-        "description": "Our Mango Powder is produced from carefully selected premium-quality mangoes that are hygienically processed, gently dehydrated, and finely milled to preserve their natural sweetness, tropical aroma, vibrant color, and nutritional value. It is widely used in the food, beverage, bakery, confectionery, and nutraceutical industries.",
+        "description": "Our Mango Powder is produced from selected premium-quality mangoes, hygienically processed and dehydrated to preserve natural tropical sweetness, rich aroma, and vibrant color. Widely used in beverages, smoothie mixes, confectionery, and food manufacturing.",
         "pricing": "Contact Trade Desk",
         "specifications": {
-          "origin": "Ratnagiri Orchards, India",
-          "packaging": "Aluminum Vacuum Foil Inserts in Master Cartons • Fine Powder • Custom Mesh Sizes",
-          "purity": "Spray-Dried from 100% Organic Fruit Pulp",
-          "grade": "Beverage & Smoothie Mixes • Bakery & Confectionery • Dairy Products & Ice Cream • Health Supplements • Instant Food Mixes",
-          "minOrder": "500 Kilograms"
-        },
-        "createdAt": "2026-05-31"
-      },
-      {
-        "id": "fp-guava",
-        "name": "Guava Powder",
-        "category": "Dehydrated Fruit Powders",
-        "images": [
-          IMAGES.exportProducts.guavaPowder
-        ],
-        "description": "Our Guava Powder is produced from carefully selected, ripe guavas that are hygienically processed and spray-dried to preserve their natural tropical flavor, aroma, color, and nutritional value. Rich in natural Vitamin C and dietary fiber, it is widely used in food, beverage, nutraceutical, dairy, and confectionery applications.",
-        "pricing": "Contact Trade Desk",
-        "specifications": {
-          "origin": "India (Maharashtra, Uttar Pradesh & Andhra Pradesh)",
-          "packaging": "25 kg Multi-layer Kraft Paper Bags with Food-Grade Poly Liner • Aluminum Foil Vacuum Packs for Bulk Export • Customized Bulk & Retail",
-          "purity": "100% Pure Guava Fruit Powder • No Artificial Colors • No Preservatives • No Added Sugar",
-          "grade": "Beverages & Smoothies • Health Supplements • Bakery & Confectionery • Dairy Products • Instant Food Mixes",
-          "minOrder": "500 Kilograms"
-        },
-        "createdAt": "2026-05-31"
-      },
-      {
-        "id": "fp-pomegranate",
-        "name": "Pomegranate Powder",
-        "category": "Dehydrated Fruit Powders",
-        "images": [
-          IMAGES.exportProducts.pomegranatePowder
-        ],
-        "description": "Our Pomegranate Powder is produced from carefully selected, ripe pomegranates that are hygienically processed and spray-dried to preserve their natural ruby-red color, fruity flavor, and nutritional value. Rich in natural antioxidants, polyphenols, and Vitamin C, it is widely used in the food, beverage, nutraceutical, and functional food industries.",
-        "pricing": "Contact Trade Desk",
-        "specifications": {
-          "origin": "India (Maharashtra, Karnataka & Gujarat)",
-          "packaging": "25 kg Multi-layer Kraft Paper Bags with Food-Grade Poly Liner • Aluminum Foil Vacuum Packs for Bulk Export • Customized Bulk & Retail",
-          "purity": "100% Pure Pomegranate Fruit Powder • No Artificial Colors • No Preservatives • No Added Sugar",
-          "grade": "Health Supplements • Functional Beverages & Smoothies • Bakery & Confectionery • Dairy Products & Ice Cream • Instant Food Mixes",
+          "origin": "Ratnagiri & South India Orchards",
+          "packaging": "Available Forms: Fine Powder • Spray-Dried Powder • Freeze-Dried Powder • Smoothie Mix (25 kg Bags / Foil Inserts)",
+          "purity": "100% Pure Organic Mango Pulp Powder",
+          "grade": "SEO Keywords: mango powder supplier India • mango powder exporter • bulk mango powder",
           "minOrder": "500 Kilograms"
         },
         "createdAt": "2026-05-31"
@@ -634,13 +598,13 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.pineapplePowder
         ],
-        "description": "Our Pineapple Powder is produced from carefully selected, ripe pineapples that are hygienically processed and spray-dried to preserve their natural tropical flavor, aroma, golden color, and nutritional value. Naturally rich in Vitamin C and bromelain, it is widely used in the food, beverage, nutraceutical, bakery, and confectionery industries.",
+        "description": "Our Pineapple Powder is prepared from selected ripe pineapples, spray-dried and freeze-dried to retain vibrant golden color, tropical aroma, and natural tangy sweetness. Excellent for smoothies, bakery, and health supplements.",
         "pricing": "Contact Trade Desk",
         "specifications": {
-          "origin": "India (Kerala, Assam, West Bengal & Tripura)",
-          "packaging": "25 kg Multi-layer Kraft Paper Bags with Food-Grade Poly Liner • Aluminum Foil Vacuum Packs for Bulk Export • Customized Bulk & Retail",
-          "purity": "100% Pure Pineapple Fruit Powder • No Artificial Colors • No Preservatives • No Added Sugar",
-          "grade": "Beverages & Smoothies • Health Supplements • Bakery & Confectionery • Dairy Products & Ice Cream • Instant Food Mixes",
+          "origin": "Kerala & Northeast India",
+          "packaging": "Available Forms: Fine Powder • Spray-Dried Powder • Freeze-Dried Powder • Smoothie Mix (25 kg Kraft Bags / Vacuum Foil)",
+          "purity": "100% Pure Pineapple Fruit Powder • Rich in Natural Bromelain",
+          "grade": "SEO Keywords: pineapple powder supplier India • pineapple powder exporter • bulk pineapple powder",
           "minOrder": "500 Kilograms"
         },
         "createdAt": "2026-05-31"
@@ -652,85 +616,49 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.papayaPowder
         ],
-        "description": "Premium-quality dehydrated papaya powder made from carefully selected, ripe papaya. The fruit is hygienically processed and finely powdered to retain its natural colour, flavour, aroma, and nutritional properties.",
+        "description": "Premium dehydrated Papaya Powder produced from ripe Indian papayas. Hygienically processed to preserve natural color, tropical aroma, enzymes, and digestive health benefits.",
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
-          "packaging": "100 g / 250 g / 500 g / 1 kg retail pouches • 5 kg / 10 kg / 20 kg / 25 kg bulk packs • Food-grade laminated pouches • Kraft paper bags with food-grade inner liner",
-          "purity": "100% Papaya Powder — free from artificial colours, flavours and preservatives",
-          "grade": "Food Grade / Export Grade (Customized specifications available)",
+          "packaging": "Available Forms: Fine Powder • Spray-Dried Powder • Freeze-Dried Powder (25 kg Bags / Custom Retail)",
+          "purity": "100% Pure Papaya Powder • No Artificial Colors or Preservatives",
+          "grade": "SEO Keywords: papaya powder supplier India • papaya powder exporter • bulk papaya powder",
           "minOrder": "500 Kilograms"
         },
         "createdAt": "2026-05-31"
       },
       {
-        "id": "fp-apple",
-        "name": "Apple Powder",
+        "id": "fp-guava",
+        "name": "Guava Powder",
         "category": "Dehydrated Fruit Powders",
         "images": [
-          IMAGES.exportProducts.applePowder
+          IMAGES.exportProducts.guavaPowder
         ],
-        "description": "Premium-quality dehydrated Apple Powder made from carefully selected fresh apples. The apples are hygienically processed and finely powdered to retain their natural fruity flavour, aroma, and characteristic apple taste. Suitable for food, beverage, bakery and nutraceutical applications.",
+        "description": "Our Guava Powder is made from ripe guavas, gently spray-dried and freeze-dried to preserve high Vitamin C content, natural fiber, and distinct tropical aroma.",
         "pricing": "Contact Trade Desk",
         "specifications": {
-          "origin": "India",
-          "packaging": "100 g / 250 g / 500 g / 1 kg retail pouches • 5 kg / 10 kg / 20 kg / 25 kg bulk packs • Food-grade laminated pouches • Kraft paper bags with food-grade inner liner",
-          "purity": "100% Apple Powder — free from artificial colours, flavours and preservatives",
-          "grade": "Food Grade / Export Grade (Customized specifications available)",
+          "origin": "India (Maharashtra & Andhra Pradesh)",
+          "packaging": "Available Forms: Fine Powder • Freeze-Dried Powder • Smoothie Mix (25 kg Bags / Vacuum Foil)",
+          "purity": "100% Pure Guava Powder • Rich in Vitamin C & Fiber",
+          "grade": "SEO Keywords: guava powder supplier India • guava powder exporter • bulk guava powder",
           "minOrder": "500 Kilograms"
         },
         "createdAt": "2026-05-31"
       },
       {
-        "id": "fp-orange",
-        "name": "Orange Powder",
+        "id": "fp-pomegranate",
+        "name": "Pomegranate Powder",
         "category": "Dehydrated Fruit Powders",
         "images": [
-          IMAGES.exportProducts.orangePowder
+          IMAGES.exportProducts.pomegranatePowder
         ],
-        "description": "Premium-quality dehydrated Orange Powder made from carefully selected fresh oranges. The fruit is hygienically processed and finely powdered to retain its natural citrus flavour, aroma, and characteristic orange taste. Suitable for food, beverage, bakery, confectionery and nutraceutical applications.",
+        "description": "Our Pomegranate Powder is produced from ruby-red pomegranate arils, spray-dried and freeze-dried to retain high antioxidant polyphenols, vibrant color, and fruity flavor.",
         "pricing": "Contact Trade Desk",
         "specifications": {
-          "origin": "India",
-          "packaging": "100 g / 250 g / 500 g / 1 kg retail pouches • 5 kg / 10 kg / 20 kg / 25 kg bulk packs • Food-grade laminated pouches • Kraft paper bags with food-grade inner liner",
-          "purity": "100% Orange Powder — free from artificial colours, flavours and preservatives",
-          "grade": "Food Grade / Export Grade (Customized specifications available)",
-          "minOrder": "500 Kilograms"
-        },
-        "createdAt": "2026-05-31"
-      },
-      {
-        "id": "fp-lemon",
-        "name": "Lemon Powder",
-        "category": "Dehydrated Fruit Powders",
-        "images": [
-          IMAGES.exportProducts.lemonPowder
-        ],
-        "description": "Premium-quality dehydrated Lemon Powder made from carefully selected fresh lemons. The lemons are hygienically processed and finely powdered to retain their characteristic citrus flavour, aroma, and natural tanginess. Suitable for food, beverage, bakery, seasoning and nutraceutical applications.",
-        "pricing": "Contact Trade Desk",
-        "specifications": {
-          "origin": "India",
-          "packaging": "100 g / 250 g / 500 g / 1 kg retail pouches • 5 kg / 10 kg / 20 kg / 25 kg bulk packs • Food-grade laminated pouches • Kraft paper bags with food-grade inner liner",
-          "purity": "100% Lemon Powder — free from artificial colours, flavours and preservatives",
-          "grade": "Food Grade / Export Grade (Customized specifications available)",
-          "minOrder": "500 Kilograms"
-        },
-        "createdAt": "2026-05-31"
-      },
-      {
-        "id": "fp-strawberry",
-        "name": "Strawberry Powder",
-        "category": "Dehydrated Fruit Powders",
-        "images": [
-          IMAGES.exportProducts.strawberryPowder
-        ],
-        "description": "Premium-quality dehydrated Strawberry Powder made from carefully selected fresh strawberries. The fruit is hygienically processed and finely powdered to retain its characteristic strawberry flavour, aroma, colour, and natural fruity taste.",
-        "pricing": "Contact Trade Desk",
-        "specifications": {
-          "origin": "India",
-          "packaging": "100 g / 250 g / 500 g / 1 kg retail pouches • 5 kg / 10 kg / 20 kg / 25 kg bulk packs • Food-grade laminated pouches • Kraft paper bags with food-grade inner liner",
-          "purity": "100% Strawberry Powder — free from artificial colours, flavours and preservatives",
-          "grade": "Food Grade / Export Grade (Customized specifications available)",
+          "origin": "India (Maharashtra & Gujarat)",
+          "packaging": "Available Forms: Fine Powder • Freeze-Dried Powder • Smoothie Mix (25 kg Bags / Vacuum Foil)",
+          "purity": "100% Pure Pomegranate Fruit Powder • Rich in Antioxidants",
+          "grade": "SEO Keywords: pomegranate powder supplier India • pomegranate powder exporter • bulk pomegranate powder",
           "minOrder": "500 Kilograms"
         },
         "createdAt": "2026-05-31"
@@ -742,13 +670,193 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.amlaPowder
         ],
-        "description": "Premium-quality dehydrated Amla Powder (Indian Gooseberry Powder) made from carefully selected fresh amla fruits. The fruit is hygienically processed and finely powdered to retain its natural colour, characteristic tangy flavour, aroma, and valuable nutritional properties.",
+        "description": "Premium Amla Powder (Indian Gooseberry Powder) processed from fresh amla fruits to retain natural Vitamin C, tangy flavor, and potent nutritional bio-compounds.",
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
-          "packaging": "100 g / 250 g / 500 g / 1 kg retail pouches • 5 kg / 10 kg / 20 kg / 25 kg bulk packs • Food-grade laminated pouches • Kraft paper bags with food-grade inner liner",
-          "purity": "100% Amla Powder — free from artificial colours, flavours and preservatives",
-          "grade": "Food Grade / Export Grade (Customized specifications available)",
+          "packaging": "Available Forms: Fine Powder • Freeze-Dried Powder • Smoothie Mix (25 kg Bags / Custom Retail)",
+          "purity": "100% Pure Amla Fruit Powder • High Natural Vitamin C",
+          "grade": "SEO Keywords: amla powder supplier India • amla powder exporter • bulk amla powder",
+          "minOrder": "500 Kilograms"
+        },
+        "createdAt": "2026-05-31"
+      },
+      {
+        "id": "fp-strawberry",
+        "name": "Strawberry Powder",
+        "category": "Dehydrated Fruit Powders",
+        "images": [
+          IMAGES.exportProducts.strawberryPowder
+        ],
+        "description": "Our Strawberry Powder is crafted from fresh strawberries, freeze-dried and finely ground to retain rich berry red color, sweet aroma, and authentic berry flavor.",
+        "pricing": "Contact Trade Desk",
+        "specifications": {
+          "origin": "India (Mahabaleshwar Orchards)",
+          "packaging": "Available Forms: Fine Powder • Freeze-Dried Powder • Smoothie Mix (25 kg Bags / Vacuum Foil)",
+          "purity": "100% Pure Strawberry Powder • Free from artificial flavors or additives",
+          "grade": "SEO Keywords: strawberry powder supplier • freeze dried strawberry powder • bulk strawberry powder",
+          "minOrder": "500 Kilograms"
+        },
+        "createdAt": "2026-05-31"
+      },
+      {
+        "id": "fp-apple",
+        "name": "Apple Powder",
+        "category": "Dehydrated Fruit Powders",
+        "images": [
+          IMAGES.exportProducts.applePowder
+        ],
+        "description": "Our Apple Powder is produced from fresh apples, spray-dried and finely powdered to retain characteristic sweet fruity flavor, natural aroma, and pectin content.",
+        "pricing": "Contact Trade Desk",
+        "specifications": {
+          "origin": "India (Himachal Pradesh & Kashmir)",
+          "packaging": "Available Forms: Fine Powder • Spray-Dried Powder • Smoothie Mix (25 kg Bags / Custom Packs)",
+          "purity": "100% Pure Apple Fruit Powder",
+          "grade": "SEO Keywords: apple powder supplier India • apple powder exporter • bulk apple powder",
+          "minOrder": "500 Kilograms"
+        },
+        "createdAt": "2026-05-31"
+      },
+      {
+        "id": "fp-orange",
+        "name": "Orange Powder",
+        "category": "Dehydrated Fruit Powders",
+        "images": [
+          IMAGES.exportProducts.orangePowder
+        ],
+        "description": "Premium dehydrated Orange Powder made from fresh oranges. Hygienically processed and spray-dried to retain citrus aroma, natural tangy orange flavor, and Vitamin C.",
+        "pricing": "Contact Trade Desk",
+        "specifications": {
+          "origin": "India (Nagpur Orchards)",
+          "packaging": "Available Forms: Fine Powder • Spray-Dried Powder • Smoothie Mix (25 kg Bags / Custom Packs)",
+          "purity": "100% Pure Orange Fruit Powder",
+          "grade": "SEO Keywords: orange powder supplier India • orange powder exporter • bulk orange powder",
+          "minOrder": "500 Kilograms"
+        },
+        "createdAt": "2026-05-31"
+      },
+      {
+        "id": "fp-lemon",
+        "name": "Lemon Powder",
+        "category": "Dehydrated Fruit Powders",
+        "images": [
+          IMAGES.exportProducts.lemonPowder
+        ],
+        "description": "Our Lemon Powder is made from fresh lemons, spray-dried to preserve crisp citrus aroma, natural zesty flavor, and citric acid content for beverage and food applications.",
+        "pricing": "Contact Trade Desk",
+        "specifications": {
+          "origin": "India",
+          "packaging": "Available Forms: Fine Powder • Spray-Dried Powder • Smoothie Mix (25 kg Bags / Custom Packs)",
+          "purity": "100% Pure Lemon Fruit Powder",
+          "grade": "SEO Keywords: lemon powder supplier India • lemon powder exporter • bulk lemon powder",
+          "minOrder": "500 Kilograms"
+        },
+        "createdAt": "2026-05-31"
+      },
+      {
+        "id": "fp-dragonfruit",
+        "name": "Dragon Fruit Powder",
+        "category": "Dehydrated Fruit Powders",
+        "images": [
+          IMAGES.exportProducts.dragonFruitPowder
+        ],
+        "description": "Our Dragon Fruit Powder (Pitaya Powder) is freeze-dried from fresh red dragon fruit to retain striking magenta color, delicate sweetness, and potent antioxidants.",
+        "pricing": "Contact Trade Desk",
+        "specifications": {
+          "origin": "India",
+          "packaging": "Available Forms: Fine Powder • Freeze-Dried Powder • Smoothie Mix (25 kg Bags / Vacuum Foil)",
+          "purity": "100% Pure Dragon Fruit Powder • High Antioxidants & Fiber",
+          "grade": "SEO Keywords: dragon fruit powder supplier India • freeze dried dragon fruit powder",
+          "minOrder": "500 Kilograms"
+        },
+        "createdAt": "2026-05-31"
+      },
+      {
+        "id": "fp-jackfruit",
+        "name": "Jackfruit Powder",
+        "category": "Dehydrated Fruit Powders",
+        "images": [
+          IMAGES.exportProducts.jackfruitPowder
+        ],
+        "description": "Our Jackfruit Powder is produced from mature jackfruits, gently dehydrated and freeze-dried to retain sweet tropical aroma, dietary fiber, and nutritional density.",
+        "pricing": "Contact Trade Desk",
+        "specifications": {
+          "origin": "India (Kerala & Karnataka)",
+          "packaging": "Available Forms: Fine Powder • Freeze-Dried Powder • Smoothie Mix (25 kg Bags / Bulk Foil Packs)",
+          "purity": "100% Pure Jackfruit Powder",
+          "grade": "SEO Keywords: jackfruit powder supplier India • jackfruit powder exporter • bulk jackfruit powder",
+          "minOrder": "500 Kilograms"
+        },
+        "createdAt": "2026-05-31"
+      },
+      {
+        "id": "fp-chikoo",
+        "name": "Chikoo Powder",
+        "category": "Dehydrated Fruit Powders",
+        "images": [
+          IMAGES.exportProducts.chikooPowder
+        ],
+        "description": "Our Chikoo Powder (Sapota Powder) is prepared from ripe sapota fruits, freeze-dried and finely milled to preserve its rich malty caramel flavor and sweetness.",
+        "pricing": "Contact Trade Desk",
+        "specifications": {
+          "origin": "India (Gujarat & Maharashtra)",
+          "packaging": "Available Forms: Fine Powder • Freeze-Dried Powder • Smoothie Mix (25 kg Bags / Bulk Foil Packs)",
+          "purity": "100% Pure Sapota Fruit Powder",
+          "grade": "SEO Keywords: chikoo powder supplier India • sapota powder exporter • bulk chikoo powder",
+          "minOrder": "500 Kilograms"
+        },
+        "createdAt": "2026-05-31"
+      },
+      {
+        "id": "fp-coconut",
+        "name": "Coconut Powder",
+        "category": "Dehydrated Fruit Powders",
+        "images": [
+          IMAGES.exportProducts.coconutPowder
+        ],
+        "description": "Our Coconut Powder is produced from fresh coconut milk and meat, spray-dried and dehydrated into fine creamy powder for confectionery, baking, and instant beverage mixes.",
+        "pricing": "Contact Trade Desk",
+        "specifications": {
+          "origin": "India (Kerala & Tamil Nadu)",
+          "packaging": "Available Forms: Fine Powder • Spray-Dried / Dehydrated Powder (25 kg Bags / Vacuum Foil)",
+          "purity": "100% Pure Dehydrated Coconut Powder",
+          "grade": "SEO Keywords: coconut powder supplier India • coconut powder exporter • bulk coconut powder",
+          "minOrder": "500 Kilograms"
+        },
+        "createdAt": "2026-05-31"
+      },
+      {
+        "id": "fp-fig",
+        "name": "Fig Powder",
+        "category": "Dehydrated Fruit Powders",
+        "images": [
+          IMAGES.exportProducts.figPowder
+        ],
+        "description": "Our Fig Powder (Anjeer Powder) is produced from premium dried figs, freeze-dried and ground into fine powder for natural sweetening, baking, and smoothie mixes.",
+        "pricing": "Contact Trade Desk",
+        "specifications": {
+          "origin": "India (Maharashtra)",
+          "packaging": "Available Forms: Fine Powder • Freeze-Dried Powder • Smoothie Mix (25 kg Bags / Vacuum Foil)",
+          "purity": "100% Pure Fig Fruit Powder",
+          "grade": "SEO Keywords: fig powder supplier • dried fig powder exporter • bulk fig powder",
+          "minOrder": "500 Kilograms"
+        },
+        "createdAt": "2026-05-31"
+      },
+      {
+        "id": "fp-watermelon",
+        "name": "Watermelon Powder",
+        "category": "Dehydrated Fruit Powders",
+        "images": [
+          IMAGES.exportProducts.watermelonPowder
+        ],
+        "description": "Our Watermelon Powder is freeze-dried from fresh ripe watermelons to retain bright pink-red color, refreshing sweet taste, and natural lycopene content.",
+        "pricing": "Contact Trade Desk",
+        "specifications": {
+          "origin": "India",
+          "packaging": "Available Forms: Fine Powder • Freeze-Dried Powder • Smoothie Mix (25 kg Bags / Vacuum Foil)",
+          "purity": "100% Pure Watermelon Powder",
+          "grade": "SEO Keywords: watermelon powder supplier • watermelon powder exporter • bulk fruit powder",
           "minOrder": "500 Kilograms"
         },
         "createdAt": "2026-05-31"
@@ -758,7 +866,7 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
   {
     "id": "moringa",
     "title": "Moringa Products",
-    "description": "We offer premium-quality Moringa-based products sourced from India, carefully processed and packed for food, nutraceutical, herbal, wellness, and international export markets.",
+    "description": "Moringa Products Supplier & Exporter India\n\nDharaaveda Global Exim supplies export-quality moringa leaf powder, flakes, tea, seeds, seed powder and moringa seed oil for global B2B buyers across food, beverage, nutraceutical, dietary supplement, and personal care industries.",
     "image": IMAGES.exportCategories.moringa,
     "products": [
       {
@@ -1293,9 +1401,9 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
   },
   {
     "id": "panchgavya",
-    "title": "Panchgavya Products Catalogue",
-    "description": "Panchgavya products are traditionally prepared using natural ingredients derived from the five sacred cow products—milk, curd, ghee, cow urine, and cow dung (Gomay)—as well as other naturally sourced ingredients, depending on the product. Dharaaveda Global Exim offers a range of traditional, eco-conscious Panchgavya products inspired by Indian heritage and craftsmanship.",
-    "image": IMAGES.exportCategories.moringa,
+    "title": "Panchgavya & Gomay Products",
+    "description": "Panchgavya & Gomay Products Supplier & Exporter India | UAE • USA • UK • Singapore • Malaysia\n\nDharaaveda Global Exim is a leading manufacturer & exporter of traditional Panchgavya & Gomay products including Cow Dung Manure, Bio-Enzyme, Organic Fertilizer, Panchgavya Compost, Gomay Idols, Gomay Diyas, Gomay Havan Logs, Havan Samagri, Panchgavya Havan Samagri, Gomay Havan Cups, Natural Dhoop, Panchgavya Dhoop, Gomay Sambrani Dhoop, Cow Dung Dhoop Sticks, Agarbatti, and Sambrani Cups. Custom packaging, bulk orders, and export-quality shipments supplied for international buyers and distributors.",
+    "image": IMAGES.exportCategories.panchgavya,
     "products": [
       {
         "id": "pg-ganesh",

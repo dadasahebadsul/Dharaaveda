@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 
 /**
- * Reusable hook to dynamically update document title and description meta tag for SEO.
+ * Reusable hook to dynamically update document title, description, and keywords meta tags for SEO.
  */
-export function useSeo(title?: string, description?: string) {
+export function useSeo(title?: string, description?: string, keywords?: string) {
   useEffect(() => {
     if (title) {
       document.title = title;
@@ -17,5 +17,14 @@ export function useSeo(title?: string, description?: string) {
       }
       meta.setAttribute("content", description);
     }
-  }, [title, description]);
+    if (keywords) {
+      let metaKw = document.querySelector('meta[name="keywords"]');
+      if (!metaKw) {
+        metaKw = document.createElement("meta");
+        metaKw.setAttribute("name", "keywords");
+        document.head.appendChild(metaKw);
+      }
+      metaKw.setAttribute("content", keywords);
+    }
+  }, [title, description, keywords]);
 }
