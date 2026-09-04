@@ -11,7 +11,8 @@ export interface Product {
     purity: string;
     grade: string;
     minOrder: string;
-    [key: string]: string;
+    availableForms?: string[];
+    [key: string]: string | string[] | undefined;
   };
   createdAt: string;
 }

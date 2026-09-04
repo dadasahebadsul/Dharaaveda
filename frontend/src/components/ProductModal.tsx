@@ -108,10 +108,10 @@ const ProductModal: React.FC<ProductModalProps> = ({ category, onClose, onInquir
                 const pPurity = pTrans?.spec?.purity || p.specifications.purity;
                 const pGrade = pTrans?.spec?.grade || p.specifications.grade;
                 const pPackaging = pTrans?.spec?.packaging || p.specifications.packaging;
-                const pAvailableForms =
-                  pTrans?.spec?.availableForms ||
-                  p.specifications.availableForms ||
-                  [];
+               const pAvailableForms =
+                 (pTrans?.spec as { availableForms?: string[] } | undefined)?.availableForms ||
+                 p.specifications.availableForms ||
+                 [];
                 const pMinOrder = pTrans?.spec?.minOrder || p.specifications.minOrder;
 
                 return (
