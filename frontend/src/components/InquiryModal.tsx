@@ -22,6 +22,13 @@ export default function InquiryModal({ product, onClose }: InquiryModalProps) {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
+ const [fieldErrors, setFieldErrors] = useState<{
+   name?: string;
+   email?: string;
+   quantity?: string;
+   phone?: string;
+   message?: string;
+ }>({});
 
   const { lang } = useLanguage();
   const t = staticTranslations[lang] || staticTranslations.en;
@@ -33,6 +40,59 @@ export default function InquiryModal({ product, onClose }: InquiryModalProps) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+const errors: {
+  name?: string;
+  email?: string;
+  quantity?: string;
+  phone?: string;
+  message?: string;
+} = {};
+    if (!name.trim()) {
+      errors.name = "Full name is required";
+    } else if (name.trim().length < 2) {
+      errors.name = "Full name must be at least 2 characters";
+    } else if (name.trim().length > 50) {
+      errors.name = "Full name must not exceed 50 characters";
+    }
+
+    if (!email.trim()) {
+      errors.email = "Corporate email is required";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      errors.email = "Please enter a valid email address";
+    }
+
+   if (!quantity.trim()) {
+     errors.quantity = "Target quantity is required";
+   } else if (!/^\d+(\.\d+)?\s*[A-Za-z]*\s*$/.test(quantity.trim())) {
+     errors.quantity = "Please enter a valid quantity";
+   }
+
+   if (phone.trim() && !/^\d{10}$/.test(phone.trim())) {
+     errors.phone = "Phone number must be exactly 10 digits";
+   }
+    // Message language validation
+    if (message.trim()) {
+      const messagePatterns: Record<string, RegExp> = {
+        en: /^[\p{Script=Latin}\p{Number}\p{P}\p{S}\s]+$/u,
+        hi: /^[\p{Script=Devanagari}\p{Number}\p{P}\p{S}\s]+$/u,
+        mr: /^[\p{Script=Devanagari}\p{Number}\p{P}\p{S}\s]+$/u,
+      };
+
+      const selectedLanguagePattern = messagePatterns[lang];
+
+      if (
+        selectedLanguagePattern &&
+        !selectedLanguagePattern.test(message.trim())
+      ) {
+        errors.message =
+          "Please enter the message in the selected language.";
+      }
+    }
+    setFieldErrors(errors);
+
+    if (Object.keys(errors).length > 0) {
+      return;
+    }
     if (!name || !email || !quantity) {
       setError(t.product.inquiryErrorFields || "Please fill out all mandatory fields.");
       return;
@@ -137,11 +197,24 @@ export default function InquiryModal({ product, onClose }: InquiryModalProps) {
                 <input
                   type="text"
                   required
+                  maxLength={50}
                   value={name}
-                  onChange={(e) => setName(e.target.value)}
+                  onChange={(e) => {
+                    const value = e.target.value;
+
+                    // Allow only letters and spaces
+                    if (/^[A-Za-z ]*$/.test(value)) {
+                      setName(value);
+                    }
+                  }}
                   placeholder={t.product.inquiryPlaceholderName || "e.g. Elena Rostova"}
                   className="w-full bg-slate-50 border border-gray-300 focus:border-orange-500 rounded-lg px-3 py-2.5 text-gray-900 placeholder-gray-400 outline-none transition-colors focus:bg-white"
                 />
+                {fieldErrors.name && (
+                  <p className="mt-1 text-xs text-red-500">
+                    {fieldErrors.name}
+                  </p>
+                )}
               </div>
 
               <div className="text-left">
@@ -151,11 +224,38 @@ export default function InquiryModal({ product, onClose }: InquiryModalProps) {
                 <input
                   type="email"
                   required
+                  maxLength={254}
                   value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  onChange={(e) => {
+                    const value = e.target.value.trim();
+
+                    setEmail(value);
+
+                    if (!value) {
+                      setFieldErrors((prev) => ({
+                        ...prev,
+                        email: "Corporate email is required",
+                      }));
+                    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+                      setFieldErrors((prev) => ({
+                        ...prev,
+                        email: "Please enter a valid email address",
+                      }));
+                    } else {
+                      setFieldErrors((prev) => ({
+                        ...prev,
+                        email: undefined,
+                      }));
+                    }
+                  }}
                   placeholder={t.product.inquiryPlaceholderEmail || EMAIL_TO}
                   className="w-full bg-slate-50 border border-gray-300 focus:border-orange-500 rounded-lg px-3 py-2.5 text-gray-900 placeholder-gray-400 outline-none transition-colors focus:bg-white"
                 />
+                {fieldErrors.email && (
+                  <p className="mt-1 text-xs text-red-500">
+                    {fieldErrors.email}
+                  </p>
+                )}
               </div>
             </div>
 
@@ -166,8 +266,15 @@ export default function InquiryModal({ product, onClose }: InquiryModalProps) {
                 </label>
                 <input
                   type="text"
+                  maxLength={100}
                   value={company}
-                  onChange={(e) => setCompany(e.target.value)}
+                  onChange={(e) => {
+                    const value = e.target.value;
+
+                    if (/^[A-Za-z0-9 .&'()-]*$/.test(value)) {
+                      setCompany(value);
+                    }
+                  }}
                   placeholder={t.product.inquiryPlaceholderCompany || "e.g. Hanseatic Spices GmbH"}
                   className="w-full bg-slate-50 border border-gray-300 focus:border-orange-500 rounded-lg px-3 py-2.5 text-gray-900 placeholder-gray-400 outline-none transition-colors focus:bg-white"
                 />
@@ -181,10 +288,26 @@ export default function InquiryModal({ product, onClose }: InquiryModalProps) {
                   type="text"
                   required
                   value={quantity}
-                  onChange={(e) => setQuantity(e.target.value)}
+                 onChange={(e) => {
+                   const value = e.target.value;
+
+                   // Allow numbers followed by an optional unit
+                   if (/^\d*(\.\d*)?\s*[A-Za-z]*\s*$/.test(value)) {
+                     setQuantity(value);
+
+                     if (value.trim()) {
+                       setFieldErrors((prev) => ({ ...prev, quantity: undefined }));
+                     }
+                   }
+                 }}
                   placeholder={t.product.inquiryPlaceholderQuantity || "e.g. 5 Metric Tons"}
                   className="w-full bg-slate-50 border border-gray-300 focus:border-orange-500 rounded-lg px-3 py-2.5 text-gray-900 placeholder-gray-400 outline-none transition-colors focus:bg-white"
                 />
+                {fieldErrors.quantity && (
+                  <p className="mt-1 text-xs text-red-500">
+                    {fieldErrors.quantity}
+                  </p>
+                )}
               </div>
             </div>
 
@@ -194,24 +317,47 @@ export default function InquiryModal({ product, onClose }: InquiryModalProps) {
               </label>
               <input
                 type="tel"
+                maxLength={10}
                 value={phone}
-                onChange={(e) => setPhone(e.target.value)}
+                onChange={(e) => {
+                  const value = e.target.value.replace(/\D/g, "");
+
+                  if (value.length <= 10) {
+                    setPhone(value);
+
+                    if (!value || value.length === 10) {
+                      setFieldErrors((prev) => ({ ...prev, phone: undefined }));
+                    }
+                  }
+                }}
                 placeholder={PHONE_NUMBER}
                 className="w-full bg-slate-50 border border-gray-300 focus:border-orange-500 rounded-lg px-3 py-2.5 text-gray-900 placeholder-gray-400 outline-none transition-colors focus:bg-white"
               />
+              {fieldErrors.phone && (
+                <p className="mt-1 text-xs text-red-500">
+                  {fieldErrors.phone}
+                </p>
+              )}
             </div>
 
             <div className="text-left">
               <label className="block text-[10px] font-mono uppercase tracking-widest text-gray-600 mb-1.5">
                 {t.product.inquiryMessageLabel || "Custom Port Destination / Packing Demands"}
               </label>
+
               <textarea
                 rows={3}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder={t.product.inquiryPlaceholderMessage || "Mention specific vacuum-seal requests, harbor ports of choice (e.g. Rotterdam, Hamburg), and phytosanitary certificate needs..."}
-                className="w-full bg-slate-50 border border-gray-300 focus:border-orange-500 rounded-lg px-3 py-2 text-gray-900 placeholder-gray-400 outline-none transition-colors resize-none focus:bg-white"
+                className="w-full bg-slate-50 border border-gray-300 focus:border-orange-500 rounded-lg px-3 py-2 text-gray-900"
               />
+
+              {fieldErrors.message && (
+                <p className="mt-1 text-xs text-red-500">
+                  {fieldErrors.message}
+                </p>
+              )}
             </div>
 
             <button

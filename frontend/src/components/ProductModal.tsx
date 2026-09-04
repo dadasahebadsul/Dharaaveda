@@ -80,8 +80,12 @@ const ProductModal: React.FC<ProductModalProps> = ({ category, onClose, onInquir
             
             {/* Category Intro Card inside Modal */}
             <div className="p-6 rounded-2xl bg-slate-50 border border-gray-200 text-left">
-              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed max-w-4xl font-sans">
-                {catDesc} Every crop is registered, compliant with APEDA requirements, and processed in high-purity clean rooms to preserve volatile natural phytol compounds and nutritional profiles during transit.
+              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed max-w-4xl font-sans whitespace-pre-line">
+                {category.id === "spices"
+                  ? `At Dharaaveda Global Exim, we combine careful sourcing with controlled processing to deliver consistent quality across every shipment. Our products are processed under stringent hygiene and quality-control practices, with appropriate testing and documentation to meet applicable food-safety and export requirements.
+
+            From whole spices and aromatic ingredients to finely milled culinary powders, we focus on preserving natural flavour, aroma, colour and nutritional quality throughout processing, packaging and transit.`
+                  : catDesc}
               </p>
             </div>
 
@@ -104,6 +108,10 @@ const ProductModal: React.FC<ProductModalProps> = ({ category, onClose, onInquir
                 const pPurity = pTrans?.spec?.purity || p.specifications.purity;
                 const pGrade = pTrans?.spec?.grade || p.specifications.grade;
                 const pPackaging = pTrans?.spec?.packaging || p.specifications.packaging;
+                const pAvailableForms =
+                  pTrans?.spec?.availableForms ||
+                  p.specifications.availableForms ||
+                  [];
                 const pMinOrder = pTrans?.spec?.minOrder || p.specifications.minOrder;
 
                 return (
@@ -146,23 +154,91 @@ const ProductModal: React.FC<ProductModalProps> = ({ category, onClose, onInquir
                       </div>
 
                       {/* Metadata specs table */}
-                      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-4 p-3 bg-slate-50 rounded-xl border border-gray-200 text-[10px] font-mono text-gray-600">
-                        <div>
-                          <span className="uppercase text-gray-500 block text-[8px] mb-0.5">{t.product.metadataOrigin || "ORIGIN"}</span>
-                          <span className="text-gray-800 font-sans">{pOrigin}</span>
+                      <div className="p-4 bg-slate-50 rounded-xl border border-gray-200 text-[10px] font-mono text-gray-600">
+
+                        {/* Top Specifications */}
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pb-4 border-b border-gray-200">
+
+                          <div>
+                            <span className="uppercase text-gray-500 block text-[8px] mb-1 font-bold">
+                              {t.product.metadataOrigin || "ORIGIN"}
+                            </span>
+                            <div className="space-y-1 text-gray-800 font-sans">
+                              {pOrigin
+                                .split("•")
+                                .map((item) => item.trim())
+                                .filter(Boolean)
+                                .map((item, index) => (
+                                  <div key={index}>• {item}</div>
+                                ))}
+                            </div>
+                          </div>
+
+                          <div>
+                            <span className="uppercase text-gray-500 block text-[8px] mb-1 font-bold">
+                              {t.product.metadataPurity || "PURITY"}
+                            </span>
+                           <div className="space-y-1 text-gray-800 font-sans">
+                             {pPurity
+                               .split("•")
+                               .map((item) => item.trim())
+                               .filter(Boolean)
+                               .map((item, index) => (
+                                 <div key={index}>• {item}</div>
+                               ))}
+                           </div>
+                          </div>
+
+                          <div>
+                            <span className="uppercase text-gray-500 block text-[8px] mb-1 font-bold">
+                              {t.product.metadataGrade || "GRADE"}
+                            </span>
+                            <div className="space-y-1 text-gray-800 font-sans">
+                              {pGrade
+                                .split("•")
+                                .map((item) => item.trim())
+                                .filter(Boolean)
+                                .map((item, index) => (
+                                  <div key={index}>• {item}</div>
+                                ))}
+                            </div>
+                          </div>
+
                         </div>
-                        <div>
-                          <span className="uppercase text-gray-500 block text-[8px] mb-0.5">{t.product.metadataPurity || "PURITY"}</span>
-                          <span className="text-gray-800 font-sans">{pPurity}</span>
+
+                        {/* Available Forms & Packaging */}
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+
+                          <div>
+                            <span className="uppercase text-gray-500 block text-[8px] mb-2 font-bold">
+                              AVAILABLE FORMS
+                            </span>
+
+                            <div className="space-y-1 text-gray-800 font-sans">
+                              {pAvailableForms.map((form) => (
+                                <div key={form}>• {form}</div>
+                              ))}
+                            </div>
+                          </div>
+
+                          <div>
+                            <span className="uppercase text-gray-500 block text-[8px] mb-2 font-bold">
+                              {t.product.metadataPackaging || "PACKAGING"}
+                            </span>
+
+                            <div className="space-y-1 text-gray-800 font-sans">
+                              {pPackaging
+                                .split("•")
+                                .map((item) => item.trim())
+                                .filter(Boolean)
+                                .map((item, index) => (
+                                  <div key={index}>• {item}</div>
+                                ))}
+                            </div>
+                          </div>
+
                         </div>
-                        <div>
-                          <span className="uppercase text-gray-500 block text-[8px] mb-0.5">{t.product.metadataGrade || "GRADE"}</span>
-                          <span className="text-gray-800 font-sans">{pGrade}</span>
-                        </div>
-                        <div>
-                          <span className="uppercase text-gray-500 block text-[8px] mb-0.5">{t.product.metadataPackaging || "PACKAGING"}</span>
-                          <span className="text-gray-800 font-sans">{pPackaging}</span>
-                        </div>
+
                       </div>
 
                       {/* Action Footer */}

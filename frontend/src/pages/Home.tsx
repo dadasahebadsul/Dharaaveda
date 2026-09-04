@@ -138,16 +138,22 @@ export default function Home() {
     {
       title: getVal("exportCardTitle"),
       subtitle: "Enterprise Global Trade",
-      desc: getVal("exportCardDesc"),
+      desc: "Dharaaveda Global Exim is a trusted global sourcing partner for premium Indian agricultural, food, wellness, and Panchgavya products. We collaborate with certified farmers, manufacturers, and producer groups to supply whole spices, spice blends, dehydrated vegetables, exotic fresh vegetables, herbs, fruit and vegetable powders, millets, rice, food ingredients, edible snacks, value-added food products, and authentic Panchgavya products to international markets. Every shipment is responsibly sourced, quality-assured through NABL-accredited laboratory testing where applicable, and meets international food safety and export compliance requirements, delivering reliability, traceability, and excellence across the global supply chain.",
       img: IMAGES.home.exportCardBg || IMAGES.export.cargoShipAbout,
       btnText: getVal("exportCardBtn"),
       btnLink: "/export",
       badge: getVal("exportCardBadge") || "GLOBAL SUPPLY CHAIN",
       highlights: [
-        getVal("exportHighlight1"),
-        getVal("exportHighlight2"),
-        getVal("exportHighlight3"),
-        getVal("exportHighlight4")
+          "APEDA Registered Exporter",
+          "FSSAI Licensed Exporter",
+          "IEC & GST Compliant",
+          "NABL Laboratory Tested Products",
+          "Export Documentation Support",
+          "Customized Private Label & OEM Packaging",
+          "Sea, Air & Multimodal Logistics",
+          "Global Quality Assurance",
+          "Sustainable & Ethical Sourcing",
+          "Bulk & Retail Packaging Solutions"
       ],
       themeColor: "from-[#0a1828]/95 to-[#070e13]/95 border-luxury-blue-accent/30 hover:border-[#2c526a]/60"
     },
@@ -412,7 +418,7 @@ export default function Home() {
                   </p>
 
                   {/* Highlights */}
-                  <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-left font-mono text-[10px] sm:text-xs text-gray-700">
+                  <ul className="grid grid-cols-2 grid-flow-col grid-rows-5 gap-x-4 gap-y-2 text-left font-mono text-[10px] sm:text-xs text-gray-700">
                     {card.highlights.map((high, hIdx) => (
                       <li key={hIdx} className="flex items-center gap-2">
                         <CheckCircle2 className="w-3.5 h-3.5 text-orange-500 shrink-0" />

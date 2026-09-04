@@ -45,8 +45,8 @@ export const translations: StaticTranslations = {
     "ctaTherapies": "Explore Therapies",
     "aboutTitle": "Bridging Earth's Bounty & Individual Recovery",
     "aboutSubtitle": "OUR DUAL-DIVISION PHILOSOPHY",
-    "aboutDesc1": "Dharaaveda operates at the intersection of international trade and holistic wellness. We believe that true well-being is both global and deeply personal.",
-    "aboutDesc2": "Our Agricultural Division partners directly with organic smallholder estates to distribute premium spices and dehydrated products worldwide. Concurrently, our Therapy Division crafts electromagnetic-silent sanctuaries in Wayanad to restore nervous system balance and cellular vitality.",
+    "aboutDesc1": "Dharaaveda Global Exim is dedicated to delivering premium Indian agricultural products to international markets while promoting holistic wellness rooted in nature. We specialize in ethically sourced spices, dehydrated vegetables, fruit and vegetable powders, herbs, millets, rice, food ingredients, and value-added products that meet international quality standards.",
+    "aboutDesc2": "Alongside our global export business, our Holistic Wellness Division offers natural healing therapies designed to support physical, emotional, and mental well-being. Through Bach Flower Therapy, sound healing, meditation, energy healing, mindfulness, and other holistic wellness practices, we help individuals restore balance and embrace healthier living. Together, our commitment to quality, sustainability, and wellness creates value for communities across the world.",
     "showcaseTitle": "Explore Our Divisions",
     "showcaseSubtitle": "Select a vertical to enter our dedicated spaces",
     "exportCardTitle": "Export Division",
@@ -641,14 +641,14 @@ export const translations: StaticTranslations = {
     "items": {
       "s-turmeric": {
         "name": "Turmeric Powder",
-        "desc": "Dharaaveda Global Exim offers premium-quality Indian Turmeric Powder with carefully selected raw material and options based on curcumin content, suitable for food, nutraceutical, wellness and ingredient applications along with completely organic.\n\nABOUT THE PRODUCT:\nOur Turmeric Powder is manufactured from quality turmeric fingers and processed under hygienic conditions to retain its natural colour, aroma and characteristic turmeric properties.\n\nAvailable Curcumin Grades:\n• Standard Grade: Curcumin 3.5%+\n• Premium High-Curcumin Grade: Curcumin 7%+\n(The exact curcumin specification can be confirmed through a batch-wise laboratory test/COA)\n\nQUALITY & LAB TESTING:\nFor export-oriented requirements, the product can be tested for:\n• Curcumin Content\n• Pesticide Residues\n• Heavy Metals\n• Aflatoxins\n• Microbiological Parameters\n• Moisture\n• Other quality parameters as per buyer/import-country requirements\nLab-tested batches with COA and required compliance documentation can be supplied as per customer specification.\n\nBENEFITS OF HIGH-CURCUMIN TURMERIC:\nTurmeric naturally contains curcuminoids, with curcumin being its key bioactive compound. Higher-curcumin turmeric provides a more concentrated source of these compounds.\nPotential wellness benefits associated with curcumin include:\n• Antioxidant support\n• Supports the body's natural inflammatory response\n• Traditionally used to support digestion\n• Supports general wellness and healthy lifestyle\n• Widely used in functional foods and nutraceutical formulations\n(These statements are for general nutritional/wellness information and are not intended to diagnose, treat or prevent any disease)\n\nGRADE & APPLICATIONS:\n• Standard Turmeric Powder (Curcumin 3.5%+): Food products, spices, seasoning, sauces, snacks\n• Premium High-Curcumin (Curcumin 7%+): Premium food ingredients, nutraceuticals, wellness products, functional formulations\n\nPACKAGING:\nAvailable according to buyer requirements:\n• 25 kg food-grade bags\n• 50 kg food-grade bags\n• PP bags with suitable inner food-grade liner\n• Kraft paper bags / customized export packaging\n• Private-label packaging available on request\n• Bulk packaging available for container shipments\nCustomized packing, labelling and specifications can be arranged according to destination-country and buyer requirements.",
+        "desc": "Dharaaveda Global Exim offers premium-quality Indian Turmeric Powder with carefully selected raw material and options based on curcumin content, suitable for food, nutraceutical, wellness and ingredient applications along with completely organic.\n\nABOUT THE PRODUCT:\nOur Turmeric Powder is manufactured from quality turmeric fingers and processed under hygienic conditions to retain its natural colour, aroma and characteristic turmeric properties.\n\nAVAILABLE CURCUMIN GRADES:\n• Standard Grade: Curcumin 3.5%+\n• Premium High-Curcumin Grade: Curcumin 7%+\n(The exact curcumin specification can be confirmed through a batch-wise laboratory test/COA)\n\nQUALITY & LAB TESTING:\nFor export-oriented requirements, the product can be tested for:\n• Curcumin Content\n• Pesticide Residues\n• Heavy Metals\n• Aflatoxins\n• Microbiological Parameters\n• Moisture\n• Other quality parameters as per buyer/import-country requirements\nLab-tested batches with COA and required compliance documentation can be supplied as per customer specification.\n\nBENEFITS OF HIGH-CURCUMIN TURMERIC:\nTurmeric naturally contains curcuminoids, with curcumin being its key bioactive compound. Higher-curcumin turmeric provides a more concentrated source of these compounds.\n\nGRADE & APPLICATIONS:\n• Standard Turmeric Powder (Curcumin 3.5%+): Food products, spices, seasoning, sauces, snacks\n• Premium High-Curcumin Turmeric Powder (Curcumin 7%+): Functional foods and nutraceutical formulations",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India (Sourced from premium turmeric growing regions)",
           "packaging": "25 kg & 50 kg food-grade bags • PP bags with inner liner • Kraft paper bags • Private-label & Bulk shipments",
           "purity": "100% Organic & Lab-Tested with COA (Curcumin, Pesticides, Heavy Metals, Aflatoxins, Microbio, Moisture)",
           "grade": "Standard (Curcumin 3.5%+) • Premium High-Curcumin (Curcumin 7%+)",
-          "minOrder": "500 Kilograms"
+          "minOrder": "100 Kilograms"
         }
       },
       "s-redchilli": {
@@ -657,10 +657,10 @@ export const translations: StaticTranslations = {
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "Guntur Region, India",
-          "packaging": "• Fine Powder • Medium Grind • Coarse Grind • Customized Mesh Sizes ",
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available",
           "purity": "Premium Export Quality • Hygienically Processed • Quality Assured",
           "grade": "• Food Processing • Spice Blends • Seasonings • Sauces • Pickles • Ready-to-Eat Foods",
-          "minOrder": "500 Kilograms"
+          "minOrder": "100 Kilograms"
         }
       },
       "s-coriander": {
@@ -669,45 +669,45 @@ export const translations: StaticTranslations = {
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "Rajasthan & Madhya Pradesh, India",
-          "packaging": "25 kg Multi-layer Kraft Paper Bags • Fine Powder • Coarse Powder • Whole Coriander Seeds",
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available",
           "purity": "Premium Export Quality • Hygienically Processed",
           "grade": "Export Grade • Machine Cleaned",
-          "minOrder": "500 Kilograms"
+          "minOrder": "100 Kilograms"
         }
       },
       "s-cumin": {
         "name": "Cumin Powder",
-        "desc": "Our Cumin Powder is finely ground from carefully selected premium cumin seeds, delivering a rich earthy aroma, warm flavor, and natural freshness. Hygienically processed to preserve its authentic taste and quality, it is widely used in spice blends, seasonings, food processing, and international export markets.",
+        "desc": "Our Cumin Powder is finely ground from carefully selected premium cumin seeds, delivering a rich earthy aroma, warm flavor, and natural freshness. Hygienically processed to preserve its authentic taste and quality, it is widely used in spice blends, seasonings, food processing, and international export markets.\nAPPLICATIONS:\nFood Processing • Spice Blends • Seasonings • Ready-to-Eat Foods • Sauces • Snacks",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "Gujarat & Rajasthan, India",
-          "packaging": "25 kg Multi-layer Kraft Paper Bags • Fine Powder • Medium Grind • Customized Mesh Sizes",
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available",
           "purity": "Premium Export Quality • Hygienically Processed",
-          "grade": "Food Processing • Spice Blends • Seasonings • Ready-to-Eat Foods • Sauces • Snacks",
-          "minOrder": "500 Kilograms"
+          "grade": "Export Grade",
+          "minOrder": "100 Kilograms"
         }
       },
       "s-blackpepper": {
         "name": "Black Pepper",
-        "desc": "Our Black Pepper is sourced from carefully selected premium peppercorns, known for their bold aroma, sharp pungency, and rich flavor. Hygienically processed and quality assured, it is ideal for culinary applications, spice blends, food processing, pharmaceuticals, and international export markets.",
+        "desc": "Our Black Pepper is sourced from carefully selected premium peppercorns, known for their bold aroma, sharp pungency, and rich flavor. Hygienically processed and quality assured, it is ideal for culinary applications, spice blends, food processing, pharmaceuticals, and international export markets.\nAPPLICATIONS:\nFood Processing • Spice Blends • Seasonings • Marinades • Pharmaceuticals • Nutraceuticals",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "Kerala & Karnataka, India",
-          "packaging": "25 kg Multi-layer Kraft Paper Bags • Whole Black Pepper • Cracked Black Pepper • Ground Black Pepper • Coarse Grind",
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging ",
           "purity": "NABL Lab Tested • Moisture as per Buyer Specification",
-          "grade": "Food Processing • Spice Blends • Seasonings • Marinades • Pharmaceuticals • Nutraceuticals",
-          "minOrder": "500 Kilograms"
+          "grade": "Export Grade",
+          "minOrder": "100 Kilograms"
         }
       },
       "s-cardamom": {
         "name": "Cardamom",
-        "desc": "Our premium Cardamom is carefully sourced from India's renowned spice-growing regions, offering a rich aroma, distinctive flavor, and vibrant natural color. Hygienically processed and quality assured, it is ideal for culinary, bakery, confectionery, beverage, pharmaceutical, and export applications.",
+        "desc": "Our premium Cardamom is carefully sourced from India's renowned spice-growing regions, offering a rich aroma, distinctive flavor, and vibrant natural color. Hygienically processed and quality assured, it is ideal for culinary, bakery, confectionery, beverage, pharmaceutical, and export applications.\nAPPLICATIONS:\nFood Processing • Spice Blends • Bakery • Confectionery • Beverages • Pharmaceuticals • Ayurveda",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "Idukki, Kerala, India",
-          "packaging": "25 kg Multi-layer Kraft Paper Bags • Whole Green Cardamom • Cardamom Seeds • Cardamom Powder",
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available",
           "purity": "Premium Export Quality • Hygienically Processed",
-          "grade": "Food Processing • Spice Blends • Bakery • Confectionery • Beverages • Pharmaceuticals • Ayurveda",
+          "grade": "Bold Green Cardamom",
           "minOrder": "200 Kilograms"
         }
       },
@@ -725,13 +725,13 @@ export const translations: StaticTranslations = {
       },
       "s-cinnamon": {
         "name": "Cinnamon",
-        "desc": "Ceylon-type sweet cinnamon quills harvested sustainably, carrying very low coumarin and a delicate woody sweetness.",
+        "desc": "Our premium Cinnamon is carefully sourced from selected spice-growing regions, offering a naturally sweet aroma, warm flavor, and superior quality. Hygienically processed and quality assured, it is ideal for culinary, bakery, beverage, pharmaceutical, and international export applications.\nAPPLICATIONS:\nFood Processing • Bakery • Confectionery • Beverages • Spice Blends • Pharmaceuticals • Ayurveda",
         "pricing": "Contact Trade Desk",
         "spec": {
-          "origin": "Western Ghats, India",
-          "packaging": "Multi-layer Kraft Paper Bags (25 kg)",
-          "purity": "100% Pure, Heavy-Metal Free",
-          "grade": "Fine Grade Alba quills",
+          "origin": "Kerala & Tamil Nadu, India",
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available",
+          "purity": "Premium Export Quality • Hygienically Processed",
+          "grade": "Export Grade Cinnamon ",
           "minOrder": "500 Kilograms"
         }
       },

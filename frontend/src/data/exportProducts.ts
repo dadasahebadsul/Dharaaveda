@@ -27,10 +27,17 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India (Sourced from premium turmeric growing regions)",
+           "availableForms": [
+                        "Fine Powder ",
+                        "Whole Turmeric Fingers ",
+                        "Polished Turmeric Fingers ",
+                        "Turmeric Granules ",
+                        "Customized Mesh Sizes"
+                      ],
           "packaging": "25 kg & 50 kg food-grade bags • PP bags with inner liner • Kraft paper bags • Private-label & Bulk shipments",
           "purity": "100% Organic & Lab-Tested with COA (Curcumin, Pesticides, Heavy Metals, Aflatoxins, Microbio, Moisture)",
           "grade": "Standard (Curcumin 3.5%+) • Premium High-Curcumin (Curcumin 7%+)",
-          "minOrder": "500 Kilograms"
+          "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
       },
@@ -45,7 +52,13 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "Guntur Region, India",
-          "packaging": "Multi-layer Kraft Paper Bags (25 kg)",
+           "availableForms": [
+              "Fine Powder",
+              "Medium Grind",
+              "Coarse Grind",
+              "Customized Mesh Sizes"
+            ],
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available",
           "purity": "Aflatoxin & Sudan Dye Negative",
           "grade": "Kashmiri Bright Red Selection",
           "minOrder": "500 Kilograms"
@@ -63,7 +76,12 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "Rajasthan & Madhya Pradesh, India",
-          "packaging": "25 kg Multi-layer Kraft Paper Bags • Fine Powder • Coarse Powder • Whole Coriander Seeds",
+          "availableForms": [
+                        "Fine Powder",
+                        "Coarse Powder",
+                        "Whole Coriander Seeds"
+                      ],
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available",
           "purity": "Premium Export Quality • Hygienically Processed",
           "grade": "Export Grade • Machine Cleaned",
           "minOrder": "500 Kilograms"
@@ -77,14 +95,19 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.cuminPowder
         ],
-        "description": "Our Cumin Powder is finely ground from carefully selected premium cumin seeds, delivering a rich earthy aroma, warm flavor, and natural freshness. Hygienically processed to preserve its authentic taste and quality, it is widely used in spice blends, seasonings, food processing, and international export markets.",
+        "description": "Our Cumin Powder is finely ground from carefully selected premium cumin seeds, delivering a rich earthy aroma, warm flavor, and natural freshness. Hygienically processed to preserve its authentic taste and quality, it is widely used in spice blends, seasonings, food processing, and international export markets.\nAPPLICATIONS:\nFood Processing • Spice Blends • Seasonings • Ready-to-Eat Foods • Sauces • Snacks",
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "Gujarat & Rajasthan, India",
-          "packaging": "25 kg Multi-layer Kraft Paper Bags • Fine Powder • Medium Grind • Customized Mesh Sizes",
+          "availableForms": [
+              "Fine Powder",
+              "Medium Grind ",
+               "Customized Mesh Sizes "
+          ],
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available",
           "purity": "Premium Export Quality • Hygienically Processed",
-          "grade": "Food Processing • Spice Blends • Seasonings • Ready-to-Eat Foods • Sauces • Snacks",
-          "minOrder": "500 Kilograms"
+          "grade": "Export Grade",
+          "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
       },
@@ -95,14 +118,20 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.blackPepper
         ],
-        "description": "Our Black Pepper is sourced from carefully selected premium peppercorns, known for their bold aroma, sharp pungency, and rich flavor. Hygienically processed and quality assured, it is ideal for culinary applications, spice blends, food processing, pharmaceuticals, and international export markets.",
+        "description": "Our Black Pepper is sourced from carefully selected premium peppercorns, known for their bold aroma, sharp pungency, and rich flavor. Hygienically processed and quality assured, it is ideal for culinary applications, spice blends, food processing, pharmaceuticals, and international export markets.\nAPPLICATIONS:\nFood Processing • Spice Blends • Seasonings • Marinades • Pharmaceuticals • Nutraceuticals",
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "Kerala & Karnataka, India",
-          "packaging": "25 kg Multi-layer Kraft Paper Bags • Whole Black Pepper • Cracked Black Pepper • Ground Black Pepper • Coarse Grind",
+           "availableForms": [
+               "Whole Black Pepper ",
+               "Cracked Black Pepper",
+               "Ground Black Pepper ",
+               "Coarse Grind "
+           ],
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging ",
           "purity": "NABL Lab Tested • Moisture as per Buyer Specification",
-          "grade": "Food Processing • Spice Blends • Seasonings • Marinades • Pharmaceuticals • Nutraceuticals",
-          "minOrder": "500 Kilograms"
+          "grade": "Export Grade",
+          "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
       },
@@ -113,13 +142,18 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.cardamom
         ],
-        "description": "Our premium Cardamom is carefully sourced from India's renowned spice-growing regions, offering a rich aroma, distinctive flavor, and vibrant natural color. Hygienically processed and quality assured, it is ideal for culinary, bakery, confectionery, beverage, pharmaceutical, and export applications.",
+        "description": "Our premium Cardamom is carefully sourced from India's renowned spice-growing regions, offering a rich aroma, distinctive flavor, and vibrant natural color. Hygienically processed and quality assured, it is ideal for culinary, bakery, confectionery, beverage, pharmaceutical, and export applications.\nAPPLICATIONS:\nFood Processing • Spice Blends • Bakery • Confectionery • Beverages • Pharmaceuticals • Ayurveda",
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "Idukki, Kerala, India",
-          "packaging": "25 kg Multi-layer Kraft Paper Bags • Whole Green Cardamom • Cardamom Seeds • Cardamom Powder",
+           "availableForms": [
+               "Whole Green Cardamom ",
+               "Cardamom Seeds ",
+               "Cardamom Powder "
+           ],
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available",
           "purity": "Premium Export Quality • Hygienically Processed",
-          "grade": "Food Processing • Spice Blends • Bakery • Confectionery • Beverages • Pharmaceuticals • Ayurveda",
+          "grade": "Bold Green Cardamom",
           "minOrder": "200 Kilograms"
         },
         "createdAt": "2026-05-31"
@@ -135,6 +169,10 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "Kerala & Tamil Nadu, India",
+           "availableForms": [
+               "Clove Powder",
+               "Clove Pieces "
+                    ],
           "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available",
           "purity": "Premium Export Quality • Hygienically Processed",
           "grade": "Hand-Selected Whole Cloves",
@@ -149,12 +187,18 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.cinnamon
         ],
-        "description": "Ceylon-type sweet cinnamon quills harvested sustainably, carrying very low coumarin and a delicate woody sweetness.",
+        "description": "Our premium Cinnamon is carefully sourced from selected spice-growing regions, offering a naturally sweet aroma, warm flavor, and superior quality. Hygienically processed and quality assured, it is ideal for culinary, bakery, beverage, pharmaceutical, and international export applications.\nAPPLICATIONS:\nFood Processing • Bakery • Confectionery • Beverages • Spice Blends • Pharmaceuticals • Ayurveda",
         "pricing": "Contact Trade Desk",
         "specifications": {
-          "origin": "Western Ghats, India",
-          "packaging": "Multi-layer Kraft Paper Bags (25 kg)",
-          "purity": "100% Pure, Heavy-Metal Free",
+          "origin": "Kerala & Tamil Nadu, India",
+           "availableForms": [
+               "Whole Quills ",
+               "Broken Quills ",
+               "Cinnamon Powder ",
+               "Cinnamon Chips"
+                    ],
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available",
+          "purity": "Premium Export Quality • Hygienically Processed",
           "grade": "Fine Grade Alba quills",
           "minOrder": "500 Kilograms"
         },
@@ -171,6 +215,11 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "Kerala, India",
+           "availableForms": [
+               "Fine Powder",
+               "Medium Grind ",
+               "Customized Mesh Sizes "
+           ],
           "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Whole Nutmeg • Nutmeg Powder • Cracked Nutmeg",
           "purity": "Premium Export Quality • Hygienically Processed",
           "grade": "Food Processing • Bakery • Confectionery • Beverages • Spice Blends • Pharmaceuticals • Ayurveda",
@@ -189,6 +238,11 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "Arunachal Pradesh & Northeast India",
+           "availableForms": [
+               "Fine Powder",
+               "Medium Grind ",
+               "Customized Mesh Sizes "
+           ],
           "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Whole • Broken • Powder",
           "purity": "Premium Export Quality • Hygienically Processed",
           "grade": "Culinary • Spice Blends • Herbal Products • Beverages • Pharmaceuticals",
@@ -207,6 +261,11 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "Rajasthan & Gujarat, India",
+           "availableForms": [
+               "Fine Powder",
+               "Medium Grind ",
+              "Customized Mesh Sizes "
+           ],
           "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Whole Fennel Seeds • Fennel Powder • Crushed Fennel",
           "purity": "Premium Export Quality • Hygienically Processed",
           "grade": "Food Processing • Spice Blends • Bakery • Confectionery • Beverages • Herbal Products • Ayurveda",
@@ -225,6 +284,11 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "Rajasthan & Uttar Pradesh, India",
+           "availableForms": [
+               "Fine Powder",
+               "Medium Grind ",
+               "Customized Mesh Sizes "
+                    ],
           "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Whole Mustard Seeds • Mustard Powder • Crushed Mustard",
           "purity": "Premium Export Quality • Hygienically Processed",
           "grade": "Food Processing • Spice Blends • Pickles • Condiments • Oil Extraction • Seasonings",
@@ -243,6 +307,11 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "Uttarakhand & Himachal Pradesh, India",
+           "availableForms": [
+               "Fine Powder",
+               "Medium Grind ",
+               "Customized Mesh Sizes "
+           ],
           "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Whole Bay Leaves • Crushed Bay Leaves • Bay Leaf Powder",
           "purity": "Premium Export Quality • Hygienically Processed",
           "grade": "Food Processing • Spice Blends • Soups • Curries • Rice Dishes • Seasonings • Herbal Products",
@@ -261,6 +330,12 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
+           "availableForms": [
+               "Fine Powder",
+               "Medium Grind ",
+               "Customized Mesh Sizes "
+           ],
+
           "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Fine Powder • Coarse Blend • Customized Spice Blends",
           "purity": "Premium Export Quality • Hygienically Processed",
           "grade": "Cooking • Curries • Gravies • Marinades • Snacks • Ready-to-Eat Foods • Food Processing",
@@ -280,6 +355,11 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
+          "availableForms": [
+                         "Fine Powder",
+                         "Medium Grind ",
+                         "Customized Mesh Sizes "
+                     ],
           "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk, Retail & Private Label Packaging Available • Available Blends: Garam Masala, Kitchen King, Chaat Masala, Pav Bhaji, Biryani, Sabzi, Sambar, Rasam, Tea, Kala, Kanda Lasun, Peri Peri, Custom Blends",
           "purity": "Premium Export Quality • Hygienically Processed",
           "grade": "Food Processing • Ready-to-Cook Mixes • Seasonings • Marinades • Snacks • Sauces • Restaurant & Catering",
@@ -298,6 +378,11 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India – Maharashtra (Sourced from reputed growing regions across India)",
+          "availableForms": [
+                         "Fine Powder",
+                         "Medium Grind ",
+                         "Customized Mesh Sizes "
+                     ],
           "packaging": "Retail & Bulk Packaging: 20 g • 50 g • 100 g • 200 g • 250 g • 500 g • 1 kg • 5 kg • 10 kg • 20 kg • 25 kg",
           "purity": "Pure Authentic Spice Blend • No Fillers or Adulteration",
           "grade": "Premium Food Grade • Export Grade • Commercial/Industrial Grade",
@@ -324,6 +409,11 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
+          "availableForms": [
+                         "Fine Powder",
+                         "Medium Grind ",
+                         "Customized Mesh Sizes "
+                     ],
           "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Fine Powder • Customized Mesh Sizes",
           "purity": "Premium Export Quality • Hygienically Processed",
           "grade": "Health Foods • Beverages • Smoothies • Bakery • Food Processing • Nutraceuticals • Natural Food Coloring",
@@ -342,6 +432,11 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "Karnataka Farms, India",
+          "availableForms": [
+                         "Fine Powder",
+                         "Medium Grind ",
+                         "Customized Mesh Sizes "
+                     ],
           "packaging": "Laminated moisture-proof drums (20kg)",
           "purity": "100% Pure Dehydrated Vegetable, No Additives",
           "grade": "Premium Spray-Dried / Low-Temp Milled",
@@ -360,6 +455,11 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
+          "availableForms": [
+                         "Fine Powder",
+                         "Medium Grind ",
+                         "Customized Mesh Sizes "
+                     ],
           "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Fine Powder • Customized Mesh Sizes",
           "purity": "Premium Export Quality • Hygienically Processed",
           "grade": "Food Processing • Soups • Sauces • Snacks • Bakery • Instant Mixes • Ready-to-Eat Foods",
@@ -378,6 +478,11 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
+          "availableForms": [
+                         "Fine Powder",
+                         "Medium Grind ",
+                         "Customized Mesh Sizes "
+                     ],
           "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Fine Powder • Coarse Powder • Customized Mesh Sizes",
           "purity": "Premium Export Quality • Hygienically Processed",
           "grade": "Food Processing • Seasonings • Spice Blends • Sauces • Snacks • Ready-to-Eat Foods • Bakery",
@@ -396,6 +501,11 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
+          "availableForms": [
+                         "Fine Powder",
+                         "Medium Grind ",
+                         "Customized Mesh Sizes "
+                     ],
           "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Fine Powder • Coarse Powder • Customized Mesh Sizes",
           "purity": "Premium Export Quality • Hygienically Processed",
           "grade": "Food Processing • Beverages • Bakery • Spice Blends • Seasonings • Nutraceuticals • Ayurveda",
@@ -414,6 +524,11 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
+          "availableForms": [
+                         "Fine Powder",
+                         "Medium Grind ",
+                         "Customized Mesh Sizes "
+                     ],
           "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Fine Powder • Coarse Powder • Customized Mesh Sizes",
           "purity": "Premium Export Quality • Hygienically Processed",
           "grade": "Food Processing • Seasonings • Spice Blends • Soups • Sauces • Snacks • Ready-to-Eat Foods",
@@ -432,6 +547,11 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
+          "availableForms": [
+                         "Fine Powder",
+                         "Medium Grind ",
+                         "Customized Mesh Sizes "
+                     ],
           "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail • Fine Powder • Custom Mesh Sizes (on request)",
           "purity": "Premium Export Quality • Hygienically Processed",
           "grade": "Nutraceuticals • Smoothies & Beverages • Soups & Sauces • Bakery & Confectionery • Pasta & Noodles • Seasonings",
@@ -450,6 +570,11 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
+          "availableForms": [
+                         "Fine Powder",
+                         "Medium Grind ",
+                         "Customized Mesh Sizes "
+                     ],
           "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Fine Powder • Custom Mesh Sizes",
           "purity": "Premium Export Quality • Hygienically Processed",
           "grade": "Health Supplements • Soups & Sauces • Bakery & Confectionery • Baby Food Formulations • Smoothies & Beverages",
@@ -468,6 +593,11 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
+          "availableForms": [
+                         "Fine Powder",
+                         "Medium Grind ",
+                         "Customized Mesh Sizes "
+                     ],
           "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Fine Powder • Custom Mesh Sizes",
           "purity": "Premium Export Quality • Hygienically Processed",
           "grade": "Soups & Sauces • Seasoning & Spice Blends • Instant Food Mixes • Ready-to-Eat Foods • Bakery Products • Snacks",
@@ -486,6 +616,11 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
+          "availableForms": [
+                         "Fine Powder",
+                         "Medium Grind ",
+                         "Customized Mesh Sizes "
+                     ],
           "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Fine Powder • Custom Mesh Sizes",
           "purity": "Premium Export Quality • Hygienically Processed",
           "grade": "Nutraceuticals & Health Foods • Soups & Sauces • Instant Food Mixes • Seasoning & Spice Blends • Ready-to-Eat Foods",
@@ -504,6 +639,11 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
+          "availableForms": [
+                         "Fine Powder",
+                         "Medium Grind ",
+                         "Customized Mesh Sizes "
+                     ],
           "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Fine Powder • Custom Mesh Sizes",
           "purity": "Premium Export Quality • Hygienically Processed",
           "grade": "Seasoning & Spice Blends • Snack Food Manufacturing • Instant Food Mixes • Soups & Sauces • Pickle Preparations",
@@ -522,6 +662,11 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
+          "availableForms": [
+                         "Fine Powder",
+                         "Medium Grind ",
+                         "Customized Mesh Sizes "
+                     ],
           "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Fine Powder • Custom Mesh Sizes",
           "purity": "Premium Export Quality • Hygienically Processed",
           "grade": "Seasoning & Spice Blends • Soups & Sauces • Instant Food Mixes • Ready-to-Eat Foods • Snacks & Savory Products",
@@ -540,6 +685,11 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "Maharashtra, India",
+          "availableForms": [
+                         "Fine Powder",
+                         "Medium Grind ",
+                         "Customized Mesh Sizes "
+                     ],
           "packaging": "Laminated moisture-proof drums (20kg)",
           "purity": "100% Pure Dehydrated Vegetable, No Additives",
           "grade": "Premium Spray-Dried / Low-Temp Milled",
@@ -566,6 +716,11 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
+          "availableForms": [
+                         "Fine Powder",
+                         "Medium Grind ",
+                         "Customized Mesh Sizes "
+                     ],
           "packaging": "Available Forms: Fine Powder • Freeze-Dried Powder • Smoothie Mix (25 kg Bags / Custom Retail & Bulk)",
           "purity": "100% Pure Natural Fruit Powder • Free from artificial colors, preservatives or additives",
           "grade": "SEO Keywords: banana powder supplier India • banana powder exporter • bulk banana powder",
