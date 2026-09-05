@@ -302,7 +302,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="text-sm sm:text-lg text-gray-600 font-light leading-relaxed max-w-3xl mx-auto font-sans"
+            className="text-sm sm:text-lg text-white font-light leading-relaxed max-w-3xl mx-auto font-sans"
           >
             {getVal("heroSubtitle")}
           </motion.p>
