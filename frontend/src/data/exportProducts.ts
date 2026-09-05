@@ -211,19 +211,19 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.nutmeg
         ],
-        "description": "Our premium Nutmeg is carefully sourced from selected spice-growing regions, offering a rich aroma, warm flavor, and natural freshness. Hygienically processed and quality assured, it is ideal for culinary, bakery, confectionery, pharmaceutical, and wellness applications.",
+        "description": "Our premium Nutmeg is carefully sourced from selected spice-growing regions, offering a rich aroma, warm flavor, and natural freshness. Hygienically processed and quality assured, it is ideal for culinary, bakery, confectionery, pharmaceutical, and wellness applications.\nAPPLICATIONS:\nApplicationsFood Processing • Bakery • Confectionery • Beverages • Spice Blends • Pharmaceuticals • Ayurveda",
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "Kerala, India",
            "availableForms": [
-               "Fine Powder",
-               "Medium Grind ",
-               "Customized Mesh Sizes "
+               "Whole Nutmeg",
+               "Nutmeg Powder ",
+               "Cracked Nutmeg"
            ],
-          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Whole Nutmeg • Nutmeg Powder • Cracked Nutmeg",
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available",
           "purity": "Premium Export Quality • Hygienically Processed",
-          "grade": "Food Processing • Bakery • Confectionery • Beverages • Spice Blends • Pharmaceuticals • Ayurveda",
-          "minOrder": "500 Kilograms"
+          "grade": "Export Grade Whole Nutmeg",
+          "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
       },
@@ -234,19 +234,19 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.starAnise
         ],
-        "description": "Star Anise is a premium aromatic spice with a distinctive star shape and sweet, licorice-like flavor. Ideal for culinary, herbal, beverage, pharmaceutical, and essential oil applications, it is carefully sourced and processed to ensure exceptional quality and freshness.",
+        "description": "Star Anise is a premium aromatic spice with a distinctive star shape and sweet, licorice-like flavor. Ideal for culinary, herbal, beverage, pharmaceutical, and essential oil applications, it is carefully sourced and processed to ensure exceptional quality and freshness.\nAPPLICATIONS:\nCulinary • Spice Blends • Herbal Products • Beverages • Pharmaceuticals",
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "Arunachal Pradesh & Northeast India",
            "availableForms": [
-               "Fine Powder",
-               "Medium Grind ",
-               "Customized Mesh Sizes "
+               "Whole",
+               "Broken ",
+               " Powder"
            ],
-          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Whole • Broken • Powder",
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available",
           "purity": "Premium Export Quality • Hygienically Processed",
-          "grade": "Culinary • Spice Blends • Herbal Products • Beverages • Pharmaceuticals",
-          "minOrder": "500 Kilograms"
+          "grade": "Export Grade Whole Star Anise",
+          "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
       },
@@ -257,19 +257,19 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.fennelSeeds
         ],
-        "description": "Our premium Fennel Seeds are carefully sourced from India's finest growing regions, offering a naturally sweet aroma, refreshing flavor, and vibrant green color. Hygienically processed and quality assured, they are ideal for culinary, confectionery, beverage, pharmaceutical, and wellness applications.",
+        "description": "Our premium Fennel Seeds are carefully sourced from India's finest growing regions, offering a naturally sweet aroma, refreshing flavor, and vibrant green color. Hygienically processed and quality assured, they are ideal for culinary, confectionery, beverage, pharmaceutical, and wellness applications.\nAPPLICATIONS:\nFood Processing • Spice Blends • Bakery • Confectionery • Beverages • Herbal Products • Ayurveda",
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "Rajasthan & Gujarat, India",
            "availableForms": [
-               "Fine Powder",
-               "Medium Grind ",
-              "Customized Mesh Sizes "
+               "Whole Fennel Seeds ",
+               "Fennel Powder ",
+              "Crushed Fennel  "
            ],
-          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Whole Fennel Seeds • Fennel Powder • Crushed Fennel",
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available",
           "purity": "Premium Export Quality • Hygienically Processed",
-          "grade": "Food Processing • Spice Blends • Bakery • Confectionery • Beverages • Herbal Products • Ayurveda",
-          "minOrder": "500 Kilograms"
+          "grade": "Export Grade Green Fennel Seeds",
+          "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
       },
@@ -280,19 +280,19 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.mustardSeeds
         ],
-        "description": "Our premium Mustard Seeds are carefully sourced from India's leading growing regions, offering a rich aroma, natural pungency, and superior quality. Hygienically processed and quality assured.",
+        "description": "Our premium Mustard Seeds are carefully sourced from India's leading growing regions, offering a rich aroma, natural pungency, and superior quality. Hygienically processed and quality assured.\nAPPLICATIONS:\nFood Processing • Spice Blends • Pickles • Condiments • Oil Extraction • Seasonings",
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "Rajasthan & Uttar Pradesh, India",
            "availableForms": [
-               "Fine Powder",
-               "Medium Grind ",
-               "Customized Mesh Sizes "
+               "Whole Mustard Seeds ",
+               "Mustard Powder  ",
+               "Crushed Mustard "
                     ],
-          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Whole Mustard Seeds • Mustard Powder • Crushed Mustard",
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available",
           "purity": "Premium Export Quality • Hygienically Processed",
-          "grade": "Food Processing • Spice Blends • Pickles • Condiments • Oil Extraction • Seasonings",
-          "minOrder": "500 Kilograms"
+          "grade": "Export Grade Whole Mustard Seeds",
+          "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
       },
@@ -303,19 +303,19 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.bayLeaves
         ],
-        "description": "Our premium Bay Leaves are carefully sourced from selected growing regions, offering a distinctive aroma, mild earthy flavor, and natural freshness. Hygienically processed and quality assured, they are ideal for culinary, spice blends, food processing, and international export markets.",
+        "description": "Our premium Bay Leaves are carefully sourced from selected growing regions, offering a distinctive aroma, mild earthy flavor, and natural freshness. Hygienically processed and quality assured, they are ideal for culinary, spice blends, food processing, and international export markets.\nAPPLICATIONS:\nFood Processing • Spice Blends • Soups • Curries • Rice Dishes • Seasonings • Herbal Products",
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "Uttarakhand & Himachal Pradesh, India",
            "availableForms": [
-               "Fine Powder",
-               "Medium Grind ",
-               "Customized Mesh Sizes "
+               "Whole Bay Leaves ",
+               "Crushed Bay Leaves ",
+               "Bay Leaf Powder "
            ],
-          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Whole Bay Leaves • Crushed Bay Leaves • Bay Leaf Powder",
+          "packaging": "",
           "purity": "Premium Export Quality • Hygienically Processed",
-          "grade": "Food Processing • Spice Blends • Soups • Curries • Rice Dishes • Seasonings • Herbal Products",
-          "minOrder": "500 Kilograms"
+          "grade": "",
+          "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
       },
@@ -326,20 +326,20 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.garamMasala
         ],
-        "description": "Our premium Garam Masala is expertly blended using carefully selected whole spices to deliver a rich aroma, balanced flavor, and authentic taste. Hygienically processed and quality assured, it is ideal for home kitchens, food processing, restaurants, and international export markets.",
+        "description": "Our premium Garam Masala is expertly blended using carefully selected whole spices to deliver a rich aroma, balanced flavor, and authentic taste. Hygienically processed and quality assured, it is ideal for home kitchens, food processing, restaurants, and international export markets.\nAPPLICATIONS:\nCooking • Curries • Gravies • Marinades • Snacks • Ready-to-Eat Foods • Food Processing",
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
            "availableForms": [
                "Fine Powder",
-               "Medium Grind ",
-               "Customized Mesh Sizes "
+               "Coarse Blend ",
+               "Customized Spice Blends "
            ],
 
-          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Fine Powder • Coarse Blend • Customized Spice Blends",
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available",
           "purity": "Premium Export Quality • Hygienically Processed",
-          "grade": "Cooking • Curries • Gravies • Marinades • Snacks • Ready-to-Eat Foods • Food Processing",
-          "minOrder": "500 Kilograms"
+          "grade": "Premium Spice Blend",
+          "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
       },
@@ -351,19 +351,19 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.mixedSpiceBlends
         ],
-        "description": "Our premium Mixed Spice Blends are expertly crafted using carefully selected spices to deliver consistent aroma, authentic flavor, and superior quality. Hygienically processed and quality assured, they are ideal for food manufacturers, restaurants, retail brands, and international export markets.",
+        "description": "Our premium Mixed Spice Blends are expertly crafted using carefully selected spices to deliver consistent aroma, authentic flavor, and superior quality. Hygienically processed and quality assured, they are ideal for food manufacturers, restaurants, retail brands, and international export markets.\nAPPLICATIONS:\nFood Processing • Ready-to-Cook Mixes • Seasonings • Marinades • Snacks • Sauces • Restaurant & Catering",
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
           "availableForms": [
                          "Fine Powder",
-                         "Medium Grind ",
-                         "Customized Mesh Sizes "
+                         "Coarse Blend ",
+                         "Customized Spice Blends "
                      ],
-          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk, Retail & Private Label Packaging Available • Available Blends: Garam Masala, Kitchen King, Chaat Masala, Pav Bhaji, Biryani, Sabzi, Sambar, Rasam, Tea, Kala, Kanda Lasun, Peri Peri, Custom Blends",
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk, Retail & Private Label Packaging Available",
           "purity": "Premium Export Quality • Hygienically Processed",
-          "grade": "Food Processing • Ready-to-Cook Mixes • Seasonings • Marinades • Snacks • Sauces • Restaurant & Catering",
-          "minOrder": "500 Kilograms"
+          "grade": "Premium Spice Blend",
+          "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
       },
@@ -405,19 +405,18 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.beetrootPowder
         ],
-        "description": "Our premium Beetroot Powder is made from carefully selected beetroots, offering a vibrant natural color, rich flavor, and superior quality. Hygienically processed to preserve its natural goodness, it is ideal for food processing, beverages, bakery, nutraceuticals, health foods, and international export markets.",
+        "description": "Our premium Beetroot Powder is made from carefully selected beetroots, offering a vibrant natural color, rich flavor, and superior quality. Hygienically processed to preserve its natural goodness, it is ideal for food processing, beverages, bakery, nutraceuticals, health foods, and international export markets.\nAPPLICATIONS:\nHealth Foods • Beverages • Smoothies • Bakery • Food Processing • Nutraceuticals • Natural Food Coloring",
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
           "availableForms": [
                          "Fine Powder",
-                         "Medium Grind ",
                          "Customized Mesh Sizes "
                      ],
-          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Fine Powder • Customized Mesh Sizes",
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available",
           "purity": "Premium Export Quality • Hygienically Processed",
-          "grade": "Health Foods • Beverages • Smoothies • Bakery • Food Processing • Nutraceuticals • Natural Food Coloring",
-          "minOrder": "500 Kilograms"
+          "grade": "Premium Food Grade",
+          "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
       },
@@ -451,19 +450,18 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.potatoPowder
         ],
-        "description": "Our premium Potato Powder is produced from carefully selected potatoes, offering a smooth texture, natural taste, and excellent consistency. Hygienically processed and quality assured, it is ideal for soups, sauces, snacks, bakery products, food processing, and international export markets.",
+        "description": "Our premium Potato Powder is produced from carefully selected potatoes, offering a smooth texture, natural taste, and excellent consistency. Hygienically processed and quality assured, it is ideal for soups, sauces, snacks, bakery products, food processing, and international export markets.\nAPPLICATIONS:\nFood Processing • Soups • Sauces • Snacks • Bakery • Instant Mixes • Ready-to-Eat Foods",
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
           "availableForms": [
                          "Fine Powder",
-                         "Medium Grind ",
                          "Customized Mesh Sizes "
                      ],
-          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Fine Powder • Customized Mesh Sizes",
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available",
           "purity": "Premium Export Quality • Hygienically Processed",
-          "grade": "Food Processing • Soups • Sauces • Snacks • Bakery • Instant Mixes • Ready-to-Eat Foods",
-          "minOrder": "500 Kilograms"
+          "grade": "Premium Food Grade",
+          "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
       },
@@ -474,19 +472,19 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.garlicPowder
         ],
-        "description": "Our premium Garlic Powder is made from carefully selected garlic cloves, delivering a rich aroma, authentic flavor, and excellent consistency. Hygienically processed and quality assured, it is ideal for seasonings, spice blends, sauces, snacks, food processing, and international export markets.",
+        "description": "Our premium Garlic Powder is made from carefully selected garlic cloves, delivering a rich aroma, authentic flavor, and excellent consistency. Hygienically processed and quality assured, it is ideal for seasonings, spice blends, sauces, snacks, food processing, and international export markets.\nAPPLICATIONS:\nFood Processing • Seasonings • Spice Blends • Sauces • Snacks • Ready-to-Eat Foods • Bakery",
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
           "availableForms": [
                          "Fine Powder",
-                         "Medium Grind ",
+                         "Coarse Powder",
                          "Customized Mesh Sizes "
                      ],
-          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Fine Powder • Coarse Powder • Customized Mesh Sizes",
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available",
           "purity": "Premium Export Quality • Hygienically Processed",
-          "grade": "Food Processing • Seasonings • Spice Blends • Sauces • Snacks • Ready-to-Eat Foods • Bakery",
-          "minOrder": "500 Kilograms"
+          "grade": "Premium Food Grade",
+          "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
       },
@@ -497,19 +495,19 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.gingerPowder
         ],
-        "description": "Our premium Ginger Powder is made from carefully selected ginger rhizomes, offering a rich aroma, warm flavor, and natural freshness. Hygienically processed and quality assured, it is ideal for food processing, beverages, bakery, nutraceuticals, spice blends, and international export markets.",
+        "description": "Our premium Ginger Powder is made from carefully selected ginger rhizomes, offering a rich aroma, warm flavor, and natural freshness. Hygienically processed and quality assured, it is ideal for food processing, beverages, bakery, nutraceuticals, spice blends, and international export markets.\nAPPLICATIONS:\nFood Processing • Beverages • Bakery • Spice Blends • Seasonings • Nutraceuticals • Ayurveda",
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
           "availableForms": [
                          "Fine Powder",
-                         "Medium Grind ",
+                         "Coarse Powder ",
                          "Customized Mesh Sizes "
                      ],
-          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Fine Powder • Coarse Powder • Customized Mesh Sizes",
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available",
           "purity": "Premium Export Quality • Hygienically Processed",
-          "grade": "Food Processing • Beverages • Bakery • Spice Blends • Seasonings • Nutraceuticals • Ayurveda",
-          "minOrder": "500 Kilograms"
+          "grade": "Premium Food Grade",
+          "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
       },
@@ -520,19 +518,19 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.onionPowder
         ],
-        "description": "Our premium Onion Powder is made from carefully selected onions, offering a rich aroma, authentic flavor, and excellent consistency. Hygienically processed and quality assured, it is ideal for seasonings, spice blends, soups, sauces, snacks, food processing, and international export markets.",
+        "description": "Our premium Onion Powder is made from carefully selected onions, offering a rich aroma, authentic flavor, and excellent consistency. Hygienically processed and quality assured, it is ideal for seasonings, spice blends, soups, sauces, snacks, food processing, and international export markets.\nAPPLICATIONS:\nFood Processing • Seasonings • Spice Blends • Soups • Sauces • Snacks • Ready-to-Eat Foods",
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
           "availableForms": [
                          "Fine Powder",
-                         "Medium Grind ",
+                         "Coarse Powder",
                          "Customized Mesh Sizes "
                      ],
-          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Fine Powder • Coarse Powder • Customized Mesh Sizes",
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available",
           "purity": "Premium Export Quality • Hygienically Processed",
-          "grade": "Food Processing • Seasonings • Spice Blends • Soups • Sauces • Snacks • Ready-to-Eat Foods",
-          "minOrder": "500 Kilograms"
+          "grade": "Premium Food Grade",
+          "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
       },
@@ -543,19 +541,18 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.spinachPowder
         ],
-        "description": "Our Spinach Powder is produced from carefully selected, fresh spinach leaves that are gently dehydrated and finely milled to preserve their natural green color, nutrients, and fresh leafy aroma. Rich in iron, dietary fiber, vitamins, and natural chlorophyll, it is widely used in the food, nutraceutical, bakery, and health food industries.",
+        "description": "Our Spinach Powder is produced from carefully selected, fresh spinach leaves that are gently dehydrated and finely milled to preserve their natural green color, nutrients, and fresh leafy aroma. Rich in iron, dietary fiber, vitamins, and natural chlorophyll, it is widely used in the food, nutraceutical, bakery, and health food industries.\nAPPLICATIONS:\nNutraceuticals & Health Supplements • Smoothies & Functional Beverages  • Soups & Sauces • Bakery & Confectionery Products • Pasta, Noodles & Ready-to-Eat Foods • Seasonings & Spice Blends • Instant Food Mixes",
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
           "availableForms": [
                          "Fine Powder",
-                         "Medium Grind ",
                          "Customized Mesh Sizes "
                      ],
-          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail • Fine Powder • Custom Mesh Sizes (on request)",
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail",
           "purity": "Premium Export Quality • Hygienically Processed",
-          "grade": "Nutraceuticals • Smoothies & Beverages • Soups & Sauces • Bakery & Confectionery • Pasta & Noodles • Seasonings",
-          "minOrder": "500 Kilograms"
+          "grade": "Premium Food Grade",
+          "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
       },
@@ -566,19 +563,18 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.carrotPowder
         ],
-        "description": "Our Carrot Powder is produced from carefully selected fresh carrots that are hygienically processed, gently dehydrated, and finely milled to preserve their natural color, sweetness, and nutritional value. Rich in natural beta-carotene, it is widely used across the food, beverage, nutraceutical, and bakery industries.",
+        "description": "Our Carrot Powder is produced from carefully selected fresh carrots that are hygienically processed, gently dehydrated, and finely milled to preserve their natural color, sweetness, and nutritional value. Rich in natural beta-carotene, it is widely used across the food, beverage, nutraceutical, and bakery industries.\nAPPLICATIONS:\nHealth Supplements & Nutraceuticals • Soups & Sauces • Bakery & Confectionery Products • Instant Food Mixes • Baby Food Formulations • Smoothies & Functional Beverages • Pasta, Noodles & Snacks • Seasonings & Ready-to-Eat Foods",
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
           "availableForms": [
                          "Fine Powder",
-                         "Medium Grind ",
                          "Customized Mesh Sizes "
                      ],
-          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Fine Powder • Custom Mesh Sizes",
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available",
           "purity": "Premium Export Quality • Hygienically Processed",
-          "grade": "Health Supplements • Soups & Sauces • Bakery & Confectionery • Baby Food Formulations • Smoothies & Beverages",
-          "minOrder": "500 Kilograms"
+          "grade": "Premium Food Grade",
+          "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
       },
@@ -589,19 +585,18 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.cabbagePowder
         ],
-        "description": "Our Cabbage Powder is produced from carefully selected fresh cabbage that is hygienically processed, gently dehydrated, and finely milled to preserve its natural flavor, color, and nutritional value. It is widely used in food processing, seasoning blends, soups, ready-to-eat meals, and health food applications.",
+        "description": "Our Cabbage Powder is produced from carefully selected fresh cabbage that is hygienically processed, gently dehydrated, and finely milled to preserve its natural flavor, color, and nutritional value. It is widely used in food processing, seasoning blends, soups, ready-to-eat meals, and health food applications.\nAPPLICATIONS:\nSoups & Sauces • Seasoning & Spice Blends • Instant Food Mixes • Ready-to-Eat & Ready-to-Cook Foods • Bakery Products • Snacks & Savory Products • Nutraceutical & Health Food Formulations • Pasta, Noodles & Convenience Foods",
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
           "availableForms": [
                          "Fine Powder",
-                         "Medium Grind ",
-                         "Customized Mesh Sizes "
+                         "Customized Mesh Sizes  (on request)"
                      ],
-          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Fine Powder • Custom Mesh Sizes",
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available",
           "purity": "Premium Export Quality • Hygienically Processed",
-          "grade": "Soups & Sauces • Seasoning & Spice Blends • Instant Food Mixes • Ready-to-Eat Foods • Bakery Products • Snacks",
-          "minOrder": "500 Kilograms"
+          "grade": "Premium Food Grade",
+          "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
       },
@@ -612,19 +607,18 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.moringaPowderVeg
         ],
-        "description": "Our Drumstick Powder is produced from carefully selected fresh drumsticks (Moringa Pods) that are hygienically processed, gently dehydrated, and finely milled to preserve their natural flavor, color, and nutritional value. It is widely used in food processing, nutraceuticals, health foods, and seasoning applications.",
+        "description": "Our Drumstick Powder is produced from carefully selected fresh drumsticks (Moringa Pods) that are hygienically processed, gently dehydrated, and finely milled to preserve their natural flavor, color, and nutritional value. It is widely used in food processing, nutraceuticals, health foods, and seasoning applications.\nAPPLICATIONS:\nSoups & Sauces • Seasoning & Spice Blends • Instant Food Mixes • Ready-to-Eat & Ready-to-Cook Foods • Bakery Products • Snacks & Savory Products • Seasoning & Spice Blends • Functional Food Formulation",
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
           "availableForms": [
                          "Fine Powder",
-                         "Medium Grind ",
-                         "Customized Mesh Sizes "
+                         "Customized Mesh Sizes (on request)"
                      ],
-          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Fine Powder • Custom Mesh Sizes",
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available",
           "purity": "Premium Export Quality • Hygienically Processed",
-          "grade": "Nutraceuticals & Health Foods • Soups & Sauces • Instant Food Mixes • Seasoning & Spice Blends • Ready-to-Eat Foods",
-          "minOrder": "500 Kilograms"
+          "grade": "Premium Food Grade",
+          "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
       },
@@ -635,19 +629,18 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.greenChilliPowder
         ],
-        "description": "Our Green Chilli Powder is produced from carefully selected fresh green chillies that are hygienically processed, gently dehydrated, and finely milled to preserve their natural pungency, vibrant green color, and fresh aroma. It is widely used in the food processing, seasoning, snack, and ready-to-eat food industries.",
+        "description": "Our Green Chilli Powder is produced from carefully selected fresh green chillies that are hygienically processed, gently dehydrated, and finely milled to preserve their natural pungency, vibrant green color, and fresh aroma. It is widely used in the food processing, seasoning, snack, and ready-to-eat food industries.\nAPPLICATIONS:\nSoups & Sauces • Seasoning & Spice Blends • Instant Food Mixes • Ready-to-Eat & Ready-to-Cook Foods • Bakery & Savory Products  • Snack Food Manufacturing • Seasoning & Spice Blends • Frozen & Convenience Foods",
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
           "availableForms": [
                          "Fine Powder",
-                         "Medium Grind ",
-                         "Customized Mesh Sizes "
+                         "Customized Mesh Sizes (on request)"
                      ],
-          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Fine Powder • Custom Mesh Sizes",
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available",
           "purity": "Premium Export Quality • Hygienically Processed",
-          "grade": "Seasoning & Spice Blends • Snack Food Manufacturing • Instant Food Mixes • Soups & Sauces • Pickle Preparations",
-          "minOrder": "500 Kilograms"
+          "grade": "Premium Food Grade",
+          "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
       },
@@ -658,19 +651,18 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.corianderLeafPowder
         ],
-        "description": "Our Coriander Leaf Powder is produced from carefully selected fresh coriander (cilantro) leaves that are hygienically processed, gently dehydrated, and finely milled to preserve their natural green color, fresh aroma, and nutritional value. It is widely used in seasoning blends, soups, sauces, ready-to-eat foods, and various culinary applications.",
+        "description": "Our Coriander Leaf Powder is produced from carefully selected fresh coriander (cilantro) leaves that are hygienically processed, gently dehydrated, and finely milled to preserve their natural green color, fresh aroma, and nutritional value. It is widely used in seasoning blends, soups, sauces, ready-to-eat foods, and various culinary applications.\nAPPLICATIONS:\nSoups & Sauces • Seasoning & Spice Blends • Instant Food Mixes • Ready-to-Eat & Ready-to-Cook Foods • Snacks & Savory Products Marinades & Dressings  • Food Processing Industry",
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
           "availableForms": [
                          "Fine Powder",
-                         "Medium Grind ",
-                         "Customized Mesh Sizes "
+                         "Customized Mesh Sizes (on request) "
                      ],
-          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available • Fine Powder • Custom Mesh Sizes",
-          "purity": "Premium Export Quality • Hygienically Processed",
-          "grade": "Seasoning & Spice Blends • Soups & Sauces • Instant Food Mixes • Ready-to-Eat Foods • Snacks & Savory Products",
-          "minOrder": "500 Kilograms"
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available",
+          "purity": "Premium Export Quality • Hygienically Processed • Frozen Food Preparations",
+          "grade": "Premium Food Grade",
+          "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
       },
@@ -712,19 +704,18 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.bananaPowder
         ],
-        "description": "Dharaaveda Global Exim offers premium Banana Powder manufactured from selected ripe bananas, gently dehydrated and finely milled to retain natural sweet flavor, aroma, and nutritional goodness. Ideal for food processing, smoothies, baby food, and nutraceutical formulations.",
+        "description": "Our Banana Powder is produced from carefully selected ripe bananas that are hygienically processed, gently dehydrated, and finely milled to preserve their natural sweetness, aroma, and nutritional value. It is widely used in the food, beverage, bakery, nutraceutical, and infant nutrition industries.\n\nAPPLICATIONS:\nHealth Supplements & Nutraceuticals • Baby Food & Infant Nutrition • Smoothies & Functional Beverages • Bakery & Confectionery Products  • Dairy Products & Ice Cream • Instant Food Mixes • Breakfast Cereals • Food Processing Industry",
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
           "availableForms": [
                          "Fine Powder",
-                         "Medium Grind ",
-                         "Customized Mesh Sizes "
+                         "Customized Mesh Sizes (on request)"
                      ],
-          "packaging": "Available Forms: Fine Powder • Freeze-Dried Powder • Smoothie Mix (25 kg Bags / Custom Retail & Bulk)",
-          "purity": "100% Pure Natural Fruit Powder • Free from artificial colors, preservatives or additives",
-          "grade": "SEO Keywords: banana powder supplier India • banana powder exporter • bulk banana powder",
-          "minOrder": "500 Kilograms"
+          "packaging": "25 kg Multi-layer Kraft Paper Bags • Customized Bulk & Retail Packaging Available",
+          "purity": "Premium Export Quality • Hygienically Processed",
+          "grade": "Premium Food Grade",
+          "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
       },
@@ -735,14 +726,18 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.mangoPowder
         ],
-        "description": "Our Mango Powder is produced from selected premium-quality mangoes, hygienically processed and dehydrated to preserve natural tropical sweetness, rich aroma, and vibrant color. Widely used in beverages, smoothie mixes, confectionery, and food manufacturing.",
+        "description": "Our Mango Powder is produced from carefully selected premium-quality mangoes that are hygienically processed, gently dehydrated, and finely milled to preserve their natural sweetness, tropical aroma, vibrant color, and nutritional value. It is widely used in the food, beverage, bakery, confectionery, and nutraceutical industries.\n\nAPPLICATIONS:\nBeverage & Smoothie Mixes • Bakery & Confectionery Products • Dairy Products & Ice Cream • Health Supplements & Nutraceuticals • Instant Food Mixes  • Desserts & Ready-to-Eat Foods • Breakfast Cereals • Breakfast Cereals • Food Processing Industry",
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "Ratnagiri & South India Orchards",
-          "packaging": "Available Forms: Fine Powder • Spray-Dried Powder • Freeze-Dried Powder • Smoothie Mix (25 kg Bags / Foil Inserts)",
-          "purity": "100% Pure Organic Mango Pulp Powder",
-          "grade": "SEO Keywords: mango powder supplier India • mango powder exporter • bulk mango powder",
-          "minOrder": "500 Kilograms"
+          "availableForms": [
+                                   "Fine Powder",
+                                   "Customized Mesh Sizes (on request)"
+                               ],
+          "packaging": "Aluminum Vacuum Foil Inserts in Master Cartons",
+          "purity": "Spray-Dried from 100% Organic Fruit Pulp",
+          "grade": "Food & Beverage Grade A",
+          "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
       },
@@ -757,6 +752,10 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "Kerala & Northeast India",
+          "availableForms": [
+                                   "Fine Powder",
+                                   "Customized Mesh Sizes (on request)"
+                               ],
           "packaging": "Available Forms: Fine Powder • Spray-Dried Powder • Freeze-Dried Powder • Smoothie Mix (25 kg Kraft Bags / Vacuum Foil)",
           "purity": "100% Pure Pineapple Fruit Powder • Rich in Natural Bromelain",
           "grade": "SEO Keywords: pineapple powder supplier India • pineapple powder exporter • bulk pineapple powder",
@@ -775,6 +774,10 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
+          "availableForms": [
+                                   "Fine Powder",
+                                   "Customized Mesh Sizes (on request)"
+                               ],
           "packaging": "Available Forms: Fine Powder • Spray-Dried Powder • Freeze-Dried Powder (25 kg Bags / Custom Retail)",
           "purity": "100% Pure Papaya Powder • No Artificial Colors or Preservatives",
           "grade": "SEO Keywords: papaya powder supplier India • papaya powder exporter • bulk papaya powder",
@@ -793,6 +796,10 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India (Maharashtra & Andhra Pradesh)",
+          "availableForms": [
+              "Fine Powder",
+               "Customized Mesh Sizes (on request)"
+               ],
           "packaging": "Available Forms: Fine Powder • Freeze-Dried Powder • Smoothie Mix (25 kg Bags / Vacuum Foil)",
           "purity": "100% Pure Guava Powder • Rich in Vitamin C & Fiber",
           "grade": "SEO Keywords: guava powder supplier India • guava powder exporter • bulk guava powder",
@@ -811,6 +818,10 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India (Maharashtra & Gujarat)",
+           "availableForms": [
+                        "Fine Powder",
+                         "Customized Mesh Sizes (on request)"
+                         ],
           "packaging": "Available Forms: Fine Powder • Freeze-Dried Powder • Smoothie Mix (25 kg Bags / Vacuum Foil)",
           "purity": "100% Pure Pomegranate Fruit Powder • Rich in Antioxidants",
           "grade": "SEO Keywords: pomegranate powder supplier India • pomegranate powder exporter • bulk pomegranate powder",
@@ -829,6 +840,10 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
+           "availableForms": [
+                        "Fine Powder",
+                         "Customized Mesh Sizes (on request)"
+                         ],
           "packaging": "Available Forms: Fine Powder • Freeze-Dried Powder • Smoothie Mix (25 kg Bags / Custom Retail)",
           "purity": "100% Pure Amla Fruit Powder • High Natural Vitamin C",
           "grade": "SEO Keywords: amla powder supplier India • amla powder exporter • bulk amla powder",
@@ -847,6 +862,10 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India (Mahabaleshwar Orchards)",
+           "availableForms": [
+                        "Fine Powder",
+                         "Customized Mesh Sizes (on request)"
+                         ],
           "packaging": "Available Forms: Fine Powder • Freeze-Dried Powder • Smoothie Mix (25 kg Bags / Vacuum Foil)",
           "purity": "100% Pure Strawberry Powder • Free from artificial flavors or additives",
           "grade": "SEO Keywords: strawberry powder supplier • freeze dried strawberry powder • bulk strawberry powder",
@@ -865,6 +884,10 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India (Himachal Pradesh & Kashmir)",
+           "availableForms": [
+                        "Fine Powder",
+                         "Customized Mesh Sizes (on request)"
+                         ],
           "packaging": "Available Forms: Fine Powder • Spray-Dried Powder • Smoothie Mix (25 kg Bags / Custom Packs)",
           "purity": "100% Pure Apple Fruit Powder",
           "grade": "SEO Keywords: apple powder supplier India • apple powder exporter • bulk apple powder",
@@ -883,6 +906,10 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India (Nagpur Orchards)",
+           "availableForms": [
+                        "Fine Powder",
+                         "Customized Mesh Sizes (on request)"
+                         ],
           "packaging": "Available Forms: Fine Powder • Spray-Dried Powder • Smoothie Mix (25 kg Bags / Custom Packs)",
           "purity": "100% Pure Orange Fruit Powder",
           "grade": "SEO Keywords: orange powder supplier India • orange powder exporter • bulk orange powder",
@@ -901,6 +928,10 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
+           "availableForms": [
+                        "Fine Powder",
+                         "Customized Mesh Sizes (on request)"
+                         ],
           "packaging": "Available Forms: Fine Powder • Spray-Dried Powder • Smoothie Mix (25 kg Bags / Custom Packs)",
           "purity": "100% Pure Lemon Fruit Powder",
           "grade": "SEO Keywords: lemon powder supplier India • lemon powder exporter • bulk lemon powder",
@@ -919,6 +950,10 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
+           "availableForms": [
+                        "Fine Powder",
+                         "Customized Mesh Sizes (on request)"
+                         ],
           "packaging": "Available Forms: Fine Powder • Freeze-Dried Powder • Smoothie Mix (25 kg Bags / Vacuum Foil)",
           "purity": "100% Pure Dragon Fruit Powder • High Antioxidants & Fiber",
           "grade": "SEO Keywords: dragon fruit powder supplier India • freeze dried dragon fruit powder",
@@ -937,6 +972,10 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India (Kerala & Karnataka)",
+           "availableForms": [
+                        "Fine Powder",
+                         "Customized Mesh Sizes (on request)"
+                         ],
           "packaging": "Available Forms: Fine Powder • Freeze-Dried Powder • Smoothie Mix (25 kg Bags / Bulk Foil Packs)",
           "purity": "100% Pure Jackfruit Powder",
           "grade": "SEO Keywords: jackfruit powder supplier India • jackfruit powder exporter • bulk jackfruit powder",
@@ -955,6 +994,10 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India (Gujarat & Maharashtra)",
+           "availableForms": [
+                        "Fine Powder",
+                         "Customized Mesh Sizes (on request)"
+                         ],
           "packaging": "Available Forms: Fine Powder • Freeze-Dried Powder • Smoothie Mix (25 kg Bags / Bulk Foil Packs)",
           "purity": "100% Pure Sapota Fruit Powder",
           "grade": "SEO Keywords: chikoo powder supplier India • sapota powder exporter • bulk chikoo powder",
@@ -973,6 +1016,10 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India (Kerala & Tamil Nadu)",
+           "availableForms": [
+                        "Fine Powder",
+                         "Customized Mesh Sizes (on request)"
+                         ],
           "packaging": "Available Forms: Fine Powder • Spray-Dried / Dehydrated Powder (25 kg Bags / Vacuum Foil)",
           "purity": "100% Pure Dehydrated Coconut Powder",
           "grade": "SEO Keywords: coconut powder supplier India • coconut powder exporter • bulk coconut powder",
@@ -991,6 +1038,10 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India (Maharashtra)",
+           "availableForms": [
+                        "Fine Powder",
+                         "Customized Mesh Sizes (on request)"
+                         ],
           "packaging": "Available Forms: Fine Powder • Freeze-Dried Powder • Smoothie Mix (25 kg Bags / Vacuum Foil)",
           "purity": "100% Pure Fig Fruit Powder",
           "grade": "SEO Keywords: fig powder supplier • dried fig powder exporter • bulk fig powder",
@@ -1009,6 +1060,10 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
+           "availableForms": [
+                        "Fine Powder",
+                         "Customized Mesh Sizes (on request)"
+                         ],
           "packaging": "Available Forms: Fine Powder • Freeze-Dried Powder • Smoothie Mix (25 kg Bags / Vacuum Foil)",
           "purity": "100% Pure Watermelon Powder",
           "grade": "SEO Keywords: watermelon powder supplier • watermelon powder exporter • bulk fruit powder",
