@@ -1001,115 +1001,187 @@ export const translations: StaticTranslations = {
       },
       "fp-guava": {
         "name": "Guava Powder",
-        "desc": "Our Guava Powder is produced from carefully selected, ripe guavas that are hygienically processed and spray-dried to preserve their natural tropical flavor, aroma, color, and nutritional value. Rich in natural Vitamin C and dietary fiber, it is widely used in food, beverage, nutraceutical, dairy, and confectionery applications.",
+        "desc": "Our Guava Powder is produced from carefully selected, ripe guavas that are hygienically processed and spray-dried to preserve their natural tropical flavor, aroma, color, and nutritional value. Rich in natural Vitamin C and dietary fiber, it is widely used in food, beverage, nutraceutical, dairy, and confectionery applications.\n\nAPPLICATIONS:\nBeverage & Smoothie Mixes • Health Supplements & Nutraceuticals • Bakery & Confectionery Products • Dairy Products & Ice Cream • Instant Food Mixes • Fruit-Based Desserts • Breakfast Cereals • Functional Foods & Food Processing",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India (Maharashtra, Uttar Pradesh & Andhra Pradesh)",
           "packaging": "25 kg Multi-layer Kraft Paper Bags with Food-Grade Poly Liner • Aluminum Foil Vacuum Packs for Bulk Export • Customized Bulk & Retail",
           "purity": "100% Pure Guava Fruit Powder • No Artificial Colors • No Preservatives • No Added Sugar",
-          "grade": "Beverages & Smoothies • Health Supplements • Bakery & Confectionery • Dairy Products • Instant Food Mixes",
-          "minOrder": "500 Kilograms"
+          "grade": "Premium Food & Beverage Grade",
+          "minOrder": "100 Kilograms"
         }
       },
       "fp-pomegranate": {
         "name": "Pomegranate Powder",
-        "desc": "Our Pomegranate Powder is produced from carefully selected, ripe pomegranates that are hygienically processed and spray-dried to preserve their natural ruby-red color, fruity flavor, and nutritional value. Rich in natural antioxidants, polyphenols, and Vitamin C, it is widely used in the food, beverage, nutraceutical, and functional food industries.",
+        "desc": "Our Pomegranate Powder is produced from carefully selected, ripe pomegranates that are hygienically processed and spray-dried to preserve their natural ruby-red color, fruity flavor, and nutritional value. Rich in natural antioxidants, polyphenols, and Vitamin C, it is widely used in the food, beverage, nutraceutical, and functional food industries.\n\nAPPLICATIONS:\nBeverage & Smoothie Mixes • Health Supplements & Nutraceuticals • Bakery & Confectionery Products • Dairy Products & Ice Cream • Instant Food Mixes • Fruit-Based Desserts • Breakfast Cereals •  Food Processing Industry ",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India (Maharashtra, Karnataka & Gujarat)",
           "packaging": "25 kg Multi-layer Kraft Paper Bags with Food-Grade Poly Liner • Aluminum Foil Vacuum Packs for Bulk Export • Customized Bulk & Retail",
           "purity": "100% Pure Pomegranate Fruit Powder • No Artificial Colors • No Preservatives • No Added Sugar",
-          "grade": "Health Supplements • Functional Beverages & Smoothies • Bakery & Confectionery • Dairy Products & Ice Cream • Instant Food Mixes",
-          "minOrder": "500 Kilograms"
+          "grade": "Premium Food & Beverage Grade",
+          "minOrder": "100 Kilograms"
         }
       },
       "fp-pineapple": {
         "name": "Pineapple Powder",
-        "desc": "Our Pineapple Powder is produced from carefully selected, ripe pineapples that are hygienically processed and spray-dried to preserve their natural tropical flavor, aroma, golden color, and nutritional value. Naturally rich in Vitamin C and bromelain, it is widely used in the food, beverage, nutraceutical, bakery, and confectionery industries.",
+        "desc": "Our Pineapple Powder is produced from carefully selected, ripe pineapples that are hygienically processed and spray-dried to preserve their natural tropical flavor, aroma, golden color, and nutritional value. Naturally rich in Vitamin C and bromelain, it is widely used in the food, beverage, nutraceutical, bakery, and confectionery industries.\n\nAPPLICATIONS:\nBeverage & Smoothie Mixes • Health Supplements & Nutraceuticals • Bakery & Confectionery Products • Dairy Products & Ice Cream • Instant Food Mixes • Fruit-Based Desserts • Breakfast Cereals • Food Processing Industry",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India (Kerala, Assam, West Bengal & Tripura)",
-          "packaging": "25 kg Multi-layer Kraft Paper Bags with Food-Grade Poly Liner • Aluminum Foil Vacuum Packs for Bulk Export • Customized Bulk & Retail",
+          "packaging": "25 kg Multi-layer Kraft Paper Bags with Food-Grade Poly Liner • Aluminum Foil Vacuum Packs for Bulk Export • Customized Bulk & Retail Packaging Available.",
           "purity": "100% Pure Pineapple Fruit Powder • No Artificial Colors • No Preservatives • No Added Sugar",
-          "grade": "Beverages & Smoothies • Health Supplements • Bakery & Confectionery • Dairy Products & Ice Cream • Instant Food Mixes",
-          "minOrder": "500 Kilograms"
+          "grade": "Premium Food & Beverage Grade",
+          "minOrder": "100 Kilograms"
         }
       },
       "fp-papaya": {
         "name": "Papaya Powder",
-        "desc": "Premium-quality dehydrated papaya powder made from carefully selected, ripe papaya. The fruit is hygienically processed and finely powdered to retain its natural colour, flavour, aroma, and nutritional properties.",
+        "desc": "Premium-quality dehydrated papaya powder made from carefully selected, ripe papaya. The fruit is hygienically processed and finely powdered to retain its natural colour, flavour, aroma, and nutritional properties.\n\nAPPLICATIONS:\nFood & beverage formulations  • Smoothies, shakes & health drinks  • Bakery & Confectionery Products • Desserts and instant mixes  • Sauces, dressings & seasoning blends  • Nutraceutical and functional-food formulations  • Food ingredient and industrial applications ",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India",
           "packaging": "100 g / 250 g / 500 g / 1 kg retail pouches • 5 kg / 10 kg / 20 kg / 25 kg bulk packs • Food-grade laminated pouches • Kraft paper bags with food-grade inner liner",
           "purity": "100% Papaya Powder — free from artificial colours, flavours and preservatives",
           "grade": "Food Grade / Export Grade (Customized specifications available)",
-          "minOrder": "500 Kilograms"
+          "minOrder": "100 Kilograms"
         }
       },
       "fp-apple": {
         "name": "Apple Powder",
-        "desc": "Premium-quality dehydrated Apple Powder made from carefully selected fresh apples. The apples are hygienically processed and finely powdered to retain their natural fruity flavour, aroma, and characteristic apple taste. Suitable for food, beverage, bakery and nutraceutical applications.",
+        "desc": "Premium-quality dehydrated Apple Powder made from carefully selected fresh apples. The apples are hygienically processed and finely powdered to retain their natural fruity flavour, aroma, and characteristic apple taste. Suitable for food, beverage, bakery and nutraceutical applications.\n\nAPPLICATIONS:\nSmoothies, shakes & health drinks  • Bakery & confectionery products   • Desserts, ice creams & yoghurt  • Instant beverage mixes  • Cereal, granola & nutrition products   • Nutraceutical and functional-food formulations  • Food flavouring and ingredient blends Sauces, fillings & fruit preparations  ",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India",
           "packaging": "100 g / 250 g / 500 g / 1 kg retail pouches • 5 kg / 10 kg / 20 kg / 25 kg bulk packs • Food-grade laminated pouches • Kraft paper bags with food-grade inner liner",
           "purity": "100% Apple Powder — free from artificial colours, flavours and preservatives",
-          "grade": "Food Grade / Export Grade (Customized specifications available)",
-          "minOrder": "500 Kilograms"
+          "grade": "Food Grade / Export Grade (Customized specifications available according to buyer requirements).",
+          "minOrder": "100 Kilograms"
         }
       },
       "fp-orange": {
         "name": "Orange Powder",
-        "desc": "Premium-quality dehydrated Orange Powder made from carefully selected fresh oranges. The fruit is hygienically processed and finely powdered to retain its natural citrus flavour, aroma, and characteristic orange taste. Suitable for food, beverage, bakery, confectionery and nutraceutical applications.",
+        "desc": "Premium-quality dehydrated Orange Powder made from carefully selected fresh oranges. The fruit is hygienically processed and finely powdered to retain its natural citrus flavour, aroma, and characteristic orange taste. Suitable for food, beverage, bakery, confectionery and nutraceutical applications.\n\nAPPLICATIONS:\nSmoothies, shakes & health drinks  • Bakery & confectionery products   • Instant beverage mixes  •Cakes, biscuits & desserts • Ice creams, yoghurt & dairy products   • Sauces, dressings & fruit preparations  • Flavouring and seasoning blends  •  Nutraceutical & functional-food formulations ",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India",
           "packaging": "100 g / 250 g / 500 g / 1 kg retail pouches • 5 kg / 10 kg / 20 kg / 25 kg bulk packs • Food-grade laminated pouches • Kraft paper bags with food-grade inner liner",
           "purity": "100% Orange Powder — free from artificial colours, flavours and preservatives",
           "grade": "Food Grade / Export Grade (Customized specifications available)",
-          "minOrder": "500 Kilograms"
+          "minOrder": "100 Kilograms"
         }
       },
       "fp-lemon": {
         "name": "Lemon Powder",
-        "desc": "Premium-quality dehydrated Lemon Powder made from carefully selected fresh lemons. The lemons are hygienically processed and finely powdered to retain their characteristic citrus flavour, aroma, and natural tanginess. Suitable for food, beverage, bakery, seasoning and nutraceutical applications.",
+        "desc": "Premium-quality dehydrated Lemon Powder made from carefully selected fresh lemons. The lemons are hygienically processed and finely powdered to retain their characteristic citrus flavour, aroma, and natural tanginess. Suitable for food, beverage, bakery, seasoning and nutraceutical applications.\n\nAPPLICATIONS:\nInstant beverages, juices & drink mixes  • Lemonade and wellness drinks   • Desserts, ice creams & yoghurt  • Sauces, dressings & marinades  • Seasoning and spice blends    • Snacks and savoury food preparations •Bakery & confectionery products ",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India",
           "packaging": "100 g / 250 g / 500 g / 1 kg retail pouches • 5 kg / 10 kg / 20 kg / 25 kg bulk packs • Food-grade laminated pouches • Kraft paper bags with food-grade inner liner",
           "purity": "100% Lemon Powder — free from artificial colours, flavours and preservatives",
           "grade": "Food Grade / Export Grade (Customized specifications available)",
-          "minOrder": "500 Kilograms"
+          "minOrder": "100 Kilograms"
         }
       },
       "fp-strawberry": {
         "name": "Strawberry Powder",
-        "desc": "Premium-quality dehydrated Strawberry Powder made from carefully selected fresh strawberries. The fruit is hygienically processed and finely powdered to retain its characteristic strawberry flavour, aroma, colour, and natural fruity taste.",
+        "desc": "Premium-quality dehydrated Strawberry Powder made from carefully selected fresh strawberries. The fruit is hygienically processed and finely powdered to retain its characteristic strawberry flavour, aroma, colour, and natural fruity taste.\n\nAPPLICATIONS:\nSmoothies, shakes & health drinks • Instant beverage mixes  • Bakery & confectionery products  • Cakes, biscuits & desserts  •Ice creams, yoghurt & dairy products • Chocolate and dessert preparations • Cereal, granola & nutrition products  • Sauces, fillings & fruit preparations  • Nutraceutical & functional-food formulations ",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India",
           "packaging": "100 g / 250 g / 500 g / 1 kg retail pouches • 5 kg / 10 kg / 20 kg / 25 kg bulk packs • Food-grade laminated pouches • Kraft paper bags with food-grade inner liner",
           "purity": "100% Strawberry Powder — free from artificial colours, flavours and preservatives",
           "grade": "Food Grade / Export Grade (Customized specifications available)",
-          "minOrder": "500 Kilograms"
+          "minOrder": "100 Kilograms"
         }
       },
       "fp-amla": {
         "name": "Amla Powder",
-        "desc": "Premium-quality dehydrated Amla Powder (Indian Gooseberry Powder) made from carefully selected fresh amla fruits. The fruit is hygienically processed and finely powdered to retain its natural colour, characteristic tangy flavour, aroma, and valuable nutritional properties.",
+        "desc": "Premium-quality dehydrated Amla Powder (Indian Gooseberry Powder) made from carefully selected fresh amla fruits. The fruit is hygienically processed and finely powdered to retain its natural colour, characteristic tangy flavour, aroma, and valuable nutritional properties.\n\nAPPLICATIONS:\nHealth drinks & wellness beverages • Smoothies and functional drink mixes   • Ayurvedic & herbal formulations   • Nutraceutical products  • Dietary supplements• Food & nutrition products  • Herbal teas and instant mixes • Personal-care and cosmetic formulations",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India",
           "packaging": "100 g / 250 g / 500 g / 1 kg retail pouches • 5 kg / 10 kg / 20 kg / 25 kg bulk packs • Food-grade laminated pouches • Kraft paper bags with food-grade inner liner",
           "purity": "100% Amla Powder — free from artificial colours, flavours and preservatives",
           "grade": "Food Grade / Export Grade (Customized specifications available)",
-          "minOrder": "500 Kilograms"
+          "minOrder": "100 Kilograms"
         }
       },
+        "fp-dragonfruit": {
+          "name": "Dragon Fruit Powde",
+          "desc": "Our Dragon Fruit Powder (Pitaya Powder) is freeze-dried from fresh red dragon fruit to retain striking magenta color, delicate sweetness, and potent antioxidants.",
+          "pricing": "Contact Trade Desk",
+          "spec": {
+            "origin": "India",
+            "packaging": "• Smoothie Mix (25 kg Bags / Vacuum Foil)",
+            "purity": "100% Pure Dragon Fruit Powder • High Antioxidants & Fiber",
+            "grade": "Food Grade / Export Grade (Customized specifications available)",
+            "minOrder": "100 Kilograms"
+          }
+        },
+        "fp-jackfruit": {
+            "name": "Jackfruit Powder",
+            "desc": "Our Jackfruit Powder is produced from mature jackfruits, gently dehydrated and freeze-dried to retain sweet tropical aroma, dietary fiber, and nutritional density.",
+             "pricing": "Contact Trade Desk",
+             "spec": {
+                 "origin": "India",
+                 "packaging": " • Smoothie Mix (25 kg Bags / Bulk Foil Packs)",
+                 "purity": "100% Pure Jackfruit Powder",
+                 "grade": "Food Grade / Export Grade (Customized specifications available)",
+                 "minOrder": "100 Kilograms"
+                  }
+              },
+          "fp-chikoo": {
+              "name": "Chikoo Powder",
+              "desc": "Our Chikoo Powder (Sapota Powder) is prepared from ripe sapota fruits, freeze-dried and finely milled to preserve its rich malty caramel flavor and sweetness.",
+               "pricing": "Contact Trade Desk",
+               "spec": {
+                   "origin": "India (Gujarat & Maharashtra)",
+                   "packaging": " • Smoothie Mix (25 kg Bags / Bulk Foil Packs)",
+                   "purity": "100% Pure Sapota Fruit Powder",
+                    "grade": "Food Grade / Export Grade (Customized specifications available)",
+                    "minOrder": "100 Kilograms"
+                            }
+                        },
+          "fp-coconut": {
+              "name": "Coconut Powder",
+              "desc": "Our Coconut Powder is produced from fresh coconut milk and meat, spray-dried and dehydrated into fine creamy powder for confectionery, baking, and instant beverage mixes.",
+              "pricing": "Contact Trade Desk",
+              "spec": {
+                  "origin": "India (Kerala & Tamil Nadu)",
+                  "packaging": " • 25 kg Bags / Vacuum Foil",
+                  "purity": "100% Pure Dehydrated Coconut Powder",
+                  "grade": "Food Grade / Export Grade (Customized specifications available)",
+                   "minOrder": "100 Kilograms"
+                   }
+               },
+            "fp-fig": {
+                "name": "Fig Powder",
+                "desc": "Our Fig Powder (Anjeer Powder) is produced from premium dried figs, freeze-dried and ground into fine powder for natural sweetening, baking, and smoothie mixes.",
+                "pricing": "Contact Trade Desk",
+                "spec": {
+                    "origin": "India (Maharashtra)",
+                    "packaging": "  Smoothie Mix (25 kg Bags / Vacuum Foil)",
+                    "purity": "100% Pure Fig Fruit Powder",
+                    "grade": "Food Grade / Export Grade (Customized specifications available)",
+                    "minOrder": "100 Kilograms"
+                       }
+                   },
+          "fp-watermelon": {
+              "name": "Watermelon Powder",
+              "desc": "Our Watermelon Powder is freeze-dried from fresh ripe watermelons to retain bright pink-red color, refreshing sweet taste, and natural lycopene content.",
+              "pricing": "Contact Trade Desk",
+              "spec": {
+                  "origin": "India",
+                  "packaging": " Smoothie Mix (25 kg Bags / Vacuum Foil)",
+                  "purity": "100% Pure Watermelon Powder",
+                  "grade": "Food Grade / Export Grade (Customized specifications available)",
+                  "minOrder": "100 Kilograms"
+                  }
+              },
       "m-leaf-powder": {
         "name": "Moringa Leaf Powder",
-        "desc": "Finely processed powder made from carefully selected moringa leaves. Suitable for food, wellness, nutraceutical and herbal applications.",
+        "desc": "Finely processed powder made from carefully selected moringa leaves. Suitable for food, wellness, nutraceutical and herbal applications.\n\nApplications:\n• Smoothies & health drinks \n• Nutritional beverages\n• Dietary and wellness products \n• Functional food formulations \n• Soups, sauces & seasoning blends\n• Nutraceutical products \n• Herbal formulations",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India",
@@ -1121,7 +1193,7 @@ export const translations: StaticTranslations = {
       },
       "m-leaf-flakes": {
         "name": "Moringa Leaf Flakes",
-        "desc": "Carefully dried moringa leaves processed into flakes while maintaining their natural green colour and characteristic aroma.",
+        "desc": "Carefully dried moringa leaves processed into flakes while maintaining their natural green colour and characteristic aroma.\n\nApplications:\n• Herbal teas \n• Soups \n• Seasonings  \n• Food preparations  \n• Nutritional products \n• Nutraceutical products \n• Ingredient blends",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India",
@@ -1133,7 +1205,7 @@ export const translations: StaticTranslations = {
       },
       "m-tea": {
         "name": "Moringa Tea",
-        "desc": "Premium dried moringa leaves selected and processed for use as a natural herbal tea ingredient.",
+        "desc": "Premium dried moringa leaves selected and processed for use as a natural herbal tea ingredient.\n\nApplications:\n• Herbal tea blends \n• Wellness beverages \n• Tea bags \n•Loose-leaf tea \n• Functional beverage formulations",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India",
@@ -1145,7 +1217,7 @@ export const translations: StaticTranslations = {
       },
       "m-seed-powder": {
         "name": "Moringa Seed Powder / Murungai Vidhai Powder l Drumstick Seed Powder",
-        "desc": "Finely processed moringa seed powder suitable for selected food, nutraceutical and industrial applications, subject to buyer specifications.",
+        "desc": "Finely processed moringa seed powder suitable for selected food, nutraceutical and industrial applications, subject to buyer specifications.\n\nApplications:\n• Nutraceutical formulations  \n•Functional food applications  \n•Research & ingredient applications  \n•Selected herbal formulations ",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India",
@@ -1169,7 +1241,7 @@ export const translations: StaticTranslations = {
       },
       "m-seed-oil": {
         "name": "Moringa Seed Oil",
-        "desc": "Premium oil obtained from moringa seeds, suitable for cosmetic, personal-care, wellness and industrial applications depending on specification.",
+        "desc": "Premium oil obtained from moringa seeds, suitable for cosmetic, personal-care, wellness and industrial applications depending on specification.\n\nApplications:\n•Cosmetics  \n•Skin-care formulations  \n•Hair-care products \n•Personal-care products \n•Natural oil formulations  ",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India",
@@ -1181,7 +1253,7 @@ export const translations: StaticTranslations = {
       },
       "m-leaf-extract": {
         "name": "Moringa Leaf Extract",
-        "desc": "Concentrated moringa leaf extract designed for use as an ingredient in nutraceutical, herbal and functional-food formulations.",
+        "desc": "Concentrated moringa leaf extract designed for use as an ingredient in nutraceutical, herbal and functional-food formulations.\n\nApplications:\n•Nutraceuticals \n•Dietary supplements  \n•Functional foods \n•Herbal formulations \n•Beverage formulations ",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India",
@@ -1193,7 +1265,7 @@ export const translations: StaticTranslations = {
       },
       "m-capsules": {
         "name": "Moringa Capsules / Tablets",
-        "desc": "Moringa-based dietary supplement products manufactured according to applicable specifications and regulatory requirements.",
+        "desc": "Moringa-based dietary supplement products manufactured according to applicable specifications and regulatory requirements.\n\nApplications:\n•Dietary supplements \n•Wellness products   \n•Private-label nutraceutical brands ",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India",
@@ -1205,14 +1277,14 @@ export const translations: StaticTranslations = {
       },
       "sd-flax": {
         "name": "Flax Seeds",
-        "desc": "Flax Seeds (Linum usitatissimum), commonly known as Alsi Seeds, are premium oilseeds valued for their rich nutritional profile. Naturally high in Omega-3 fatty acids (ALA), dietary fiber, protein, and essential minerals, flax seeds are widely used in the food, nutraceutical, animal feed, and oil extraction industries. Our flax seeds are carefully cleaned, graded, and hygienically packed to meet domestic and international quality standards.\n\nApplications:\n• Bakery & Confectionery\n• Breakfast Cereals & Granola\n• Health Foods & Nutritional Supplements\n• Smoothies & Functional Beverages\n• Cold-Pressed Oil Extraction\n• Animal & Poultry Feed\n• Food Processing Industry\n\nAvailable Forms:\n• Whole Flax Seeds\n• Brown Flax Seeds\n• Golden Flax Seeds\n• Flax Seed Powder\n• Cold-Pressed Flax Seed Oil",
+        "desc": "Flax Seeds (Linum usitatissimum), commonly known as Alsi Seeds, are premium oilseeds valued for their rich nutritional profile. Naturally high in Omega-3 fatty acids (ALA), dietary fiber, protein, and essential minerals, flax seeds are widely used in the food, nutraceutical, animal feed, and oil extraction industries. Our flax seeds are carefully cleaned, graded, and hygienically packed to meet domestic and international quality standards.\n\nApplications:\n• Bakery & Confectionery\n• Breakfast Cereals & Granola\n• Health Foods & Nutritional Supplements\n• Smoothies & Functional Beverages\n• Cold-Pressed Oil Extraction\n• Animal & Poultry Feed\n• Food Processing Industry",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India",
           "packaging": "25 kg PP Bags • 50 kg PP Bags • HDPE Laminated Bags • Food-Grade Paper Bags • Jumbo Bags (500–1000 kg) • Customized Private Label & Export Packaging Available",
-          "purity": "99% – 99.99%",
+          "purity": "• 99% – 99.99% • Moisture: Maximum 8% (or as per buyer requirement)",
           "grade": "Machine Cleaned • Sortex Cleaned • Export Quality",
-          "minOrder": "500 Kilograms"
+          "minOrder": "100 Kilograms"
         }
       },
       "sd-pumpkin": {
@@ -1222,50 +1294,50 @@ export const translations: StaticTranslations = {
         "spec": {
           "origin": "India",
           "packaging": "10 kg Food-Grade Bags • 25 kg PP Bags • 50 kg PP Bags • HDPE Laminated Bags • Jumbo Bags (500–1000 kg) • Customized Retail & Private Label Packaging Available",
-          "purity": "99% – 99.99%",
+          "purity": "• 99% – 99.99% • Moisture: Maximum 8%",
           "grade": "Machine Cleaned • Sortex Cleaned • Export Quality",
-          "minOrder": "500 Kilograms"
+          "minOrder": "100 Kilograms"
         }
       },
       "sd-sesame": {
         "name": "Sesame Seeds",
-        "desc": "Sesame Seeds (Sesamum indicum) are one of the oldest and most valuable oilseeds, renowned for their rich nutritional profile and exceptional oil content. Naturally abundant in protein, healthy fats, calcium, iron, magnesium, antioxidants, and dietary fiber, sesame seeds are extensively used in the food, bakery, confectionery, oil extraction, and nutraceutical industries. Our sesame seeds are sourced from trusted farms, carefully cleaned, machine sorted, and hygienically packed to meet premium domestic and international export standards.\n\nApplications:\n• Bakery & Confectionery\n• Tahini & Sesame Paste Production\n• Edible Oil Extraction\n• Snacks & Energy Bars\n• Breakfast Cereals & Granola\n• Spice Blends & Food Garnishing\n• Health Foods & Nutraceuticals\n• Food Processing Industry\n\nAvailable Forms:\n• Natural White Sesame Seeds\n• Hulled White Sesame Seeds\n• Black Sesame Seeds\n• Brown Sesame Seeds\n• Roasted Sesame Seeds\n• Sesame Seed Oil",
+        "desc": "Sesame Seeds (Sesamum indicum) are one of the oldest and most valuable oilseeds, renowned for their rich nutritional profile and exceptional oil content. Naturally abundant in protein, healthy fats, calcium, iron, magnesium, antioxidants, and dietary fiber, sesame seeds are extensively used in the food, bakery, confectionery, oil extraction, and nutraceutical industries. Our sesame seeds are sourced from trusted farms, carefully cleaned, machine sorted, and hygienically packed to meet premium domestic and international export standards.\n\nApplications:\n• Bakery & Confectionery\n• Tahini & Sesame Paste Production\n• Edible Oil Extraction\n• Snacks & Energy Bars\n• Breakfast Cereals & Granola\n• Spice Blends & Food Garnishing\n• Health Foods & Nutraceuticals\n• Food Processing Industry",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India",
           "packaging": "10 kg Food-Grade Bags • 25 kg PP Bags • 50 kg PP Bags • HDPE Laminated Bags • Kraft Paper Bags • Jumbo Bags (500–1000 kg) • Customized Retail & Private Label Packaging Available",
-          "purity": "99% – 99.99%",
+          "purity": "• 99% – 99.99% • Moisture: Maximum 8% •Admixture: Maximum 1% ",
           "grade": "Machine Cleaned • Sortex Cleaned • Export Quality",
           "minOrder": "500 Kilograms"
         }
       },
       "sd-sunflower": {
         "name": "Sunflower Seeds",
-        "desc": "Sunflower Seeds (Helianthus annuus) are premium edible oilseeds known for their excellent nutritional value and pleasant nutty flavor. Rich in protein, healthy unsaturated fats, vitamin E, dietary fiber, magnesium, selenium, and antioxidants, sunflower seeds are widely used in the food, bakery, snack, confectionery, and oil extraction industries. Our sunflower seeds are sourced from trusted farms, carefully cleaned, graded, and hygienically packed to ensure superior quality and compliance with international export standards.\n\nApplications:\n• Healthy Snacks\n• Bakery & Confectionery\n• Breakfast Cereals & Granola\n• Trail Mixes & Energy Bars\n• Salads & Food Garnishing\n• Edible Oil Extraction\n• Health Foods & Nutraceuticals\n• Food Processing Industry\n• Animal & Bird Feed\n\nAvailable Forms:\n• Whole Sunflower Seeds (With Shell)\n• Hulled Sunflower Seed Kernels\n• Raw Sunflower Seeds\n• Roasted Sunflower Seeds\n• Salted Sunflower Seeds\n• Sunflower Seed Oil\n\nKey Features:\n• Rich in Vitamin E & Healthy Fats\n• High Protein & Dietary Fiber\n• Uniform Size and Premium Quality\n• Hygienically Processed\n• Export-Quality Standards\n• Bulk Supply with Customized Packaging",
+        "desc": "Sunflower Seeds (Helianthus annuus) are premium edible oilseeds known for their excellent nutritional value and pleasant nutty flavor. Rich in protein, healthy unsaturated fats, vitamin E, dietary fiber, magnesium, selenium, and antioxidants, sunflower seeds are widely used in the food, bakery, snack, confectionery, and oil extraction industries. Our sunflower seeds are sourced from trusted farms, carefully cleaned, graded, and hygienically packed to ensure superior quality and compliance with international export standards.\n\nApplications:\n• Healthy Snacks\n• Bakery & Confectionery\n• Breakfast Cereals & Granola\n• Trail Mixes & Energy Bars\n• Salads & Food Garnishing\n• Edible Oil Extraction\n• Health Foods & Nutraceuticals\n• Food Processing Industry\n• Animal & Bird Feed\n\nKey Features:\n• Rich in Vitamin E & Healthy Fats\n• High Protein & Dietary Fiber\n• Uniform Size and Premium Quality\n• Hygienically Processed\n• Export-Quality Standards\n• Bulk Supply with Customized Packaging",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India",
           "packaging": "10 kg Food-Grade Bags • 25 kg PP Bags • 50 kg PP Bags • HDPE Laminated Bags • Kraft Paper Bags • Jumbo Bags (500–1000 kg) • Customized Retail & Private Label Packaging Available",
-          "purity": "99% – 99.99%",
+          "purity": "• 99% – 99.99% • Moisture: Maximum 8% •Admixture: Maximum 1%",
           "grade": "Machine Cleaned • Sortex Cleaned • Export Quality",
           "minOrder": "500 Kilograms"
         }
       },
       "sd-chia": {
         "name": "Chia Seeds",
-        "desc": "Chia Seeds (Salvia hispanica) are premium nutrient-dense superfoods renowned for their exceptional health benefits. Naturally rich in Omega-3 fatty acids, dietary fiber, plant-based protein, calcium, magnesium, phosphorus, and antioxidants, chia seeds are widely used in the food, beverage, nutraceutical, and health industries. Our chia seeds are sourced from trusted farms, carefully cleaned, graded, and hygienically packed to meet premium domestic and international export standards.\n\nApplications:\n• Health Foods & Superfoods\n• Smoothies & Functional Beverages\n• Bakery & Confectionery\n• Breakfast Cereals & Granola\n• Energy Bars & Trail Mixes\n• Puddings & Desserts\n• Nutraceutical & Dietary Supplements\n• Food Processing Industry\n\nAvailable Forms:\n• Whole Black Chia Seeds\n• Whole White Chia Seeds\n• Organic Chia Seeds\n• Chia Seed Powder\n• Chia Seed Oil\n\nKey Features:\n• Rich in Omega-3 Fatty Acids\n• Excellent Source of Dietary Fiber & Plant Protein\n• High in Calcium, Magnesium & Antioxidants\n• Naturally Gluten-Free\n• Hygienically Processed\n• Export-Quality Standards\n• Bulk Supply with Customized Packaging",
+        "desc": "Chia Seeds (Salvia hispanica) are premium nutrient-dense superfoods renowned for their exceptional health benefits. Naturally rich in Omega-3 fatty acids, dietary fiber, plant-based protein, calcium, magnesium, phosphorus, and antioxidants, chia seeds are widely used in the food, beverage, nutraceutical, and health industries. Our chia seeds are sourced from trusted farms, carefully cleaned, graded, and hygienically packed to meet premium domestic and international export standards.\n\nApplications:\n• Health Foods & Superfoods\n• Smoothies & Functional Beverages\n• Bakery & Confectionery\n• Breakfast Cereals & Granola\n• Energy Bars & Trail Mixes\n• Puddings & Desserts\n• Nutraceutical & Dietary Supplements\n• Food Processing Industry\n\nKey Features:\n• Rich in Omega-3 Fatty Acids\n• Excellent Source of Dietary Fiber & Plant Protein\n• High in Calcium, Magnesium & Antioxidants\n• Naturally Gluten-Free\n• Hygienically Processed\n• Export-Quality Standards\n• Bulk Supply with Customized Packaging",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India",
           "packaging": "10 kg Food-Grade Bags • 25 kg PP Bags • 50 kg PP Bags • HDPE Laminated Bags • Kraft Paper Bags • Jumbo Bags (500–1000 kg) • Customized Retail & Private Label Packaging Available",
-          "purity": "99% – 99.99%",
+          "purity": "• 99% – 99.99% • Moisture: Maximum 8% •Admixture: Maximum 1%",
           "grade": "Machine Cleaned • Sortex Cleaned • Export Quality",
           "minOrder": "500 Kilograms"
         }
       },
       "sd-watermelon": {
         "name": "Watermelon Seeds",
-        "desc": "Watermelon Seeds (Citrullus lanatus) are highly nutritious edible seeds valued for their rich content of protein, healthy fats, essential minerals, and antioxidants. They are widely used in the food, bakery, confectionery, snack, and nutraceutical industries. Our premium watermelon seeds are sourced from trusted farms, carefully cleaned, graded, and hygienically packed to ensure superior quality, freshness, and compliance with international export standards.\n\nApplications:\n• Healthy Snacks\n• Bakery & Confectionery\n• Trail Mixes & Energy Bars\n• Breakfast Cereals & Granola\n• Salads & Food Garnishing\n• Traditional Indian Sweets & Desserts\n• Nutraceutical & Dietary Supplements\n• Food Processing Industry\n\nAvailable Forms:\n• Whole Watermelon Seeds (With Shell)\n• Hulled Watermelon Seed Kernels\n• Raw Watermelon Seeds\n• Roasted Watermelon Seeds\n• Salted Watermelon Seeds\n• Watermelon Seed Oil",
+        "desc": "Watermelon Seeds (Citrullus lanatus) are highly nutritious edible seeds valued for their rich content of protein, healthy fats, essential minerals, and antioxidants. They are widely used in the food, bakery, confectionery, snack, and nutraceutical industries. Our premium watermelon seeds are sourced from trusted farms, carefully cleaned, graded, and hygienically packed to ensure superior quality, freshness, and compliance with international export standards.\n\nApplications:\n• Healthy Snacks\n• Bakery & Confectionery\n• Trail Mixes & Energy Bars\n• Breakfast Cereals & Granola\n• Salads & Food Garnishing\n• Traditional Indian Sweets & Desserts\n• Nutraceutical & Dietary Supplements\n• Food Processing Industry",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India",
@@ -1277,86 +1349,86 @@ export const translations: StaticTranslations = {
       },
       "sd-basil": {
         "name": "Basil Seeds",
-        "desc": "Basil Seeds (Ocimum basilicum), commonly known as Sabja Seeds or Sweet Basil Seeds, are highly valued for their cooling properties and impressive nutritional profile. Rich in dietary fiber, plant-based protein, antioxidants, calcium, iron, and essential minerals, basil seeds are widely used in beverages, desserts, health foods, and nutraceutical products. Our premium basil seeds are sourced from trusted farms, carefully cleaned, graded, and hygienically packed to meet the highest domestic and international export standards.\n\nApplications:\n• Health Drinks & Functional Beverages\n• Falooda & Traditional Desserts\n• Smoothies & Detox Drinks\n• Ice Cream & Yogurt Toppings\n• Bakery & Confectionery\n• Nutraceutical & Dietary Supplements\n• Weight Management Products\n• Food Processing Industry\n\nAvailable Forms:\n• Whole Basil Seeds (Sabja Seeds)\n• Black Sweet Basil Seeds\n• Machine Cleaned Basil Seeds\n• Sortex Cleaned Basil Seeds\n• Organic Basil Seeds\n• Basil Seed Powder\n\nKey Features:\n• Rich in Dietary Fiber & Antioxidants\n• Excellent Hydration & Cooling Properties\n• High Purity & Uniform Size\n• Hygienically Processed\n• Export-Quality Standards\n• Bulk Supply with Customized Packaging",
+        "desc": "Basil Seeds (Ocimum basilicum), commonly known as Sabja Seeds or Sweet Basil Seeds, are highly valued for their cooling properties and impressive nutritional profile. Rich in dietary fiber, plant-based protein, antioxidants, calcium, iron, and essential minerals, basil seeds are widely used in beverages, desserts, health foods, and nutraceutical products. Our premium basil seeds are sourced from trusted farms, carefully cleaned, graded, and hygienically packed to meet the highest domestic and international export standards.\n\nApplications:\n• Health Drinks & Functional Beverages\n• Falooda & Traditional Desserts\n• Smoothies & Detox Drinks\n• Ice Cream & Yogurt Toppings\n• Bakery & Confectionery\n• Nutraceutical & Dietary Supplements\n• Weight Management Products\n• Food Processing Industry\n\nKey Features:\n• Rich in Dietary Fiber & Antioxidants\n• Excellent Hydration & Cooling Properties\n• High Purity & Uniform Size\n• Hygienically Processed\n• Export-Quality Standards\n• Bulk Supply with Customized Packaging",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India",
           "packaging": "10 kg Food-Grade Bags • 25 kg PP Bags • 50 kg PP Bags • HDPE Laminated Bags • Kraft Paper Bags • Jumbo Bags (500–1000 kg) • Customized Retail & Private Label Packaging Available",
-          "purity": "99% – 99.99%",
+          "purity": "• 99% – 99.99% • Moisture: Maximum 8% •Admixture: Maximum 1%",
           "grade": "Machine Cleaned • Sortex Cleaned • Export Quality",
-          "minOrder": "500 Kilograms"
+          "minOrder": "100 Kilograms"
         }
       },
       "dv-onion": {
         "name": "Dehydrated Onion",
-        "desc": "Premium-quality dehydrated onion processed from fresh, carefully selected onions. Dehydration helps retain the natural onion flavour and aroma while providing longer shelf life and easy storage.\n\nApplications:\n• Used extensively in food processing, instant foods, soups, sauces, gravies, seasoning blends, snacks, ready-to-eat meals, spice mixes, hotels, restaurants and industrial food manufacturing.\n\nAvailable Forms:\n• Dehydrated Onion Flakes\n• Dehydrated Onion Chopped\n• Dehydrated Onion Minced\n• Dehydrated Onion Granules\n• Dehydrated Onion Powder",
+        "desc": "Premium-quality dehydrated onion processed from fresh, carefully selected onions. Dehydration helps retain the natural onion flavour and aroma while providing longer shelf life and easy storage.\n\nApplications:\n• Used extensively in food processing, instant foods, soups, sauces, gravies, seasoning blends, snacks, ready-to-eat meals, spice mixes, hotels, restaurants and industrial food manufacturing.",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India – sourced from selected onion-growing regions",
           "packaging": "5 kg, 10 kg, 20 kg and 25 kg food-grade packaging or customized bulk packaging with inner liner for moisture protection",
           "purity": "100% Pure Onion • Retains natural flavour & aroma",
           "grade": "Food-grade, Export Quality • Customized cuts & specifications available",
-          "minOrder": "500 Kilograms"
+          "minOrder": "100 Kilograms"
         }
       },
       "dv-garlic": {
         "name": "Dehydrated Garlic",
-        "desc": "Dehydrated Garlic is produced from fresh, carefully selected garlic cloves that are cleaned, sliced, dried, and processed under hygienic conditions. It retains the characteristic aroma, flavor, and nutritional benefits of fresh garlic while offering a longer shelf life and convenient storage.\n\nApplications:\n• Food Processing Industry\n• Seasoning & Spice Blends\n• Ready-to-Eat & Ready-to-Cook Foods\n• Soups & Sauces\n• Snacks & Namkeen\n• Instant Noodles & Pasta\n• Meat & Poultry Products\n• Pickles & Marinades\n• Restaurant & Catering Services\n\nAvailable Forms:\n• Garlic Flakes\n• Garlic Minced\n• Garlic Granules\n• Garlic Powder\n• Garlic Chopped\n• Garlic Kibbled",
+        "desc": "Dehydrated Garlic is produced from fresh, carefully selected garlic cloves that are cleaned, sliced, dried, and processed under hygienic conditions. It retains the characteristic aroma, flavor, and nutritional benefits of fresh garlic while offering a longer shelf life and convenient storage.\n\nApplications:\n• Food Processing Industry\n• Seasoning & Spice Blends\n• Ready-to-Eat & Ready-to-Cook Foods\n• Soups & Sauces\n• Snacks & Namkeen\n• Instant Noodles & Pasta\n• Meat & Poultry Products\n• Pickles & Marinades\n• Restaurant & Catering Services",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India (Sourced from Gujarat, Madhya Pradesh, and Rajasthan)",
           "packaging": "10 kg Food Grade Poly Bags • 20 kg Corrugated Boxes • 25 kg HDPE Bags • 25 kg Paper Bags with Inner Liner • Private Label & Bulk Packaging Available",
           "purity": "100% Pure Garlic • Hygienically Processed",
           "grade": "Premium Export Grade • A Grade • Standard Grade • Customized Specifications Available",
-          "minOrder": "500 Kilograms"
+          "minOrder": "100 Kilograms"
         }
       },
       "dv-ginger": {
         "name": "Dehydrated Ginger",
-        "desc": "Premium-quality dehydrated ginger prepared from carefully selected fresh ginger. It is hygienically processed and dried to preserve its natural aroma, flavour, colour, and functional properties. Suitable for food manufacturers, spice blenders, seasoning companies, and export markets.\n\nApplications:\n• Spice blends and masala manufacturing\n• Ginger tea and instant beverages\n• Soups, sauces & gravies\n• Bakery & confectionery products\n• Ready-to-eat and ready-to-cook foods\n• Seasonings and snack applications\n• Herbal and wellness formulations\n• Food processing & industrial applications\n\nAvailable Forms:\n• Ginger Powder\n• Ginger Flakes\n• Ginger Granules\n• Ginger Slices\n• Ginger Chopped/Cut",
+        "desc": "Premium-quality dehydrated ginger prepared from carefully selected fresh ginger. It is hygienically processed and dried to preserve its natural aroma, flavour, colour, and functional properties. Suitable for food manufacturers, spice blenders, seasoning companies, and export markets.\n\nApplications:\n• Spice blends and masala manufacturing\n• Ginger tea and instant beverages\n• Soups, sauces & gravies\n• Bakery & confectionery products\n• Ready-to-eat and ready-to-cook foods\n• Seasonings and snack applications\n• Herbal and wellness formulations\n• Food processing & industrial applications",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India — sourced from selected ginger-growing regions and processed under hygienic conditions",
           "packaging": "1 kg, 5 kg, 10 kg, 20 kg, 25 kg • Customized private-label packaging available",
           "purity": "Uniform colour, aroma & flavour • Low-moisture dehydrated product",
-          "grade": "Premium Export Grade • Food Grade • Lab testing and export documentation available on request",
-          "minOrder": "500 Kilograms"
+          "grade": "•Premium Export Grade • Food Grade • Lab testing and export documentation available on request",
+          "minOrder": "100 Kilograms"
         }
       },
       "dv-tomato": {
         "name": "Dehydrated Tomato",
-        "desc": "Premium-quality tomatoes carefully selected, washed, sliced, and dehydrated under controlled conditions to retain their natural colour, flavour, aroma, and nutritional value.\n\nApplications:\n• Used in soups, sauces, gravies, instant foods, pizza toppings, pasta, seasoning blends, ready-to-eat meals, snacks, spice mixes, and food-processing applications.\n\nAvailable Forms:\n• Tomato Flakes\n• Tomato Slices\n• Tomato Granules\n• Tomato Powder\n• Tomato Chunks\n\nShelf Life & Storage:\n• Shelf Life: Typically 12–18 months when stored in a cool, dry place in sealed packaging.\n• Storage: Store in a cool, dry place away from direct sunlight and moisture.",
+        "desc": "Premium-quality tomatoes carefully selected, washed, sliced, and dehydrated under controlled conditions to retain their natural colour, flavour, aroma, and nutritional value.\n\nApplications:\n• Used in soups, sauces, gravies, instant foods, pizza toppings, pasta, seasoning blends, ready-to-eat meals, snacks, spice mixes, and food-processing applications.\n\nShelf Life & Storage:\n• Shelf Life: Typically 12–18 months when stored in a cool, dry place in sealed packaging.\n• Storage: Store in a cool, dry place away from direct sunlight and moisture.",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India",
           "packaging": "10 kg / 20 kg / 25 kg bulk food-grade bags or cartons with inner liner • Customized packaging available",
           "purity": "100% Pure Tomato • Retains natural colour, flavour, aroma & nutrition",
           "grade": "Food Grade / Export Grade (Customized specifications available as per buyer requirement)",
-          "minOrder": "500 Kilograms"
+          "minOrder": "100 Kilograms"
         }
       },
       "dv-carrot": {
         "name": "Dehydrated Carrot",
-        "desc": "Dehydrated Carrot is prepared from fresh, carefully selected carrots that are washed, sorted, cut, and gently dehydrated to reduce moisture while preserving their natural color, flavor, and nutritional properties. It offers convenient storage, longer shelf life, and consistent quality for food processing and culinary applications.\n\nApplications:\n• Soups, sauces & gravies\n• Ready-to-eat and instant foods\n• Seasoning & spice blends\n• Noodles, pasta & instant meals\n• Snacks and savory products\n• Bakery & savory bakery products\n• Baby food and nutritional mixes\n• Food-service and industrial food processing\n\nAvailable Forms:\n• Carrot Flakes\n• Carrot Granules\n• Carrot Powder\n• Carrot Slices\n• Carrot Dices",
+        "desc": "Dehydrated Carrot is prepared from fresh, carefully selected carrots that are washed, sorted, cut, and gently dehydrated to reduce moisture while preserving their natural color, flavor, and nutritional properties. It offers convenient storage, longer shelf life, and consistent quality for food processing and culinary applications.\n\nApplications:\n• Soups, sauces & gravies\n• Ready-to-eat and instant foods\n• Seasoning & spice blends\n• Noodles, pasta & instant meals\n• Snacks and savory products\n• Bakery & savory bakery products\n• Baby food and nutritional mixes\n• Food-service and industrial food processing",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India",
           "packaging": "100 g, 250 g, 500 g, 1 kg, 5 kg, 10 kg, 20–25 kg bulk packaging • Customized export packaging available",
           "purity": "Gently Dehydrated • Preserves Natural Color & Flavor",
           "grade": "Premium Food Grade • Standard Food Grade • Industrial Food Grade • Customized specifications available",
-          "minOrder": "500 Kilograms"
+          "minOrder": "100 Kilograms"
         }
       },
       "dv-beetroot": {
         "name": "Dehydrated Beetroot",
-        "desc": "Dehydrated Beetroot is prepared from fresh, carefully selected beetroot that is cleaned, sliced, and dehydrated under controlled conditions to reduce moisture while preserving its natural colour, flavour, aroma, and nutritional properties. It offers a convenient, shelf-stable alternative to fresh beetroot.\n\nApplications:\n• Food & beverage manufacturing\n• Soups, sauces & gravies\n• Bakery & confectionery products\n• Smoothies, juices & health drinks\n• Seasoning and spice blends\n• Natural food colouring\n• Instant food preparations\n• Snack and ready-to-eat products\n• Nutraceutical and functional food applications\n\nAvailable Forms:\n• Beetroot Flakes\n• Beetroot Powder\n• Beetroot Granules\n• Beetroot Slices\n• Beetroot Dice",
+        "desc": "Dehydrated Beetroot is prepared from fresh, carefully selected beetroot that is cleaned, sliced, and dehydrated under controlled conditions to reduce moisture while preserving its natural colour, flavour, aroma, and nutritional properties. It offers a convenient, shelf-stable alternative to fresh beetroot.\n\nApplications:\n• Food & beverage manufacturing\n• Soups, sauces & gravies\n• Bakery & confectionery products\n• Smoothies, juices & health drinks\n• Seasoning and spice blends\n• Natural food colouring\n• Instant food preparations\n• Snack and ready-to-eat products\n• Nutraceutical and functional food applications",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India — sourced from selected beetroot-growing regions and processed under controlled hygienic conditions",
           "packaging": "100 g, 250 g, 500 g, 1 kg, 5 kg, 10 kg, 20 kg, 25 kg • Bulk export packaging: Food-grade inner liner with PP/HDPE outer",
           "purity": "Controlled Hygienic Processing • Retains Natural Colour & Aroma",
           "grade": "Food Grade • Export Grade • Premium Grade available on request • Custom specifications available",
-          "minOrder": "500 Kilograms"
+          "minOrder": "100 Kilograms"
         }
       },
       "dv-spinach": {
@@ -1368,19 +1440,19 @@ export const translations: StaticTranslations = {
           "packaging": "100 g, 250 g, 500 g, 1 kg, 5 kg, 10 kg, 20 kg, 25 kg • Custom bulk packaging as per buyer requirement",
           "purity": "Characteristic Green Colour & Natural Flavor Preserved",
           "grade": "Food Grade • Export Grade • Industrial/Commercial Grade • Customized specifications available",
-          "minOrder": "500 Kilograms"
+          "minOrder": "100 Kilograms"
         }
       },
       "dv-cabbage": {
         "name": "Dehydrated Cabbage",
-        "desc": "Dehydrated Cabbage is made from fresh, quality cabbage that is carefully cleaned, cut, and dehydrated to remove moisture while preserving its natural flavour, colour, and nutritional properties. It offers longer shelf life, easy storage, and convenient usage without refrigeration.\n\nApplications:\n• Instant soups & soup mixes\n• Noodles, pasta & ready-to-eat meals\n• Pickles and chutneys\n• Spice & seasoning blends\n• Snack seasonings\n• Sauces, gravies & curry mixes\n• Instant food products\n• Bakery & savoury products\n• Food-service and industrial food processing\n\nAvailable Forms:\n• Flakes\n• Granules\n• Powder\n• Slices\n• Dices\n\nStorage:\n• Store in a cool, dry place away from direct sunlight and moisture.",
+        "desc": "Dehydrated Cabbage is made from fresh, quality cabbage that is carefully cleaned, cut, and dehydrated to remove moisture while preserving its natural flavour, colour, and nutritional properties. It offers longer shelf life, easy storage, and convenient usage without refrigeration.\n\nApplications:\n• Instant soups & soup mixes\n• Noodles, pasta & ready-to-eat meals\n• Pickles and chutneys\n• Spice & seasoning blends\n• Snack seasonings\n• Sauces, gravies & curry mixes\n• Instant food products\n• Bakery & savoury products\n• Food-service and industrial food processing",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India – sourced from selected cabbage-growing regions and processed under controlled hygienic conditions",
           "packaging": "5 kg, 10 kg, 20 kg, 25 kg, 50 kg • Customized packaging available on request",
           "purity": "Cleaned, Cut & Dehydrated • Preserves Natural Flavour & Colour",
           "grade": "Food Grade • Export Grade • Premium Grade • Industrial / Bulk Grade • Customized specifications available",
-          "minOrder": "500 Kilograms"
+          "minOrder": "100 Kilograms"
         }
       },
       "df-banana": {
