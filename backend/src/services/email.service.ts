@@ -226,3 +226,94 @@ export async function sendInquiryNotificationEmail(inquiry: any): Promise<void> 
     console.error("[EmailService] Error transmitting inquiry notification email:", error);
   }
 }
+
+export async function sendOtpEmail(
+  email: string,
+  otp: string
+): Promise<void> {
+  const host = process.env.SMTP_HOST || "smtp.mailtrap.io";
+  const port = parseInt(process.env.SMTP_PORT || "2525");
+  const user = process.env.SMTP_USER || "";
+  const pass = process.env.SMTP_PASS || "";
+
+  const fromAddress =
+    process.env.EMAIL_FROM || `"Dharaaveda" <${EMAIL_TO}>`;
+
+  const mailOptions = {
+    from: fromAddress,
+    to: email,
+    subject: "Your Dharaaveda Email Verification OTP",
+    html: `
+      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 30px; border: 1px solid #e2e8f0; border-radius: 16px; background-color: #ffffff;">
+
+        <div style="text-align: center; margin-bottom: 25px;">
+          <h2 style="color: #050d0a; font-family: Georgia, serif;">
+            Dhara<span style="color: #FA980F;">Aveda</span>
+          </h2>
+          <p style="font-size: 12px; color: #718096;">
+            Email Verification
+          </p>
+        </div>
+
+        <div style="background-color: #f7fafc; border-radius: 12px; padding: 25px; text-align: center;">
+          <h3 style="color: #050d0a;">
+            Verify Your Email Address
+          </h3>
+
+          <p style="color: #4a5568; font-size: 14px;">
+            Use the following OTP to verify your email address for your
+            DharaAveda trade inquiry.
+          </p>
+
+          <div style="font-size: 32px; font-weight: bold; letter-spacing: 8px; color: #FA980F; margin: 25px 0;">
+            ${otp}
+          </div>
+
+          <p style="color: #718096; font-size: 12px;">
+            This OTP is valid for 5 minutes.
+          </p>
+
+          <p style="color: #a0aec0; font-size: 11px; margin-top: 20px;">
+            If you did not request this verification code, you can safely
+            ignore this email.
+          </p>
+        </div>
+
+        <div style="text-align: center; margin-top: 25px; color: #a0aec0; font-size: 11px;">
+          © 2026 DharaAveda
+        </div>
+
+      </div>
+    `
+  };
+
+  if (!user || !pass) {
+    console.log("=========================================================");
+    console.log("MOCK OTP EMAIL DISPATCHED");
+    console.log(`From:    ${mailOptions.from}`);
+    console.log(`To:      ${mailOptions.to}`);
+    console.log(`Subject: ${mailOptions.subject}`);
+    console.log(`OTP:     ${otp}`);
+    console.log("=========================================================");
+    return;
+  }
+
+  try {
+    const transporter = nodemailer.createTransport({
+      host,
+      port,
+      secure: port === 465,
+      auth: {
+        user,
+        pass
+      }
+    });
+
+    await transporter.sendMail(mailOptions);
+
+    console.log(`[EmailService] OTP email sent successfully to ${email}`);
+  } catch (error) {
+    console.error("[EmailService] Error sending OTP email:", error);
+    throw error;
+  }
+}

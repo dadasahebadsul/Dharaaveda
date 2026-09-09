@@ -12,11 +12,20 @@ import { Product } from "../models/Product";
 import { ScreenshotReview } from "../models/ScreenshotReview";
 import { TherapyService } from "../models/Service";
 import { Testimonial } from "../models/Testimonial";
-import { sendConfirmationEmail, sendBookingNotificationEmail, sendInquiryNotificationEmail } from "../services/email.service";
+import {sendConfirmationEmail,sendBookingNotificationEmail,sendInquiryNotificationEmail,sendOtpEmail} from "../services/email.service";
 
 type AsyncHandler = (req: Request, res: Response, next: NextFunction) => Promise<void>;
 
 const router = Router();
+
+const emailOtps = new Map<
+  string,
+  {
+    otpHash: string;
+    expiresAt: number;
+    lastSentAt: number;
+  }
+>();
 
 const DEFAULT_PRODUCT_IMAGE =
   "/images/products/spices-catalog-fallback.webp?auto=format&fit=crop&q=80&w=800";
@@ -786,8 +795,168 @@ router.get(
 );
 
 router.post(
+  "/inquiries/send-otp",
+  asyncHandler(async (req, res) => {
+    const email = String(req.body.email || "").trim().toLowerCase();
+
+    if (!email) {
+      res.status(400).json({ error: "Email address is required." });
+      return;
+    }
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      res.status(400).json({ error: "Please enter a valid email address." });
+      return;
+    }
+
+    const existing = emailOtps.get(email);
+    const now = Date.now();
+
+    // Prevent repeated OTP requests within 60 seconds
+    if (existing && now - existing.lastSentAt < 60 * 1000) {
+      res.status(429).json({
+        error: "Please wait 60 seconds before requesting another OTP."
+      });
+      return;
+    }
+
+    // Generate a secure 6-digit OTP
+    const otp = crypto.randomInt(100000, 1000000).toString();
+
+    // Store only a hash of the OTP
+    const otpHash = crypto
+      .createHash("sha256")
+      .update(otp)
+      .digest("hex");
+
+    emailOtps.set(email, {
+      otpHash,
+      expiresAt: now + 5 * 60 * 1000,
+      lastSentAt: now
+    });
+
+    try {
+      await sendOtpEmail(email, otp);
+
+      res.json({
+        success: true,
+        message: "OTP sent successfully."
+      });
+    } catch (error) {
+      emailOtps.delete(email);
+
+      console.error("[OTP] Failed to send OTP:", error);
+
+      res.status(500).json({
+        error: "Failed to send OTP. Please try again."
+      });
+    }
+  })
+);
+
+router.post(
+  "/inquiries/verify-otp",
+  asyncHandler(async (req, res) => {
+    const email = String(req.body.email || "").trim().toLowerCase();
+    const otp = String(req.body.otp || "").trim();
+
+    if (!email) {
+      res.status(400).json({ error: "Email address is required." });
+      return;
+    }
+
+    if (!otp) {
+      res.status(400).json({ error: "OTP is required." });
+      return;
+    }
+
+    const stored = emailOtps.get(email);
+
+    if (!stored) {
+      res.status(400).json({
+        error: "No OTP found. Please request a new OTP."
+      });
+      return;
+    }
+
+    // Check OTP expiration
+    if (Date.now() > stored.expiresAt) {
+      emailOtps.delete(email);
+
+      res.status(400).json({
+        error: "OTP has expired. Please request a new OTP."
+      });
+      return;
+    }
+
+    // Hash the entered OTP and compare it with the stored hash
+    const otpHash = crypto
+      .createHash("sha256")
+      .update(otp)
+      .digest("hex");
+
+    if (otpHash !== stored.otpHash) {
+      res.status(400).json({
+        error: "Invalid OTP. Please check the OTP and try again."
+      });
+      return;
+    }
+
+    // OTP is correct — remove it so it cannot be reused
+    emailOtps.delete(email);
+
+    // Create a short-lived verification token
+    const verificationToken = jwt.sign(
+      { email },
+      getJwtSecret(),
+      { expiresIn: "10m" }
+    );
+
+    res.json({
+      success: true,
+      message: "Email verified successfully.",
+      verificationToken
+    });
+  })
+);
+
+router.post(
   "/inquiries",
   asyncHandler(async (req, res) => {
+    const emailVerificationToken = String(
+      req.body.emailVerificationToken || ""
+    ).trim();
+
+    if (!emailVerificationToken) {
+      res.status(403).json({
+        error: "Please verify your corporate email before submitting the inquiry."
+      });
+      return;
+    }
+
+    try {
+      const decoded = jwt.verify(
+        emailVerificationToken,
+        getJwtSecret()
+      ) as { email?: string };
+
+      const normalizedInquiryEmail = String(req.body.email || "")
+        .trim()
+        .toLowerCase();
+
+      if (decoded.email !== normalizedInquiryEmail) {
+        res.status(403).json({
+          error: "Email verification does not match the inquiry email."
+        });
+        return;
+      }
+    } catch {
+      res.status(403).json({
+        error: "Email verification has expired. Please verify your email again."
+      });
+      return;
+    }
+
     const inquiry = await Inquiry.create({
       _id: "inq_" + Date.now().toString(),
       name: req.body.name || "",

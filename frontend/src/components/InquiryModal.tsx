@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { X, Send, CheckCircle, Loader } from "lucide-react";
+import {parsePhoneNumberFromString,getCountries,getCountryCallingCode,type CountryCode,} from "libphonenumber-js";
 import { Product } from "../types";
 import { api } from "../lib/api";
 import { useLanguage } from "../lib/LanguageContext";
@@ -16,12 +17,22 @@ export default function InquiryModal({ product, onClose }: InquiryModalProps) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+ const [country, setCountry] = useState<CountryCode>("IN");
+  const countries = getCountries();
+  const countryNames = new Intl.DisplayNames(["en"], { type: "region" });
   const [company, setCompany] = useState("");
   const [quantity, setQuantity] = useState("");
+  const [orderType, setOrderType] = useState<"sample" | "actual">("sample");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
+  const [otp, setOtp] = useState("");
+  const [otpSent, setOtpSent] = useState(false);
+  const [otpVerified, setOtpVerified] = useState(false);
+  const [emailVerificationToken, setEmailVerificationToken] = useState("");
+  const [otpLoading, setOtpLoading] = useState(false);
+  const [otpError, setOtpError] = useState("");
  const [fieldErrors, setFieldErrors] = useState<{
    name?: string;
    email?: string;
@@ -37,6 +48,109 @@ export default function InquiryModal({ product, onClose }: InquiryModalProps) {
 
   const pTrans = t.products?.items?.[product.id];
   const productName = pTrans?.name || product.name;
+
+  const handleSendOtp = async () => {
+    const trimmedEmail = email.trim().toLowerCase();
+
+    if (!trimmedEmail) {
+      setFieldErrors((prev) => ({
+        ...prev,
+        email: "Corporate email is required",
+      }));
+      return;
+    }
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmedEmail)) {
+      setFieldErrors((prev) => ({
+        ...prev,
+        email: "Please enter a valid email address",
+      }));
+      return;
+    }
+
+    setOtpLoading(true);
+    setOtpError("");
+    setError("");
+
+    try {
+      const response = await fetch(
+        `${import.meta.env.VITE_API_URL || "http://localhost:5000/api"}/inquiries/send-otp`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: trimmedEmail,
+          }),
+        }
+      );
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to send OTP.");
+      }
+
+      setOtpSent(true);
+      setOtpVerified(false);
+      setOtp("");
+      setOtpError("");
+    } catch (err: any) {
+      setOtpError(err.message || "Failed to send OTP. Please try again.");
+    } finally {
+      setOtpLoading(false);
+    }
+  };
+
+const handleVerifyOtp = async () => {
+  const trimmedEmail = email.trim().toLowerCase();
+  const trimmedOtp = otp.trim();
+
+  if (!trimmedOtp) {
+    setOtpError("Please enter the OTP.");
+    return;
+  }
+
+  if (!/^\d{6}$/.test(trimmedOtp)) {
+    setOtpError("OTP must be a 6-digit number.");
+    return;
+  }
+
+  setOtpLoading(true);
+  setOtpError("");
+  setError("");
+
+  try {
+    const response = await fetch(
+      `${import.meta.env.VITE_API_URL || "http://localhost:5000/api"}/inquiries/verify-otp`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: trimmedEmail,
+          otp: trimmedOtp,
+        }),
+      }
+    );
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data.error || "OTP verification failed.");
+    }
+    setEmailVerificationToken(data.verificationToken);
+    setOtpVerified(true);
+    setOtpError("");
+  } catch (err: any) {
+    setOtpVerified(false);
+    setOtpError(err.message || "Invalid OTP. Please try again.");
+  } finally {
+    setOtpLoading(false);
+  }
+};
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -67,8 +181,15 @@ const errors: {
      errors.quantity = "Please enter a valid quantity";
    }
 
-   if (phone.trim() && !/^\d{10}$/.test(phone.trim())) {
-     errors.phone = "Phone number must be exactly 10 digits";
+   if (phone.trim()) {
+     const phoneNumber = parsePhoneNumberFromString(
+       phone.trim(),
+       country
+     );
+
+     if (!phoneNumber || !phoneNumber.isValid()) {
+       errors.phone = "Please enter a valid phone number for the selected country";
+     }
    }
     // Message language validation
     if (message.trim()) {
@@ -93,6 +214,10 @@ const errors: {
     if (Object.keys(errors).length > 0) {
       return;
     }
+if (!otpVerified) {
+  setOtpError("Please verify your corporate email before submitting the inquiry.");
+  return;
+}
     if (!name || !email || !quantity) {
       setError(t.product.inquiryErrorFields || "Please fill out all mandatory fields.");
       return;
@@ -111,7 +236,8 @@ const errors: {
         company,
         productName: productName,
         quantity,
-        message: finalMessage
+        message: finalMessage,
+        emailVerificationToken
       });
 
       const formattedMessage = `Company: ${company || "Not specified"}\nQuantity: ${quantity}\nDetails: ${finalMessage}`;
@@ -221,36 +347,54 @@ const errors: {
                 <label className="block text-[10px] font-mono uppercase tracking-widest text-gray-600 mb-1.5">
                   {t.product.inquiryLabelEmail || "Corporate Email *"}
                 </label>
-                <input
-                  type="email"
-                  required
-                  maxLength={254}
-                  value={email}
-                  onChange={(e) => {
-                    const value = e.target.value.trim();
+                <div className="flex gap-2">
+                  <input
+                    type="email"
+                    required
+                    maxLength={254}
+                    value={email}
+                    onChange={(e) => {
+                      const value = e.target.value.trim();
 
-                    setEmail(value);
+                      setEmail(value);
 
-                    if (!value) {
-                      setFieldErrors((prev) => ({
-                        ...prev,
-                        email: "Corporate email is required",
-                      }));
-                    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
-                      setFieldErrors((prev) => ({
-                        ...prev,
-                        email: "Please enter a valid email address",
-                      }));
-                    } else {
-                      setFieldErrors((prev) => ({
-                        ...prev,
-                        email: undefined,
-                      }));
-                    }
-                  }}
-                  placeholder={t.product.inquiryPlaceholderEmail || EMAIL_TO}
-                  className="w-full bg-slate-50 border border-gray-300 focus:border-orange-500 rounded-lg px-3 py-2.5 text-gray-900 placeholder-gray-400 outline-none transition-colors focus:bg-white"
-                />
+                      // Email changed, so previous verification is no longer valid
+                      setOtpSent(false);
+                      setOtpVerified(false);
+                      setOtp("");
+                      setOtpError("");
+
+                      if (!value) {
+                        setFieldErrors((prev) => ({
+                          ...prev,
+                          email: "Corporate email is required",
+                        }));
+                      } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+                        setFieldErrors((prev) => ({
+                          ...prev,
+                          email: "Please enter a valid email address",
+                        }));
+                      } else {
+                        setFieldErrors((prev) => ({
+                          ...prev,
+                          email: undefined,
+                        }));
+                      }
+                    }}
+                    placeholder={t.product.inquiryPlaceholderEmail || EMAIL_TO}
+                    className="flex-1 min-w-0 bg-slate-50 border border-gray-300 focus:border-orange-500 rounded-lg px-3 py-2.5 text-gray-900 placeholder-gray-400 outline-none transition-colors focus:bg-white"
+                  />
+
+                  <button
+                    type="button"
+                    onClick={handleSendOtp}
+                    disabled={otpLoading || otpVerified}
+                    className="shrink-0 px-3 py-2.5 bg-orange-500 hover:bg-orange-600 disabled:bg-gray-300 disabled:cursor-not-allowed text-white rounded-lg text-[10px] font-semibold uppercase tracking-wider transition-colors"
+                  >
+                    {otpLoading ? "Sending..." : otpVerified ? "Verified ✓" : "Send OTP"}
+                  </button>
+                </div>
+
                 {fieldErrors.email && (
                   <p className="mt-1 text-xs text-red-500">
                     {fieldErrors.email}
@@ -258,6 +402,56 @@ const errors: {
                 )}
               </div>
             </div>
+
+            {otpSent && (
+              <div className="mt-3 p-4 bg-orange-50 border border-orange-200 rounded-xl">
+                <label className="block text-[10px] font-mono uppercase tracking-widest text-gray-600 mb-1.5">
+                  Email Verification OTP
+                </label>
+
+                <div className="flex gap-2">
+                  <input
+                    type="text"
+                    inputMode="numeric"
+                    maxLength={6}
+                    value={otp}
+                    onChange={(e) => {
+                      const value = e.target.value.replace(/\D/g, "");
+
+                      if (value.length <= 6) {
+                        setOtp(value);
+                        setOtpError("");
+                      }
+                    }}
+                    placeholder="Enter 6-digit OTP"
+                    disabled={otpVerified}
+                    className="flex-1 min-w-0 bg-white border border-gray-300 focus:border-orange-500 rounded-lg px-3 py-2.5 text-gray-900 placeholder-gray-400 outline-none transition-colors disabled:bg-gray-100"
+                  />
+
+                  <button
+                    type="button"
+                    onClick={handleVerifyOtp}
+                    disabled={otpLoading || otpVerified || otp.length !== 6}
+                    className="shrink-0 px-3 py-2.5 bg-orange-500 hover:bg-orange-600 disabled:bg-gray-300 disabled:cursor-not-allowed text-white rounded-lg text-[10px] font-semibold uppercase tracking-wider transition-colors"
+                  >
+                    {otpLoading ? "Verifying..." : otpVerified ? "Verified ✓" : "Verify OTP"}
+                  </button>
+                </div>
+
+                {otpError && (
+                  <p className="mt-2 text-xs text-red-500">
+                    {otpError}
+                  </p>
+                )}
+
+                {otpVerified && (
+                  <div className="mt-2 flex items-center gap-1.5 text-xs text-green-600 font-medium">
+                    <CheckCircle className="w-4 h-4" />
+                    Email verified successfully
+                  </div>
+                )}
+              </div>
+            )}
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="text-left">
@@ -280,59 +474,90 @@ const errors: {
                 />
               </div>
 
-              <div className="text-left">
-                <label className="block text-[10px] font-mono uppercase tracking-widest text-gray-600 mb-1.5">
-                  {t.product.inquiryLabelQuantity || "Target Quantity (e.g. Tons) *"}
+              <div>
+                <label className="block text-xs font-mono tracking-widest text-slate-600 mb-2">
+                  ORDER TYPE *
                 </label>
+
+                <select
+                  value={orderType}
+                  onChange={(e) => {
+                    setOrderType(e.target.value as "sample" | "actual");
+                    setQuantity("");
+                    setFieldErrors((prev) => ({
+                      ...prev,
+                      quantity: undefined,
+                    }));
+                  }}
+                  className="w-full bg-slate-50 border border-gray-300 focus:border-orange-500 rounded-lg px-3 py-2.5 text-gray-900 outline-none transition"
+                >
+                  <option value="sample">Sample Order</option>
+                  <option value="actual">Actual Order</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-xs font-mono tracking-widest text-slate-600 mb-2">
+                  TARGET QUANTITY (KG) *
+                </label>
+
                 <input
-                  type="text"
-                  required
+                  type="number"
                   value={quantity}
-                 onChange={(e) => {
-                   const value = e.target.value;
-
-                   // Allow numbers followed by an optional unit
-                   if (/^\d*(\.\d*)?\s*[A-Za-z]*\s*$/.test(value)) {
-                     setQuantity(value);
-
-                     if (value.trim()) {
-                       setFieldErrors((prev) => ({ ...prev, quantity: undefined }));
-                     }
-                   }
-                 }}
-                  placeholder={t.product.inquiryPlaceholderQuantity || "e.g. 5 Metric Tons"}
-                  className="w-full bg-slate-50 border border-gray-300 focus:border-orange-500 rounded-lg px-3 py-2.5 text-gray-900 placeholder-gray-400 outline-none transition-colors focus:bg-white"
+                  onChange={(e) => setQuantity(e.target.value)}
+                  placeholder={orderType === "sample" ? "Minimum 1 kg" : "Minimum 100 kg"}
+                  min={orderType === "sample" ? 1 : 100}
+                  step="0.01"
+                  className="w-full bg-slate-50 border border-gray-300 focus:border-orange-500 rounded-lg px-3 py-2.5 text-gray-900 placeholder-gray-400 outline-none transition"
                 />
+
                 {fieldErrors.quantity && (
                   <p className="mt-1 text-xs text-red-500">
                     {fieldErrors.quantity}
                   </p>
                 )}
               </div>
-            </div>
+             </div>
 
             <div className="text-left">
               <label className="block text-[10px] font-mono uppercase tracking-widest text-gray-600 mb-1.5">
                 {t.contact.labelPhone || "Direct Contact Phone"}
               </label>
-              <input
-                type="tel"
-                maxLength={10}
-                value={phone}
-                onChange={(e) => {
-                  const value = e.target.value.replace(/\D/g, "");
+              <div className="flex gap-2">
+                <select
+                  value={country}
+                  onChange={(e) => {
+                    setCountry(e.target.value as CountryCode);
+                    setPhone("");
+                    setFieldErrors((prev) => ({ ...prev, phone: undefined }));
+                  }}
+                  className="w-[42%] bg-slate-50 border border-gray-300 focus:border-orange-500 rounded-lg px-3 py-2.5 text-gray-900 outline-none"
+                >
+                  {countries.map((countryCode) => (
+                    <option key={countryCode} value={countryCode}>
+                      {countryNames.of(countryCode)} (+{getCountryCallingCode(countryCode)})
+                    </option>
+                  ))}
+                </select>
 
-                  if (value.length <= 10) {
-                    setPhone(value);
+                <input
+                  type="tel"
+                  value={phone}
+                  onChange={(e) => {
+                    const value = e.target.value.replace(/\D/g, "");
 
-                    if (!value || value.length === 10) {
-                      setFieldErrors((prev) => ({ ...prev, phone: undefined }));
+                    if (value.length <= 15) {
+                      setPhone(value);
+
+                      if (!value) {
+                        setFieldErrors((prev) => ({ ...prev, phone: undefined }));
+                      }
                     }
-                  }
-                }}
-                placeholder={PHONE_NUMBER}
-                className="w-full bg-slate-50 border border-gray-300 focus:border-orange-500 rounded-lg px-3 py-2.5 text-gray-900 placeholder-gray-400 outline-none transition-colors focus:bg-white"
-              />
+                  }}
+                  placeholder="Enter phone number"
+                  className="flex-1 bg-slate-50 border border-gray-300 focus:border-orange-500 rounded-lg px-3 py-2.5 text-gray-900 placeholder-gray-400 outline-none transition"
+                />
+              </div>
               {fieldErrors.phone && (
                 <p className="mt-1 text-xs text-red-500">
                   {fieldErrors.phone}

@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { X, Send, Compass, HelpCircle, ShieldCheck, Tag } from "lucide-react";
+import {X,Send,Compass,HelpCircle,ShieldCheck,Tag,MapPin,Award,Package,Boxes,} from "lucide-react";
 import { ProductCategory } from "../data/exportProducts";
 import { Product } from "../types";
 import OptimizedImage from "./OptimizedImage";
@@ -16,6 +16,8 @@ interface ProductModalProps {
 const ProductModal: React.FC<ProductModalProps> = ({ category, onClose, onInquiry }) => {
   const { lang } = useLanguage();
   const t = staticTranslations[lang] || staticTranslations.en;
+
+   const [expandedDetailId, setExpandedDetailId] = useState<string | null>(null);
 
   // Prevent background scroll when modal is open
   useEffect(() => {
@@ -103,6 +105,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ category, onClose, onInquir
                 const pTrans = t.products?.items?.[p.id];
                 const pName = pTrans?.name || p.name;
                 const pDesc = pTrans?.desc || p.description;
+                const pDetails = p.details;
                 const pPricing = pTrans?.pricing || p.pricing;
                 const pOrigin = pTrans?.spec?.origin || p.specifications.origin;
                 const pPurity = pTrans?.spec?.purity || p.specifications.purity;
@@ -148,22 +151,112 @@ const ProductModal: React.FC<ProductModalProps> = ({ category, onClose, onInquir
                             <span>{t.product.minOrder || "Min Order"}: {pMinOrder}</span>
                           </div>
                         </div>
-                        <p className="text-xs text-gray-600 leading-relaxed whitespace-pre-line">
-                          {pDesc}
-                        </p>
+                       <div className="text-xs text-gray-600 leading-relaxed">
+                         <p className="whitespace-pre-line">
+                           {pDesc}
+                         </p>
+
+                         {[
+                           {
+                             id: "about",
+                             title: "About the Product",
+                             content: pDetails?.about,
+                           },
+                       {
+                         id: "applications",
+                         title: "Applications",
+                         content: pDetails?.applications,
+                       },
+                       {
+                         id: "keyFeatures",
+                         title: "Key Features",
+                         content: pDetails?.keyFeatures,
+                       },
+                       {
+                         id: "shelfLifeStorage",
+                         title: "Shelf Life & Storage",
+                         content: pDetails?.shelfLifeStorage,
+                       },
+                       {
+                         id: "storage",
+                         title: "Storage",
+                         content: pDetails?.storage,
+                       },
+                           {
+                             id: "availableCurcuminGrades",
+                             title: "Available Curcumin Grades",
+                             content: pDetails?.availableCurcuminGrades,
+                           },
+                           {
+                             id: "qualityTesting",
+                             title: "Quality & Lab Testing",
+                             content: pDetails?.qualityTesting,
+                           },
+                           {
+                             id: "benefitsHighCurcumin",
+                             title: "Benefits of High-Curcumin Turmeric",
+                             content: pDetails?.benefitsHighCurcumin,
+                           },
+                           {
+                             id: "gradeApplications",
+                             title: "Grade & Applications",
+                             content: pDetails?.gradeApplications,
+                           },
+                         ]
+                           .filter((section) => section.content)
+                           .map((section) => {
+                             const detailId = `${p.id}-${section.id}`;
+                             const isExpanded = expandedDetailId === detailId;
+
+                             return (
+                               <div key={detailId} className="mt-4">
+                                 <h5 className="font-semibold text-gray-800 mb-1">
+                                   {section.title}
+                                 </h5>
+
+                                 <p
+                                   className={
+                                     isExpanded
+                                       ? "whitespace-pre-line"
+                                       : "whitespace-pre-line line-clamp-3"
+                                   }
+                                 >
+                                   {section.content}
+                                 </p>
+
+                                 <button
+                                   type="button"
+                                   onClick={() =>
+                                     setExpandedDetailId(
+                                       isExpanded ? null : detailId
+                                     )
+                                   }
+                                   className="mt-1 text-orange-600 font-medium hover:underline"
+                                 >
+                                   {isExpanded ? "Less" : "More"}
+                                 </button>
+                               </div>
+                             );
+                           })}
+                       </div>
                       </div>
 
                       {/* Metadata specs table */}
-                      <div className="p-4 bg-slate-50 rounded-xl border border-gray-200 text-[10px] font-mono text-gray-600">
+                      <div className="p-5 sm:p-6 bg-slate-50/70 rounded-2xl border border-gray-200 shadow-sm text-sm text-gray-700">
 
                         {/* Top Specifications */}
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pb-4 border-b border-gray-200">
 
                           <div>
-                            <span className="uppercase text-gray-500 block text-[8px] mb-1 font-bold">
-                              {t.product.metadataOrigin || "ORIGIN"}
-                            </span>
-                            <div className="space-y-1 text-gray-800 font-sans">
+                            <div className="flex items-center gap-2 h-6 mb-2">
+                               <span className="flex items-center justify-center w-7 h-7 rounded-full bg-orange-50">
+                                  <MapPin className="w-4 h-4 text-orange-500" />
+                                </span>
+                              <span className="uppercase text-gray-700 text-sm font-bold tracking-widest">
+                                {t.product.metadataOrigin || "ORIGIN"}
+                              </span>
+                            </div>
+                            <div className="space-y-1 text-base leading-7 text-gray-800 font-sans">
                               {pOrigin
                                 .split("•")
                                 .map((item) => item.trim())
@@ -174,11 +267,16 @@ const ProductModal: React.FC<ProductModalProps> = ({ category, onClose, onInquir
                             </div>
                           </div>
 
-                          <div>
-                            <span className="uppercase text-gray-500 block text-[8px] mb-1 font-bold">
-                              {t.product.metadataPurity || "PURITY"}
-                            </span>
-                           <div className="space-y-1 text-gray-800 font-sans">
+                          <div className="sm:border-l sm:border-gray-200 sm:pl-6">
+                            <div className="flex items-center gap-2 mb-2">
+                              <span className="flex items-center justify-center w-7 h-7 rounded-full bg-orange-50">
+                                <ShieldCheck className="w-4 h-4 text-orange-500" />
+                              </span>
+                              <span className="uppercase text-gray-700 text-sm font-bold tracking-widest">
+                                {t.product.metadataPurity || "PURITY"}
+                              </span>
+                            </div>
+                           <div className="space-y-1 text-base leading-7 text-gray-800 font-sans">
                              {pPurity
                                .split("•")
                                .map((item) => item.trim())
@@ -189,11 +287,16 @@ const ProductModal: React.FC<ProductModalProps> = ({ category, onClose, onInquir
                            </div>
                           </div>
 
-                          <div>
-                            <span className="uppercase text-gray-500 block text-[8px] mb-1 font-bold">
-                              {t.product.metadataGrade || "GRADE"}
-                            </span>
-                            <div className="space-y-1 text-gray-800 font-sans">
+                          <div className="sm:border-l sm:border-gray-200 sm:pl-6">
+                            <div className="flex items-center gap-2 mb-2">
+                              <span className="flex items-center justify-center w-7 h-7 rounded-full bg-orange-50">
+                                <Award className="w-4 h-4 text-orange-500" />
+                              </span>
+                              <span className="uppercase text-gray-700 text-sm font-bold tracking-widest">
+                                {t.product.metadataGrade || "GRADE"}
+                              </span>
+                            </div>
+                            <div className="space-y-1 text-base leading-7 text-gray-800 font-sans">
                               {pGrade
                                 .split("•")
                                 .map((item) => item.trim())
@@ -207,26 +310,36 @@ const ProductModal: React.FC<ProductModalProps> = ({ category, onClose, onInquir
                         </div>
 
                         {/* Available Forms & Packaging */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 pt-6">
 
                           <div>
-                            <span className="uppercase text-gray-500 block text-[8px] mb-2 font-bold">
-                              AVAILABLE FORMS
-                            </span>
+                            <div className="flex items-center gap-2 mb-2">
+                              <span className="flex items-center justify-center w-7 h-7 rounded-full bg-orange-50">
+                                <Boxes className="w-4 h-4 text-orange-500" />
+                              </span>
+                              <span className="uppercase text-gray-700 text-sm font-bold tracking-widest">
+                                AVAILABLE FORMS
+                              </span>
+                            </div>
 
-                            <div className="space-y-1 text-gray-800 font-sans">
+                            <div className="space-y-1 text-base leading-7 text-gray-800 font-sans">
                               {pAvailableForms.map((form) => (
                                 <div key={form}>• {form}</div>
                               ))}
                             </div>
                           </div>
 
-                          <div>
-                            <span className="uppercase text-gray-500 block text-[8px] mb-2 font-bold">
-                              {t.product.metadataPackaging || "PACKAGING"}
-                            </span>
+                          <div className="sm:border-l sm:border-gray-200 sm:pl-6">
+                            <div className="flex items-center gap-2 mb-2">
+                              <span className="flex items-center justify-center w-7 h-7 rounded-full bg-orange-50">
+                                <Package className="w-4 h-4 text-orange-500" />
+                              </span>
+                              <span className="uppercase text-gray-700 text-sm font-bold tracking-widest">
+                                {t.product.metadataPackaging || "PACKAGING"}
+                              </span>
+                            </div>
 
-                            <div className="space-y-1 text-gray-800 font-sans">
+                            <div className="space-y-1 text-base leading-7 text-gray-800 font-sans">
                               {pPackaging
                                 .split("•")
                                 .map((item) => item.trim())
@@ -251,8 +364,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ category, onClose, onInquir
                         </div>
                         <button
                           onClick={() => onInquiry(p)}
-                          className="cursor-pointer flex items-center space-x-2 px-5 py-2.5 bg-orange-500 hover:bg-orange-600 text-white font-bold transition-all duration-300 rounded shadow-md shadow-orange-500/10"
-                        >
+                          className="cursor-pointer flex items-center space-x-2 px-5 py-2.5 bg-orange-500 hover:bg-orange-600 text-white font-bold transition-all duration-300 rounded shadow-md shadow-orange-500/10">
                           <Send className="w-3.5 h-3.5" />
                           <span>{t.product.sendInquiry || "Send Inquiry / Quote"}</span>
                         </button>

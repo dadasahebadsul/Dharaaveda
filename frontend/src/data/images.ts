@@ -160,6 +160,7 @@ export const IMAGES = {
     papayaSlices: "/images/products/asset-67-68747470.webp",
     strawberrySlices: "/images/products/asset-68-68747470.webp",
     guavaSlices: "/images/products/dehydrated-guava-slices.webp",
+    orangeSlices: "/images/products/orange-slices.webp",
     // Flakes
     onionFlakes: "/images/products/asset-70-68747470.webp",
     garlicFlakes: "/images/products/dehydrated-garlic-flakes.webp",

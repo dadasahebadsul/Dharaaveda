@@ -4,6 +4,14 @@ export interface Product {
   category: string;
   images: string[];
   description: string;
+  details?: {
+    about?: string;
+    availableCurcuminGrades?: string;
+    qualityTesting?: string;
+    benefitsHighCurcumin?: string;
+    gradeApplications?: string;
+    [key: string]: string | undefined;
+  };
   pricing: string;
   specifications: {
     origin: string;

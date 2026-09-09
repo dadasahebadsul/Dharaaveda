@@ -231,7 +231,9 @@ export const api = {
   async getInquiries(): Promise<Inquiry[]> {
     return fetchApi<Inquiry[]>("/api/inquiries");
   },
-  async createInquiry(inquiry: Partial<Inquiry>): Promise<Inquiry> {
+  async createInquiry(
+    inquiry: Partial<Inquiry> & { emailVerificationToken?: string }
+  ): Promise<Inquiry> {
     return fetchApi<Inquiry>("/api/inquiries", {
       method: "POST",
       body: JSON.stringify(inquiry),
