@@ -299,21 +299,30 @@ export async function sendOtpEmail(
   }
 
   try {
-    const transporter = nodemailer.createTransport({
-      host,
-      port,
-      secure: port === 465,
-      auth: {
-        user,
-        pass
-      }
-    });
+       console.log(`[OTP] Starting SMTP connection to ${host}:${port}`);
+       console.log(`[OTP] SMTP user configured: ${Boolean(user)}`);
+       console.log(`[OTP] SMTP password configured: ${Boolean(pass)}`);
 
-    await transporter.sendMail(mailOptions);
+       const transporter = nodemailer.createTransport({
+         host,
+         port,
+         secure: port === 465,
+         auth: {
+           user,
+           pass
+         },
+         connectionTimeout: 10000,
+         greetingTimeout: 10000,
+         socketTimeout: 10000
+       });
 
-    console.log(`[EmailService] OTP email sent successfully to ${email}`);
-  } catch (error) {
-    console.error("[EmailService] Error sending OTP email:", error);
-    throw error;
-  }
+       console.log("[OTP] SMTP transporter created. Sending email...");
+
+       await transporter.sendMail(mailOptions);
+
+       console.log(`[EmailService] OTP email sent successfully to ${email}`);
+     } catch (error) {
+       console.error("[EmailService] Error sending OTP email:", error);
+       throw error;
+     }
 }
