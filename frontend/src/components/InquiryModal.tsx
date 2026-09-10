@@ -74,7 +74,7 @@ export default function InquiryModal({ product, onClose }: InquiryModalProps) {
 
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_API_URL || "http://localhost:5000/api"}/inquiries/send-otp`,
+        `${import.meta.env.VITE_API_URL || "http://localhost:5000"}/api/inquiries/send-otp`,
         {
           method: "POST",
           headers: {
@@ -123,7 +123,7 @@ const handleVerifyOtp = async () => {
 
   try {
     const response = await fetch(
-      `${import.meta.env.VITE_API_URL || "http://localhost:5000/api"}/inquiries/verify-otp`,
+      `${import.meta.env.VITE_API_URL || "http://localhost:5000"}/api/inquiries/verify-otp`,
       {
         method: "POST",
         headers: {
