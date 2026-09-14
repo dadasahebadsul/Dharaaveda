@@ -1107,6 +1107,7 @@ router.post(
       imageUrl: imageUrl,
       caption: req.body.caption || "Client review screenshot",
       platform: req.body.platform || "whatsapp",
+      topic: req.body.topic || "All",
       imageData: imageData || undefined,
       imageMimeType: imageMimeType || undefined,
       translations: req.body.translations || {}

@@ -468,20 +468,65 @@ const DEFAULT_SCREENSHOTS = [
     _id: "sr1",
     imageUrl: "/images/testimonials/client-review-wellness-1.webp?auto=format&fit=crop&q=80&w=600",
     caption: "Usui Reiki Session: 'I slept for 9 hours straight for the first time in 5 years.'",
-    platform: "whatsapp"
+    platform: "whatsapp",
+    topic: "Sleep"
   },
   {
     _id: "sr2",
     imageUrl: "/images/testimonials/client-review-wellness-2.webp?auto=format&fit=crop&q=80&w=600",
     caption: "Bach Flower review: 'My somatic panic attacks dissolved within 12 days.'",
-    platform: "instagram"
+    platform: "instagram",
+    topic: "Panic attack"
   },
   {
     _id: "sr3",
     imageUrl: "/images/testimonials/client-review-soundwave.webp?auto=format&fit=crop&q=80&w=600",
     caption: "Pranic Sound waves: 'Unbelievable vibrational wave clearing Wayanad residue. Deeply recommend!'",
-    platform: "whatsapp"
-  }
+    platform: "whatsapp",
+    topic: "Sound healing"
+  },
+   {
+     _id: "sr4",
+     imageUrl: "/uploads/screenshot_1782930499730.png",
+     caption: "Bach Flower Remedies: 1-year-old child constantly crying. Felt relief in 4-5 days of remedies.",
+     platform: "whatsapp",
+     topic: "Crying"
+   },
+   {
+     _id: "sr5",
+     imageUrl: "/uploads/screenshot_1782930752173.png",
+     caption: "Bach Flower Remedies: Stomach pains and cramps gone. Felt relaxed, calm, and anxiety disappeared.",
+     platform: "whatsapp",
+     topic: "Stomach pain"
+   },
+   {
+     _id: "sr6",
+     imageUrl: "/uploads/screenshot_1782930811410.png",
+     caption: "Down syndrome-related difficulties and frequent emotional bursts. Tremendous improvement after treatment.",
+     platform: "whatsapp",
+     topic: "Emotional breakdown"
+   },
+   {
+     _id: "sr7",
+     imageUrl: "/uploads/screenshot_1782930877171.png",
+     caption: "Bach Flower Remedies: 14-year-old with anger and phone addiction improved in just 1 month.",
+     platform: "whatsapp",
+     topic: "Anger"
+   },
+   {
+     _id: "sr8",
+     imageUrl: "/uploads/screenshot_1782930964331.png",
+     caption: "Bach Flower Remedies + Rekkhano Healing: 42-year-old woman with body aches, constant tiredness and fatigue for 4.5 years.",
+     platform: "whatsapp",
+     topic: "Swelling, tiredness"
+   },
+   {
+     _id: "sr9",
+     imageUrl: "/uploads/screenshot_1782931016964.png",
+     caption: "Bach Flower Remedies: 78-year-old father with dementia, tiredness, restlessness, anxiety, sleep issues, confusion and panic. Positive changes noticed within a few days.",
+     platform: "whatsapp",
+     topic: "Stomach pain"
+   },
 ];
 
 export async function seedDatabase(): Promise<void> {
@@ -510,7 +555,13 @@ export async function seedDatabase(): Promise<void> {
         } 
       }
     ).catch(() => {});
-
+    for (const review of DEFAULT_SCREENSHOTS) {
+      await ScreenshotReview.updateOne(
+        { _id: review._id },
+        { $set: review },
+        { upsert: true }
+      );
+    }
     const productsCount = await Product.countDocuments();
     if (productsCount > 0) {
       console.log("Database already populated. Enforced pricing & duration updates.");
