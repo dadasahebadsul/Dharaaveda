@@ -51,14 +51,17 @@ export function getLocalSrcSets(src: string, isPriority = false) {
     cleanSrc.includes("heroAtmosphere");
 
   // AVIF srcSet ONLY for hero/background assets that have .avif files
-  const avifSrcSet = isHeroOrBg
+  const avifSrcSet = isHeroOrBg && !cleanSrc.includes("therapyHero")
     ? `${basePath}-hero.avif${queryStr} 1200w, ${basePath}.avif${queryStr} 800w`
     : undefined;
 
-  // WebP srcSet with responsive sizes (-thumb 200w, -card 600w, master 1200w)
-  const webpSrcSet = isPriority || isHeroOrBg
-    ? `${basePath}-hero.webp${queryStr} 1200w, ${basePath}-card.webp${queryStr} 600w, ${basePath}-thumb.webp${queryStr} 200w, ${cleanSrc}${queryStr} 1200w`
-    : `${basePath}-card.webp${queryStr} 600w, ${basePath}-thumb.webp${queryStr} 200w, ${cleanSrc}${queryStr} 800w`;
+ // WebP srcSet with responsive sizes
+ const webpSrcSet =
+   cleanSrc.includes("therapyHero")
+     ? undefined
+     : isPriority || isHeroOrBg
+     ? `${basePath}-hero.webp${queryStr} 1200w, ${basePath}-card.webp${queryStr} 600w, ${basePath}-thumb.webp${queryStr} 200w, ${cleanSrc}${queryStr} 1200w`
+     : `${basePath}-card.webp${queryStr} 600w, ${basePath}-thumb.webp${queryStr} 200w, ${cleanSrc}${queryStr} 800w`;
 
   return { avifSrcSet, webpSrcSet, cleanSrc };
 }

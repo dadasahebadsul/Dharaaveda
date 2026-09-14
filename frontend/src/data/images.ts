@@ -179,7 +179,7 @@ export const IMAGES = {
     /** Full-width hero background on the Wellness/Therapy page */
     heroBg: "/images/therapy/heroBg.webp",
     /** Atmosphere/mood image shown alongside the hero text */
-    heroAtmosphere: "/images/therapy/heroAtmosphere.webp",
+    heroAtmosphere: "/images/therapy/therapyHero.webp",
     /** Image for the Bach Flower Therapy service card */
     bachFlowerService: "/images/therapy/bachFlowerService.webp",
     /** Image for the Rekkhanoho / Reiki Therapy service card */

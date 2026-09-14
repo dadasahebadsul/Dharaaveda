@@ -132,6 +132,7 @@ export interface ScreenshotReview {
   imageUrl: string;
   caption: string;
   platform: 'whatsapp' | 'instagram';
+   topic: string;
   translations?: Record<string, {
     caption?: string;
   }>;

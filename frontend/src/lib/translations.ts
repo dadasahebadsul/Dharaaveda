@@ -216,11 +216,12 @@ export interface StaticTranslations {
     modalCloseTitle?: string;
   };
   wellness: {
-    floatingCTAText: string;
-    heroBadge: string;
-    heroTitle: string;
-    heroDesc: string;
-    heroExploreBtn: string;
+     floatingCTAText: string;
+     heroBadge: string;
+     heroTitle: string;
+     heroSubtitle?: string;
+     heroDesc: string;
+     heroExploreBtn: string;
     modalitiesBadge: string;
     modalitiesTitle: string;
     modalitiesDesc: string;

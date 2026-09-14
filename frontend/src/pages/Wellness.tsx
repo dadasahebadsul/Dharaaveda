@@ -209,14 +209,15 @@ export default function Wellness() {
 
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
           <div className="space-y-6">
-            <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-therapy-50 border border-therapy-200 text-[10px] font-mono uppercase tracking-widest text-therapy-600 font-bold">
-              <Sparkles className="w-3.5 h-3.5 text-therapy-500" />
-              <span>{t.heroBadge}</span>
-            </div>
             <h1 className="font-serif text-3xl sm:text-5xl lg:text-7xl tracking-wide text-gray-900 leading-tight">
               {t.heroTitle}
             </h1>
-            <p className="text-xs sm:text-sm text-gray-600 leading-relaxed max-w-lg font-light">
+
+            <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-lg font-medium">
+              {t.heroSubtitle}
+            </p>
+
+            <p className="text-xs sm:text-sm text-gray-600 leading-relaxed max-w-lg font-light whitespace-pre-line">
               {t.heroDesc}
             </p>
             <div className="flex space-x-4 pt-2">
@@ -231,7 +232,7 @@ export default function Wellness() {
 
           <div className="relative rounded-3xl overflow-hidden border border-gray-200 h-[340px] shadow-2xl">
             <OptimizedImage
-              src={IMAGES.therapy.heroAtmosphere}
+              src="/images/therapy/therapyHero.webp"
               alt="Luxury Meditation Atmosphere"
               className="w-full h-full filter brightness-95"
               width={800}
@@ -321,24 +322,6 @@ export default function Wellness() {
                         ))}
                       </div>
 
-                      {/* Healing Timeline / Detailed consultation steps */}
-                      {srv.timeline && srv.timeline.length > 0 && (
-                        <div className="pt-6 space-y-4 border-t border-gray-200">
-                          <p className="text-[10px] font-mono uppercase tracking-wider text-therapy-600 font-bold text-left">
-                            {t.modalityTimelineTitle}
-                          </p>
-                          <div className="relative pl-6 border-l border-gray-200 space-y-6 text-left">
-                            {(srv.translations?.[lang]?.timeline || srv.timeline).map((step, sIdx) => (
-                              <div key={sIdx} className="relative text-xs">
-                                {/* Dot */}
-                                <div className="absolute -left-[30px] top-1.5 w-2 h-2 rounded-full bg-therapy-500 ring-4 ring-white" />
-                                <h4 className="font-bold text-gray-900 tracking-wide">{step.title}</h4>
-                                <p className="text-gray-500 mt-1">{step.description}</p>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      )}
 
                       <div className="pt-4 flex">
                         <button
@@ -482,6 +465,12 @@ export default function Wellness() {
               ))
             )}
           </div>
+         <a
+           href="/testimonials"
+           className="mt-10 mx-auto inline-flex items-center justify-center rounded-full border border-therapy-500 px-6 py-3 text-xs font-mono uppercase tracking-widest text-therapy-600 hover:bg-therapy-500 hover:text-white transition-all duration-300"
+         >
+           View All Testimonials
+         </a>
         </div>
       </section>
 

@@ -511,13 +511,20 @@ export default function BookingForm({ preselectedServiceId = "", onSuccess }: Bo
                   return (
                     <button
                       key={idx}
-                      disabled={isPast}
-                      onClick={() => handleDateSelect(dateStr)}
+                      onClick={() => {
+                        if (isPast) {
+                          setError("This date is no longer available. Please select today or a future date.");
+                          return;
+                        }
+
+                        setError("");
+                        handleDateSelect(dateStr);
+                      }}
                       className={`w-9.5 h-9.5 rounded-xl text-xs flex items-center justify-center font-semibold transition-all select-none cursor-pointer ${
                         isSelected
                           ? "bg-[#FA980F] text-white shadow-md shadow-[#FA980F]/20 font-bold scale-105"
                           : isPast
-                          ? "text-gray-350 cursor-not-allowed"
+                          ? "text-gray-350 bg-gray-50 hover:bg-red-50 hover:text-red-500"
                           : "text-gray-800 hover:bg-slate-100"
                       }`}
                     >

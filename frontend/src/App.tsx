@@ -26,6 +26,7 @@ export const Contact = lazyWithPreload(() => import("./pages/Contact"));
 export const AdminLogin = lazyWithPreload(() => import("./pages/AdminLogin"));
 export const AdminDashboard = lazyWithPreload(() => import("./pages/AdminDashboard"));
 export const MyBookings = lazyWithPreload(() => import("./pages/MyBookings"));
+export const Testimonials = lazyWithPreload(() => import("./pages/Testimonials"));
 
 // Scroll Restoration helper - requestAnimationFrame optimized to prevent main-thread block
 function ScrollToTop() {
@@ -53,6 +54,7 @@ function PublicLayout() {
             <Route path="/wellness" element={<Wellness />} />
             <Route path="/booking" element={<Booking />} />
             <Route path="/my-bookings" element={<MyBookings />} />
+            <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </Suspense>

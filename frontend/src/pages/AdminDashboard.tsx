@@ -7,6 +7,7 @@ import {
 import { Product, TherapyService, Booking, Inquiry, Testimonial, QuickStats, AboutVikranti, ScreenshotReview } from "../types";
 import { api } from "../lib/api";
 import { IMAGES } from "../data/images";
+import { TESTIMONIAL_TOPICS } from "../data/testimonialTopics";
 
 type Tab = "overview" | "products" | "services" | "testimonials" | "inquiries" | "bookings" | "wellness-settings";
 
@@ -40,6 +41,7 @@ export default function AdminDashboard() {
   const [revUrl, setRevUrl] = useState("");
   const [revCaption, setRevCaption] = useState("");
   const [revPlatform, setRevPlatform] = useState<'whatsapp' | 'instagram'>("whatsapp");
+  const [revTopic, setRevTopic] = useState("All");
   const [fileInputKey, setFileInputKey] = useState(0);
   const [savingAbout, setSavingAbout] = useState(false);
   const [addingReview, setAddingReview] = useState(false);
@@ -418,7 +420,8 @@ export default function AdminDashboard() {
       await api.createScreenshotReview({
         imageUrl: revUrl,
         caption: revCaption || "Client direct review",
-        platform: revPlatform
+        platform: revPlatform,
+        topic: revTopic,
       });
       setRevUrl("");
       setRevCaption("");

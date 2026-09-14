@@ -523,9 +523,10 @@ export const translations: StaticTranslations = {
   },
   "wellness": {
     "floatingCTAText": "Attune Session",
-    "heroBadge": "Restorative Quantum Sanctuary",
-    "heroTitle": "Calming Quantum Harmony",
-    "heroDesc": "True longevity begins where structural stress dissolves. DharaAveda Sanctuary blends classical Edward Bach wildflower remedies, Usui Reiki chakra alignment, Aura-Soma chromo-essential oils, and immersive 432Hz quartz singing sound waves. Align your auric frequency, cleanse deep lifecycle trauma, and restore absolute biological peace.",
+    "heroBadge": "",
+    "heroTitle": "FIND YOUR INNER BALANCE",
+    "heroSubtitle": "Gentle healing for the mind, emotions & body",
+    "heroDesc": "Discover a personalised approach to emotional and holistic wellbeing through Bach Flower Remedies and Rakkhenho Therapy.\n\nBach Flower Therapy works gently with emotional patterns such as stress, worry, fear, overwhelm and low confidence, while Rakkhenho Therapy offers a relaxing, nurturing experience designed to support deep relaxation and inner balance.\n\nPause. Breathe. Reconnect with yourself.",
     "heroExploreBtn": "Explore Sanctuary Modalities",
     "modalitiesBadge": "ANCIENT KNOWLEDGE RESTORED",
     "modalitiesTitle": "Our Therapeutic Modalities",
