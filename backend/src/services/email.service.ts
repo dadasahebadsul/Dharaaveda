@@ -1,4 +1,5 @@
 import nodemailer from "nodemailer";
+import { Resend } from "resend";
 
 export const EMAIL_TO = process.env.EMAIL_TO || "sales@dharaaveda.com";
 
@@ -287,42 +288,24 @@ export async function sendOtpEmail(
     `
   };
 
-  if (!user || !pass) {
-    console.log("=========================================================");
-    console.log("MOCK OTP EMAIL DISPATCHED");
-    console.log(`From:    ${mailOptions.from}`);
-    console.log(`To:      ${mailOptions.to}`);
-    console.log(`Subject: ${mailOptions.subject}`);
-    console.log(`OTP:     ${otp}`);
-    console.log("=========================================================");
-    return;
-  }
-
   try {
-       console.log(`[OTP] Starting SMTP connection to ${host}:${port}`);
-       console.log(`[OTP] SMTP user configured: ${Boolean(user)}`);
-       console.log(`[OTP] SMTP password configured: ${Boolean(pass)}`);
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
-       const transporter = nodemailer.createTransport({
-         host,
-         port,
-         secure: port === 465,
-         auth: {
-           user,
-           pass
-         },
-         connectionTimeout: 10000,
-         greetingTimeout: 10000,
-         socketTimeout: 10000
-       });
+    const { error } = await resend.emails.send({
+      from: fromAddress,
+      to: email,
+      subject: mailOptions.subject,
+      html: mailOptions.html,
+    });
 
-       console.log("[OTP] SMTP transporter created. Sending email...");
+    if (error) {
+      console.error("[EmailService] Resend error:", error);
+      throw new Error(error.message);
+    }
 
-       await transporter.sendMail(mailOptions);
-
-       console.log(`[EmailService] OTP email sent successfully to ${email}`);
-     } catch (error) {
-       console.error("[EmailService] Error sending OTP email:", error);
-       throw error;
-     }
+    console.log(`[EmailService] OTP email sent successfully to ${email}`);
+  } catch (error) {
+    console.error("[EmailService] Error sending OTP email:", error);
+    throw error;
+  }
 }
