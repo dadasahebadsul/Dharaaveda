@@ -1,7 +1,43 @@
 import nodemailer from "nodemailer";
 import { Resend } from "resend";
+import { GoogleGenAI } from "@google/genai";
 
 export const EMAIL_TO = process.env.EMAIL_TO || "sales@dharaaveda.com";
+async function translateToEnglish(text: string): Promise<string> {
+  if (!text?.trim()) {
+    return text;
+  }
+
+  try {
+    const apiKey = process.env.GEMINI_API_KEY;
+
+    if (!apiKey) {
+      console.warn("[Translation] GEMINI_API_KEY is not configured");
+      return text;
+    }
+
+    const ai = new GoogleGenAI({ apiKey });
+
+    const response = await ai.models.generateContent({
+      model: "gemini-2.5-flash",
+      contents: `Translate the following customer message into clear, natural English.
+
+Important:
+- Preserve the original meaning exactly.
+- Do not add or remove information.
+- Do not explain the translation.
+- Return only the English translation.
+
+Customer message:
+${text}`,
+    });
+
+    return response.text?.trim() || text;
+  } catch (error) {
+    console.error("[Translation] Error translating message:", error);
+    return text;
+  }
+}
 
 /**
  * Sends a confirmation email to the customer after a booking is confirmed.
@@ -168,6 +204,8 @@ export async function sendBookingNotificationEmail(booking: any): Promise<void> 
  * Sends a general or export inquiry notification email to the admin/sales team.
  */
 export async function sendInquiryNotificationEmail(inquiry: any): Promise<void> {
+    const translatedMessage = await translateToEnglish(inquiry.message);
+
   const host = process.env.SMTP_HOST || "smtp.mailtrap.io";
   const port = parseInt(process.env.SMTP_PORT || "2525");
   const user = process.env.SMTP_USER || "";
@@ -198,7 +236,7 @@ export async function sendInquiryNotificationEmail(inquiry: any): Promise<void> 
         ${isExport ? `<p><strong>Quantity Target:</strong> ${inquiry.quantity}</p>` : ""}
         <p><strong>Message / Demand details:</strong></p>
         <blockquote style="background: #f7fafc; border-left: 4px solid #FA980F; margin: 15px 0; padding: 15px; font-style: italic;">
-          ${inquiry.message.replace(/\n/g, "<br/>")}
+          ${translatedMessage.replace(/\n/g, "<br/>")}
         </blockquote>
       </div>
     `

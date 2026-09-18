@@ -177,8 +177,16 @@ const errors: {
 
    if (!quantity.trim()) {
      errors.quantity = "Target quantity is required";
-   } else if (!/^\d+(\.\d+)?\s*[A-Za-z]*\s*$/.test(quantity.trim())) {
-     errors.quantity = "Please enter a valid quantity";
+   } else {
+     const quantityValue = Number(quantity);
+
+     if (Number.isNaN(quantityValue)) {
+       errors.quantity = "Please enter a valid quantity";
+     } else if (orderType === "sample" && (quantityValue < 1 || quantityValue > 99)) {
+       errors.quantity = "Sample Order quantity must be between 1 and 99 kg";
+     } else if (orderType === "actual" && quantityValue < 100) {
+       errors.quantity = "Actual Order quantity must be at least 100 kg";
+     }
    }
 
    if (phone.trim()) {
@@ -191,24 +199,7 @@ const errors: {
        errors.phone = "Please enter a valid phone number for the selected country";
      }
    }
-    // Message language validation
-    if (message.trim()) {
-      const messagePatterns: Record<string, RegExp> = {
-        en: /^[\p{Script=Latin}\p{Number}\p{P}\p{S}\s]+$/u,
-        hi: /^[\p{Script=Devanagari}\p{Number}\p{P}\p{S}\s]+$/u,
-        mr: /^[\p{Script=Devanagari}\p{Number}\p{P}\p{S}\s]+$/u,
-      };
 
-      const selectedLanguagePattern = messagePatterns[lang];
-
-      if (
-        selectedLanguagePattern &&
-        !selectedLanguagePattern.test(message.trim())
-      ) {
-        errors.message =
-          "Please enter the message in the selected language.";
-      }
-    }
     setFieldErrors(errors);
 
     if (Object.keys(errors).length > 0) {
@@ -501,15 +492,41 @@ if (!otpVerified) {
                   TARGET QUANTITY (KG) *
                 </label>
 
-                <input
-                  type="number"
-                  value={quantity}
-                  onChange={(e) => setQuantity(e.target.value)}
-                  placeholder={orderType === "sample" ? "Minimum 1 kg" : "Minimum 100 kg"}
-                  min={orderType === "sample" ? 1 : 100}
-                  step="0.01"
-                  className="w-full bg-slate-50 border border-gray-300 focus:border-orange-500 rounded-lg px-3 py-2.5 text-gray-900 placeholder-gray-400 outline-none transition"
-                />
+               {orderType === "sample" ? (
+                 <input
+                   type="number"
+                   value={quantity}
+                   onChange={(e) => {
+                     const value = e.target.value;
+
+                     if (value === "" || Number(value) <= 99) {
+                       setQuantity(value);
+                     }
+                   }}
+                   placeholder="Minimum 1 kg"
+                   min={1}
+                   max={99}
+                   step="0.01"
+                   className="w-full bg-slate-50 border border-gray-300 focus:border-orange-500 rounded-lg px-3 py-2.5 text-sm"
+                 />
+               ) : (
+                 <select
+                   value={quantity}
+                   onChange={(e) => setQuantity(e.target.value)}
+                   className="w-full bg-slate-50 border border-gray-300 focus:border-orange-500 rounded-lg px-3 py-2.5 text-sm"
+                 >
+                   <option value="">Select quantity</option>
+                   <option value="100">100 kg</option>
+                   <option value="150">150 kg</option>
+                   <option value="200">200 kg</option>
+                   <option value="250">250 kg</option>
+                   <option value="300">300 kg</option>
+                   <option value="350">350 kg</option>
+                   <option value="400">400 kg</option>
+                   <option value="450">450 kg</option>
+                   <option value="500">500 kg</option>
+                 </select>
+               )}
 
                 {fieldErrors.quantity && (
                   <p className="mt-1 text-xs text-red-500">

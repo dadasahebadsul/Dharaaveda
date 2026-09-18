@@ -1,76 +1,178 @@
 {
-  "timestamp": "2026-08-05T07:48:59.153Z",
-  "totalMasterImagesProcessed": 87,
-  "totalVariantsGenerated": 276,
-  "totalOriginalPayloadMb": "7.61",
-  "totalOptimizedPayloadMb": "10.09",
-  "overallSavingsPercent": "-32.6%",
+  "timestamp": "2026-09-18T19:22:21.403Z",
+  "totalMasterImagesProcessed": 103,
+  "totalVariantsGenerated": 345,
+  "totalOriginalPayloadMb": "9.30",
+  "totalOptimizedPayloadMb": "14.86",
+  "overallSavingsPercent": "-59.7%",
   "details": [
     {
-      "asset": "backgrounds/export-logistics-cargo.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 29.87,
-      "optimizedWebpKb": 27.77,
-      "savingsPercent": "7.0%",
+      "asset": "backgrounds/export-logistics-cargo.avif",
+      "originalFormat": "avif",
+      "originalSizeKb": 33.5,
+      "optimizedWebpKb": 26.53,
+      "savingsPercent": "20.8%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "27.77"
+          "sizeKb": "26.53"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "22.45"
+          "sizeKb": "25.19"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "4.53"
+          "sizeKb": "4.71"
         },
         {
           "format": "webp",
           "size": "hero (1200px)",
-          "sizeKb": "27.77"
+          "sizeKb": "26.53"
         },
         {
           "format": "avif",
           "size": "hero (1200px)",
-          "sizeKb": "33.50"
+          "sizeKb": "33.15"
+        }
+      ]
+    },
+    {
+      "asset": "backgrounds/export-logistics-cargo.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 26.53,
+      "optimizedWebpKb": 25.22,
+      "savingsPercent": "4.9%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "25.22"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "20.95"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "4.46"
+        },
+        {
+          "format": "webp",
+          "size": "hero (1200px)",
+          "sizeKb": "25.22"
+        },
+        {
+          "format": "avif",
+          "size": "hero (1200px)",
+          "sizeKb": "29.88"
+        }
+      ]
+    },
+    {
+      "asset": "backgrounds/export-trade-showcase.avif",
+      "originalFormat": "avif",
+      "originalSizeKb": 157.76,
+      "optimizedWebpKb": 130.79,
+      "savingsPercent": "17.1%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "130.79"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "43.02"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "6.71"
+        },
+        {
+          "format": "webp",
+          "size": "hero (1200px)",
+          "sizeKb": "130.79"
+        },
+        {
+          "format": "avif",
+          "size": "hero (1200px)",
+          "sizeKb": "155.92"
         }
       ]
     },
     {
       "asset": "backgrounds/export-trade-showcase.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 138.53,
-      "optimizedWebpKb": 135.26,
-      "savingsPercent": "2.4%",
+      "originalSizeKb": 130.79,
+      "optimizedWebpKb": 128.9,
+      "savingsPercent": "1.4%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "135.26"
+          "sizeKb": "128.90"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "43.51"
+          "sizeKb": "42.33"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "6.34"
+          "sizeKb": "6.36"
         },
         {
           "format": "webp",
           "size": "hero (1200px)",
-          "sizeKb": "135.26"
+          "sizeKb": "128.90"
         },
         {
           "format": "avif",
           "size": "hero (1200px)",
-          "sizeKb": "157.76"
+          "sizeKb": "151.45"
+        }
+      ]
+    },
+    {
+      "asset": "export/heroBg.avif",
+      "originalFormat": "avif",
+      "originalSizeKb": 179.83,
+      "optimizedWebpKb": 145.28,
+      "savingsPercent": "19.2%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "145.28"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "59.75"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "7.61"
+        },
+        {
+          "format": "webp",
+          "size": "hero (1200px)",
+          "sizeKb": "145.28"
+        },
+        {
+          "format": "avif",
+          "size": "hero (1200px)",
+          "sizeKb": "177.57"
         }
       ]
     },
@@ -109,6 +211,40 @@
       ]
     },
     {
+      "asset": "export/heroBg.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 151.61,
+      "optimizedWebpKb": 143.31,
+      "savingsPercent": "5.5%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "143.31"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "53.87"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "7.42"
+        },
+        {
+          "format": "webp",
+          "size": "hero (1200px)",
+          "sizeKb": "143.31"
+        },
+        {
+          "format": "avif",
+          "size": "hero (1200px)",
+          "sizeKb": "169.99"
+        }
+      ]
+    },
+    {
       "asset": "home.png",
       "originalFormat": "png",
       "originalSizeKb": 2330.78,
@@ -129,6 +265,30 @@
           "format": "webp",
           "size": "thumb (200px)",
           "sizeKb": "7.07"
+        }
+      ]
+    },
+    {
+      "asset": "home.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 134.45,
+      "optimizedWebpKb": 128.22,
+      "savingsPercent": "4.6%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "128.22"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "46.44"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "6.91"
         }
       ]
     },
@@ -183,1387 +343,331 @@
     {
       "asset": "products/amchur-mango-powder.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 13.2,
-      "optimizedWebpKb": 12.88,
-      "savingsPercent": "2.4%",
+      "originalSizeKb": 12.88,
+      "optimizedWebpKb": 12.77,
+      "savingsPercent": "0.9%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "12.88"
+          "sizeKb": "12.77"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "12.88"
+          "sizeKb": "12.77"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "3.81"
+          "sizeKb": "3.78"
         }
       ]
     },
     {
       "asset": "products/amla-fruit-powder.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 8.14,
-      "optimizedWebpKb": 8.06,
-      "savingsPercent": "1.0%",
+      "originalSizeKb": 8.06,
+      "optimizedWebpKb": 8.01,
+      "savingsPercent": "0.6%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "8.06"
+          "sizeKb": "8.01"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "8.06"
+          "sizeKb": "8.01"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "3.13"
+          "sizeKb": "3.08"
         }
       ]
     },
     {
       "asset": "products/asset-13-68747470.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 91.39,
-      "optimizedWebpKb": 89.1,
-      "savingsPercent": "2.5%",
+      "originalSizeKb": 89.1,
+      "optimizedWebpKb": 87.58,
+      "savingsPercent": "1.7%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "89.10"
+          "sizeKb": "87.58"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "56.28"
+          "sizeKb": "55.71"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "11.12"
+          "sizeKb": "11.03"
         }
       ]
     },
     {
       "asset": "products/asset-14-68747470.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 66.6,
-      "optimizedWebpKb": 63.29,
-      "savingsPercent": "5.0%",
+      "originalSizeKb": 63.29,
+      "optimizedWebpKb": 61.81,
+      "savingsPercent": "2.3%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "63.29"
+          "sizeKb": "61.81"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "38.18"
+          "sizeKb": "37.51"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "6.75"
+          "sizeKb": "6.65"
         }
       ]
     },
     {
       "asset": "products/asset-15-68747470.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 43.37,
-      "optimizedWebpKb": 41.89,
-      "savingsPercent": "3.4%",
+      "originalSizeKb": 41.89,
+      "optimizedWebpKb": 41.23,
+      "savingsPercent": "1.6%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "41.89"
+          "sizeKb": "41.23"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "25.51"
+          "sizeKb": "25.66"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "5.59"
+          "sizeKb": "5.54"
         }
       ]
     },
     {
       "asset": "products/asset-16-68747470.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 87.94,
-      "optimizedWebpKb": 81.84,
-      "savingsPercent": "6.9%",
+      "originalSizeKb": 81.84,
+      "optimizedWebpKb": 78.62,
+      "savingsPercent": "3.9%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "81.84"
+          "sizeKb": "78.62"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "48.26"
+          "sizeKb": "46.90"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "9.43"
+          "sizeKb": "9.15"
         }
       ]
     },
     {
       "asset": "products/asset-17-68747470.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 64.79,
-      "optimizedWebpKb": 60.42,
-      "savingsPercent": "6.7%",
+      "originalSizeKb": 60.42,
+      "optimizedWebpKb": 58.47,
+      "savingsPercent": "3.2%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "60.42"
+          "sizeKb": "58.47"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "40.50"
+          "sizeKb": "39.20"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "9.42"
+          "sizeKb": "8.95"
         }
       ]
     },
     {
       "asset": "products/asset-18-68747470.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 58.79,
-      "optimizedWebpKb": 56.3,
-      "savingsPercent": "4.2%",
+      "originalSizeKb": 56.3,
+      "optimizedWebpKb": 55.34,
+      "savingsPercent": "1.7%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "56.30"
+          "sizeKb": "55.34"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "30.77"
+          "sizeKb": "30.54"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "5.72"
+          "sizeKb": "5.69"
         }
       ]
     },
     {
       "asset": "products/asset-19-68747470.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 43.06,
-      "optimizedWebpKb": 41.51,
-      "savingsPercent": "3.6%",
+      "originalSizeKb": 41.51,
+      "optimizedWebpKb": 41.04,
+      "savingsPercent": "1.1%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "41.51"
+          "sizeKb": "41.04"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "25.21"
+          "sizeKb": "25.17"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "5.60"
+          "sizeKb": "5.52"
         }
       ]
     },
     {
       "asset": "products/asset-20-68747470.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 62.81,
-      "optimizedWebpKb": 60.79,
-      "savingsPercent": "3.2%",
+      "originalSizeKb": 60.79,
+      "optimizedWebpKb": 59.9,
+      "savingsPercent": "1.5%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "60.79"
+          "sizeKb": "59.90"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "40.17"
+          "sizeKb": "39.81"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "9.92"
+          "sizeKb": "9.89"
         }
       ]
     },
     {
       "asset": "products/asset-21-68747470.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 22.13,
-      "optimizedWebpKb": 21.09,
-      "savingsPercent": "4.7%",
+      "originalSizeKb": 21.09,
+      "optimizedWebpKb": 20.72,
+      "savingsPercent": "1.8%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "21.09"
+          "sizeKb": "20.72"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "13.38"
+          "sizeKb": "13.19"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "2.85"
+          "sizeKb": "2.81"
         }
       ]
     },
     {
       "asset": "products/asset-22-68747470.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 28.22,
-      "optimizedWebpKb": 26.78,
-      "savingsPercent": "5.1%",
+      "originalSizeKb": 26.78,
+      "optimizedWebpKb": 26.36,
+      "savingsPercent": "1.6%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "26.78"
+          "sizeKb": "26.36"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "17.03"
+          "sizeKb": "17.07"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "4.47"
+          "sizeKb": "4.42"
         }
       ]
     },
     {
       "asset": "products/asset-23-68747470.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 92.92,
-      "optimizedWebpKb": 90.41,
-      "savingsPercent": "2.7%",
+      "originalSizeKb": 90.41,
+      "optimizedWebpKb": 89.02,
+      "savingsPercent": "1.5%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "90.41"
+          "sizeKb": "89.02"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "55.97"
+          "sizeKb": "55.68"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "10.62"
+          "sizeKb": "10.44"
         }
       ]
     },
     {
       "asset": "products/asset-24-68747470.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 46.85,
-      "optimizedWebpKb": 45.39,
-      "savingsPercent": "3.1%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "45.39"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "45.39"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "7.81"
-        }
-      ]
-    },
-    {
-      "asset": "products/asset-28-68747470.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 23.18,
-      "optimizedWebpKb": 21.14,
-      "savingsPercent": "8.8%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "21.14"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "21.14"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "5.51"
-        }
-      ]
-    },
-    {
-      "asset": "products/asset-30-68747470.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 16.37,
-      "optimizedWebpKb": 16.19,
-      "savingsPercent": "1.1%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "16.19"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "16.19"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "5.55"
-        }
-      ]
-    },
-    {
-      "asset": "products/asset-32-68747470.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 16.31,
-      "optimizedWebpKb": 15.96,
-      "savingsPercent": "2.1%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "15.96"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "15.96"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "4.74"
-        }
-      ]
-    },
-    {
-      "asset": "products/asset-44-68747470.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 44.6,
-      "optimizedWebpKb": 42.47,
-      "savingsPercent": "4.8%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "42.47"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "26.83"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "5.84"
-        }
-      ]
-    },
-    {
-      "asset": "products/asset-5-68747470.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 157.21,
-      "optimizedWebpKb": 154.92,
-      "savingsPercent": "1.5%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "154.92"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "82.56"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "11.84"
-        }
-      ]
-    },
-    {
-      "asset": "products/asset-50-68747470.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 19.31,
-      "optimizedWebpKb": 18.78,
-      "savingsPercent": "2.8%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "18.78"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "18.78"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "6.23"
-        }
-      ]
-    },
-    {
-      "asset": "products/asset-51-68747470.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 27.7,
-      "optimizedWebpKb": 27.25,
-      "savingsPercent": "1.6%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "27.25"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "27.25"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "10.47"
-        }
-      ]
-    },
-    {
-      "asset": "products/asset-56-68747470.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 47.02,
-      "optimizedWebpKb": 46.14,
-      "savingsPercent": "1.9%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "46.14"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "29.30"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "5.30"
-        }
-      ]
-    },
-    {
-      "asset": "products/asset-57-68747470.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 34.66,
-      "optimizedWebpKb": 33.5,
-      "savingsPercent": "3.4%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "33.50"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "22.25"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "5.49"
-        }
-      ]
-    },
-    {
-      "asset": "products/asset-59-68747470.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 50.13,
-      "optimizedWebpKb": 48.75,
-      "savingsPercent": "2.7%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "48.75"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "48.75"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "13.54"
-        }
-      ]
-    },
-    {
-      "asset": "products/asset-6-68747470.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 81.88,
-      "optimizedWebpKb": 78.73,
-      "savingsPercent": "3.9%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "78.73"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "41.94"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "6.64"
-        }
-      ]
-    },
-    {
-      "asset": "products/asset-64-68747470.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 48.06,
-      "optimizedWebpKb": 45.9,
-      "savingsPercent": "4.5%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "45.90"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "45.90"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "9.07"
-        }
-      ]
-    },
-    {
-      "asset": "products/asset-65-68747470.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 127.75,
-      "optimizedWebpKb": 122.17,
-      "savingsPercent": "4.4%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "122.17"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "72.67"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "12.27"
-        }
-      ]
-    },
-    {
-      "asset": "products/asset-66-68747470.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 81.28,
-      "optimizedWebpKb": 78.75,
-      "savingsPercent": "3.1%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "78.75"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "60.39"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "13.39"
-        }
-      ]
-    },
-    {
-      "asset": "products/asset-67-68747470.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 28.66,
-      "optimizedWebpKb": 27.27,
-      "savingsPercent": "4.9%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "27.27"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "19.41"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "3.98"
-        }
-      ]
-    },
-    {
-      "asset": "products/asset-68-68747470.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 72.44,
-      "optimizedWebpKb": 70.45,
-      "savingsPercent": "2.7%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "70.45"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "44.49"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "7.77"
-        }
-      ]
-    },
-    {
-      "asset": "products/asset-7-68747470.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 25.56,
-      "optimizedWebpKb": 23.88,
-      "savingsPercent": "6.6%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "23.88"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "14.03"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "3.27"
-        }
-      ]
-    },
-    {
-      "asset": "products/asset-70-68747470.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 25.79,
-      "optimizedWebpKb": 24.13,
-      "savingsPercent": "6.4%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "24.13"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "24.13"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "5.04"
-        }
-      ]
-    },
-    {
-      "asset": "products/asset-8-68747470.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 146.76,
-      "optimizedWebpKb": 140.76,
-      "savingsPercent": "4.1%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "140.76"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "82.90"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "11.89"
-        }
-      ]
-    },
-    {
-      "asset": "products/asset-85-68747470.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 85.97,
-      "optimizedWebpKb": 75.32,
-      "savingsPercent": "12.4%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "75.32"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "45.54"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "10.68"
-        }
-      ]
-    },
-    {
-      "asset": "products/asset-86-68747470.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 18.89,
-      "optimizedWebpKb": 17.38,
-      "savingsPercent": "8.0%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "17.38"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "11.78"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "3.45"
-        }
-      ]
-    },
-    {
-      "asset": "products/asset-87-68747470.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 102.38,
-      "optimizedWebpKb": 99.92,
-      "savingsPercent": "2.4%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "99.92"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "52.92"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "7.49"
-        }
-      ]
-    },
-    {
-      "asset": "products/asset-89-68747470.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 1.4,
-      "optimizedWebpKb": 1.36,
-      "savingsPercent": "2.5%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "1.36"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "1.36"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "1.36"
-        }
-      ]
-    },
-    {
-      "asset": "products/asset-9-68747470.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 47.11,
-      "optimizedWebpKb": 45.2,
-      "savingsPercent": "4.1%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "45.20"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "27.96"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "6.24"
-        }
-      ]
-    },
-    {
-      "asset": "products/cabbage-powder.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 35.78,
-      "optimizedWebpKb": 33.52,
-      "savingsPercent": "6.3%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "33.52"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "19.63"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "3.57"
-        }
-      ]
-    },
-    {
-      "asset": "products/chia-seeds.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 51.52,
-      "optimizedWebpKb": 49.48,
-      "savingsPercent": "4.0%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "49.48"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "49.48"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "9.46"
-        }
-      ]
-    },
-    {
-      "asset": "products/coriander-leaf-powder.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 54,
-      "optimizedWebpKb": 51.71,
-      "savingsPercent": "4.3%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "51.71"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "29.51"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "5.67"
-        }
-      ]
-    },
-    {
-      "asset": "products/dehydrated-banana-slices.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 20.08,
-      "optimizedWebpKb": 19.14,
-      "savingsPercent": "4.7%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "19.14"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "19.14"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "6.15"
-        }
-      ]
-    },
-    {
-      "asset": "products/dehydrated-beetroot-flakes.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 71.9,
-      "optimizedWebpKb": 69.68,
-      "savingsPercent": "3.1%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "69.68"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "43.42"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "7.35"
-        }
-      ]
-    },
-    {
-      "asset": "products/dehydrated-cabbage-flakes.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 46.87,
-      "optimizedWebpKb": 46.32,
-      "savingsPercent": "1.2%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "46.32"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "46.32"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "12.72"
-        }
-      ]
-    },
-    {
-      "asset": "products/dehydrated-garlic-flakes.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 63.88,
-      "optimizedWebpKb": 62.97,
-      "savingsPercent": "1.4%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "62.97"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "37.58"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "6.94"
-        }
-      ]
-    },
-    {
-      "asset": "products/dehydrated-ginger-slice.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 33.94,
-      "optimizedWebpKb": 31.83,
-      "savingsPercent": "6.2%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "31.83"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "31.83"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "6.58"
-        }
-      ]
-    },
-    {
-      "asset": "products/dehydrated-guava-slices.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 67.91,
-      "optimizedWebpKb": 66.06,
-      "savingsPercent": "2.7%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "66.06"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "38.27"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "7.76"
-        }
-      ]
-    },
-    {
-      "asset": "products/dehydrated-mix-vegetables.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 39.31,
-      "optimizedWebpKb": 38.69,
-      "savingsPercent": "1.6%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "38.69"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "38.69"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "8.87"
-        }
-      ]
-    },
-    {
-      "asset": "products/dehydrated-potato-flakes.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 32.29,
-      "optimizedWebpKb": 31.75,
+      "originalSizeKb": 45.39,
+      "optimizedWebpKb": 44.64,
       "savingsPercent": "1.7%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "31.75"
+          "sizeKb": "44.64"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "31.75"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "8.27"
-        }
-      ]
-    },
-    {
-      "asset": "products/dehydrated-spinach-flakes.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 41.91,
-      "optimizedWebpKb": 40.21,
-      "savingsPercent": "4.1%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "40.21"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "25.09"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "5.21"
-        }
-      ]
-    },
-    {
-      "asset": "products/dehydrated-tomato-flakes.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 49.94,
-      "optimizedWebpKb": 49.24,
-      "savingsPercent": "1.4%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "49.24"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "49.24"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "11.78"
-        }
-      ]
-    },
-    {
-      "asset": "products/green-chilli-powder.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 23.49,
-      "optimizedWebpKb": 22.92,
-      "savingsPercent": "2.4%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "22.92"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "22.92"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "5.06"
-        }
-      ]
-    },
-    {
-      "asset": "products/hulled-sesame-seeds.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 46.08,
-      "optimizedWebpKb": 44.82,
-      "savingsPercent": "2.7%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "44.82"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "44.82"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "11.95"
-        }
-      ]
-    },
-    {
-      "asset": "products/lemon-powder.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 42.18,
-      "optimizedWebpKb": 40.99,
-      "savingsPercent": "2.8%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "40.99"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "40.99"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "9.08"
-        }
-      ]
-    },
-    {
-      "asset": "products/mint-leaf-powder.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 23.8,
-      "optimizedWebpKb": 23.45,
-      "savingsPercent": "1.5%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "23.45"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "15.04"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "3.00"
-        }
-      ]
-    },
-    {
-      "asset": "products/moringa-leaf-powder.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 96.74,
-      "optimizedWebpKb": 92.65,
-      "savingsPercent": "4.2%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "92.65"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "53.40"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "9.62"
-        }
-      ]
-    },
-    {
-      "asset": "products/orange-peel-powder.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 21.58,
-      "optimizedWebpKb": 20.97,
-      "savingsPercent": "2.8%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "20.97"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "20.97"
-        },
-        {
-          "format": "webp",
-          "size": "thumb (200px)",
-          "sizeKb": "5.37"
-        }
-      ]
-    },
-    {
-      "asset": "products/papaya-powder.webp",
-      "originalFormat": "webp",
-      "originalSizeKb": 33.63,
-      "optimizedWebpKb": 32.71,
-      "savingsPercent": "2.7%",
-      "variants": [
-        {
-          "format": "webp",
-          "size": "master (1200px)",
-          "sizeKb": "32.71"
-        },
-        {
-          "format": "webp",
-          "size": "card (600px)",
-          "sizeKb": "32.71"
+          "sizeKb": "44.64"
         },
         {
           "format": "webp",
@@ -1573,189 +677,909 @@
       ]
     },
     {
-      "asset": "products/pineapple-powder.webp",
+      "asset": "products/asset-28-68747470.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 25.48,
-      "optimizedWebpKb": 24.87,
+      "originalSizeKb": 21.14,
+      "optimizedWebpKb": 20.47,
+      "savingsPercent": "3.2%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "20.47"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "20.47"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "5.23"
+        }
+      ]
+    },
+    {
+      "asset": "products/asset-30-68747470.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 16.19,
+      "optimizedWebpKb": 16.11,
+      "savingsPercent": "0.5%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "16.11"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "16.11"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "5.48"
+        }
+      ]
+    },
+    {
+      "asset": "products/asset-32-68747470.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 15.96,
+      "optimizedWebpKb": 15.84,
+      "savingsPercent": "0.8%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "15.84"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "15.84"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "4.75"
+        }
+      ]
+    },
+    {
+      "asset": "products/asset-44-68747470.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 42.47,
+      "optimizedWebpKb": 41.55,
+      "savingsPercent": "2.2%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "41.55"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "26.51"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "5.74"
+        }
+      ]
+    },
+    {
+      "asset": "products/asset-5-68747470.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 154.92,
+      "optimizedWebpKb": 153.29,
+      "savingsPercent": "1.1%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "153.29"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "82.17"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "11.71"
+        }
+      ]
+    },
+    {
+      "asset": "products/asset-50-68747470.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 18.78,
+      "optimizedWebpKb": 18.64,
+      "savingsPercent": "0.8%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "18.64"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "18.64"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "6.13"
+        }
+      ]
+    },
+    {
+      "asset": "products/asset-51-68747470.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 27.25,
+      "optimizedWebpKb": 27.13,
+      "savingsPercent": "0.4%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "27.13"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "27.13"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "10.53"
+        }
+      ]
+    },
+    {
+      "asset": "products/asset-56-68747470.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 46.14,
+      "optimizedWebpKb": 45.77,
+      "savingsPercent": "0.8%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "45.77"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "29.12"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "5.23"
+        }
+      ]
+    },
+    {
+      "asset": "products/asset-57-68747470.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 33.5,
+      "optimizedWebpKb": 33.14,
+      "savingsPercent": "1.0%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "33.14"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "22.18"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "5.41"
+        }
+      ]
+    },
+    {
+      "asset": "products/asset-59-68747470.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 48.75,
+      "optimizedWebpKb": 48.14,
+      "savingsPercent": "1.3%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "48.14"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "48.14"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "13.31"
+        }
+      ]
+    },
+    {
+      "asset": "products/asset-6-68747470.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 78.73,
+      "optimizedWebpKb": 76.39,
+      "savingsPercent": "3.0%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "76.39"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "40.74"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "6.53"
+        }
+      ]
+    },
+    {
+      "asset": "products/asset-64-68747470.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 45.9,
+      "optimizedWebpKb": 45.44,
+      "savingsPercent": "1.0%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "45.44"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "45.44"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "8.91"
+        }
+      ]
+    },
+    {
+      "asset": "products/asset-65-68747470.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 122.17,
+      "optimizedWebpKb": 118.98,
+      "savingsPercent": "2.6%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "118.98"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "71.18"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "12.15"
+        }
+      ]
+    },
+    {
+      "asset": "products/asset-66-68747470.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 78.75,
+      "optimizedWebpKb": 77.96,
+      "savingsPercent": "1.0%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "77.96"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "60.14"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "13.16"
+        }
+      ]
+    },
+    {
+      "asset": "products/asset-67-68747470.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 27.27,
+      "optimizedWebpKb": 26.15,
+      "savingsPercent": "4.1%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "26.15"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "18.64"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "3.93"
+        }
+      ]
+    },
+    {
+      "asset": "products/asset-68-68747470.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 70.45,
+      "optimizedWebpKb": 69.91,
+      "savingsPercent": "0.8%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "69.91"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "44.26"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "7.66"
+        }
+      ]
+    },
+    {
+      "asset": "products/asset-7-68747470.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 23.88,
+      "optimizedWebpKb": 23.3,
       "savingsPercent": "2.4%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "24.87"
+          "sizeKb": "23.30"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "15.77"
+          "sizeKb": "13.72"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "3.25"
+          "sizeKb": "3.22"
         }
       ]
     },
     {
-      "asset": "products/pomegranate-powder.webp",
+      "asset": "products/asset-70-68747470.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 37.26,
-      "optimizedWebpKb": 35.55,
-      "savingsPercent": "4.6%",
+      "originalSizeKb": 24.13,
+      "optimizedWebpKb": 23.47,
+      "savingsPercent": "2.8%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "35.55"
+          "sizeKb": "23.47"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "20.13"
+          "sizeKb": "23.47"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "3.53"
+          "sizeKb": "4.94"
         }
       ]
     },
     {
-      "asset": "products/raw-banana-powder.webp",
+      "asset": "products/asset-8-68747470.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 35.89,
-      "optimizedWebpKb": 33.43,
-      "savingsPercent": "6.9%",
+      "originalSizeKb": 140.76,
+      "optimizedWebpKb": 138.76,
+      "savingsPercent": "1.4%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "33.43"
+          "sizeKb": "138.76"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "23.25"
+          "sizeKb": "81.29"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "6.44"
+          "sizeKb": "11.79"
         }
       ]
     },
     {
-      "asset": "products/spices-catalog-fallback.webp",
+      "asset": "products/asset-85-68747470.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 77.95,
-      "optimizedWebpKb": 73.75,
-      "savingsPercent": "5.4%",
+      "originalSizeKb": 75.32,
+      "optimizedWebpKb": 69.75,
+      "savingsPercent": "7.4%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "73.75"
+          "sizeKb": "69.75"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "41.81"
+          "sizeKb": "42.74"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "7.29"
+          "sizeKb": "10.30"
         }
       ]
     },
     {
-      "asset": "products/strawberry-powder.webp",
+      "asset": "products/asset-86-68747470.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 28.68,
-      "optimizedWebpKb": 27.98,
-      "savingsPercent": "2.5%",
+      "originalSizeKb": 17.38,
+      "optimizedWebpKb": 16.7,
+      "savingsPercent": "3.9%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "27.98"
+          "sizeKb": "16.70"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "18.07"
+          "sizeKb": "11.70"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "3.68"
+          "sizeKb": "3.38"
         }
       ]
     },
     {
-      "asset": "products/sunflower-seeds.webp",
+      "asset": "products/asset-87-68747470.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 125.54,
-      "optimizedWebpKb": 120.79,
-      "savingsPercent": "3.8%",
+      "originalSizeKb": 99.92,
+      "optimizedWebpKb": 99.24,
+      "savingsPercent": "0.7%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "120.79"
+          "sizeKb": "99.24"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "71.66"
+          "sizeKb": "52.35"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "12.93"
+          "sizeKb": "7.39"
         }
       ]
     },
     {
-      "asset": "products/turmeric-extract.webp",
+      "asset": "products/asset-89-68747470.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 82.05,
-      "optimizedWebpKb": 77.21,
-      "savingsPercent": "5.9%",
+      "originalSizeKb": 1.36,
+      "optimizedWebpKb": 1.35,
+      "savingsPercent": "0.9%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "77.21"
+          "sizeKb": "1.35"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "43.05"
+          "sizeKb": "1.35"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "6.83"
+          "sizeKb": "1.35"
         }
       ]
     },
     {
-      "asset": "products/watermelon-seeds.webp",
+      "asset": "products/asset-9-68747470.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 37.37,
-      "optimizedWebpKb": 36.28,
-      "savingsPercent": "2.9%",
+      "originalSizeKb": 45.2,
+      "optimizedWebpKb": 44.61,
+      "savingsPercent": "1.3%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "36.28"
+          "sizeKb": "44.61"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "22.61"
+          "sizeKb": "27.74"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "6.25"
+        }
+      ]
+    },
+    {
+      "asset": "products/cabbage-powder.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 33.52,
+      "optimizedWebpKb": 32.71,
+      "savingsPercent": "2.4%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "32.71"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "19.26"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "3.55"
+        }
+      ]
+    },
+    {
+      "asset": "products/chia-seeds.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 49.48,
+      "optimizedWebpKb": 48.92,
+      "savingsPercent": "1.1%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "48.92"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "48.92"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "9.48"
+        }
+      ]
+    },
+    {
+      "asset": "products/coriander-leaf-powder.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 51.71,
+      "optimizedWebpKb": 50.79,
+      "savingsPercent": "1.8%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "50.79"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "29.06"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "5.62"
+        }
+      ]
+    },
+    {
+      "asset": "products/dehydrated-banana-slices.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 19.14,
+      "optimizedWebpKb": 18.84,
+      "savingsPercent": "1.6%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "18.84"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "18.84"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "6.02"
+        }
+      ]
+    },
+    {
+      "asset": "products/dehydrated-beetroot-flakes.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 69.68,
+      "optimizedWebpKb": 67.99,
+      "savingsPercent": "2.4%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "67.99"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "42.37"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "7.24"
+        }
+      ]
+    },
+    {
+      "asset": "products/dehydrated-cabbage-flakes.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 46.32,
+      "optimizedWebpKb": 46.07,
+      "savingsPercent": "0.5%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "46.07"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "46.07"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "12.71"
+        }
+      ]
+    },
+    {
+      "asset": "products/dehydrated-garlic-flakes.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 62.97,
+      "optimizedWebpKb": 62.34,
+      "savingsPercent": "1.0%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "62.34"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "37.55"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "6.88"
+        }
+      ]
+    },
+    {
+      "asset": "products/dehydrated-ginger-slice.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 31.83,
+      "optimizedWebpKb": 31.39,
+      "savingsPercent": "1.4%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "31.39"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "31.39"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "6.49"
+        }
+      ]
+    },
+    {
+      "asset": "products/dehydrated-guava-slices.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 66.06,
+      "optimizedWebpKb": 65.32,
+      "savingsPercent": "1.1%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "65.32"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "38.03"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "7.72"
+        }
+      ]
+    },
+    {
+      "asset": "products/dehydrated-mix-vegetables.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 38.69,
+      "optimizedWebpKb": 38.54,
+      "savingsPercent": "0.4%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "38.54"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "38.54"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "8.79"
+        }
+      ]
+    },
+    {
+      "asset": "products/dehydrated-potato-flakes.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 31.75,
+      "optimizedWebpKb": 31.55,
+      "savingsPercent": "0.6%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "31.55"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "31.55"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "8.17"
+        }
+      ]
+    },
+    {
+      "asset": "products/dehydrated-spinach-flakes.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 40.21,
+      "optimizedWebpKb": 39.72,
+      "savingsPercent": "1.2%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "39.72"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "24.90"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "5.20"
+        }
+      ]
+    },
+    {
+      "asset": "products/dehydrated-tomato-flakes.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 49.24,
+      "optimizedWebpKb": 49.11,
+      "savingsPercent": "0.3%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "49.11"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "49.11"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "11.84"
+        }
+      ]
+    },
+    {
+      "asset": "products/green-chilli-powder.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 22.92,
+      "optimizedWebpKb": 22.73,
+      "savingsPercent": "0.9%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "22.73"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "22.73"
         },
         {
           "format": "webp",
@@ -1765,93 +1589,309 @@
       ]
     },
     {
-      "asset": "products/white-guava-powder.webp",
+      "asset": "products/hulled-sesame-seeds.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 14.12,
-      "optimizedWebpKb": 13.13,
-      "savingsPercent": "7.0%",
+      "originalSizeKb": 44.82,
+      "optimizedWebpKb": 44.32,
+      "savingsPercent": "1.1%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "13.13"
+          "sizeKb": "44.32"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "8.67"
+          "sizeKb": "44.32"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "2.26"
+          "sizeKb": "11.79"
         }
       ]
     },
     {
-      "asset": "testimonials/client-avatar-default.webp",
+      "asset": "products/kala-masala.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 52.63,
-      "optimizedWebpKb": 43.55,
-      "savingsPercent": "17.2%",
+      "originalSizeKb": 160.19,
+      "optimizedWebpKb": 129.51,
+      "savingsPercent": "19.1%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "43.55"
+          "sizeKb": "129.51"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "24.50"
+          "sizeKb": "55.18"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "6.24"
+          "sizeKb": "10.43"
         }
       ]
     },
     {
-      "asset": "testimonials/client-avatar-male.webp",
+      "asset": "products/lemon-powder.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 2.93,
-      "optimizedWebpKb": 2.78,
-      "savingsPercent": "5.1%",
+      "originalSizeKb": 40.99,
+      "optimizedWebpKb": 40.69,
+      "savingsPercent": "0.7%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "2.78"
+          "sizeKb": "40.69"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "2.78"
+          "sizeKb": "40.69"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "2.78"
+          "sizeKb": "9.03"
         }
       ]
     },
     {
-      "asset": "testimonials/client-review-soundwave.webp",
+      "asset": "products/mint-leaf-powder.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 18.16,
-      "optimizedWebpKb": 17.08,
-      "savingsPercent": "6.0%",
+      "originalSizeKb": 23.45,
+      "optimizedWebpKb": 23.28,
+      "savingsPercent": "0.7%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "17.08"
+          "sizeKb": "23.28"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "17.08"
+          "sizeKb": "14.69"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "2.97"
+        }
+      ]
+    },
+    {
+      "asset": "products/moringa-leaf-powder.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 92.65,
+      "optimizedWebpKb": 90.86,
+      "savingsPercent": "1.9%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "90.86"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "52.42"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "9.60"
+        }
+      ]
+    },
+    {
+      "asset": "products/moringa-seed-oil.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 59.51,
+      "optimizedWebpKb": 55.07,
+      "savingsPercent": "7.5%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "55.07"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "22.69"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "4.87"
+        }
+      ]
+    },
+    {
+      "asset": "products/moringa-seeds.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 165.4,
+      "optimizedWebpKb": 159.87,
+      "savingsPercent": "3.3%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "159.87"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "95.17"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "18.88"
+        }
+      ]
+    },
+    {
+      "asset": "products/mustard-seeds.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 59.95,
+      "optimizedWebpKb": 58.54,
+      "savingsPercent": "2.4%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "58.54"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "58.54"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "12.22"
+        }
+      ]
+    },
+    {
+      "asset": "products/orange-peel-powder.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 20.97,
+      "optimizedWebpKb": 20.76,
+      "savingsPercent": "1.0%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "20.76"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "20.76"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "5.28"
+        }
+      ]
+    },
+    {
+      "asset": "products/orange-slices.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 182.11,
+      "optimizedWebpKb": 88.37,
+      "savingsPercent": "51.5%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "88.37"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "34.99"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "6.46"
+        }
+      ]
+    },
+    {
+      "asset": "products/panchgavya-products.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 48.43,
+      "optimizedWebpKb": 37.34,
+      "savingsPercent": "22.9%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "37.34"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "16.89"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "3.93"
+        }
+      ]
+    },
+    {
+      "asset": "products/papaya-powder.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 32.71,
+      "optimizedWebpKb": 32.28,
+      "savingsPercent": "1.3%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "32.28"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "32.28"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "7.62"
+        }
+      ]
+    },
+    {
+      "asset": "products/pineapple-powder.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 24.87,
+      "optimizedWebpKb": 24.67,
+      "savingsPercent": "0.8%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "24.67"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "15.77"
         },
         {
           "format": "webp",
@@ -1861,117 +1901,463 @@
       ]
     },
     {
-      "asset": "testimonials/client-review-wellness-1.webp",
+      "asset": "products/pomegranate-powder.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 43.47,
-      "optimizedWebpKb": 42.5,
-      "savingsPercent": "2.2%",
+      "originalSizeKb": 35.55,
+      "optimizedWebpKb": 34.72,
+      "savingsPercent": "2.3%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "42.50"
+          "sizeKb": "34.72"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "42.50"
+          "sizeKb": "19.79"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "7.63"
+          "sizeKb": "3.50"
+        }
+      ]
+    },
+    {
+      "asset": "products/raw-banana-powder.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 33.43,
+      "optimizedWebpKb": 32.14,
+      "savingsPercent": "3.8%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "32.14"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "22.30"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "6.22"
+        }
+      ]
+    },
+    {
+      "asset": "products/red-chilli-powder.jpg",
+      "originalFormat": "jpg",
+      "originalSizeKb": 39.47,
+      "optimizedWebpKb": 26.7,
+      "savingsPercent": "32.4%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "26.70"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "26.70"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "6.74"
+        }
+      ]
+    },
+    {
+      "asset": "products/red-chilli-powder.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 26.7,
+      "optimizedWebpKb": 24.54,
+      "savingsPercent": "8.1%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "24.54"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "24.54"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "6.22"
+        }
+      ]
+    },
+    {
+      "asset": "products/spices-catalog-fallback.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 73.75,
+      "optimizedWebpKb": 72.54,
+      "savingsPercent": "1.6%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "72.54"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "41.45"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "7.18"
+        }
+      ]
+    },
+    {
+      "asset": "products/strawberry-powder.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 27.98,
+      "optimizedWebpKb": 27.8,
+      "savingsPercent": "0.6%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "27.80"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "17.96"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "3.69"
+        }
+      ]
+    },
+    {
+      "asset": "products/sunflower-seeds.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 120.79,
+      "optimizedWebpKb": 119.62,
+      "savingsPercent": "1.0%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "119.62"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "71.05"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "12.95"
+        }
+      ]
+    },
+    {
+      "asset": "products/turmeric-extract.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 77.21,
+      "optimizedWebpKb": 75.62,
+      "savingsPercent": "2.1%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "75.62"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "41.99"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "6.75"
+        }
+      ]
+    },
+    {
+      "asset": "products/watermelon-seeds.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 36.28,
+      "optimizedWebpKb": 35.24,
+      "savingsPercent": "2.9%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "35.24"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "22.06"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "4.93"
+        }
+      ]
+    },
+    {
+      "asset": "products/white-guava-powder.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 13.13,
+      "optimizedWebpKb": 12.71,
+      "savingsPercent": "3.2%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "12.71"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "8.48"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "2.20"
+        }
+      ]
+    },
+    {
+      "asset": "testimonials/client-avatar-default.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 43.55,
+      "optimizedWebpKb": 39.89,
+      "savingsPercent": "8.4%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "39.89"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "23.78"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "6.08"
+        }
+      ]
+    },
+    {
+      "asset": "testimonials/client-avatar-male.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 2.78,
+      "optimizedWebpKb": 2.68,
+      "savingsPercent": "3.4%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "2.68"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "2.68"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "2.68"
+        }
+      ]
+    },
+    {
+      "asset": "testimonials/client-review-soundwave.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 17.08,
+      "optimizedWebpKb": 16.64,
+      "savingsPercent": "2.5%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "16.64"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "16.64"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "3.17"
+        }
+      ]
+    },
+    {
+      "asset": "testimonials/client-review-wellness-1.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 42.5,
+      "optimizedWebpKb": 42.06,
+      "savingsPercent": "1.0%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "42.06"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "42.06"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "7.62"
         }
       ]
     },
     {
       "asset": "testimonials/client-review-wellness-2.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 21.49,
-      "optimizedWebpKb": 19.78,
-      "savingsPercent": "8.0%",
+      "originalSizeKb": 19.78,
+      "optimizedWebpKb": 19.3,
+      "savingsPercent": "2.4%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "19.78"
+          "sizeKb": "19.30"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "19.78"
+          "sizeKb": "19.30"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "4.06"
+          "sizeKb": "3.99"
         }
       ]
     },
     {
       "asset": "therapy/bachFlowerService.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 48.1,
-      "optimizedWebpKb": 45.76,
-      "savingsPercent": "4.9%",
+      "originalSizeKb": 119.78,
+      "optimizedWebpKb": 93.81,
+      "savingsPercent": "21.7%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "45.76"
+          "sizeKb": "93.81"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "29.52"
+          "sizeKb": "43.00"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "7.22"
+          "sizeKb": "9.35"
         }
       ]
     },
     {
       "asset": "therapy/founderPortrait.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 77.5,
-      "optimizedWebpKb": 69.85,
-      "savingsPercent": "9.9%",
+      "originalSizeKb": 69.85,
+      "optimizedWebpKb": 68.34,
+      "savingsPercent": "2.2%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "69.85"
+          "sizeKb": "68.34"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "27.41"
+          "sizeKb": "27.01"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "6.27"
+          "sizeKb": "6.31"
+        }
+      ]
+    },
+    {
+      "asset": "therapy/heroAtmosphere.avif",
+      "originalFormat": "avif",
+      "originalSizeKb": 19.32,
+      "optimizedWebpKb": 13.73,
+      "savingsPercent": "28.9%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "13.73"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "9.58"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "2.41"
+        },
+        {
+          "format": "webp",
+          "size": "hero (1200px)",
+          "sizeKb": "13.73"
+        },
+        {
+          "format": "avif",
+          "size": "hero (1200px)",
+          "sizeKb": "18.87"
         }
       ]
     },
     {
       "asset": "therapy/heroAtmosphere.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 15.3,
-      "optimizedWebpKb": 14.39,
-      "savingsPercent": "6.0%",
+      "originalSizeKb": 13.73,
+      "optimizedWebpKb": 13.16,
+      "savingsPercent": "4.1%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "14.39"
+          "sizeKb": "13.16"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "9.10"
+          "sizeKb": "8.77"
         },
         {
           "format": "webp",
@@ -1981,113 +2367,147 @@
         {
           "format": "webp",
           "size": "hero (1200px)",
-          "sizeKb": "14.39"
+          "sizeKb": "13.16"
         },
         {
           "format": "avif",
           "size": "hero (1200px)",
-          "sizeKb": "19.32"
+          "sizeKb": "18.19"
+        }
+      ]
+    },
+    {
+      "asset": "therapy/heroBg.avif",
+      "originalFormat": "avif",
+      "originalSizeKb": 396.06,
+      "optimizedWebpKb": 313,
+      "savingsPercent": "21.0%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "313.00"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "42.60"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "7.05"
+        },
+        {
+          "format": "webp",
+          "size": "hero (1200px)",
+          "sizeKb": "313.00"
+        },
+        {
+          "format": "avif",
+          "size": "hero (1200px)",
+          "sizeKb": "394.17"
         }
       ]
     },
     {
       "asset": "therapy/heroBg.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 344.38,
-      "optimizedWebpKb": 327.88,
-      "savingsPercent": "4.8%",
+      "originalSizeKb": 313,
+      "optimizedWebpKb": 309.72,
+      "savingsPercent": "1.0%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "327.88"
+          "sizeKb": "309.72"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "41.12"
+          "sizeKb": "42.33"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "6.91"
+          "sizeKb": "6.93"
         },
         {
           "format": "webp",
           "size": "hero (1200px)",
-          "sizeKb": "327.88"
+          "sizeKb": "309.72"
         },
         {
           "format": "avif",
           "size": "hero (1200px)",
-          "sizeKb": "396.06"
+          "sizeKb": "374.29"
         }
       ]
     },
     {
       "asset": "therapy/rekkhanohoService.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 7.2,
-      "optimizedWebpKb": 5.71,
-      "savingsPercent": "20.7%",
+      "originalSizeKb": 5.71,
+      "optimizedWebpKb": 5.58,
+      "savingsPercent": "2.2%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "5.71"
+          "sizeKb": "5.58"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "5.71"
+          "sizeKb": "5.58"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "3.20"
+          "sizeKb": "3.13"
         }
       ]
     },
     {
       "asset": "therapy/sanctuary-lotus-atmosphere.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 1.78,
-      "optimizedWebpKb": 1.71,
-      "savingsPercent": "4.2%",
+      "originalSizeKb": 1.71,
+      "optimizedWebpKb": 1.69,
+      "savingsPercent": "1.1%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "1.71"
+          "sizeKb": "1.69"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "1.71"
+          "sizeKb": "1.69"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "1.71"
+          "sizeKb": "1.69"
         }
       ]
     },
     {
       "asset": "therapy/sanctuary-meditation-retreat.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 71.8,
-      "optimizedWebpKb": 65.13,
-      "savingsPercent": "9.3%",
+      "originalSizeKb": 65.13,
+      "optimizedWebpKb": 60.53,
+      "savingsPercent": "7.1%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "65.13"
+          "sizeKb": "60.53"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "33.69"
+          "sizeKb": "32.67"
         },
         {
           "format": "webp",
@@ -2099,48 +2519,82 @@
     {
       "asset": "therapy/sanctuaryLocation.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 108.22,
-      "optimizedWebpKb": 105.04,
-      "savingsPercent": "2.9%",
+      "originalSizeKb": 105.04,
+      "optimizedWebpKb": 104,
+      "savingsPercent": "1.0%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "105.04"
+          "sizeKb": "104.00"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "52.92"
+          "sizeKb": "52.25"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "7.46"
+          "sizeKb": "7.35"
         }
       ]
     },
     {
       "asset": "therapy/serviceFallback.webp",
       "originalFormat": "webp",
-      "originalSizeKb": 114.34,
-      "optimizedWebpKb": 106.26,
-      "savingsPercent": "7.1%",
+      "originalSizeKb": 119.78,
+      "optimizedWebpKb": 93.81,
+      "savingsPercent": "21.7%",
       "variants": [
         {
           "format": "webp",
           "size": "master (1200px)",
-          "sizeKb": "106.26"
+          "sizeKb": "93.81"
         },
         {
           "format": "webp",
           "size": "card (600px)",
-          "sizeKb": "37.11"
+          "sizeKb": "43.00"
         },
         {
           "format": "webp",
           "size": "thumb (200px)",
-          "sizeKb": "6.93"
+          "sizeKb": "9.35"
+        }
+      ]
+    },
+    {
+      "asset": "therapy/therapyHero.webp",
+      "originalFormat": "webp",
+      "originalSizeKb": 52.57,
+      "optimizedWebpKb": 32.86,
+      "savingsPercent": "37.5%",
+      "variants": [
+        {
+          "format": "webp",
+          "size": "master (1200px)",
+          "sizeKb": "32.86"
+        },
+        {
+          "format": "webp",
+          "size": "card (600px)",
+          "sizeKb": "22.52"
+        },
+        {
+          "format": "webp",
+          "size": "thumb (200px)",
+          "sizeKb": "4.82"
+        },
+        {
+          "format": "webp",
+          "size": "hero (1200px)",
+          "sizeKb": "32.86"
+        },
+        {
+          "format": "avif",
+          "size": "hero (1200px)",
+          "sizeKb": "41.42"
         }
       ]
     }

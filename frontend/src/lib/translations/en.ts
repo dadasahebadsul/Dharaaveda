@@ -632,7 +632,7 @@ export const translations: StaticTranslations = {
       },
       "dehydrated_fruits": {
         "title": "Dehydrated Fruits",
-        "desc": "Premium long-cut and slices of sun-sheltered dehydrated fruits preserving natural sugars, texture, and vitamins."
+        "desc": "Dharaaveda Global Exim offers carefully selected dehydrated fruits processed to retain their characteristic flavour, aroma, colour and convenience, with extended shelf life for food and beverage applications."
       },
       "flakes": {
         "title": "Flakes Category",

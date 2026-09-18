@@ -1842,7 +1842,7 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
   {
     "id": "dehydrated_fruits",
     "title": "Dehydrated Fruits",
-    "description": "Premium long-cut and slices of sun-sheltered dehydrated fruits preserving natural sugars, texture, and vitamins.",
+    "description": "Dharaaveda Global Exim offers carefully selected dehydrated fruits processed to retain their characteristic flavour, aroma, colour and convenience, with extended shelf life for food and beverage applications.",
     "image": IMAGES.exportCategories.dehydratedFruits,
     "products": [
       {
