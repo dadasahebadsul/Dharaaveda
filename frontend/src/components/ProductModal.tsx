@@ -202,6 +202,11 @@ const ProductModal: React.FC<ProductModalProps> = ({ category, onClose, onInquir
                              title: "Grade & Applications",
                              content: pDetails?.gradeApplications,
                            },
+                       {
+                         id: "benefits",
+                         title: "Benefits",
+                         content: pDetails?.benefits,
+                       },
                          ]
                            .filter((section) => section.content)
                            .map((section) => {
@@ -256,7 +261,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ category, onClose, onInquir
                                 {t.product.metadataOrigin || "ORIGIN"}
                               </span>
                             </div>
-                            <div className="space-y-1 text-base leading-7 text-gray-800 font-sans">
+                            <div className="space-y-1 text-base leading-7 text-gray-800 font-mono">
                               {pOrigin
                                 .split("•")
                                 .map((item) => item.trim())
@@ -276,7 +281,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ category, onClose, onInquir
                                 {t.product.metadataPurity || "PURITY"}
                               </span>
                             </div>
-                           <div className="space-y-1 text-base leading-7 text-gray-800 font-sans">
+                           <div className="space-y-1 text-base leading-7 text-gray-800 font-mono">
                              {pPurity
                                .split("•")
                                .map((item) => item.trim())
@@ -296,7 +301,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ category, onClose, onInquir
                                 {t.product.metadataGrade || "GRADE"}
                               </span>
                             </div>
-                            <div className="space-y-1 text-base leading-7 text-gray-800 font-sans">
+                            <div className="space-y-1 text-base leading-7 text-gray-800 font-mono">
                               {pGrade
                                 .split("•")
                                 .map((item) => item.trim())
@@ -322,7 +327,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ category, onClose, onInquir
                               </span>
                             </div>
 
-                            <div className="space-y-1 text-base leading-7 text-gray-800 font-sans">
+                            <div className="space-y-1 text-base leading-7 text-gray-800 font-mono">
                               {pAvailableForms.map((form) => (
                                 <div key={form}>• {form}</div>
                               ))}
@@ -339,7 +344,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ category, onClose, onInquir
                               </span>
                             </div>
 
-                            <div className="space-y-1 text-base leading-7 text-gray-800 font-sans">
+                            <div className="space-y-1 text-base leading-7 text-gray-800 font-mono">
                               {pPackaging
                                 .split("•")
                                 .map((item) => item.trim())

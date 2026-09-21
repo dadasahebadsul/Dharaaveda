@@ -122,12 +122,12 @@ export const IMAGES = {
     lemonPowder: "/images/products/lemon-powder.webp",
     strawberryPowder: "/images/products/strawberry-powder.webp",
     amlaPowder: "/images/products/amla-fruit-powder.webp",
-    dragonFruitPowder: "/images/products/spices-catalog-fallback.webp",
-    jackfruitPowder: "/images/products/spices-catalog-fallback.webp",
-    chikooPowder: "/images/products/spices-catalog-fallback.webp",
-    coconutPowder: "/images/products/spices-catalog-fallback.webp",
-    figPowder: "/images/products/spices-catalog-fallback.webp",
-    watermelonPowder: "/images/products/spices-catalog-fallback.webp",
+    dragonFruitPowder: "/images/products/dragon-fruit-powder.webp",
+    jackfruitPowder: "/images/products/jackfruit-powder.webp",
+    chikooPowder: "/images/products/chikoo-powder.webp",
+    coconutPowder: "/images/products/coconut-powder.webp",
+    figPowder: "/images/products/fig-powder.webp",
+    watermelonPowder: "/images/products/watermelon-powder.webp",
     // Moringa Products
     moringaPowder: "/images/products/moringa-leaf-powder.webp",
     moringaLeaves: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNwNsgi7f-TOPNkw9sGyb1BBuyrcNuEuNt7Q&s",
@@ -135,7 +135,9 @@ export const IMAGES = {
     moringaExtract: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwE68zDlJyiPMGoSfcK1NgmjHHLXavgznxow&s",
     moringaSeeds: "/images/products/moringa-seeds.webp",
     moringaSeedOil: "/images/products/moringa-seed-oil.webp",
-    // Seeds
+    MoringaLeafExtract: "/images/products/moringa-leaf-extract.webp",
+    MoringaCapsulesTablets:"/images/products/moringa-capsules-tablets.webp",
+
     flaxSeeds: "/images/products/asset-51-68747470.webp",
     pumpkinSeeds: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU0jfiE947AYh41zRqzeFE56IGIiVcS3Uxtg&s",
     sesameSeeds: "/images/products/hulled-sesame-seeds.webp",
@@ -161,6 +163,13 @@ export const IMAGES = {
     strawberrySlices: "/images/products/asset-68-68747470.webp",
     guavaSlices: "/images/products/dehydrated-guava-slices.webp",
     orangeSlices: "/images/products/orange-slices.webp",
+    LemonSlices: "/images/products/dehydrated-lemon.webp",
+    WatermelonSlices: "/images/products/dehydrated-watermelon.webp",
+    JackfruitSlices: "/images/products/dehydrated-jackfruit.webp",
+    AmlaSlices: "/images/products/dehydrated-amla.webp",
+    DehydratedCoconut: "/images/products/dehydrated-coconut-products.webp",
+    KiwiSlices: "/images/products/dehydrated-kiwi.webp",
+    PomegranateArils: "/images/products/dehydrated-pomegranate.webp",
     // Flakes
     onionFlakes: "/images/products/asset-70-68747470.webp",
     garlicFlakes: "/images/products/dehydrated-garlic-flakes.webp",
@@ -170,6 +179,16 @@ export const IMAGES = {
     carrotFlakes: "/images/products/asset-70-68747470.webp",
     spinachFlakes: "/images/products/asset-70-68747470.webp",
     mixedVegFlakes: "/images/products/dehydrated-mix-vegetables.webp",
+
+    // Panchgavya & Gomay
+    GomayGanesh: "/images/products/gomay-ganesh.webp",
+    GomayShreeYantra: "/images/products/gomay-shree-yantra.webp",
+    GomayShubhLabh: "/images/products/gomay-shubh-labh.webp",
+    GomayMobileStand: "/images/products/gomay-mobile-stand.webp",
+    GomayAntiRadiationChip: "/images/products/gomay-anti-radiation-chip.webp",
+    PanchgavyaDhoop: "/images/products/gomay-incense-sticks.webp",
+    PanchgavyaDiya: "/images/products/gomay-diya.webp",
+    PanchgavyaHavanSamagri: "/images/products/gomay-havan-samagri.webp",
   },
 
   // ----------------------------------------------------------

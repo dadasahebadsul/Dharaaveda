@@ -99,11 +99,11 @@ export default function OptimizedImage({
   decoding,
   ...rest
 }: OptimizedImageProps) {
-  const [isLoaded, setIsLoaded] = useState(priority);
+  const [isLoaded, setIsLoaded] = useState(true);
   const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
-    setIsLoaded(priority);
+    setIsLoaded(true);
     setHasError(false);
   }, [src, priority]);
 
@@ -163,12 +163,18 @@ export default function OptimizedImage({
         {avifSrcSet && <source type="image/avif" srcSet={avifSrcSet} sizes={sizes} />}
 
         {/* WebP Format */}
-        {webpSrcSet && <source type="image/webp" srcSet={webpSrcSet} sizes={sizes} />}
+        {webpSrcSet && (
+          <source
+            type="image/webp"
+            srcSet={webpSrcSet}
+            sizes={sizes}
+          />
+        )}
 
         {/* Standard Img Tag Fallback */}
         <img
           src={finalSrc}
-          srcSet={unsplashSrcSet}
+          //srcSet={unsplashSrcSet}
           sizes={isUnsplash ? sizes : undefined}
           alt={alt}
           width={width}

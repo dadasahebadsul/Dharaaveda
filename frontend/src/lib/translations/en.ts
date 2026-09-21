@@ -1108,78 +1108,7 @@ export const translations: StaticTranslations = {
           "minOrder": "100 Kilograms"
         }
       },
-        "fp-dragonfruit": {
-          "name": "Dragon Fruit Powde",
-          "desc": "Our Dragon Fruit Powder (Pitaya Powder) is freeze-dried from fresh red dragon fruit to retain striking magenta color, delicate sweetness, and potent antioxidants.",
-          "pricing": "Contact Trade Desk",
-          "spec": {
-            "origin": "India",
-            "packaging": "• Smoothie Mix (25 kg Bags / Vacuum Foil)",
-            "purity": "100% Pure Dragon Fruit Powder • High Antioxidants & Fiber",
-            "grade": "Food Grade / Export Grade (Customized specifications available)",
-            "minOrder": "100 Kilograms"
-          }
-        },
-        "fp-jackfruit": {
-            "name": "Jackfruit Powder",
-            "desc": "Our Jackfruit Powder is produced from mature jackfruits, gently dehydrated and freeze-dried to retain sweet tropical aroma, dietary fiber, and nutritional density.",
-             "pricing": "Contact Trade Desk",
-             "spec": {
-                 "origin": "India",
-                 "packaging": " • Smoothie Mix (25 kg Bags / Bulk Foil Packs)",
-                 "purity": "100% Pure Jackfruit Powder",
-                 "grade": "Food Grade / Export Grade (Customized specifications available)",
-                 "minOrder": "100 Kilograms"
-                  }
-              },
-          "fp-chikoo": {
-              "name": "Chikoo Powder",
-              "desc": "Our Chikoo Powder (Sapota Powder) is prepared from ripe sapota fruits, freeze-dried and finely milled to preserve its rich malty caramel flavor and sweetness.",
-               "pricing": "Contact Trade Desk",
-               "spec": {
-                   "origin": "India (Gujarat & Maharashtra)",
-                   "packaging": " • Smoothie Mix (25 kg Bags / Bulk Foil Packs)",
-                   "purity": "100% Pure Sapota Fruit Powder",
-                    "grade": "Food Grade / Export Grade (Customized specifications available)",
-                    "minOrder": "100 Kilograms"
-                            }
-                        },
-          "fp-coconut": {
-              "name": "Coconut Powder",
-              "desc": "Our Coconut Powder is produced from fresh coconut milk and meat, spray-dried and dehydrated into fine creamy powder for confectionery, baking, and instant beverage mixes.",
-              "pricing": "Contact Trade Desk",
-              "spec": {
-                  "origin": "India (Kerala & Tamil Nadu)",
-                  "packaging": " • 25 kg Bags / Vacuum Foil",
-                  "purity": "100% Pure Dehydrated Coconut Powder",
-                  "grade": "Food Grade / Export Grade (Customized specifications available)",
-                   "minOrder": "100 Kilograms"
-                   }
-               },
-            "fp-fig": {
-                "name": "Fig Powder",
-                "desc": "Our Fig Powder (Anjeer Powder) is produced from premium dried figs, freeze-dried and ground into fine powder for natural sweetening, baking, and smoothie mixes.",
-                "pricing": "Contact Trade Desk",
-                "spec": {
-                    "origin": "India (Maharashtra)",
-                    "packaging": "  Smoothie Mix (25 kg Bags / Vacuum Foil)",
-                    "purity": "100% Pure Fig Fruit Powder",
-                    "grade": "Food Grade / Export Grade (Customized specifications available)",
-                    "minOrder": "100 Kilograms"
-                       }
-                   },
-          "fp-watermelon": {
-              "name": "Watermelon Powder",
-              "desc": "Our Watermelon Powder is freeze-dried from fresh ripe watermelons to retain bright pink-red color, refreshing sweet taste, and natural lycopene content.",
-              "pricing": "Contact Trade Desk",
-              "spec": {
-                  "origin": "India",
-                  "packaging": " Smoothie Mix (25 kg Bags / Vacuum Foil)",
-                  "purity": "100% Pure Watermelon Powder",
-                  "grade": "Food Grade / Export Grade (Customized specifications available)",
-                  "minOrder": "100 Kilograms"
-                  }
-              },
+
       "m-leaf-powder": {
         "name": "Moringa Leaf Powder",
         "desc": "Finely processed powder made from carefully selected moringa leaves. Suitable for food, wellness, nutraceutical and herbal applications.",
@@ -1458,7 +1387,7 @@ export const translations: StaticTranslations = {
       },
       "df-banana": {
         "name": "Banana Slices",
-        "desc": "Dehydrated Banana is prepared from carefully selected ripe bananas and gently dehydrated to reduce moisture while retaining the natural banana flavour, aroma, colour, and nutritional characteristics. It is convenient, shelf-stable, and suitable for food manufacturing.\n\n Applications:\n Breakfast cereals, granola, trail mixes, bakery products, confectionery, snacks, smoothies, desserts, baby food, and food-processing applications.",
+        "desc": "Dehydrated Banana is prepared from carefully selected ripe bananas and gently dehydrated to reduce moisture while retaining the natural banana flavour, aroma, colour, and nutritional characteristics. It is convenient, shelf-stable, and suitable for food manufacturing.",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India – sourced from selected banana-growing regions.",
@@ -1470,7 +1399,7 @@ export const translations: StaticTranslations = {
       },
       "df-mango": {
         "name": "Mango Slices",
-        "desc": "Dehydrated Mango is prepared from carefully selected mangoes and dehydrated to create a convenient, shelf-stable ingredient while retaining the characteristic tropical mango flavour, aroma, and colour.\n\n Applications:\nSnacks, trail mixes, cereals, bakery products, confectionery, desserts, smoothies, beverages, fruit preparations, and food-processing applications.",
+        "desc": "Dehydrated Mango is prepared from carefully selected mangoes and dehydrated to create a convenient, shelf-stable ingredient while retaining the characteristic tropical mango flavour, aroma, and colour.",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India – sourced from selected mango-growing regions.",
@@ -1482,7 +1411,7 @@ export const translations: StaticTranslations = {
       },
       "df-pineapple": {
         "name": "Pineapple Slices",
-        "desc": "Dehydrated Pineapple is made from selected ripe pineapples and processed under controlled dehydration conditions to provide a convenient fruit ingredient with a characteristic tropical flavour and aroma.\n\n Applications:\nBakery, confectionery, cereals, granola, trail mixes, desserts, snacks, beverages, fruit blends, yogurt products, and food manufacturing.",
+        "desc": "Dehydrated Pineapple is made from selected ripe pineapples and processed under controlled dehydration conditions to provide a convenient fruit ingredient with a characteristic tropical flavour and aroma.",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India – sourced from selected pineapple-growing regions.",
@@ -1494,7 +1423,7 @@ export const translations: StaticTranslations = {
       },
       "df-apple": {
         "name": "Apple Slices",
-        "desc": "Dehydrated Apple is produced from selected fresh apples that are cleaned, sliced, and carefully dehydrated to provide a convenient, shelf-stable fruit ingredient with a characteristic apple flavour and aroma.\n\n Applications:\nCereals, granola, bakery products, confectionery, snack mixes, tea blends, desserts, fruit mixes, sauces, and food-processing applications. ",
+        "desc": "Dehydrated Apple is produced from selected fresh apples that are cleaned, sliced, and carefully dehydrated to provide a convenient, shelf-stable fruit ingredient with a characteristic apple flavour and aroma.",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India – sourced from selected apple-growing regions.",
@@ -1506,7 +1435,7 @@ export const translations: StaticTranslations = {
       },
       "df-papaya": {
         "name": "Papaya Slices",
-        "desc": "Dehydrated Papaya is produced from selected papaya fruit and carefully dehydrated to reduce moisture while providing a convenient, shelf-stable fruit ingredient.\n\nApplications:\nBakery products, confectionery, fruit mixes, cereals, granola, trail mixes, desserts, snacks, beverages, and food manufacturing.",
+        "desc": "Dehydrated Papaya is produced from selected papaya fruit and carefully dehydrated to reduce moisture while providing a convenient, shelf-stable fruit ingredient.",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India – sourced from selected papaya-growing regions.",
@@ -1518,7 +1447,7 @@ export const translations: StaticTranslations = {
       },
       "df-strawberry": {
         "name": "Strawberry Slices",
-        "desc": "Dehydrated Strawberry is prepared from selected strawberries and carefully dehydrated to provide a convenient fruit ingredient with a characteristic strawberry flavour, aroma, and appearance.\n\nApplications:\nCereals, granola, bakery products, confectionery, chocolates, desserts, yogurt, ice cream, smoothies, snack mixes, and beverage applications.",
+        "desc": "Dehydrated Strawberry is prepared from selected strawberries and carefully dehydrated to provide a convenient fruit ingredient with a characteristic strawberry flavour, aroma, and appearance.",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India – sourced from selected strawberry-growing regions.",
@@ -1530,7 +1459,7 @@ export const translations: StaticTranslations = {
       },
       "df-guava": {
         "name": "Guava Slices",
-        "desc": "Dehydrated Guava is prepared from selected guavas and carefully dehydrated to create a convenient, shelf-stable fruit ingredient with its characteristic guava flavour and aroma.\n\nApplications:\nSnacks, fruit mixes, cereals, granola, bakery products, confectionery,beverages, desserts, smoothies, and food-processing applications.",
+        "desc": "Dehydrated Guava is prepared from selected guavas and carefully dehydrated to create a convenient, shelf-stable fruit ingredient with its characteristic guava flavour and aroma.",
         "pricing": "Contact Trade Desk",
         "spec": {
           "origin": "India – sourced from selected guava-growing regions.",
@@ -1542,7 +1471,7 @@ export const translations: StaticTranslations = {
       },
       "df-Orange": {
           "name": "Orange Slices",
-          "desc": "Dehydrated Orange is produced from selected oranges and carefully processed to provide a convenient, shelf-stable citrus ingredient with characteristic orange flavour and aroma.\n\nApplications:\nTea blends, beverages, bakery, confectionery, desserts, cereals, snack mixes, garnishing, sauces, seasonings, and food-processing applications.",
+          "desc": "Dehydrated Orange is produced from selected oranges and carefully processed to provide a convenient, shelf-stable citrus ingredient with characteristic orange flavour and aroma.",
           "pricing": "Contact Trade Desk",
           "spec": {
               "origin": "India – sourced from selected citrus-growing regions.",

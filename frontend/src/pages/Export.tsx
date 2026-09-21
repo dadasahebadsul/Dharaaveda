@@ -686,5 +686,51 @@ const SHOWCASE_CATEGORIES = [
       { title: "Potato Flakes", desc: "High-starch potato flakes, ideal for instant baking thickeners and snack bases." },
       { title: "Mixed Veg Flakes", desc: "A colorful blend of carrot, cabbage, onion, and spinach flakes for instant soup cups." }
     ]
-  }
+  },
+
+     {
+        id: "panchgavya",
+        badge: "Panchgavya & Gomay Products Desk",
+        title: "Panchgavya & Gomay Products",
+        description:
+          "Traditional Panchgavya and Gomay products prepared using natural materials and traditional Indian craftsmanship. Suitable for spiritual, cultural, wellness and eco-conscious applications.",
+        image: IMAGES.exportCategories.panchgavya,
+        highlights: [
+          "Traditional Panchgavya products",
+          "Natural and eco-friendly materials",
+          "Handcrafted traditional products",
+          "Customized export packaging"
+        ],
+        benefits: [
+          "Natural and traditional product range",
+          "Eco-conscious product selection",
+          "Suitable for cultural and spiritual use",
+          "Bulk and customized packaging options"
+        ],
+        packaging:
+          "Individual protective packaging • Gift boxes • Bulk packaging • Customized export packaging",
+        capability:
+          "Bulk supply and customized packaging available for international buyers.",
+        shippingInfo:
+          "Export-ready packaging with customized shipment solutions.",
+        features: [
+          {
+            title: "Gomay Ganesh",
+            desc: "Handcrafted Ganesh idol made using cow dung (Gomay) and natural materials."
+          },
+          {
+            title: "Gomay Shree Yantra",
+            desc: "Traditional Gomay Shree Yantra prepared for spiritual and cultural applications."
+          },
+          {
+            title: "Gomay Shubh Labh",
+            desc: "Traditional Gomay product designed for auspicious and cultural use."
+          },
+          {
+            title: "Gomay Mobile Stand",
+            desc: "Eco-friendly Gomay mobile stand made using traditional natural materials."
+          }
+        ]
+     }
+
 ];

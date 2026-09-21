@@ -471,25 +471,27 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "createdAt": "2026-05-31"
       },
       {
-        "id": "vp-tomato",
+        "id": "vp-tomatopowder",
         "name": "Tomato Powder",
         "category": "Dehydrated Vegetable Powders",
         "images": [
           IMAGES.exportProducts.tomatoPowder
         ],
-        "description": "Fine spray-dried red tomato powder prepared from ripe organic tomatoes, ideal for instant soups, sauces, and seasoning rubs.",
+        "description": "Premium-quality Tomato Powder made from carefully selected, ripe tomatoes that are dehydrated and finely processed to retain their natural colour, flavour, aroma, and nutritional value. Suitable for food manufacturing and commercial applications.",
+        "details": {
+          "applications": "• Soups\n• Sauces\n• Ketchup\n• Seasonings\n• Snacks\n• Instant foods\n• Gravies\n• Ready-to-eat meals\n• Bakery products\n• Nutraceutical formulations\n• Food processing"
+        },
         "pricing": "Contact Trade Desk",
         "specifications": {
-          "origin": "Karnataka Farms, India",
+          "origin": "India",
           "availableForms": [
-                         "Fine Powder",
-                         "Medium Grind ",
-                         "Customized Mesh Sizes "
-                     ],
-          "packaging": "Laminated moisture-proof drums (20kg)",
-          "purity": "100% Pure Dehydrated Vegetable, No Additives",
-          "grade": "Premium Spray-Dried / Low-Temp Milled",
-          "minOrder": "500 Kilograms"
+            "Fine Powder",
+            "Customized Mesh Sizes "
+          ],
+          "packaging": "1 kg • 5 kg • 10 kg • 20 kg • 25 kg • Customized packaging",
+          "purity": "100% Pure Tomato Powder – No artificial colours, flavours, or preservatives.",
+          "grade": "Food Grade / Export Quality",
+          "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
       },
@@ -747,28 +749,30 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "createdAt": "2026-05-31"
       },
       {
-        "id": "vp-mint",
+        "id": "vp-mintpowder",
         "name": "Mint Powder",
         "category": "Dehydrated Vegetable Powders",
         "images": [
           IMAGES.exportProducts.mintPowder
         ],
-        "description": "High-purity dehydrated mint powder ground to micro-mesh standards for quick solubility and flavor dispersion.",
+        "description": "Dharaaveda Mint Powder is made from carefully selected, naturally dried mint leaves, hygienically processed to retain its characteristic aroma, flavour, and natural properties. It is suitable for food, beverage, seasoning, and wellness applications.",
+        "details": {
+          "applications": "• Food seasoning\n• Spice blends\n• Beverages\n• Herbal teas\n• Chutneys\n• Sauces\n• Snacks\n• Bakery products\n• Nutraceutical and wellness formulations"
+        },
         "pricing": "Contact Trade Desk",
         "specifications": {
-          "origin": "Maharashtra, India",
+          "origin": "India",
           "availableForms": [
-                         "Fine Powder",
-                         "Medium Grind ",
-                         "Customized Mesh Sizes "
-                     ],
-          "packaging": "Laminated moisture-proof drums (20kg)",
-          "purity": "100% Pure Dehydrated Vegetable, No Additives",
-          "grade": "Premium Spray-Dried / Low-Temp Milled",
-          "minOrder": "500 Kilograms"
+                "Fine Powder",
+                "Medium Grind",
+                "Customized Mesh Sizes "
+              ],
+          "packaging": "100 g • 250 g • 500 g • 1 kg • 10 kg • 20 kg • 25 kg • Customized packaging",
+          "purity": "100% Pure Mint Powder – No Artificial Colours, Flavours or Added Preservatives.",
+          "grade": "Food Grade / Export Quality."
         },
         "createdAt": "2026-05-31"
-      }
+      },
     ]
   },
   {
@@ -1068,17 +1072,20 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.dragonFruitPowder
         ],
-        "description": "Our Dragon Fruit Powder (Pitaya Powder) is freeze-dried from fresh red dragon fruit to retain striking magenta color, delicate sweetness, and potent antioxidants.",
+        "description": "Dragon Fruit Powder is a premium natural fruit powder produced from carefully selected ripe dragon fruits. It is processed using suitable dehydration technology to help retain its natural colour, flavour and nutritional characteristics. Ideal for food, beverage and wellness applications.",
+        "details": {
+          "applications": "• Smoothies\n• Beverages\n• Health drinks\n• Bakery products\n• Desserts\n• Ice creams\n• Confectionery\n• Nutraceutical formulations\n• Natural food products"
+        },
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
-           "availableForms": [
-                        "Fine Powder",
-                         "Freeze-Dried Powder"
-                         ],
-          "packaging": "• Smoothie Mix (25 kg Bags / Vacuum Foil)",
-          "purity": "100% Pure Dragon Fruit Powder • High Antioxidants & Fiber",
-          "grade": "Food Grade / Export Grade (Customized specifications available)",
+          "availableForms": [
+            "Fine Powder",
+            "Freeze-Dried Powder"
+          ],
+          "packaging": "1 kg • 5 kg • 10 kg • 25 kg food-grade packaging • Customized packaging options available for bulk and export requirements.",
+          "purity": "100% Pure Dragon Fruit Powder – No Artificial Colours, Flavours or Preservatives.",
+          "grade": "Food Grade / Export Quality",
           "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
@@ -1090,17 +1097,20 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.jackfruitPowder
         ],
-        "description": "Our Jackfruit Powder is produced from mature jackfruits, gently dehydrated and freeze-dried to retain sweet tropical aroma, dietary fiber, and nutritional density.",
+        "description": "Premium-quality jackfruit powder made from carefully selected, naturally ripened jackfruit. The fruit is cleaned, processed, and finely dried to retain its natural flavour, aroma, colour, and nutritional properties. Suitable for food, beverage, bakery, and wellness applications.",
+        "details": {
+          "applications": "• Bakery & confectionery products\n• Smoothies, shakes & beverages\n• Desserts, ice creams & puddings\n• Health & nutrition mixes\n• Instant food preparations"
+        },
         "pricing": "Contact Trade Desk",
         "specifications": {
-          "origin": "India (Kerala & Karnataka)",
-           "availableForms": [
-                        "Fine Powder",
-                         "Freeze-Dried Powder"
-                         ],
-          "packaging": " • Smoothie Mix (25 kg Bags / Bulk Foil Packs)",
-          "purity": "100% Pure Jackfruit Powder",
-          "grade": "Food Grade / Export Grade (Customized specifications available)",
+          "origin": "India – sourced from selected jackfruit-growing regions and processed under hygienic conditions.",
+          "availableForms": [
+            "Fine Powder",
+            "Freeze-Dried Powder"
+          ],
+          "packaging": "500 g • 1 kg • 5 kg • 25 kg • Customized bulk packaging • Packed in food-grade moisture-resistant packaging suitable for domestic and export transportation.",
+          "purity": "100% pure jackfruit powder •  No artificial colours • No added preservatives • No added flavouring. ",
+          "grade": "Food Grade • Export Grade • Fine Powder • Suitable for B2B and industrial food applications.",
           "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
@@ -1112,17 +1122,20 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.chikooPowder
         ],
-        "description": "Our Chikoo Powder (Sapota Powder) is prepared from ripe sapota fruits, freeze-dried and finely milled to preserve its rich malty caramel flavor and sweetness.",
+        "description": "Premium-quality Chikoo (Sapota) Powder made from carefully selected, naturally ripened chikoo fruits. The fruit is cleaned, processed and dehydrated under controlled conditions to retain its characteristic natural sweetness, aroma and nutritional properties. Suitable for food, beverage and wellness applications.",
+        "details": {
+          "applications": "• Smoothies\n• Milkshakes\n• Beverages\n• Desserts\n• Ice creams\n• Bakery products\n• Confectionery\n• Nutrition mixes\n• Instant food preparations\n• Natural flavouring applications"
+        },
         "pricing": "Contact Trade Desk",
         "specifications": {
-          "origin": "India (Gujarat & Maharashtra)",
-           "availableForms": [
-                        "Fine Powder",
-                         "Freeze-Dried Powder "
-                         ],
-          "packaging": " • Smoothie Mix (25 kg Bags / Bulk Foil Packs)",
-          "purity": "100% Pure Sapota Fruit Powder",
-          "grade": "Food Grade / Export Grade (Customized specifications available)",
+          "origin": "India — sourced from selected chikoo-growing regions and processed under controlled hygienic conditions.",
+          "availableForms": [
+            "Fine Powder",
+            "Freeze-Dried Powder"
+          ],
+          "packaging": "500 g • 1 kg • 5 kg • 10 kg • 25 kg • Customized bulk packaging.",
+          "purity": "100% pure chikoo powder • free from artificial colours and flavours.",
+          "grade": "Food Grade • Premium Grade • Export Quality",
           "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
@@ -1134,17 +1147,20 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.coconutPowder
         ],
-        "description": "Our Coconut Powder is produced from fresh coconut milk and meat, spray-dried and dehydrated into fine creamy powder for confectionery, baking, and instant beverage mixes.",
+        "description": "Premium-quality Coconut Powder made from carefully selected, mature coconuts. The coconut is hygienically processed and finely powdered to retain its natural taste, aroma, texture, and nutritional properties.",
+        "details": {
+          "applications": "• Bakery products\n• Confectionery\n• Sweets\n• Desserts\n• Chocolates\n• Snack foods\n• Curries\n• Gravies\n• Coconut-based beverages\n• Instant mixes\n• Food preparations"
+        },
         "pricing": "Contact Trade Desk",
         "specifications": {
-          "origin": "India (Kerala & Tamil Nadu)",
-           "availableForms": [
-                        "Fine Powder",
-                         "Spray-Dried / Dehydrated Powder"
-                         ],
-          "packaging": "25 kg Bags / Vacuum Foil",
-          "purity": "100% Pure Dehydrated Coconut Powder",
-          "grade": "Food Grade / Export Grade (Customized specifications available)",
+          "origin": "India – sourced from selected coconut-growing regions with reliable agricultural and processing practices.",
+          "availableForms": [
+            "Fine Powder",
+            "Custom particle size available as per buyer requirements"
+          ],
+          "packaging": "25 kg food-grade PP bags with inner liner • Customized packaging • Private-label packing • Bulk packaging can be arranged as per buyer requirements",
+          "purity": "100% Coconut • No artificial colours • No added preservatives • Hygienically processed • Suitable for food applications.",
+          "grade": "Food Grade • Export Quality • Fine Powder • Custom particle size available as per buyer requirements.",
           "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
@@ -1156,17 +1172,20 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.figPowder
         ],
-        "description": "Our Fig Powder (Anjeer Powder) is produced from premium dried figs, freeze-dried and ground into fine powder for natural sweetening, baking, and smoothie mixes.",
+        "description": "Premium-quality Fig Powder made from carefully selected, naturally dried figs. It offers the natural sweetness, nutritional value, and characteristic flavor of figs in a convenient powdered form.",
+        "details": {
+          "applications": "• Smoothies\n• Milkshakes\n• Bakery products\n• Confectionery\n• Desserts\n• Health drinks\n• Nutrition blends\n• Baby-food formulations\n• Wellness products"
+        },
         "pricing": "Contact Trade Desk",
         "specifications": {
-          "origin": "India (Maharashtra)",
-           "availableForms": [
-                        "Fine Powder",
-                         " Freeze-Dried Powder "
-                         ],
-          "packaging": " Smoothie Mix (25 kg Bags / Vacuum Foil)",
-          "purity": "100% Pure Fig Fruit Powder",
-          "grade": "Food Grade / Export Grade (Customized specifications available)",
+          "origin": "India – sourced from selected agricultural regions and processed under hygienic conditions.",
+          "availableForms": [
+            "Fine Powder",
+            "Freeze-Dried Powder"
+          ],
+          "packaging": "• 25 kg food-grade PP/HDPE bags with inner liner for bulk supply • Customized packaging options available as per buyer requirements.",
+          "purity": "• 100% Pure Fig Powder • No Added Sugar • No Artificial Colour • No Artificial Flavour • No Preservatives",
+          "grade": "Food Grade • Export Quality • Hygienically Processed • Suitable for Industrial & Retail Applications",
           "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
@@ -1178,21 +1197,24 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.watermelonPowder
         ],
-        "description": "Our Watermelon Powder is freeze-dried from fresh ripe watermelons to retain bright pink-red color, refreshing sweet taste, and natural lycopene content.",
+        "description": "100% natural watermelon powder made from carefully selected, ripe watermelons and processed under controlled drying conditions to preserve its natural flavour, colour, and nutritional properties. Suitable for food, beverage, wellness, and cosmetic applications.",
+        "details": {
+          "applications": "• Smoothies\n• Beverages\n• Instant drink mixes\n• Desserts\n• Bakery products\n• Nutraceutical formulations\n• Flavour blends\n• Cosmetic/skin-care formulations"
+        },
         "pricing": "Contact Trade Desk",
         "specifications": {
-          "origin": "India",
-           "availableForms": [
-                        "Fine Powder",
-                         "Freeze-Dried Powder"
-                         ],
-          "packaging": " Smoothie Mix (25 kg Bags / Vacuum Foil)",
-          "purity": "100% Pure Watermelon Powder",
-          "grade": "Food Grade / Export Grade (Customized specifications available)",
+          "origin": "India – sourced from quality watermelon-growing regions and processed under hygienic conditions.",
+          "availableForms": [
+            "Fine Powder",
+            "Freeze-Dried Powder"
+          ],
+          "packaging": "500 g • 1 kg • 5 kg • 10 kg • 20 kg • 25 kg food-grade packaging • Customized packaging available as per buyer requirements.",
+          "purity": "100% watermelon powder, free from artificial colours, preservatives, and unnecessary additives • Typical specification: ≥99% purity, subject to batch/laboratory analysis.",
+          "grade": "Food Grade • Export Quality • Hygienically Processed • Suitable for Industrial & Retail Applications",
           "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
-      }
+      },
     ]
   },
   {
@@ -1355,7 +1377,7 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
           "name": "Moringa Leaf Extract",
           "category": "Moringa Products",
           "images": [
-                IMAGES.exportProducts.moringaSeedOil
+                IMAGES.exportProducts.MoringaLeafExtract
           ],
            "description": "Concentrated moringa leaf extract designed for use as an ingredient in nutraceutical, herbal and functional-food formulations.",
            "details": {
@@ -1380,7 +1402,7 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
           "name": "Moringa Capsules / Tablets",
           "category": "Moringa Products",
           "images": [
-                IMAGES.exportProducts.moringaSeedOil
+                IMAGES.exportProducts.MoringaCapsulesTablets
           ],
           "description": "Moringa-based dietary supplement products manufactured according to applicable specifications and regulatory requirements.",
             "details": {
@@ -1852,7 +1874,10 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.bananaSlices
         ],
-        "description": "Dehydrated Banana is prepared from carefully selected ripe bananas and gently dehydrated to reduce moisture while retaining the natural banana flavour, aroma, colour, and nutritional characteristics. It is convenient, shelf-stable, and suitable for food manufacturing.\n\n Applications:\n Breakfast cereals, granola, trail mixes, bakery products, confectionery, snacks, smoothies, desserts, baby food, and food-processing applications.",
+        "description": "Dehydrated Banana is prepared from carefully selected ripe bananas and gently dehydrated to reduce moisture while retaining the natural banana flavour, aroma, colour, and nutritional characteristics. It is convenient, shelf-stable, and suitable for food manufacturing.",
+        "details": {
+            "applications": "• Breakfast cereals\n• Granola\n• Trail mixes\n• Bakery products\n• Confectionery\n• Snacks\n• Smoothies\n• Desserts\n• Baby food\n• Food-processing applications"
+          },
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India – sourced from selected banana-growing regions.",
@@ -1878,7 +1903,10 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.mangoSlices
         ],
-        "description": "Dehydrated Mango is prepared from carefully selected mangoes and dehydrated to create a convenient, shelf-stable ingredient while retaining the characteristic tropical mango flavour, aroma, and colour.\n\n Applications:\nSnacks, trail mixes, cereals, bakery products, confectionery, desserts, smoothies, beverages, fruit preparations, and food-processing applications.",
+        "description": "Dehydrated Mango is prepared from carefully selected mangoes and dehydrated to create a convenient, shelf-stable ingredient while retaining the characteristic tropical mango flavour, aroma, and colour.",
+        "details": {
+            "applications": "• Snacks\n• Trail mixes\n• Cereals\n• Bakery products\n• Confectionery\n• Desserts\n• Smoothies\n• Beverages\n• Fruit preparations\n• Food-processing applications"
+          },
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India – sourced from selected mango-growing regions.",
@@ -1904,7 +1932,10 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.pineappleSlices
         ],
-        "description": "Dehydrated Pineapple is made from selected ripe pineapples and processed under controlled dehydration conditions to provide a convenient fruit ingredient with a characteristic tropical flavour and aroma.\n\n Applications:\nBakery, confectionery, cereals, granola, trail mixes, desserts, snacks, beverages, fruit blends, yogurt products, and food manufacturing.",
+        "description": "Dehydrated Pineapple is made from selected ripe pineapples and processed under controlled dehydration conditions to provide a convenient fruit ingredient with a characteristic tropical flavour and aroma.",
+        "details": {
+            "applications": "• Bakery\n• Confectionery\n• Cereals\n• Granola\n• Trail mixes\n• Desserts\n• Snacks\n• Beverages\n• Fruit blends\n• Yogurt products\n• Food manufacturing"
+          },
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India – sourced from selected pineapple-growing regions.",
@@ -1930,7 +1961,10 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.appleSlices
         ],
-        "description": "Dehydrated Apple is produced from selected fresh apples that are cleaned, sliced, and carefully dehydrated to provide a convenient, shelf-stable fruit ingredient with a characteristic apple flavour and aroma.\n\n Applications:\nCereals, granola, bakery products, confectionery, snack mixes, tea blends, desserts, fruit mixes, sauces, and food-processing applications. ",
+        "description": "Dehydrated Apple is produced from selected fresh apples that are cleaned, sliced, and carefully dehydrated to provide a convenient, shelf-stable fruit ingredient with a characteristic apple flavour and aroma.",
+        "details": {
+            "applications": "• Cereals\n• Granola\n• Bakery products\n• Confectionery\n• Snack mixes\n• Tea blends\n• Desserts\n• Fruit mixes\n• Sauces\n• Food-processing applications"
+          },
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India – sourced from selected apple-growing regions.",
@@ -1956,7 +1990,10 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.papayaSlices
         ],
-        "description": "Dehydrated Papaya is produced from selected papaya fruit and carefully dehydrated to reduce moisture while providing a convenient, shelf-stable fruit ingredient.\n\nApplications:\nBakery products, confectionery, fruit mixes, cereals, granola, trail mixes, desserts, snacks, beverages, and food manufacturing.",
+        "description": "Dehydrated Papaya is produced from selected papaya fruit and carefully dehydrated to reduce moisture while providing a convenient, shelf-stable fruit ingredient.",
+        "details": {
+            "applications": "• Bakery products\n• Confectionery\n• Fruit mixes\n• Cereals\n• Granola\n• Trail mixes\n• Desserts\n• Snacks\n• Beverages\n• Food manufacturing"
+          },
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India – sourced from selected papaya-growing regions.",
@@ -1983,7 +2020,10 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.strawberrySlices
         ],
-        "description": "Dehydrated Strawberry is prepared from selected strawberries and carefully dehydrated to provide a convenient fruit ingredient with a characteristic strawberry flavour, aroma, and appearance.\n\nApplications:\nCereals, granola, bakery products, confectionery, chocolates, desserts, yogurt, ice cream, smoothies, snack mixes, and beverage applications.",
+        "description": "Dehydrated Strawberry is prepared from selected strawberries and carefully dehydrated to provide a convenient fruit ingredient with a characteristic strawberry flavour, aroma, and appearance.",
+        "details": {
+            "applications": "• Cereals\n• Granola\n• Bakery products\n• Confectionery\n• Chocolates\n• Desserts\n• Yogurt\n• Ice cream\n• Smoothies\n• Snack mixes\n• Beverage applications"
+          },
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India – sourced from selected strawberry-growing regions.",
@@ -2010,7 +2050,10 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "images": [
           IMAGES.exportProducts.guavaSlices
         ],
-        "description": "Dehydrated Guava is prepared from selected guavas and carefully dehydrated to create a convenient, shelf-stable fruit ingredient with its characteristic guava flavour and aroma.\n\nApplications:\nSnacks, fruit mixes, cereals, granola, bakery products, confectionery,beverages, desserts, smoothies, and food-processing applications.",
+        "description": "Dehydrated Guava is prepared from selected guavas and carefully dehydrated to create a convenient, shelf-stable fruit ingredient with its characteristic guava flavour and aroma.",
+         "details": {
+            "applications": "• Snacks\n• Fruit mixes\n• Cereals\n• Granola\n• Bakery products\n• Confectionery\n• Beverages\n• Desserts\n• Smoothies\n• Food-processing applications"
+          },
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India – sourced from selected guava-growing regions.",
@@ -2029,32 +2072,7 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         },
         "createdAt": "2026-05-31"
       },
-      {
-          "id": "df-guava",
-          "name": "Guava Slices",
-          "category": "Dehydrated Fruits",
-          "images": [
-                IMAGES.exportProducts.guavaSlices
-          ],
-          "description": "Dehydrated Guava is prepared from selected guavas and carefully dehydrated to create a convenient, shelf-stable fruit ingredient with its characteristic guava flavour and aroma.\n\nApplications:\nSnacks, fruit mixes, cereals, granola, bakery products, confectionery,beverages, desserts, smoothies, and food-processing applications.",
-          "pricing": "Contact Trade Desk",
-          "specifications": {
-              "origin": "India – sourced from selected guava-growing regions.",
-              "availableForms": [
-                                                                            " Flakes",
-                                                                             "Chunks ",
-                                                                             "Powder",
-                                                                             "Slices ",
-                                                                             "Dices",
-                                                                             "Pieces"
-                                                                             ],
-                "packaging": "100 g • 250 g • 500 g • 1 kg • 5 kg • 10 kg • 20 kg • 25 kg • Customized bulk packaging",
-                "purity": "No Added Sugar, Sulfites or Colorants",
-                "grade": "Food Grade • Export Grade • Industrial/Commercial Grade",
-                "minOrder": "100 Kilograms"
-          },
-              "createdAt": "2026-05-31"
-      },
+
       {
           "id": "df-Orange",
           "name": "Orange Slices",
@@ -2062,7 +2080,10 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
           "images": [
                 IMAGES.exportProducts.orangeSlices
           ],
-          "description": "Dehydrated Orange is produced from selected oranges and carefully processed to provide a convenient, shelf-stable citrus ingredient with characteristic orange flavour and aroma.\n\nApplications:\nTea blends, beverages, bakery, confectionery, desserts, cereals, snack mixes, garnishing, sauces, seasonings, and food-processing applications.",
+          "description": "Dehydrated Orange is produced from selected oranges and carefully processed to provide a convenient, shelf-stable citrus ingredient with characteristic orange flavour and aroma.",
+          "details": {
+              "applications": "• Tea blends\n• Beverages\n• Bakery\n• Confectionery\n• Desserts\n• Cereals\n• Snack mixes\n• Garnishing\n• Sauces\n• Seasonings\n• Food-processing applications"
+            },
           "pricing": "Contact Trade Desk",
           "specifications": {
           "origin": "India – sourced from selected citrus-growing regions.",
@@ -2081,7 +2102,214 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
           "minOrder": "100 Kilograms"
       },
               "createdAt": "2026-05-31"
-     }
+     },
+      {
+        "id": "df-Lemon",
+        "name": "Lemon Slices",
+        "category": "Dehydrated Fruits",
+        "images": [
+          IMAGES.exportProducts.LemonSlices
+        ],
+        "description": "Dehydrated Lemon is prepared from selected lemons and carefully dehydrated to provide a convenient citrus ingredient with characteristic lemon flavour and aroma.",
+        "details": {
+          "applications": "• Tea and infusion blends\n• Beverages\n• Bakery\n• Confectionery\n• Seasonings\n• Sauces\n• Marinades\n• Desserts\n• Garnishing\n• Food manufacturing"
+        },
+        "pricing": "Contact Trade Desk",
+        "specifications": {
+          "origin": "India – sourced from selected lemon-growing regions.",
+          "availableForms": [
+            "Slices",
+            "Wheels",
+            "Pieces",
+            "Zest",
+            "Peel",
+            "Flakes",
+            "Powder"
+          ],
+          "packaging": "100 g • 250 g • 500 g • 1 kg • 5 kg • 10 kg • 20 kg • 25 kg • Customized bulk packaging",
+          "purity": "No Added Sugar, Sulfites or Colorants",
+          "grade": "Food Grade • Export Grade • Industrial/Commercial Grade",
+          "minOrder": "100 Kilograms"
+        },
+        "createdAt": "2026-05-31"
+      },
+       {
+         "id": "df-Watermelon",
+         "name": "Watermelon Slices",
+         "category": "Dehydrated Fruits",
+         "images": [
+           IMAGES.exportProducts.WatermelonSlices
+         ],
+         "description": "Dehydrated Watermelon is produced from selected watermelon and processed through controlled dehydration to provide a convenient fruit ingredient suitable for various food applications.",
+         "details": {
+           "applications": "• Fruit snacks\n• Trail mixes\n• Cereals\n• Granola\n• Confectionery\n• Bakery products\n• Desserts\n• Beverages\n• Fruit blends\n• Food-processing applications"
+         },
+         "pricing": "Contact Trade Desk",
+         "specifications": {
+           "origin": "India – sourced from selected watermelon-growing regions.",
+           "availableForms": [
+             "Slices",
+             "Dices",
+             "Cubes",
+             "Pieces",
+             "Flakes",
+             "Powder"
+           ],
+           "packaging": "100 g • 250 g • 500 g • 1 kg • 5 kg • 10 kg • 20 kg • 25 kg • Customized bulk packaging",
+           "purity": "No Added Sugar, Sulfites or Colorants",
+           "grade": "Food Grade • Export Grade • Industrial/Commercial Grade",
+           "minOrder": "100 Kilograms"
+         },
+         "createdAt": "2026-05-31"
+       },
+        {
+          "id": "df-Jackfruit",
+          "name": "Jackfruit Slices",
+          "category": "Dehydrated Fruits",
+          "images": [
+            IMAGES.exportProducts.JackfruitSlices
+          ],
+          "description": "Dehydrated Jackfruit is prepared from selected jackfruit and carefully dehydrated to provide a convenient, shelf-stable fruit ingredient with its distinctive tropical flavour and aroma.",
+          "details": {
+            "applications": "• Snacks\n• Trail mixes\n• Cereals\n• Granola\n• Bakery products\n• Confectionery\n• Desserts\n• Fruit mixes\n• Beverages\n• Food manufacturing"
+          },
+          "pricing": "Contact Trade Desk",
+          "specifications": {
+            "origin": "India – sourced from selected jackfruit-growing regions.",
+            "availableForms": [
+              "Slices",
+              "Chunks",
+              "Pieces",
+              "Dices",
+              "Flakes",
+              "Crushed",
+              "Powder"
+            ],
+            "packaging": "100 g • 250 g • 500 g • 1 kg • 5 kg • 10 kg • 20 kg • 25 kg • Customized bulk packaging",
+            "purity": "No Added Sugar, Sulfites or Colorants",
+            "grade": "Food Grade • Export Grade • Industrial/Commercial Grade",
+            "minOrder": "100 Kilograms"
+          },
+          "createdAt": "2026-05-31"
+        },
+         {
+           "id": "df-Amla",
+           "name": "Amla Slices",
+           "category": "Dehydrated Fruits",
+           "images": [
+             IMAGES.exportProducts.AmlaSlices
+           ],
+           "description": "Dehydrated Amla, also known as Indian Gooseberry, is prepared from selected amla fruit and carefully dehydrated to provide a convenient, shelf-stable ingredient with its characteristic tart flavour.",
+           "details": {
+             "applications": "• Herbal products\n• Functional food formulations\n• Snacks\n• Confectionery\n• Beverages\n• Tea blends\n• Dietary food preparations\n• Fruit mixes\n• Food-processing applications"
+           },
+           "pricing": "Contact Trade Desk",
+           "specifications": {
+             "origin": "India – sourced from selected amla-growing regions.",
+             "availableForms": [
+               "Slices",
+               "Pieces",
+               "Dices",
+               "Flakes",
+               "Crushed",
+               "Powder"
+             ],
+             "packaging": "100 g • 250 g • 500 g • 1 kg • 5 kg • 10 kg • 20 kg • 25 kg • Customized bulk packaging",
+             "purity": "No Added Sugar, Sulfites or Colorants",
+             "grade": "Food Grade • Export Grade • Industrial/Commercial Grade",
+             "minOrder": "100 Kilograms"
+           },
+           "createdAt": "2026-05-31"
+         },
+         {
+           "id": "df-Coconut",
+           "name": "Dehydrated Coconut",
+           "category": "Dehydrated Fruits",
+           "images": [
+             IMAGES.exportProducts.DehydratedCoconut
+           ],
+           "description": "Dehydrated Coconut is prepared from selected mature coconut and processed under controlled conditions to reduce moisture while maintaining its characteristic coconut flavour and aroma.",
+           "details": {
+             "applications": "• Bakery\n• Confectionery\n• Chocolates\n• Cereals\n• Granola\n• Desserts\n• Curries\n• Snack products\n• Coconut-based foods\n• Food manufacturing"
+           },
+           "pricing": "Contact Trade Desk",
+           "specifications": {
+             "origin": "India – sourced from selected coconut-growing regions.",
+             "availableForms": [
+               "Desiccated",
+               "Flakes",
+               "Chips",
+               "Shreds",
+               "Slices",
+               "Dices",
+               "Powder"
+             ],
+             "packaging": "100 g • 250 g • 500 g • 1 kg • 5 kg • 10 kg • 20 kg • 25 kg • Customized bulk packaging",
+             "purity": "No Added Sugar, Sulfites or Colorants",
+             "grade": "Food Grade • Export Grade • Industrial/Commercial Grade",
+             "minOrder": "100 Kilograms"
+           },
+           "createdAt": "2026-05-31"
+         },
+         {
+           "id": "df-Kiwi",
+           "name": "Kiwi Slices",
+           "category": "Dehydrated Fruits",
+           "images": [
+             IMAGES.exportProducts.KiwiSlices
+           ],
+           "description": "Dehydrated Kiwi is produced from selected kiwi fruit and carefully dehydrated to provide a convenient, shelf-stable ingredient with characteristic kiwi flavour and appearance.",
+           "details": {
+             "applications": "• Cereals\n• Granola\n• Trail mixes\n• Bakery products\n• Confectionery\n• Desserts\n• Yogurt\n• Ice cream\n• Smoothies\n• Snacks\n• Food-processing applications"
+           },
+           "pricing": "Contact Trade Desk",
+           "specifications": {
+             "origin": "India – sourced from selected kiwi-growing regions.",
+             "availableForms": [
+               "Slices",
+               "Dices",
+               "Pieces",
+               "Chunks",
+               "Flakes",
+               "Crushed",
+               "Powder"
+             ],
+             "packaging": "100 g • 250 g • 500 g • 1 kg • 5 kg • 10 kg • 20 kg • 25 kg • Customized bulk packaging",
+             "purity": "No Added Sugar, Sulfites or Colorants",
+             "grade": "Food Grade • Export Grade • Industrial/Commercial Grade",
+             "minOrder": "100 Kilograms"
+           },
+           "createdAt": "2026-05-31"
+         },
+     {
+       "id": "df-Pomegranate",
+       "name": "Pomegranate Arils",
+       "category": "Dehydrated Fruits",
+       "images": [
+         IMAGES.exportProducts.PomegranateArils
+       ],
+       "description": "Dehydrated Pomegranate is prepared from selected pomegranate fruit and carefully processed to provide a convenient, shelf-stable ingredient with characteristic pomegranate flavour and colour.",
+       "details": {
+         "applications": "• Cereals\n• Granola\n• Trail mixes\n• Bakery products\n• Confectionery\n• Desserts\n• Beverages\n• Tea blends\n• Snack products\n• Fruit preparations\n• Food manufacturing"
+       },
+       "pricing": "Contact Trade Desk",
+       "specifications": {
+         "origin": "India – sourced from selected pomegranate-growing regions.",
+         "availableForms": [
+           "Arils",
+           "Seeds",
+           "Pieces",
+           "Flakes",
+           "Crushed",
+           "Powder"
+         ],
+         "packaging": "100 g • 250 g • 500 g • 1 kg • 5 kg • 10 kg • 20 kg • 25 kg • Customized bulk packaging",
+         "purity": "No Added Sugar, Sulfites or Colorants",
+         "grade": "Food Grade • Export Grade • Industrial/Commercial Grade",
+         "minOrder": "100 Kilograms"
+       },
+       "createdAt": "2026-05-31"
+     },
 
     ]
   },
@@ -2096,12 +2324,22 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "name": "Gomay Ganesh",
         "category": "Panchgavya Products Catalogue",
         "images": [
-          IMAGES.export.productFallback
+          IMAGES.exportProducts.GomayGanesh
         ],
-        "description": "Gomay Ganesh is a traditionally handcrafted Ganesh idol made using cow dung (Gomay) and natural materials. It combines traditional Indian craftsmanship with an eco-conscious approach to festive celebrations.\n\nApplications:\n• Ganesh Chaturthi\n• Home puja and worship\n• Office and workplace décor\n• Festive occasions\n• Spiritual gifting\n• Eco-friendly celebrations\n\nAvailable Forms:\n• 2 Inch\n• 3 Inch\n• 7 Inch\n• Customized sizes and designs\n\nBenefits:\n• Supports eco-conscious festive celebrations\n• Made using natural materials\n• Traditional handcrafted product\n• Suitable for gifting and devotional use\n• Designed as an alternative to conventional decorative idols",
+        "description": "Gomay Ganesh is a traditionally handcrafted Ganesh idol made using cow dung (Gomay) and natural materials. It combines traditional Indian craftsmanship with an eco-conscious approach to festive celebrations.",
+        "details": {
+          "applications": "• Ganesh Chaturthi\n• Home puja and worship\n• Office and workplace décor\n• Festive occasions\n• Spiritual gifting\n• Eco-friendly celebrations",
+          "benefits": "• Supports eco-conscious festive celebrations\n• Made using natural materials\n• Traditional handcrafted product\n• Suitable for gifting and devotional use\n• Designed as an alternative to conventional decorative idols"
+        },
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
+          "availableForms": [
+            "2 Inch",
+            "3 Inch",
+            "7 Inch",
+            "Customized sizes and designs"
+          ],
           "packaging": "Individual protective packaging • Gift boxes • Bulk packaging • Customized export packaging",
           "purity": "Natural • Eco-Friendly • Handmade",
           "grade": "Traditional Grade",
@@ -2114,12 +2352,22 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "name": "Gomay Shree Yantra",
         "category": "Panchgavya Products Catalogue",
         "images": [
-          IMAGES.export.productFallback
+          IMAGES.exportProducts.GomayShreeYantra
         ],
-        "description": "Gomay Shree Yantra is a traditionally crafted spiritual décor product made using Gomay and natural materials, inspired by Indian cultural and spiritual traditions.\n\nApplications:\n• Puja rooms\n• Home décor\n• Offices\n• Temples\n• Meditation spaces\n• Spiritual gifting\n\nAvailable Forms:\n• Standard size\n• Wall-mounted format\n• Tabletop format\n• Customized sizes and designs\n\nBenefits:\n• Traditional spiritual décor\n• Natural-material craftsmanship\n• Suitable for puja and meditation spaces\n• Attractive cultural gifting option\n• Eco-conscious decorative choice",
+        "description": "Gomay Shree Yantra is a traditionally crafted spiritual décor product made using Gomay and natural materials, inspired by Indian cultural and spiritual traditions.",
+        "details": {
+          "applications": "• Puja rooms\n• Home décor\n• Offices\n• Temples\n• Meditation spaces\n• Spiritual gifting",
+          "benefits": "• Traditional spiritual décor\n• Natural-material craftsmanship\n• Suitable for puja and meditation spaces\n• Attractive cultural gifting option\n• Eco-conscious decorative choice"
+        },
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
+          "availableForms": [
+            "Standard size",
+            "Wall-mounted format",
+            "Tabletop format",
+            "Customized sizes and designs"
+          ],
           "packaging": "Individual protective packaging • Gift box • Bulk packaging • Customized export packaging",
           "purity": "Natural • Eco-Friendly • Handmade",
           "grade": "Traditional Grade",
@@ -2132,12 +2380,23 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "name": "Gomay Shubh Labh",
         "category": "Panchgavya Products Catalogue",
         "images": [
-          IMAGES.export.productFallback
+          IMAGES.exportProducts.GomayShubhLabh
         ],
-        "description": "Gomay Shubh Labh is a traditional decorative product representing auspicious symbols associated with Indian festive and cultural traditions. It is handcrafted using Gomay and natural materials.\n\nApplications:\n• Home entrance decoration\n• Puja rooms\n• Shops\n• Offices\n• Diwali decoration\n• Festive gifting\n\nAvailable Forms:\n• Shubh Labh set\n• Wall hanging\n• Door decoration\n• Tabletop décor\n• Customized designs\n\nBenefits:\n• Traditional auspicious décor\n• Suitable for festive occasions\n• Natural-material craftsmanship\n• Suitable for gifting\n• Eco-conscious decorative option",
+        "description": "Gomay Shubh Labh is a traditional decorative product representing auspicious symbols associated with Indian festive and cultural traditions. It is handcrafted using Gomay and natural materials.",
+        "details": {
+          "applications": "• Home entrance decoration\n• Puja rooms\n• Shops\n• Offices\n• Diwali decoration\n• Festive gifting",
+          "benefits": "• Traditional auspicious décor\n• Suitable for festive occasions\n• Natural-material craftsmanship\n• Suitable for gifting\n• Eco-conscious decorative option"
+        },
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
+          "availableForms": [
+            "Shubh Labh set",
+            "Wall hanging",
+            "Door decoration",
+            "Tabletop décor",
+            "Customized designs"
+          ],
           "packaging": "Individual packaging • Gift packaging • Sets • Bulk packaging • Customized packaging",
           "purity": "Natural • Eco-Friendly • Handmade",
           "grade": "Traditional Grade",
@@ -2150,12 +2409,22 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "name": "Gomay Mobile Stand",
         "category": "Panchgavya Products Catalogue",
         "images": [
-          IMAGES.export.productFallback
+          IMAGES.exportProducts.GomayMobileStand
         ],
-        "description": "Gomay Mobile Stand is an eco-conscious utility product crafted using Gomay and natural materials. It combines traditional craftsmanship with practical everyday use.\n\nApplications:\n• Mobile phone stand\n• Home use\n• Office desk\n• Workstation décor\n• Study table\n• Gifting\n\nAvailable Forms:\n• Standard mobile stand\n• Horizontal design\n• Vertical design\n• Customized shapes and designs\n\nBenefits:\n• Functional everyday product\n• Natural-material craftsmanship\n• Unique traditional design\n• Suitable for home and office use\n• Eco-conscious gifting option",
+        "description": "Gomay Mobile Stand is an eco-conscious utility product crafted using Gomay and natural materials. It combines traditional craftsmanship with practical everyday use.",
+        "details": {
+          "applications": "• Mobile phone stand\n• Home use\n• Office desk\n• Workstation décor\n• Study table\n• Gifting",
+          "benefits": "• Functional everyday product\n• Natural-material craftsmanship\n• Unique traditional design\n• Suitable for home and office use\n• Eco-conscious gifting option"
+        },
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
+          "availableForms": [
+            "Standard mobile stand",
+            "Horizontal design",
+            "Vertical design",
+            "Customized shapes and designs"
+          ],
           "packaging": "Individual protective packaging • Gift packaging • Bulk packaging • Customized export packaging",
           "purity": "Natural • Eco-Friendly • Handmade",
           "grade": "Traditional Craft Grade",
@@ -2163,35 +2432,56 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         },
         "createdAt": "2026-05-31"
       },
-      {
-        "id": "pg-antiradiation",
-        "name": "Gomay Anti-Radiation Chip",
-        "category": "Panchgavya Products Catalogue",
-        "images": [
-          IMAGES.export.productFallback
-        ],
-        "description": "Gomay Anti-Radiation Chip is a small Gomay-based accessory designed for placement near electronic devices. It is positioned as a traditional and eco-conscious lifestyle product.\n\nApplications:\n• Mobile phones\n• Laptops\n• Workstations\n• Home and office décor\n• Gifting\n\nAvailable Forms:\n• Round\n• Square\n• Decorative shapes\n• Customized designs\n\nBenefits:\n• Compact and easy to place\n• Traditional Gomay-based product\n• Suitable as a lifestyle accessory\n• Eco-conscious product concept\n• Suitable for gifting",
-        "pricing": "Contact Trade Desk",
-        "specifications": {
-          "origin": "India",
-          "packaging": "Individual pouch • Individual box • Gift packaging • Bulk packaging • Customized export packaging",
-          "purity": "Natural • Eco-Friendly • Handmade",
-          "grade": "Traditional Grade",
-          "minOrder": "500 Units"
-        },
-        "createdAt": "2026-05-31"
-      },
+     {
+       "id": "pg-antiradiation",
+       "name": "Gomay Anti-Radiation Chip",
+       "category": "Panchgavya Products Catalogue",
+       "images": [
+         IMAGES.exportProducts.GomayAntiRadiationChip
+       ],
+       "description": "Gomay Anti-Radiation Chip is a small Gomay-based accessory designed for placement near electronic devices. It is positioned as a traditional and eco-conscious lifestyle product.",
+       "details": {
+         "applications": "• Mobile phones\n• Laptops\n• Workstations\n• Home and office décor\n• Gifting",
+         "benefits": "• Compact and easy to place\n• Traditional Gomay-based product\n• Suitable as a lifestyle accessory\n• Eco-conscious product concept\n• Suitable for gifting"
+       },
+       "pricing": "Contact Trade Desk",
+       "specifications": {
+         "origin": "India",
+         "availableForms": [
+           "Round",
+           "Square",
+           "Decorative shapes",
+           "Customized designs"
+         ],
+         "packaging": "Individual pouch • Individual box • Gift packaging • Bulk packaging • Customized export packaging",
+         "purity": "Natural • Eco-Friendly • Handmade",
+         "grade": "Traditional Grade",
+         "minOrder": "500 Units"
+       },
+       "createdAt": "2026-05-31"
+     },
       {
         "id": "pg-dhoop",
         "name": "Panchgavya Dhoop",
         "category": "Panchgavya Products Catalogue",
         "images": [
-          IMAGES.export.productFallback
+          IMAGES.exportProducts.PanchgavyaDhoop
         ],
-        "description": "Panchgavya Dhoop is a traditional aromatic product prepared using Panchgavya-based and other natural ingredients. It is inspired by traditional Indian practices of using aromatic products during puja and spiritual activities.\n\nApplications:\n• Puja\n• Meditation\n• Prayer spaces\n• Temples\n• Home fragrance\n• Spiritual ceremonies\n• Traditional rituals\n\nAvailable Forms:\n• Dhoop Sticks\n• Dhoop Cones\n• Dhoop Cups\n• Dhoop Tablets\n• Customized forms\n\nBenefits:\n• Traditional aromatic experience\n• Suitable for puja and spiritual spaces\n• Convenient to use\n• Natural and traditional product positioning\n• Suitable for gifting and festive occasions",
+        "description": "Panchgavya Dhoop is a traditional aromatic product prepared using Panchgavya-based and other natural ingredients. It is inspired by traditional Indian practices of using aromatic products during puja and spiritual activities.",
+        "details": {
+          "applications": "• Puja\n• Meditation\n• Prayer spaces\n• Temples\n• Home fragrance\n• Spiritual ceremonies\n• Traditional rituals",
+          "benefits": "• Traditional aromatic experience\n• Suitable for puja and spiritual spaces\n• Convenient to use\n• Natural and traditional product positioning\n• Suitable for gifting and festive occasions"
+        },
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
+          "availableForms": [
+            "Dhoop Sticks",
+            "Dhoop Cones",
+            "Dhoop Cups",
+            "Dhoop Tablets",
+            "Customized forms"
+          ],
           "packaging": "10 pcs • 20 pcs • 50 pcs • 100 pcs • 250 g • 500 g • Bulk packaging • Customized export packaging",
           "purity": "Natural • Eco-Friendly",
           "grade": "Ritual Grade",
@@ -2204,12 +2494,23 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "name": "Panchgavya Diya",
         "category": "Panchgavya Products Catalogue",
         "images": [
-          IMAGES.export.productFallback
+          IMAGES.exportProducts.PanchgavyaDiya
         ],
-        "description": "Panchgavya Diya is a traditionally crafted diya made using natural Panchgavya-based materials. It is suitable for festivals, puja, religious ceremonies, and decorative use.\n\nApplications:\n• Diwali\n• Puja\n• Religious ceremonies\n• Temples\n• Home décor\n• Festive gifting\n\nAvailable Forms:\n• Single Diya\n• Set of Diyas\n• Decorative Diyas\n• Festival Gift Sets\n• Customized designs\n\nBenefits:\n• Suitable for traditional celebrations\n• Natural-material craftsmanship\n• Eco-conscious festive option\n• Suitable for gifting\n• Attractive traditional décor",
+        "description": "Panchgavya Diya is a traditionally crafted diya made using natural Panchgavya-based materials. It is suitable for festivals, puja, religious ceremonies, and decorative use.",
+        "details": {
+          "applications": "• Diwali\n• Puja\n• Religious ceremonies\n• Temples\n• Home décor\n• Festive gifting",
+          "benefits": "• Suitable for traditional celebrations\n• Natural-material craftsmanship\n• Eco-conscious festive option\n• Suitable for gifting\n• Attractive traditional décor"
+        },
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
+          "availableForms": [
+            "Single Diya",
+            "Set of Diyas",
+            "Decorative Diyas",
+            "Festival Gift Sets",
+            "Customized designs"
+          ],
           "packaging": "Single pack • Sets of 2/4/6/12 • Gift boxes • Bulk packaging • Customized festive packaging",
           "purity": "Natural • Eco-Friendly • Handmade",
           "grade": "Traditional Grade",
@@ -2222,19 +2523,30 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
         "name": "Panchgavya Havan Samagri",
         "category": "Panchgavya Products Catalogue",
         "images": [
-          IMAGES.export.productFallback
+          IMAGES.exportProducts.PanchgavyaHavanSamagri
         ],
-        "description": "Panchgavya Havan Samagri is a traditional ritual blend prepared using Panchgavya-based and selected natural ingredients for Havan, Yagna, and other traditional ceremonies.\n\nApplications:\n• Havan\n• Yagna\n• Puja\n• Religious ceremonies\n• Temple use\n• Traditional rituals\n\nAvailable Forms:\n• Powder\n• Granules\n• Herbal mix\n• Traditional Havan blend\n• Customized formulations\n\nBenefits:\n• Authentic traditional ritual blend\n• Selected natural ingredients\n• Formulated for sacred fire ceremonies",
+        "description": "Panchgavya Havan Samagri is a traditional ritual blend prepared using Panchgavya-based and selected natural ingredients for Havan, Yagna, and other traditional ceremonies.",
+        "details": {
+          "applications": "• Havan\n• Yagna\n• Puja\n• Religious ceremonies\n• Temple use\n• Traditional rituals",
+          "benefits": "• Authentic traditional ritual blend\n• Selected natural ingredients\n• Formulated for sacred fire ceremonies"
+        },
         "pricing": "Contact Trade Desk",
         "specifications": {
           "origin": "India",
+          "availableForms": [
+            "Powder",
+            "Granules",
+            "Herbal mix",
+            "Traditional Havan blend",
+            "Customized formulations"
+          ],
           "packaging": "500 g • 1 kg • 5 kg • 25 kg Bulk packaging",
           "purity": "Natural • Pure Ritual Blend",
           "grade": "Ritual Grade • Export Grade",
           "minOrder": "200 Kilograms"
         },
         "createdAt": "2026-05-31"
-      }
+      },
     ]
   }
 ];

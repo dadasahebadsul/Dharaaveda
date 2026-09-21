@@ -1,15 +1,25 @@
 import React, { useEffect, useState } from "react";
 import { Star, Quote, ArrowLeft } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { api } from "../lib/api";
 import type { Testimonial, ScreenshotReview } from "../types";
-import { TESTIMONIAL_TOPICS } from "../data/testimonialTopics";
+import {TESTIMONIAL_TOPICS,type TestimonialTopic,} from "../data/testimonialTopics";
 
 export default function Testimonials() {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
   const [screenshotReviews, setScreenshotReviews] = useState<ScreenshotReview[]>([]);
-  const [selectedTopic, setSelectedTopic] = useState("All");
+
+  const topicFromUrl = searchParams.get("topic");
+
+  const [selectedTopic, setSelectedTopic] = useState(
+    topicFromUrl &&
+    TESTIMONIAL_TOPICS.includes(topicFromUrl as TestimonialTopic)
+      ? topicFromUrl
+      : "All"
+  );
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     async function loadTestimonials() {

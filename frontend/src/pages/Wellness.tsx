@@ -323,23 +323,32 @@ export default function Wellness() {
                       </div>
 
 
-                      <div className="pt-4 flex">
+                      <div className="pt-4 flex items-center gap-4 flex-wrap">
                         <button
                           onClick={() => {
                             setBookingServiceId(srv.id);
                             setIsBookingModalOpen(true);
                           }}
-                          className="cursor-pointer inline-flex items-center space-x-2 text-xs font-mono tracking-widest uppercase text-therapy-600 hover:text-white transition-all border border-therapy-200 hover:border-transparent px-6 py-3 rounded-full bg-therapy-50/55 hover:bg-therapy-500 shadow-sm"
+                          className="cursor-pointer inline-flex items-center space-x-2 px-6 py-3 rounded-full bg-therapy-500 hover:bg-therapy-600 text-white text-xs font-mono tracking-widest uppercase transition-all duration-300 shadow-sm"
                         >
                           <span>
-                            {srv.id === "bach-flower" 
-                              ? "Book Consultation" 
-                              : srv.id === "reiki-aurasoma" 
-                              ? "Schedule Healing Session" 
+                            {srv.id === "bach-flower"
+                              ? "Book Consultation"
+                              : srv.id === "reiki-aurasoma"
+                              ? "Schedule Healing Session"
                               : "Request Appointment"}
                           </span>
                           <ChevronRight className="w-4 h-4" />
                         </button>
+
+                        {srv.id === "bach-flower" && (
+                          <a
+                            href="/testimonial-topics"
+                            className="inline-flex items-center justify-center px-6 py-3 rounded-full border border-therapy-500 text-therapy-600 hover:bg-therapy-500 hover:text-white text-xs font-mono tracking-widest uppercase transition-all duration-300"
+                          >
+                            View All Testimonials
+                          </a>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -465,12 +474,7 @@ export default function Wellness() {
               ))
             )}
           </div>
-         <a
-           href="/testimonials"
-           className="mt-10 mx-auto inline-flex items-center justify-center rounded-full border border-therapy-500 px-6 py-3 text-xs font-mono uppercase tracking-widest text-therapy-600 hover:bg-therapy-500 hover:text-white transition-all duration-300"
-         >
-           View All Testimonials
-         </a>
+
         </div>
       </section>
 
@@ -863,7 +867,7 @@ export default function Wellness() {
                   </p>
                 </div>
 
-                <div className="pt-4 text-left">
+                <div className="pt-4 text-left flex items-center gap-4 flex-wrap">
                   <button
                     onClick={() => {
                       setBookingServiceId("");
@@ -874,6 +878,14 @@ export default function Wellness() {
                     <CalendarRange className="w-4 h-4" />
                     <span>Book Consultation</span>
                   </button>
+                  {/*
+                     <a
+                       href="/testimonials"
+                       className="inline-flex items-center justify-center px-6 py-3 border border-therapy-500 text-therapy-600 rounded-full font-mono text-[12px] tracking-widest"
+                     >
+                       View All Testimonials
+                     </a>
+                     */}
                 </div>
               </div>
 
