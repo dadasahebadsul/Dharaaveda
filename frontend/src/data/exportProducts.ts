@@ -769,7 +769,8 @@ export const EXPORT_CATEGORIES: ProductCategory[] = [
               ],
           "packaging": "100 g • 250 g • 500 g • 1 kg • 10 kg • 20 kg • 25 kg • Customized packaging",
           "purity": "100% Pure Mint Powder – No Artificial Colours, Flavours or Added Preservatives.",
-          "grade": "Food Grade / Export Quality."
+          "grade": "Food Grade / Export Quality.",
+          "minOrder": "100 Kilograms"
         },
         "createdAt": "2026-05-31"
       },
