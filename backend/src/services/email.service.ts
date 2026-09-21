@@ -1,6 +1,6 @@
 import nodemailer from "nodemailer";
 import { Resend } from "resend";
-import { GoogleGenAI } from "@google/genai";
+
 
 export const EMAIL_TO = process.env.EMAIL_TO || "sales@dharaaveda.com";
 async function translateToEnglish(text: string): Promise<string> {
@@ -16,7 +16,8 @@ async function translateToEnglish(text: string): Promise<string> {
       return text;
     }
 
-    const ai = new GoogleGenAI({ apiKey });
+   const { GoogleGenAI } = await import("@google/genai");
+   const ai = new GoogleGenAI({ apiKey });
 
     const response = await ai.models.generateContent({
       model: "gemini-2.5-flash",
