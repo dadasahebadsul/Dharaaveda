@@ -8,6 +8,7 @@ import { staticTranslations } from "../lib/translations";
 import { sendEmail } from "../services/emailService";
 import { EMAIL_TO, PHONE_NUMBER } from "../lib/constants";
 import { downloadReceipt, shareReceipt } from "../utils/pdfGenerator";
+import {parsePhoneNumberFromString,getCountries,getCountryCallingCode,type CountryCode,} from "libphonenumber-js";
 
 
 const saveBookingToLocalStorage = (booking: Booking) => {
@@ -42,6 +43,153 @@ export default function BookingForm({ preselectedServiceId = "", onSuccess }: Bo
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const [country, setCountry] = useState<CountryCode>("IN");
+
+  const [otp, setOtp] = useState("");
+  const [otpSent, setOtpSent] = useState(false);
+  const [otpVerified, setOtpVerified] = useState(false);
+  const [otpLoading, setOtpLoading] = useState(false);
+  const [otpError, setOtpError] = useState("");
+const [emailVerificationToken, setEmailVerificationToken] = useState("");
+
+  const countries = getCountries();
+
+  const countryNames = new Intl.DisplayNames(["en"], {
+    type: "region",
+  });
+
+const handleSendOtp = async () => {
+  const trimmedEmail = email.trim().toLowerCase();
+
+  if (!trimmedEmail) {
+    setFieldErrors((prev) => ({
+      ...prev,
+      email: "Email address is required.",
+    }));
+    return;
+  }
+
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmedEmail)) {
+    setFieldErrors((prev) => ({
+      ...prev,
+      email: "Please enter a valid email address.",
+    }));
+    return;
+  }
+
+  setOtpLoading(true);
+  setOtpError("");
+
+  try {
+    const response = await fetch(
+      `${import.meta.env.VITE_API_URL || "http://localhost:5000"}/api/inquiries/send-otp`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: trimmedEmail,
+        }),
+      }
+    );
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data.error || "Failed to send OTP.");
+    }
+
+    setOtpSent(true);
+    setOtpVerified(false);
+    setOtp("");
+    setOtpError("");
+  } catch (err: any) {
+    setOtpError(
+      err.message || "Failed to send OTP. Please try again."
+    );
+  } finally {
+    setOtpLoading(false);
+  }
+};
+const handleVerifyOtp = async () => {
+  if (!otp.trim()) {
+    setOtpError("Please enter the OTP.");
+    return;
+  }
+
+  if (!/^\d{6}$/.test(otp.trim())) {
+    setOtpError("OTP must be 6 digits.");
+    return;
+  }
+
+  setOtpLoading(true);
+  setOtpError("");
+
+  try {
+    const response = await fetch(
+      `${import.meta.env.VITE_API_URL || "http://localhost:5000"}/api/inquiries/verify-otp`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: email.trim().toLowerCase(),
+          otp: otp.trim(),
+        }),
+      }
+    );
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data.error || "OTP verification failed.");
+    }
+
+    setEmailVerificationToken(data.verificationToken);
+    setOtpVerified(true);
+    setOtpError("");
+  } catch (err: any) {
+    setOtpVerified(false);
+    setOtpError(
+      err.message || "Invalid OTP. Please try again."
+    );
+  } finally {
+    setOtpLoading(false);
+  }
+};
+  const validatePhoneNumber = () => {
+    if (!phone.trim()) {
+      return "Phone number is required.";
+    }
+
+    try {
+      const parsedPhone = parsePhoneNumberFromString(phone, country);
+
+      if (!parsedPhone) {
+        return `Enter a valid phone number for ${countryNames.of(country) || "selected country"}.`;
+      }
+
+      if (!parsedPhone.isPossible()) {
+        return `Phone number length is not valid for ${countryNames.of(country) || "selected country"}.`;
+      }
+
+      if (!parsedPhone.isValid()) {
+        return `Enter a valid phone number for ${countryNames.of(country) || "selected country"}.`;
+      }
+
+      return "";
+    } catch {
+      return "Enter a valid phone number.";
+    }
+  };
+
+  const [fieldErrors, setFieldErrors] = useState<{
+    name?: string;
+    email?: string;
+    phone?: string;
+  }>({});
   const [notes, setNotes] = useState("");
 
   const [busySlots, setBusySlots] = useState<{ time: string; service: string }[]>([]);
@@ -421,6 +569,7 @@ export default function BookingForm({ preselectedServiceId = "", onSuccess }: Bo
       )}
 
       {/* Main Body */}
+
       <div className="p-6 sm:p-10 text-left">
         {error && (
           <div className="p-4 mb-6 bg-red-50 border border-red-200 text-red-600 rounded-xl text-xs flex items-center space-x-2">
@@ -444,11 +593,16 @@ export default function BookingForm({ preselectedServiceId = "", onSuccess }: Bo
                 >
                   <div className="space-y-3">
                     <div className="flex justify-between items-start">
-                      <span className="text-[9px] font-mono tracking-widest text-[#FA980F] uppercase font-bold">{srv.category}</span>
+                      <span className="text-[9px] font-mono tracking-widest text-[#FA980F] uppercase font-bold">
+                        {srv.id === "bach-flower" ? "Emotional & Energy Upliftment" : srv.category}
+                      </span>
                       <span className="text-xs font-bold text-gray-900">{srv.pricing}</span>
                     </div>
                     <h4 className="font-serif text-base font-semibold group-hover:text-[#FA980F] transition-colors">{srv.translations?.[lang]?.name || srv.name}</h4>
                     <p className="text-xs text-gray-650 leading-relaxed font-light">{srv.translations?.[lang]?.description || srv.description}</p>
+                    <p className="mt-3 text-xs text-gray-600 leading-relaxed italic font-bold">
+                      To explore current offers and customised wellness sessions, kindly connect with our therapist.
+                    </p>
                   </div>
                   <div className="flex items-center justify-between border-t border-gray-100 pt-4 mt-4 text-[10px] font-mono uppercase tracking-widest text-[#FA980F] font-bold">
                     <span>{srv.duration} Session</span>
@@ -617,7 +771,66 @@ export default function BookingForm({ preselectedServiceId = "", onSuccess }: Bo
               </button>
             </div>
 
-            <form onSubmit={(e) => { e.preventDefault(); setStep(5); }} className="space-y-4 font-sans text-xs text-gray-650">
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+
+                const errors: {
+                  name?: string;
+                  email?: string;
+                  phone?: string;
+                } = {};
+
+                // Full Name validation
+                if (!name.trim()) {
+                  errors.name = "Full name is required.";
+                } else if (name.trim().length < 2) {
+                  errors.name = "Full name must be at least 2 characters.";
+                } else if (name.trim().length > 50) {
+                  errors.name = "Full name must not exceed 50 characters.";
+                }
+
+                // Email validation
+                // Email validation
+                if (!email.trim()) {
+                  errors.email = "Email address is required";
+                } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                  errors.email = "Please enter a valid email address";
+                }
+                if (email.trim() && !otpVerified) {
+                  errors.email = "Please verify your email address with OTP.";
+                }
+
+                // Phone validation — same libphonenumber-js approach
+                if (!phone.trim()) {
+                  errors.phone = "Phone number is required.";
+                } else {
+                  try {
+                    const phoneNumber = parsePhoneNumberFromString(
+                      phone.trim(),
+                      country
+                    );
+
+                    if (!phoneNumber || !phoneNumber.isValid()) {
+                      errors.phone =
+                        "Please enter a valid phone number for the selected country";
+                    }
+                  } catch {
+                    errors.phone =
+                      "Please enter a valid phone number for the selected country";
+                  }
+                }
+
+                setFieldErrors(errors);
+
+                if (Object.keys(errors).length > 0) {
+                  return;
+                }
+
+                setStep(5);
+              }}
+              className="space-y-4 font-sans text-xs text-gray-900"
+            >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
                   <label className="block text-[9px] font-mono uppercase tracking-widest text-gray-600 mb-1.5 font-bold">Your Full Name *</label>
@@ -626,43 +839,203 @@ export default function BookingForm({ preselectedServiceId = "", onSuccess }: Bo
                     <input
                       type="text"
                       required
+                      maxLength={50}
                       value={name}
-                      onChange={(e) => setName(e.target.value)}
-                      placeholder="e.g. Heinrich Müller"
+                      onChange={(e) => {
+                        const value = e.target.value;
+
+                        // Allow only letters and spaces
+                        if (/^[A-Za-z ]*$/.test(value)) {
+                          setName(value);
+
+                          if (value.trim().length > 0) {
+                            setFieldErrors((prev) => ({
+                              ...prev,
+                              name: undefined,
+                            }));
+                          }
+                        }
+                      }}
+                      placeholder="e.g. Heinrich Muller"
                       className="w-full bg-slate-50 border border-gray-350 focus:border-[#FA980F] rounded-xl pl-10 pr-3 py-2.5 text-gray-900 placeholder-gray-400 focus:bg-white focus:outline-none transition-colors"
                     />
+                    {fieldErrors.name && (
+                      <p className="mt-1 text-xs text-red-600">
+                        {fieldErrors.name}
+                      </p>
+                    )}
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-[9px] font-mono uppercase tracking-widest text-gray-600 mb-1.5 font-bold">Email Address *</label>
+                  <label className="block text-[9px] font-mono uppercase tracking-widest text-gray-600 mb-1.5 font-bold">
+                    Email Address *
+                  </label>
+
                   <div className="relative">
                     <Mail className="absolute left-3 top-3 w-4 h-4 text-gray-450" />
+
                     <input
                       type="email"
                       required
                       value={email}
-                      onChange={(e) => setEmail(e.target.value)}
+                      disabled={otpVerified}
+                      onChange={(e) => {
+                        setEmail(e.target.value);
+
+                        if (otpVerified) {
+                          setOtpVerified(false);
+                          setOtpSent(false);
+                          setOtp("");
+                        }
+
+                        if (fieldErrors.email) {
+                          setFieldErrors((prev) => ({
+                            ...prev,
+                            email: undefined,
+                          }));
+                        }
+
+                        setOtpError("");
+                      }}
                       placeholder={`e.g. ${EMAIL_TO}`}
-                      className="w-full bg-slate-50 border border-gray-350 focus:border-[#FA980F] rounded-xl pl-10 pr-3 py-2.5 text-gray-900 placeholder-gray-400 focus:bg-white focus:outline-none transition-colors"
+                      className={`w-full bg-slate-50 border ${
+                        otpVerified
+                          ? "border-emerald-500 bg-emerald-50"
+                          : "border-gray-350 focus:border-[#FA980F]"
+                      } rounded-xl pl-10 pr-3 py-2.5 text-gray-900 placeholder-gray-400 focus:bg-white focus:outline-none transition-colors`}
                     />
                   </div>
+
+                  {/* Send OTP */}
+                  {!otpVerified && !otpSent && (
+                    <button
+                      type="button"
+                      onClick={handleSendOtp}
+                      disabled={otpLoading}
+                      className="mt-2 px-4 py-2 bg-[#FA980F] hover:bg-orange-600 text-white rounded-lg text-[10px] font-mono font-bold uppercase tracking-wider disabled:opacity-50"
+                    >
+                      {otpLoading ? "Sending OTP..." : "Send OTP"}
+                    </button>
+                  )}
+
+                  {/* OTP Input */}
+                  {otpSent && !otpVerified && (
+                    <div className="mt-2 space-y-2">
+                      <input
+                        type="text"
+                        inputMode="numeric"
+                        maxLength={6}
+                        value={otp}
+                        onChange={(e) => {
+                          const value = e.target.value.replace(/\D/g, "");
+
+                          if (value.length <= 6) {
+                            setOtp(value);
+                            setOtpError("");
+                          }
+                        }}
+                        placeholder="Enter 6-digit OTP"
+                        className="w-full bg-slate-50 border border-gray-350 focus:border-[#FA980F] rounded-xl px-3 py-2.5 text-gray-900 placeholder-gray-400 focus:bg-white focus:outline-none transition-colors"
+                      />
+
+                      <div className="flex gap-2">
+                        <button
+                          type="button"
+                          onClick={handleVerifyOtp}
+                          disabled={otpLoading || otp.length !== 6}
+                          className="px-4 py-2 bg-black hover:bg-gray-800 text-white rounded-lg text-[10px] font-mono font-bold uppercase tracking-wider disabled:opacity-50"
+                        >
+                          {otpLoading ? "Verifying..." : "Verify OTP"}
+                        </button>
+
+                        <button
+                          type="button"
+                          onClick={handleSendOtp}
+                          disabled={otpLoading}
+                          className="px-4 py-2 border border-gray-300 hover:border-gray-900 text-gray-700 rounded-lg text-[10px] font-mono font-bold uppercase tracking-wider disabled:opacity-50"
+                        >
+                          Resend OTP
+                        </button>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Verified */}
+                  {otpVerified && (
+                    <p className="mt-2 text-xs text-emerald-600 font-semibold flex items-center gap-1">
+                      <CheckCircle className="w-4 h-4" />
+                      Email verified successfully
+                    </p>
+                  )}
+
+                  {/* Normal email validation error */}
+                  {fieldErrors.email && (
+                    <p className="mt-1 text-xs text-red-600">
+                      {fieldErrors.email}
+                    </p>
+                  )}
+
+                  {/* OTP error */}
+                  {otpError && (
+                    <p className="mt-1 text-xs text-red-600">
+                      {otpError}
+                    </p>
+                  )}
                 </div>
               </div>
 
-              <div>
-                <label className="block text-[9px] font-mono uppercase tracking-widest text-gray-600 mb-1.5 font-bold">Direct Mobile Number *</label>
-                <div className="relative">
-                  <Phone className="absolute left-3 top-3 w-4 h-4 text-gray-450" />
+              <div className="text-left">
+                <label className="block text-[10px] font-mono uppercase tracking-widest text-gray-600 mb-1.5">
+                  DIRECT MOBILE NUMBER *
+                </label>
+
+                <div className="flex gap-2">
+                  <select
+                    value={country}
+                    onChange={(e) => {
+                      setCountry(e.target.value as CountryCode);
+                      setPhone("");
+                      setFieldErrors((prev) => ({
+                        ...prev,
+                        phone: undefined,
+                      }));
+                    }}
+                    className="w-[42%] bg-slate-50 border border-gray-300 focus:border-orange-500 rounded-xl px-3 py-2.5 text-gray-900 outline-none"
+                  >
+                    {countries.map((countryCode) => (
+                      <option key={countryCode} value={countryCode}>
+                        {countryNames.of(countryCode)} (+{getCountryCallingCode(countryCode)})
+                      </option>
+                    ))}
+                  </select>
+
                   <input
                     type="tel"
                     required
                     value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
-                    placeholder={`e.g. ${PHONE_NUMBER}`}
-                    className="w-full bg-slate-50 border border-gray-350 focus:border-[#FA980F] rounded-xl pl-10 pr-3 py-2.5 text-gray-900 placeholder-gray-400 focus:bg-white focus:outline-none transition-colors"
+                    onChange={(e) => {
+                                        const value = e.target.value.replace(/\D/g, "");
+
+                                        if (value.length <= 15) {
+                                          setPhone(value);
+
+                                          if (!value) {
+                                            setFieldErrors((prev) => ({ ...prev, phone: undefined }));
+                                          }
+                                        }
+                                      }}
+                    placeholder="Enter phone number"
+                    className="flex-1 bg-slate-50 border border-gray-300 focus:border-orange-500 rounded-xl px-3 py-2.5 text-gray-900 placeholder-gray-400 outline-none transition"
                   />
                 </div>
+
+                {fieldErrors.phone && (
+                  <p className="mt-1 text-xs text-red-600">
+                    {fieldErrors.phone}
+                  </p>
+                )}
+
               </div>
 
               <div>
@@ -712,7 +1085,7 @@ export default function BookingForm({ preselectedServiceId = "", onSuccess }: Bo
                 </div>
                 <div>
                   <p className="text-gray-400 font-mono text-[9px] uppercase tracking-wider">Session Rate</p>
-                  <p className="font-serif text-sm font-semibold text-[#FA980F] mt-0.5">₹2,000</p>
+                  <p className="font-serif text-sm font-semibold text-[#FA980F] mt-0.5">₹2,000 + 18% GST = ₹2,360/-</p>
                 </div>
                 <div>
                   <p className="text-gray-400 font-mono text-[9px] uppercase tracking-wider">Scheduled Date</p>
@@ -773,7 +1146,7 @@ export default function BookingForm({ preselectedServiceId = "", onSuccess }: Bo
                   ) : (
                     <>
                       <ShieldCheck className="w-4 h-4" />
-                      <span>Proceed to Pay ₹1</span>
+                      <span>Proceed to Pay ₹2,360</span>
                     </>
                   )}
                 </button>

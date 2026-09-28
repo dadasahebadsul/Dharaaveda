@@ -77,7 +77,7 @@
     {
       "id": "bach-flower",
       "name": "Bach Flower Therapy",
-      "category": "Emotional & Homeopathic Restoration",
+      "category": "Emotional & Energy Upliftment",
       "description": "A gentle, natural way to heal from within — working on the emotional level while simultaneously supporting physical, mental, and skin health.",
       "benefits": [
         "Helps balance emotions and bring harmony to body and mind.",
@@ -108,7 +108,7 @@
       "translations": {
         "en": {
           "name": "Bach Flower Therapy",
-          "category": "Emotional & Homeopathic Restoration",
+          "category": "Emotional & Energy Upliftment",
           "description": "A gentle, natural way to heal from within — working on the emotional level while simultaneously supporting physical, mental, and skin health.",
           "story": "A gentle, natural way to heal from within — working on the emotional level while simultaneously supporting physical, mental, and skin health.",
           "highlight": "Safe • Natural • Gentle • No Side Effects",
@@ -2810,115 +2810,7 @@
     }
   },
   "screenshotReviews": [
-    {
-      "id": "sr1",
-      "imageUrl": "/images/testimonials/client-review-wellness-1.webp?auto=format&fit=crop&q=80&w=600",
-      "caption": "Usui Reiki Session: 'I slept for 9 hours straight for the first time in 5 years.'",
-      "platform": "whatsapp",
-      "translations": {
-        "en": {
-          "caption": "Usui Reiki Session: 'I slept for 9 hours straight for the first time in 5 years.'"
-        },
-        "mr": {
-          "caption": "उसुई रेकी सत्र: 'गेल्या ५ वर्षात पहिल्यांदाच मी सलग ९ तास झोपलो.'"
-        },
-        "hi": {
-          "caption": "उसुई रेकी सत्र: 'पिछले ५ वर्षों में पहली बार मैं लगातार ९ घंटे सो पाया।'"
-        },
-        "sa": {
-          "id": "sr1",
-          "caption": "उसई रेकी सत्र: 'मैं 5 साल में पहली बार 9 घंटे लगातार सोया।'"
-        },
-        "es": {
-          "id": "sr1",
-          "caption": "Sesión de Usui Reiki: 'Dormí 9 horas seguidas por primera vez en 5 años.'"
-        },
-        "fr": {
-          "id": "sr1",
-          "caption": "Séance de Reiki Usui : 'J'ai dormi 9 heures d'affilée pour la première fois depuis 5 ans.'"
-        },
-        "de": {
-          "id": "sr1",
-          "caption": "Usui Reiki Sitzung: 'Ich habe zum ersten Mal seit 5 Jahren 9 Stunden am Stück geschlafen.'"
-        },
-        "it": {
-          "id": "sr1",
-          "caption": "Sessione Usui Reiki: 'Ho dormito per 9 ore di fila per la prima volta in 5 anni.'"
-        },
-        "pt": {
-          "id": "sr1",
-          "caption": "Sessão Usui Reiki: 'Dormi por 9 horas seguidas pela primeira vez em 5 anos.'"
-        },
-        "ru": {
-          "id": "sr1",
-          "caption": "Сеанс Усуи Рейки: «Я спал 9 часов подряд впервые за 5 лет»."
-        },
-        "zh": {
-          "id": "sr1",
-          "caption": "臼井灵气体验：“五年来，我第一次感受到了长达 9 小时的深层熟睡。”"
-        },
-        "ja": {
-          "id": "sr1",
-          "caption": "臼井レイキ・セッション：「5年ぶりに、9時間続けてぐっすりと眠ることができました。」"
-        },
-        "ko": {
-          "id": "sr1",
-          "caption": "우수이 레이키 세션: '5년 만에 처음으로 9시간 동안 깨지 않고 숙면을 취했습니다.'"
-        },
-        "ar": {
-          "id": "sr1",
-          "caption": "جلسة ريكي أوسوي: 'نمت لمدة 9 ساعات متواصلة لأول مرة منذ 5 سنوات.'"
-        },
-        "bn": {
-          "id": "sr1",
-          "caption": "উসুই রেইকি সেশন: 'গত ৫ বছরে এই প্রথম আমি টানা ৯ ঘণ্টা ঘুমিয়েছি।'"
-        },
-        "ta": {
-          "id": "sr1",
-          "caption": "உசுயி ரெய்கி அமர்வு: 'கடந்த 5 ஆண்டுகளில் முதல் முறையாக நான் 9 மணிநேரம் நிம்மதியாக உறங்கினேன்.'"
-        },
-        "te": {
-          "id": "sr1",
-          "caption": "ఉసుయి రేకి సెషన్: '5 ఏళ్లలో మొదటిసారిగా నేను వరుసగా 9 గంటల పాటు హాయిగా నిద్రపోయాను.'"
-        },
-        "ml": {
-          "id": "sr1",
-          "caption": "ഉസുയി റെയ്കി സെഷൻ: '5 വർഷത്തിനിടെ ആദ്യമായി ഞാൻ തുടർച്ചയായി 9 മണിക്കൂർ ഉറങ്ങി.'"
-        },
-        "kn": {
-          "id": "sr1",
-          "caption": "ಉಸುಯಿ ರೇಖಿ ಸೆಷನ್: 'ನಾನು 5 ವರ್ಷಗಳ ನಂತರ ಮೊದಲ ಬಾರಿಗೆ 9 ಗಂಟೆಗಳ ಕಾಲ ಆಳವಾಗಿ ನಿದ್ದೆ ಮಾಡಿದೆ.'"
-        },
-        "gu": {
-          "id": "sr1",
-          "caption": "યુસુઈ રેકી સેશન: '5 વર્ષમાં પ્રથમ વખત હું 9 કલાક સતત ઊંઘી શક્યો.'"
-        },
-        "pa": {
-          "id": "sr1",
-          "caption": "ਉਸੁਈ ਰੇਕੀ ਸੈਸ਼ਨ: 'ਮੈਂ 5 ਸਾਲਾਂ ਵਿੱਚ ਪਹਿਲੀ ਵਾਰ 9 ਘੰਟੇ ਲਗਾਤਾਰ ਸੌਂ ਪਾਇਆ।'"
-        },
-        "tr": {
-          "id": "sr1",
-          "caption": "Usui Reiki Seansı: '5 yıldır ilk defa 9 saat kesintisiz uyudum.'"
-        },
-        "nl": {
-          "id": "sr1",
-          "caption": "Usui Reiki Sessie: 'Voor het eerst in 5 jaar heb ik 9 uur onafgebroken geslapen.'"
-        },
-        "id": {
-          "id": "sr1",
-          "caption": "Sesi Reiki Usui: 'Saya tidur selama 9 jam berturut-turut untuk pertama kalinya dalam 5 tahun.'"
-        },
-        "vi": {
-          "id": "sr1",
-          "caption": "Phiên Usui Reiki: 'Tôi đã ngủ liên tục 9 tiếng lần đầu tiên sau 5 năm.'"
-        },
-        "pl": {
-          "id": "sr1",
-          "caption": "Sesja Reiki Usui: „Po raz pierwszy od 5 lat spałem bez przerwy 9 godzin”."
-        }
-      }
-    },
+
     {
       "id": "sr2",
       "imageUrl": "/images/testimonials/client-review-wellness-2.webp?auto=format&fit=crop&q=80&w=600",

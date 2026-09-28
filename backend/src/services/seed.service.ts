@@ -76,7 +76,7 @@ const SEED_SERVICES = [
   {
     _id: "bach-flower",
     name: "Bach Flower Therapy",
-    category: "Emotional & Homeopathic Restoration",
+  category: "Emotional & Energy Upliftment",
     description: "*Bach Flower Therapy* is a gentle, safe, and natural system of emotional healing developed by *Dr. Edward Bach*, a British physician and homeopath, in the 1930s.",
     benefits: [
       "Helps balance emotions and bring harmony to body and mind.",
@@ -84,7 +84,7 @@ const SEED_SERVICES = [
       "Natural complementary support for: Skin allergies and chronic ailments, Blood clots (internal and external), Diabetes, BP and sugar imbalance, Constipation and digestive issues, Cancer care and post-surgery recovery support, ICU/CCU recovery support, Women's health and pregnancy care, Newborn and child emotional well-being, Elderly care and age-related concerns."
     ],
     duration: "1 Hour",
-    pricing: "₹2,000 per session",
+    pricing: "₹2,000 + 18% GST = ₹2,360/- per session",
     image: "/images/therapy/bachFlowerService.webp",
     story: "*Bach Flower Therapy* is a gentle, safe, and natural system of emotional healing developed by *Dr. Edward Bach*, a British physician and homeopath, in the 1930s.\n\nThe therapy is based on the understanding that our emotional well-being plays a vital role in our overall health. Feelings such as stress, anxiety, fear, sadness, anger, guilt, loneliness, lack of confidence, or emotional overwhelm can affect both the mind and body. Bach Flower Remedies help restore emotional balance by addressing these underlying emotional states.\n\nPrepared from the flowers of wild plants and trees, these remedies work gently to support the body's natural ability to heal. They are *non-habit forming, non-toxic, and suitable for people of all ages*, including children, adults, senior citizens, and even pets.\n\nBach Flower Therapy can support individuals experiencing:\n\n* Stress, anxiety, and overthinking\n* Fear, panic, and phobias\n* Depression, grief, and emotional trauma\n* Anger, irritability, and frustration\n* Low confidence and self-esteem\n* Sleep disturbances and mental fatigue\n* Relationship and family challenges\n* Exam stress and concentration difficulties in children\n* Emotional support during pregnancy, postpartum, and menopause\n* Lifestyle-related emotional imbalances that may accompany physical health concerns\n\nBach Flower Therapy is a complementary wellness approach that focuses on emotional harmony and inner peace. It can be used alongside conventional medical care but is *not a substitute for medical diagnosis or treatment*.\n\nBy bringing emotions back into balance, Bach Flower Remedies help individuals feel calmer, more positive, emotionally resilient, and better able to face life's challenges with confidence and clarity.",
     highlight: "Safe • Natural • Gentle • No Side Effects",
@@ -107,7 +107,7 @@ const SEED_SERVICES = [
     translations: {
       en: {
         name: "Bach Flower Therapy",
-        category: "Emotional & Homeopathic Restoration",
+        category: "Emotional & Energy Upliftment",
         description: "*Bach Flower Therapy* is a gentle, safe, and natural system of emotional healing developed by *Dr. Edward Bach*, a British physician and homeopath, in the 1930s.",
         story: "*Bach Flower Therapy* is a gentle, safe, and natural system of emotional healing developed by *Dr. Edward Bach*, a British physician and homeopath, in the 1930s.\n\nThe therapy is based on the understanding that our emotional well-being plays a vital role in our overall health. Feelings such as stress, anxiety, fear, sadness, anger, guilt, loneliness, lack of confidence, or emotional overwhelm can affect both the mind and body. Bach Flower Remedies help restore emotional balance by addressing these underlying emotional states.\n\nPrepared from the flowers of wild plants and trees, these remedies work gently to support the body's natural ability to heal. They are *non-habit forming, non-toxic, and suitable for people of all ages*, including children, adults, senior citizens, and even pets.\n\nBach Flower Therapy can support individuals experiencing:\n\n* Stress, anxiety, and overthinking\n* Fear, panic, and phobias\n* Depression, grief, and emotional trauma\n* Anger, irritability, and frustration\n* Low confidence and self-esteem\n* Sleep disturbances and mental fatigue\n* Relationship and family challenges\n* Exam stress and concentration difficulties in children\n* Emotional support during pregnancy, postpartum, and menopause\n* Lifestyle-related emotional imbalances that may accompany physical health concerns\n\nBach Flower Therapy is a complementary wellness approach that focuses on emotional harmony and inner peace. It can be used alongside conventional medical care but is *not a substitute for medical diagnosis or treatment*.\n\nBy bringing emotions back into balance, Bach Flower Remedies help individuals feel calmer, more positive, emotionally resilient, and better able to face life's challenges with confidence and clarity.",
         highlight: "Safe • Natural • Gentle • No Side Effects",
@@ -204,7 +204,7 @@ const SEED_SERVICES = [
       "Enhances spiritual growth and awareness"
     ],
     duration: "1 Hour",
-    pricing: "₹2,000 per session",
+    pricing: "₹2,000 + 18% GST = ₹2,360/- per session",
     image: "/images/therapy/rekkhanohoService.webp",
     story: "Rekkhanoho is a powerful energy healing modality channeling spiritual life-force. By dissolving dense, discordant resonance across cellular fascia, we release deep-rooted somatic patterns, empowering the body's latent biological healing loops.",
     highlight: "Natural • Holistic • Energy Balancing • Non-Invasive",
@@ -363,25 +363,11 @@ const DEFAULT_ABOUT = {
 
 const DEFAULT_SCREENSHOTS = [
   {
-    _id: "sr1",
-    imageUrl: "/images/testimonials/client-review-wellness-1.webp?auto=format&fit=crop&q=80&w=600",
-    caption: "Usui Reiki Session: 'I slept for 9 hours straight for the first time in 5 years.'",
-    platform: "whatsapp",
-    topic: "Sleep"
-  },
-  {
     _id: "sr2",
     imageUrl: "/images/testimonials/client-review-wellness-2.webp?auto=format&fit=crop&q=80&w=600",
     caption: "Bach Flower review: 'My somatic panic attacks dissolved within 12 days.'",
     platform: "instagram",
     topic: "Panic attack"
-  },
-  {
-    _id: "sr3",
-    imageUrl: "/images/testimonials/client-review-soundwave.webp?auto=format&fit=crop&q=80&w=600",
-    caption: "Pranic Sound waves: 'Unbelievable vibrational wave clearing Wayanad residue. Deeply recommend!'",
-    platform: "whatsapp",
-    topic: "Sound healing"
   },
    {
      _id: "sr4",
@@ -438,7 +424,7 @@ export async function seedDatabase(): Promise<void> {
           "translations.en.description": "*Bach Flower Therapy* is a gentle, safe, and natural system of emotional healing developed by *Dr. Edward Bach*, a British physician and homeopath, in the 1930s.",
           "translations.en.story": "*Bach Flower Therapy* is a gentle, safe, and natural system of emotional healing developed by *Dr. Edward Bach*, a British physician and homeopath, in the 1930s.\n\nThe therapy is based on the understanding that our emotional well-being plays a vital role in our overall health. Feelings such as stress, anxiety, fear, sadness, anger, guilt, loneliness, lack of confidence, or emotional overwhelm can affect both the mind and body. Bach Flower Remedies help restore emotional balance by addressing these underlying emotional states.\n\nPrepared from the flowers of wild plants and trees, these remedies work gently to support the body's natural ability to heal. They are *non-habit forming, non-toxic, and suitable for people of all ages*, including children, adults, senior citizens, and even pets.\n\nBach Flower Therapy can support individuals experiencing:\n\n* Stress, anxiety, and overthinking\n* Fear, panic, and phobias\n* Depression, grief, and emotional trauma\n* Anger, irritability, and frustration\n* Low confidence and self-esteem\n* Sleep disturbances and mental fatigue\n* Relationship and family challenges\n* Exam stress and concentration difficulties in children\n* Emotional support during pregnancy, postpartum, and menopause\n* Lifestyle-related emotional imbalances that may accompany physical health concerns\n\nBach Flower Therapy is a complementary wellness approach that focuses on emotional harmony and inner peace. It can be used alongside conventional medical care but is *not a substitute for medical diagnosis or treatment*.\n\nBy bringing emotions back into balance, Bach Flower Remedies help individuals feel calmer, more positive, emotionally resilient, and better able to face life's challenges with confidence and clarity.",
           duration: "1 Hour", 
-          pricing: "₹2,000 per session",
+          pricing: "₹2,000 + 18% GST = ₹2,360/- per session",
           image: "/images/therapy/bachFlowerService.webp"
         } 
       }
@@ -448,7 +434,7 @@ export async function seedDatabase(): Promise<void> {
       { $set: { 
           name: "Rekkhanoho Therapy", 
           duration: "1 Hour", 
-          pricing: "₹2,000 per session",
+          pricing: "₹2,000 + 18% GST = ₹2,360/- per session",
           image: "/images/therapy/rekkhanohoService.webp"
         } 
       }

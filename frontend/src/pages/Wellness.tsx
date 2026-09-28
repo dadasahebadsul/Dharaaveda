@@ -321,6 +321,9 @@ export default function Wellness() {
                           </span>
                         ))}
                       </div>
+                      <p className="mt-3 text-sm text-gray-600 leading-relaxed font-bold italic">
+                        To explore current offers and customised wellness sessions, kindly connect with our therapist.
+                      </p>
 
 
                       <div className="pt-4 flex items-center gap-4 flex-wrap">

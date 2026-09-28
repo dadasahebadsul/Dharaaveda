@@ -13,6 +13,12 @@ dotenv.config();
 
 // Ensure uploads directory exists
 const uploadDir = path.join(__dirname, "../uploads");
+console.log("Uploads directory:", uploadDir);
+console.log(
+  "Image exists:",
+  fs.existsSync(path.join(uploadDir, "screenshot_178293049730.png"))
+);
+console.log("Files in uploads:", fs.readdirSync(uploadDir));
 if (!fs.existsSync(uploadDir)) {
   fs.mkdirSync(uploadDir, { recursive: true });
 }

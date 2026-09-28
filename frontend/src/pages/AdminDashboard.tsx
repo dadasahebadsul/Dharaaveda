@@ -41,7 +41,7 @@ export default function AdminDashboard() {
   const [revUrl, setRevUrl] = useState("");
   const [revCaption, setRevCaption] = useState("");
   const [revPlatform, setRevPlatform] = useState<'whatsapp' | 'instagram'>("whatsapp");
-  const [revTopic, setRevTopic] = useState("All");
+  const [revTopic, setRevTopic] = useState("");
   const [fileInputKey, setFileInputKey] = useState(0);
   const [savingAbout, setSavingAbout] = useState(false);
   const [addingReview, setAddingReview] = useState(false);
@@ -1405,6 +1405,26 @@ export default function AdminDashboard() {
                           </select>
                         </div>
                         <div>
+                          <label className="block text-[9px] font-mono uppercase text-gray-400 mb-1">
+                            Testimonial Topic
+                          </label>
+
+                          <select
+                            required
+                            value={revTopic}
+                            onChange={(e) => setRevTopic(e.target.value)}
+                            className="w-full bg-[#0b1a13] border border-luxury-gold/20 rounded p-2 text-white outline-none"
+                          >
+                            <option value="">Select a topic</option>
+
+                            {TESTIMONIAL_TOPICS.filter((topic) => topic !== "All").map((topic) => (
+                              <option key={topic} value={topic}>
+                                {topic}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+                        <div>
                           <label className="block text-[9px] font-mono uppercase text-gray-400 mb-1">Client Quote / Caption</label>
                           <input 
                             type="text" 
@@ -1441,7 +1461,11 @@ export default function AdminDashboard() {
                           <div key={rev.id} className="p-3 rounded-lg border border-luxury-gold/10 bg-black/30 flex items-center justify-between gap-4">
                             <div className="flex items-center space-x-3">
                               <img 
-                                src={rev.imageUrl} 
+                                src={
+                                  rev.imageUrl.startsWith("http")
+                                    ? rev.imageUrl
+                                    : `${import.meta.env.VITE_API_URL}${rev.imageUrl}`
+                                }
                                 alt={rev.caption} 
                                 referrerPolicy="no-referrer"
                                 className="w-10 h-10 rounded object-cover border border-luxury-gold/20" 

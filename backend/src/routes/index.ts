@@ -313,7 +313,7 @@ router.post(
       return;
     }
 
-    const amount = 1; // ₹1 per session (test amount)
+    const amount = 2360; // ₹2,000 + 18% GST
 
     let orderId = "";
     const keyId = process.env.RAZORPAY_KEY_ID;
@@ -439,9 +439,7 @@ router.post(
       notes: bookingNotes,
       amount: reqAmount
     } = req.body;
-
-    const amount = reqAmount || 1; // ₹1 per session (test amount)as per the sessionnbut it will be based on the services
-
+const amount = 2360; // ₹2,360 per session
     // Guard: reject if this time slot is already booked and paid
     if (service && date && time) {
       const conflict = await Booking.findOne({
@@ -1071,6 +1069,11 @@ router.get(
   "/screenshot-reviews/image/:id",
   asyncHandler(async (req, res) => {
     const review = await ScreenshotReview.findById(req.params.id);
+    console.log("Requested ID:", req.params.id);
+    console.log("Review found:", review ? {
+      id: review._id,
+      hasImageData: !!review.imageData
+    } : null);
     if (!review || !review.imageData) {
       res.status(404).json({ error: "Image not found in Wayanad archives" });
       return;
