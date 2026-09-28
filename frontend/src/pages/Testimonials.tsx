@@ -148,7 +148,11 @@ const filteredScreenshotReviews =
                   >
                     <div className="aspect-[4/3] bg-gray-50 overflow-hidden">
                       <img
-                        src={`http://localhost:3000${review.imageUrl}`}
+                        src={
+                          review.imageUrl.startsWith("http")
+                            ? review.imageUrl
+                            : `${import.meta.env.VITE_API_URL}${review.imageUrl}`
+                        }
                         alt={review.caption}
                         className="w-full h-full object-cover"
                       />
