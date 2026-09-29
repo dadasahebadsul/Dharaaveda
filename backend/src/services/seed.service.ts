@@ -439,13 +439,7 @@ export async function seedDatabase(): Promise<void> {
         } 
       }
     ).catch(() => {});
-    for (const review of DEFAULT_SCREENSHOTS) {
-      await ScreenshotReview.updateOne(
-        { _id: review._id },
-        { $set: review },
-        { upsert: true }
-      );
-    }
+
     const productsCount = await Product.countDocuments();
     if (productsCount > 0) {
       console.log("Database already populated. Enforced pricing & duration updates.");
@@ -564,7 +558,7 @@ export async function seedDatabase(): Promise<void> {
     console.log("Seeded About Content details");
 
     // Screenshot Reviews Seeding
-    const reviewsToSeed = localDb?.screenshotReviews || DEFAULT_SCREENSHOTS;
+    const reviewsToSeed = localDb?.screenshotReviews || [];
     const reviewDocs = reviewsToSeed.map((r: any) => ({
       ...r,
       _id: r.id || r._id

@@ -408,14 +408,7 @@ const ShowcaseCategorySection = React.memo<ShowcaseCategorySectionProps>((
                   <span>{t.product?.viewProducts || "View Products"}</span>
                 </button>
               )}
-              <a
-                href="#booking-form-card"
-                onClick={onRequestQuote}
-                className="cursor-pointer inline-flex items-center space-x-2 px-6 py-3 border border-gray-300 hover:border-orange-500 hover:text-orange-500 text-gray-600 font-bold text-xs font-mono uppercase tracking-widest transition-all duration-300 rounded"
-              >
-                <Mail className="w-4 h-4" />
-                <span>{t.product?.inquiryRequestQuote || "Request Quote"}</span>
-              </a>
+
             </div>
           </motion.div>
 
