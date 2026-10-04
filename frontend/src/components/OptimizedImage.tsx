@@ -183,6 +183,13 @@ export default function OptimizedImage({
           fetchPriority={computedFetchPriority}
           decoding={computedDecoding}
           referrerPolicy="no-referrer"
+
+          onContextMenu={(e) => e.preventDefault()}
+          onDragStart={(e) => e.preventDefault()}
+          onMouseDown={(e) => {
+            if (e.button === 2) e.preventDefault();
+          }}
+
           onLoad={() => setIsLoaded(true)}
           onError={() => {
             if (!hasError) {
@@ -190,13 +197,17 @@ export default function OptimizedImage({
               setIsLoaded(true);
             }
           }}
+
           className={`w-full h-full object-cover ${imgClassName} ${
             priority
               ? "opacity-100 scale-100 filter brightness-100"
               : `transition-all duration-700 ease-out ${
-                  isLoaded ? "opacity-100 scale-100 filter brightness-100" : "opacity-0 scale-[1.02] filter blur-[3px]"
+                  isLoaded
+                    ? "opacity-100 scale-100 filter brightness-100"
+                    : "opacity-0 scale-[1.02] filter blur-[3px]"
                 }`
           }`}
+
           {...rest}
         />
       </picture>

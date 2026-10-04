@@ -72,6 +72,21 @@ function PublicLayout() {
 }
 
 export default function App() {
+    useEffect(() => {
+        const handleContextMenu = (event: MouseEvent) => {
+          const target = event.target as HTMLElement;
+
+          if (target.tagName === "IMG") {
+            event.preventDefault();
+          }
+        };
+
+        document.addEventListener("contextmenu", handleContextMenu);
+
+        return () => {
+          document.removeEventListener("contextmenu", handleContextMenu);
+        };
+      }, []);
   useEffect(() => {
     // 1. Eagerly warm up the bundle chunk cache for public pages
     const prefetchTimer = setTimeout(() => {
