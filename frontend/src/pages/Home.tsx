@@ -126,6 +126,14 @@ function CountUpStat({ target, decimals = 0, suffix = "", duration = 1200 }: Cou
 
 
 export default function Home() {
+    useSeo({
+      title: "Indian Spices & Natural Products Exporter | Dharaaveda Global Exim",
+      description:
+        "Dharaaveda Global Exim is an Indian supplier and exporter of premium spices, dehydrated fruit powders, moringa products, Panchgavya, Gomay products and natural wellness products for global B2B buyers.",
+      keywords:
+        "Indian spices exporter, spices supplier India, bulk spices supplier, dehydrated fruit powder exporter, moringa products supplier India, Panchgavya products, Gomay products, natural products exporter India",
+      canonical: "https://dharaaveda.com/",
+    });
   const { lang } = useLanguage();
   const t = staticTranslations[lang] || staticTranslations.en;
   useSeo(t.seo?.homeTitle || staticTranslations.en.seo?.homeTitle, t.seo?.homeDesc || staticTranslations.en.seo?.homeDesc);
@@ -166,10 +174,22 @@ export default function Home() {
       btnLink: "/wellness",
       badge: getVal("therapyCardBadge") || "BIOFIELD ATtUNEMENT",
       highlights: [
-        getVal("therapyHighlight1"),
-        getVal("therapyHighlight2"),
-        getVal("therapyHighlight3"),
-        getVal("therapyHighlight4")
+        {
+          title: getVal("therapyHighlight1"),
+          description: getVal("therapyHighlight1Desc"),
+        },
+        {
+          title: getVal("therapyHighlight2"),
+          description: getVal("therapyHighlight2Desc"),
+        },
+        {
+          title: getVal("therapyHighlight3"),
+          description: getVal("therapyHighlight3Desc"),
+        },
+        {
+          title: getVal("therapyHighlight4"),
+          description: getVal("therapyHighlight4Desc"),
+        },
       ],
       themeColor: "from-[#081e14]/95 to-[#030907]/95 border-emerald-900/30 hover:border-emerald-500/50"
     }
@@ -417,15 +437,59 @@ export default function Home() {
                     {card.desc}
                   </p>
 
-                  {/* Highlights */}
-                  <ul className="grid grid-cols-2 grid-flow-col grid-rows-5 gap-x-4 gap-y-2 text-left font-mono text-[10px] sm:text-xs text-gray-700">
-                    {card.highlights.map((high, hIdx) => (
-                      <li key={hIdx} className="flex items-center gap-2">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-orange-500 shrink-0" />
-                        <span>{high}</span>
-                      </li>
-                    ))}
-                  </ul>
+                 {/* Highlights */}
+                 <ul
+                   className={
+                     card.highlights.some((item) => typeof item !== "string")
+                       ? "grid grid-cols-1 gap-y-4 text-left"
+                       : "grid grid-cols-2 grid-flow-col grid-rows-5 gap-x-4 gap-y-2 text-left font-mono text-[10px]"
+                   }
+                 >
+                   {card.highlights.map((high, hIdx) => {
+                     const title =
+                       typeof high === "string"
+                         ? high
+                         : high.title;
+
+                     const description =
+                       typeof high === "string"
+                         ? undefined
+                         : high.description;
+
+                     return (
+                       <li
+                         key={hIdx}
+                         className={
+                           typeof high === "string"
+                             ? "flex items-center gap-2"
+                             : "flex items-start gap-2"
+                         }
+                       >
+                         <CheckCircle2
+                           className="w-3.5 h-3.5 text-orange-500 shrink-0 mt-0.5"
+                         />
+
+                         <div className="min-w-0">
+                           <span
+                             className={
+                               typeof high === "string"
+                                 ? "font-mono"
+                                 : "block font-mono text-[11px] font-medium text-gray-800"
+                             }
+                           >
+                             {title}
+                           </span>
+
+                           {description && (
+                             <p className="mt-1 max-w-xl text-[10px] leading-relaxed text-gray-500 font-sans">
+                               {description}
+                             </p>
+                           )}
+                         </div>
+                       </li>
+                     );
+                   })}
+                 </ul>
 
                   {/* Action link button */}
                   <div className="pt-4 text-left">

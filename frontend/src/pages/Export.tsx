@@ -16,6 +16,14 @@ const ProductModal = lazy(() => import("../components/ProductModal"));
 const InquiryModal = lazy(() => import("../components/InquiryModal"));
 
 export default function Export() {
+      useSeo({
+        title: "Indian Spices & Natural Products Export Catalogue | Dharaaveda",
+        description:
+          "Explore Dharaaveda Global Exim's export catalogue of premium Indian spices, dehydrated fruit powders, moringa products, Panchgavya, Gomay products and natural products for global B2B buyers.",
+        keywords:
+          "Indian spices export catalogue, Indian spices supplier, spices exporter India, dehydrated fruit powder exporter, moringa products exporter, Panchgavya exporter, Gomay products supplier, bulk natural products India",
+        canonical: "https://dharaaveda.com/export",
+      });
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategoryModal, setSelectedCategoryModal] = useState<ProductCategory | null>(null);
   const [selectedProductForInquiry, setSelectedProductForInquiry] = useState<Product | null>(null);

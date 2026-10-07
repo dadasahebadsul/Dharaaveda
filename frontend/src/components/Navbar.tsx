@@ -150,45 +150,33 @@ export default function Navbar() {
           }`}
       >
         {/* Left Side: Brand Logo and Name */}
+        {/* Left Side: Brand Logo */}
+        {/* Left Side: New Dharaaveda Brand */}
         <Link
           to="/"
+          className="flex items-center shrink-0"
           onMouseEnter={() => handlePrefetch("/")}
-          onFocus={() => handlePrefetch("/")}
-          onTouchStart={() => handlePrefetch("/")}
-          className="flex items-center gap-3 select-none group pointer-events-auto"
         >
-          <div className="w-11 h-11 flex items-center justify-center shrink-0 relative">
-            <picture className="contents">
-              <source srcSet="/images/logo/logo.svg" type="image/svg+xml" />
-              <source srcSet="/images/logo/logo.webp" type="image/webp" />
-              <img
-                src="/images/logo/logo.png"
-                alt="Dharaaveda Logo"
-                width={96}
-                height={100}
-                decoding="async"
-                fetchPriority="high"
-                style={{
-                  transform: `translate(${translateX}px, ${translateY}px) scale(${logoScale})`,
-                  transformOrigin: "center center",
-                  width: "96px",
-                  height: "100px",
-                  transition: "transform 450ms cubic-bezier(0.16, 1, 0.3, 1)"
-                }}
-                className="object-contain select-none pointer-events-none"
-              />
-            </picture>
-          </div>
-          <div className="flex flex-col text-left">
-            <span className={`text-[20px] sm:text-[24px] font-light tracking-[0.25em] uppercase text-gray-900 leading-tight ${isWellnessActive ? "group-hover:text-therapy-500" : "group-hover:text-orange-500"} transition-colors duration-300`}>
-              Dhara<span className={isWellnessActive ? "text-therapy-500 font-semibold" : "text-orange-500 font-semibold"}>Aveda</span>
+          {/* New Logo */}
+          <img
+            src="/images/logo/Dharaaveda_Logo.png"
+            alt="Dharaaveda Global Exim"
+            className="w-[58px] h-[58px] sm:w-[64px] sm:h-[64px] lg:w-[70px] lg:h-[70px] object-contain"
+            decoding="async"
+            fetchPriority="high"
+          />
+
+          {/* Brand Text */}
+          <div className="ml-3 flex flex-col justify-center">
+            <span className="text-[20px] sm:text-[22px] lg:text-[24px] tracking-[0.25em] font-light text-gray-900 whitespace-nowrap">
+              DHARA<span className="text-orange-500 font-semibold">AVEDA</span>
             </span>
-            <span className="text-[7.5px] font-mono tracking-[0.2em] uppercase text-gray-500 -mt-0.5 whitespace-nowrap hidden xs:block">
-              {t.navbar.subTitle || "Agriculture & Aura Clinic"}
+
+            <span className="mt-1 text-[7px] sm:text-[7.5px] lg:text-[8px] tracking-[0.28em] text-gray-500 uppercase whitespace-nowrap">
+              GLOBAL EXIM
             </span>
           </div>
         </Link>
-
         {/* Center: Luxury Navigation Links */}
         <div className="hidden md:flex items-center gap-1 bg-gray-100/80 p-1 rounded-full border border-gray-200/50">
           {navLinks.map((link) => {

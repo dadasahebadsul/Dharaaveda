@@ -57,12 +57,40 @@ export const translations: StaticTranslations = {
     "exportHighlight4": "Bulk custom packaging",
     "exportCardBtn": "View Export Services",
     "therapyCardTitle": "Therapy Division",
-    "therapyCardDesc": "Attune your biofield, clear deep lifecycle trauma, and restore absolute somatic peace. Immersive consultations blending flower essences, Reiki chakra alignment, and polyphonic quartz sound healing.",
+
+    "therapyCardSubtitle": "Restorative & Holistic Wellness",
+
+    "therapyCardBadge": "BIOFIELD ATTUNEMENT",
+
+    "therapyCardDesc":
+      "Reconnect with inner balance, emotional ease, and a deeper sense of wellbeing through a refined, personalized approach to holistic wellness.",
+
+    "therapyCardDesc2":
+      "Our wellness sessions thoughtfully bring together traditional wisdom and contemporary wellness practices, creating a calm and private space for relaxation, self-awareness, emotional clarity, mindful reflection, and personal restoration.",
+
+    "therapySectionTitle": "Our Therapies",
+
     "therapyHighlight1": "Bach Flower Therapy",
-    "therapyHighlight2": "Usui Reiki Alignment",
-    "therapyHighlight3": "Emotional Wellness",
-    "therapyHighlight4": "432Hz Sound Healing",
-    "therapyCardBtn": "View Therapy Services",
+
+    "therapyHighlight1Desc":
+      "Personalized flower essence consultations designed to support emotional balance, self-awareness, and inner wellbeing according to individual needs.",
+
+    "therapyHighlight2": "Emotional Wellness Sessions",
+
+    "therapyHighlight2Desc":
+      "Personalized and supportive sessions creating space for emotional reflection, greater self-awareness, relaxation, and inner harmony.",
+
+    "therapyHighlight3": "Rekkhanho Wellness Therapy",
+
+    "therapyHighlight3Desc":
+      "A traditional wellness practice centered on relaxation, mindful body awareness, and cultivating a greater sense of balance and wellbeing.",
+
+    "therapyHighlight4": "Biofield Attunement",
+
+    "therapyHighlight4Desc":
+      "A refined holistic approach supporting balance, deeper self-awareness, emotional ease, and personal wellbeing.",
+
+    "therapyCardBtn": "Explore Wellness Services",
     "whyTitle": "Why Choose Dharaaveda",
     "whySubtitle": "Uncompromising standards across logistics and wellness",
     "whyTrustTitle": "Absolute Trust",
@@ -89,7 +117,7 @@ export const translations: StaticTranslations = {
     "highlightsExport4Desc": "Custom vacuum-barrier sealing, SGS certifications, and custom port filings.",
     "highlightsTherapy1": "Bach Flower Therapy",
     "highlightsTherapy1Desc": "Custom liquid remedies selected for active cognitive stress and neural release.",
-    "highlightsTherapy2": "Rekkhanoho / Reiki",
+    "highlightsTherapy2": "Rekkhanoho",
     "highlightsTherapy2Desc": "Non-invasive biofield chakra balancing and chromatic energy field restoration.",
     "highlightsTherapy3": "Emotional Wellness",
     "highlightsTherapy3Desc": "Nervous system recovery protocols designed to dissolve lifestyle fatigue.",

@@ -73,7 +73,7 @@ const homeKeys = {
   highlightsExport4Desc: "Custom vacuum-barrier sealing, SGS certifications, and custom port filings.",
   highlightsTherapy1: "Bach Flower Therapy",
   highlightsTherapy1Desc: "Custom liquid remedies selected for active cognitive stress and neural release.",
-  highlightsTherapy2: "Rekkhanoho / Reiki",
+  highlightsTherapy2: "Rekkhanoho",
   highlightsTherapy2Desc: "Non-invasive biofield chakra balancing and chromatic energy field restoration.",
   highlightsTherapy3: "Emotional Wellness",
   highlightsTherapy3Desc: "Nervous system recovery protocols designed to dissolve lifestyle fatigue.",
