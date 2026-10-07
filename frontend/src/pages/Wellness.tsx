@@ -67,7 +67,15 @@ export default function Wellness() {
   }, [isBookingModalOpen]);
 
   const rootT = staticTranslations[lang] || staticTranslations.en;
-  useSeo(rootT.seo?.wellnessTitle || staticTranslations.en.seo?.wellnessTitle, rootT.seo?.wellnessDesc || staticTranslations.en.seo?.wellnessDesc);
+ useSeo({
+   title:
+     rootT.seo?.wellnessTitle ||
+     staticTranslations.en.seo?.wellnessTitle,
+
+   description:
+     rootT.seo?.wellnessDesc ||
+     staticTranslations.en.seo?.wellnessDesc,
+ });
   const t = {
     ...rootT.wellness,
     booking: rootT.booking,

@@ -30,11 +30,19 @@ export default function Export() {
 
   const { lang } = useLanguage();
   const t = staticTranslations[lang] || staticTranslations.en;
-  useSeo(
-    t.seo?.exportTitle || staticTranslations.en.seo?.exportTitle,
-    t.seo?.exportDesc || staticTranslations.en.seo?.exportDesc,
-    t.seo?.exportKeywords || staticTranslations.en.seo?.exportKeywords
-  );
+  useSeo({
+    title:
+      t.seo?.exportTitle ||
+      staticTranslations.en.seo?.exportTitle,
+
+    description:
+      t.seo?.exportDesc ||
+      staticTranslations.en.seo?.exportDesc,
+
+    keywords:
+      t.seo?.exportKeywords ||
+      staticTranslations.en.seo?.exportKeywords,
+  });
 
   const handleOpenCategoryModal = useCallback((category: ProductCategory) => {
     setSelectedCategoryModal(category);

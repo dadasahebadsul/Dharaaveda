@@ -12,7 +12,11 @@ export default function MyBookings() {
   const t = staticTranslations[lang] || staticTranslations.en;
 
   // SEO details
-  useSeo("My Bookings | DharaAveda Sanctuary", "View details and download PDF receipts for your scheduled therapy residencies at DharaAveda Sanctuary.");
+  useSeo({
+    title: "My Bookings | DharaAveda Sanctuary",
+    description:
+      "View details and download PDF receipts for your scheduled therapy residencies at DharaAveda Sanctuary.",
+  });
 
   const [bookings, setBookings] = useState<Booking[]>([]);
   const [selectedBooking, setSelectedBooking] = useState<Booking | null>(null);

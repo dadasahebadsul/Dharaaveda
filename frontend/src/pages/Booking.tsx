@@ -14,10 +14,15 @@ export default function Booking() {
   const { lang } = useLanguage();
   const t = staticTranslations[lang] || staticTranslations.en;
 
-  useSeo(
-    t.seo?.bookingTitle || staticTranslations.en.seo?.bookingTitle,
-    t.seo?.bookingDesc || staticTranslations.en.seo?.bookingDesc
-  );
+  useSeo({
+    title:
+      t.seo?.bookingTitle ||
+      staticTranslations.en.seo?.bookingTitle,
+
+    description:
+      t.seo?.bookingDesc ||
+      staticTranslations.en.seo?.bookingDesc,
+  });
 
   return (
     <div className="bg-white text-gray-900 min-h-screen pt-28 pb-20 px-4 font-sans relative">

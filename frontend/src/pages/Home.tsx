@@ -136,7 +136,15 @@ export default function Home() {
     });
   const { lang } = useLanguage();
   const t = staticTranslations[lang] || staticTranslations.en;
-  useSeo(t.seo?.homeTitle || staticTranslations.en.seo?.homeTitle, t.seo?.homeDesc || staticTranslations.en.seo?.homeDesc);
+  useSeo({
+    title:
+      t.seo?.homeTitle ||
+      staticTranslations.en.seo?.homeTitle,
+
+    description:
+      t.seo?.homeDesc ||
+      staticTranslations.en.seo?.homeDesc,
+  });
   
   const getVal = (key: string) => {
     return t.home?.[key] || staticTranslations.en.home?.[key] || "";

@@ -84,10 +84,15 @@ export default function Contact() {
 
   const t = staticTranslations[lang] || staticTranslations.en;
 
-  useSeo(
-    t.seo?.contactTitle || staticTranslations.en.seo?.contactTitle,
-    t.seo?.contactDesc || staticTranslations.en.seo?.contactDesc
-  );
+  useSeo({
+    title:
+      t.seo?.contactTitle ||
+      staticTranslations.en.seo?.contactTitle,
+
+    description:
+      t.seo?.contactDesc ||
+      staticTranslations.en.seo?.contactDesc,
+  });
 
   // =========================================================
   // API BASE URL
